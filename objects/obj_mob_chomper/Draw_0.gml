@@ -1,0 +1,1 @@
+draw_sprite_ext(sprite_index,image_index,x,y+idle_offset,face,1,0,global.c_front,1);

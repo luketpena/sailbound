@@ -1,0 +1,1 @@
+sys_islands.island_list_cleanup();

@@ -1,0 +1,34 @@
+The game map generates in a line, with biomes generating along that line. The player gets to see one biome
+ahead of themselves on the line. Events get evenly distributed along the line, with different biomes having
+different possible events that can occur.
+
+The path can split into up to three separate lines, but always rejoins.
+
+Whenever a grid is crossed there is some kind of location or interaction that can take place between grids.
+These once again depend on the biome.
+
+Possible interactions:
+ - A merchant selling items and upgrades
+ - An alchemist who can temporarily enchant the boat
+ - A lookout tower that can reveal biomes, events, and interactions along the path
+ - Buried treasure for bonus gold and gems
+ - A blacksmith that can repair, increase your max health, or add an additional upgrade slot
+ - A teleport tower that lets you skip a few blocks ahead
+ - A cursed chest that gives a temporary debuff for some kind of reward
+ - Quest givers that give you challenge and a limit to how many blocks you must complete it in
+ - A bookie that lets you wager money on a percent chance of making bonus cash or losing your wager
+ - Empty ocean where nothing happens
+ - A fortune teller that will let you choose what kind of block, location, or event they will reveal to you
+ - A wind trickster-god that will blow you back a number of space
+ - One seagull carries a great reward, one has an okay reward, two have nothing, one has a bomb. Pick the right seagull after they mix up
+ - 
+
+The player has two currencies:
+ - Coins [purchase goods and items in a single playthrough - they do not carry over]
+ - Gems [purchase goods back at port, such as hulls and other unlocks]
+ 
+Every hull has a limited number of upgrade slots. The number varies from hull to hull. 
+ - Upgrades provide some gameplay-altering bonus to the player
+ - Upgrades come in varying quality: bronze, silver, gold, super
+ - Any quality can be cursed. Cursed cannot be removed without damaging the hull
+

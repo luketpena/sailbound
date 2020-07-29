@@ -1,0 +1,94 @@
+The goal of the game is to reach the treasure in the pirate's cove at the end. The player sails from point to point on the map, exploring islands and overcoming challenges.
+
+----THE MAP----
+The map only shows the paths that lead from where you are currently, unless you find Map Scraps.
+ - Map Scraps [reveals a number of paths ahead of you OR reveals an Island]
+ 
+When choosing a new place to sail, the distance from your point to the next one determines how long the sailing will be.
+
+----PLOTTING A COURSE----
+The player can select any grid - so long as it is forward - to move to next. While plotting a course, the player has three distances they can see:
+ - Far [players can see potential islands]
+ - Mid [players can see biomes]
+ - Near [players can see events]
+ 
+With this in mind, a player can plot a course to avoid or go towards what they want. Plot a course beyond what you know, and you might run into danger blindly or miss opportunities.
+
+----BIOMES----
+The map is divided into a grid, with a different Biome represented in each grid block. A Biome determines several things:
+ - The environment the player is in
+ - The mobs that can spawn
+ - The events that can occur
+ - Islands to discover
+ 
+Potential biomes:
+ - Open Water
+ - Tropical reef
+ - Arctic
+ - Volcanic
+ - Skull Islands
+ - Haunted Seas
+ - Junkyard Bayou
+
+----PATHS----
+Paths can have various dangers and events that can take place on them. The path moves along a grid, and each grid block a path goes through the longer the journey on that path.
+
+----EVENTS----
+Events occur while sailing along a path. Each biome has its own set of events that can occur, with Open Water being the most commong biome with the largest number of events.
+
+----ISLANDS----
+Islands are locations where the player can get out of their boat and be on foot to explore. Exploring is an opportunity to do a number of helpful tasks:
+ - Repair the boat
+ - Find material to repair the boat
+ - Spend gold on upgrades, modifiers, repairs, items, armor, and collectibles.
+ - Find or purchase new hulls for future play throughs
+ - Discover upgrades for the boat
+ - Find armor for the boat
+ - Discover treasure troves
+ 
+Islands can be different kinds of environments:
+ - Floating shops
+ - Abandoned islands
+ - Bustling towns
+ - Pirate coves
+ 
+While exploring, the player can engage in simple combat and has their own independant HP. On KO, the following occurs:
+ - The player is knocked out and carried back to where their ship is docked
+ - They are revived with very little health
+ - A penalty is applied (damage done, upgrade removed, modifier removed, ammo missing, weapon missing, etc)
+ 
+----EXPLORATION----
+The player has a number of mobility options:
+ - Walk / Run
+ - Jump / Double Jump / Wall Jump / Charge Jump / Run Jump / Back Flip
+ - Hard Fall (pull down in air)
+ - Swim / Boost Swim (jump button, costs air) / Dive (pull down while falling over water)
+ - Swing on Vines / Climb Ladders / Climb Vines
+
+The Players combat options change depending on what else they are doing. Peter wields a giant burst-barrel-hammer.
+ - Stand (3-hit combo)
+ - Walk / Run / Jump / Swim (2-hit combo)
+ - Back Flip / Charge Jump (sustained spinning attack)
+ - Run Jump (leaping smash)
+ - Hard Fall (ground pound)
+ 
+----UPGRADES----
+Upgrades are now more subtle stat boosts, with dramatic modifications being called Modifiers.
+
+Things upgrades change:
+ - Number of hit points
+ - Max ammo capacity
+ - Additional modifier slots
+
+----MODIFIERS----
+Modifiers give more dramatic changes, and the player has a limited number of slots, starting with only one on the default ship. (More slots can be purchased or discovered)
+
+Example modifiers:
+ - Regenerating shield
+ - Damage retaliation
+ - Boost jump
+ - Balloon Sail
+ - Item Magnetism
+ 
+
+ 

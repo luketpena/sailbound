@@ -1,0 +1,23 @@
+A mushroom that bounce you.
+A platform that crumbles when touched.
+A gust of wind that pushes you.
+Water to swim in.
+Magma to avoid.
+Ropes to swing on.
+Vines and ladders to climb.
+Floating bubbles that bounce you.
+Ice to slide on.
+Water currents to push you.
+Moving platforms to transport you.
+Walls to walljump off of.
+Tunnels to dig through.
+Spikes to dodge.
+Poison gas to dash through.
+Sticky goop to slow you down.
+Doors to unlock and open.
+Fire spouts to wait on and dodge.
+Secret blocks to break open.
+Treasure to dig up.
+Stones to break.
+Roots to burn with temporary torches.
+Torches to light.

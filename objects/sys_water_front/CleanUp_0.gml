@@ -1,0 +1,1 @@
+part_emitter_destroy(global.ps_water_front,pe_water_front);

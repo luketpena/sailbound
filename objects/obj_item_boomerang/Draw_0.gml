@@ -1,0 +1,1 @@
+draw_sprite_ext(spr_item_boomerang,0,x,y,1,1,spin,global.c_front,1);

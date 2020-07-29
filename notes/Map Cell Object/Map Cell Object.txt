@@ -1,0 +1,6 @@
+Information stored for each cell:
+
+ - coordinates
+ - biome
+ - active event
+ - island (another ds map with information about the island)

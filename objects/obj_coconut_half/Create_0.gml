@@ -1,0 +1,10 @@
+fixture_create_circle(id,4,.5,0,0,0,0,false,true);
+behave_init(behave.bouncer,.1,3,1,true,.01,.9,2,.4,.05,-1);
+floater_init(16,16,true,4,5);
+
+phy_angular_velocity = random_range(-300,300)
+active = true;
+anim = 0;
+anim_speed = .25;
+
+fade_wait = 3*room_speed;

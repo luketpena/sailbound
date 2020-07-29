@@ -1,0 +1,1 @@
+draw_sprite_ext(sprite_index,anim,x,y,1,1,image_angle,global.c_front,image_alpha);

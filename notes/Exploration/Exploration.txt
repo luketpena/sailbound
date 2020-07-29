@@ -1,0 +1,15 @@
+----WEAPONRY----
+
+MELEE
+ - Hammer [slow, high knockback, good against armor]
+ - Sword / Axe [medium, medium knockback, average weapon]
+ - Dagger [fast, low knockback, very agile]
+ - 
+
+RANGED
+ - Crossbow [slow reload, fast and accurate attack]
+ - Bow [slow reload, variable damage]
+ - Blunderbuss [short range, AoE damage]
+ - Boomerang / Chakram [partially melee, partially ranged]
+ - Cannon [slow attack, slow projectile, huge splash damage]
+ - Pistol [fast, low damage]

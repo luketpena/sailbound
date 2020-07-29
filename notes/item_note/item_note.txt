@@ -1,0 +1,53 @@
+If items are something you have in a slot that can be used up, that changes their usage dramatically.
+
+SINGLE USE ITEMS
+ -01 Repair Buddy (slowly repairs a large amount of health)
+ -02 Potion (instantly repair a small amount of health)
+ -03 Boombox (KO all on-screen mobs)
+ -04 Depth Turret (floats underwater in one place and creates bursts of electricity when mobs come close) [time limit]
+ -05 Heli Turret (flies at random through the air shooting watermelon seeds at nearby mobs) [time limit]
+ -06 Lightning Bottle (stuns all on-screen mobs for a long period)
+ -07 Alchemist Potion (all KOs give gold) [time limit]
+ -08 Bubble Shield (grants three layers of bubbles that protect you from three hits)
+ -09 Zap Pulse (hits enemies nearby the boat) [time limit]
+ -10 Boom Barrel (fly freely both above and below the water, damaging enemies you touch)
+ -11 Balloons (tie a number of balloons to the boat, each ballon gives you one extra in-air jump)
+
+WEAPONS
+ -01 Cannon (explosive projectile, affected by gravity, explodes on contact with water) [medium ammo]
+ -02 Missile (explosive projectile, flies straight, can pass through water) [limited ammo]
+ -03 Boomerang (thrown projectile, hits all in path, returns close to start point) [reusable if caught]
+ -04 Chili Pepper (constant stream of fire) [auto-draining fuel]
+ -05 Battle Anvil (burst in an aimed direction, create explosion on impact with mob) [medium ammo]
+ -06 Ghost Pearl (pass through all mobs and items, can float through the air in any direction) [medium fuel]
+ -07 Punchbox (medium range melee attack, travels in a straight line, impacts first enemey) [limited uses, breaks on final hit]
+ -08 Sword (close range melee attack, impacts all enemies in direction in range) [blade durability reduces on hit, breaks when worn]
+ -09 Hammer (close range melee, cracks armor well)
+ 
+UPGRADES
+ -01 Balloon Sail (hold jump to float down)
+ -02 Treasure Magnet (pull pick-ups from afar)
+ -03 Auto-Zap (create AoE burst when taking damage)
+ -04 Armor Plating (increases your health by a limited amount)
+ -05 Hull Spring (bounce higher off of enemies you land on)
+ -06 Ammo Generator (gives bonus ammo when equipping weapons)
+ -07 Heart Generator (slowly regenerates health over time)
+ -08 Super Hull (reduce damage from jumping on spiked and enflamed enemies)
+ -09 Refund (gain some gold when using and item or weapon)
+ -10 Lantern (increases fog and darkness visibility and reduces curse duration)
+ -11 Windbag (lets you charge a more powerful jump)
+ -12 Guardian Vial (protects you from sinking once) [if activated, it cannot be removed from that upgrade slot]
+ -13 Vampiric Plating (KOs have a chance to heal you)
+ -14 Martial Master (increase attack rate and damage with melee weapons) (melee KOs have a chance to heal you)
+
+CURSE
+ -01 Brittle Hull (take double damage)
+ -02 Monster Bait (increased mob rate)
+ -03 Cursed Satchel (cannot use items or weapons)
+ -04 Dead Wind (move slower and sailing takes longer)
+ -05 Eternal Night (while active, time of day is always night and ghosts pursue)
+ -06 Cursed Chest (coins take money away from you, evil chests explode when you get close)
+ -07 Barter (a random item is stolen from you in exchange)
+ -08 Blood Money (health is taken from you in exchange, up to half health)
+ 
+ 

@@ -1,0 +1,20 @@
+Converting GML script: ${project_dir}\scripts\tmc_ease_lerp\tmc_ease_lerp.gml
+Converted description /// @description tmc_ease_lerp(easing_type as EASE Enum, from_val, to_val, lerp_at)/// @param easing_type as EASE Enum
+/// @param  from_val
+/// @param  to_val
+/// @param  lerp_at
+
+Converting GML script: ${project_dir}\scripts\tmc_ease_progress\tmc_ease_progress.gml
+Converted description /// @description tmc_ease_progress(easing_type as EASE Enum, from_val, to_val, end_at, at)/// @param easing_type as EASE Enum
+/// @param  from_val
+/// @param  to_val
+/// @param  end_at
+/// @param  at
+
+Converting GML script: ${project_dir}\scripts\tmc_ease_start_end\tmc_ease_start_end.gml
+Converted description /// @description tmc_ease_start_end(easing_type as EASE Enum, from_val, to_val, start_at, end_at, at)/// @param easing_type as EASE Enum
+/// @param  from_val
+/// @param  to_val
+/// @param  start_at
+/// @param  end_at
+/// @param  at

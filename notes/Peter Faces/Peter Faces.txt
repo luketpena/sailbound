@@ -1,0 +1,15 @@
+Faces are divided by mood and action.
+
+ACTIONS:
+	-	Idle
+	- Jumping
+	- Falling
+	- Diving
+	- Taking Damage
+
+MOODS:
+	- Neutral
+	- Happy
+	- Delighted
+	- Scared
+	- Determined

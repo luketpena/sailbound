@@ -1,0 +1,34 @@
+Events cannot overlap, and each combination of factors is considered a unique event that does not
+intersect with any other event. Events can be classified as EVENTS or as WEATHER. This determines
+where the player can get information about these events.
+
+EVENTS WITH VARIANTS
+	Rain
+		+ Drizzle (just light rain) (occurs right before heavier rain)
+		+ Rainstorm (heavier rain, darker colors, higher waves)
+		+ Thunderstorm (Rainstorm + lightning)
+		+ Darkstorm (Rainstorm + black fog)
+	Snow
+		+ Light Snow (a few snowflakes) (occurs before heavier snowfall)
+		+ Blizzard (snow + heavy fog)
+		+ Ice Storm (blizzard + icebergs)
+		+ Glacier (icebergs)
+		+ Mist Glaciers (icebergs + fog)
+	Eruptions
+		+ Ash (procedes any volcanic activity)
+		+ Ash Cloud (ash + very heavy clouds of volcanic fog)
+		+ Eruptions (backdrop volcanos shoot explosive projectils vertically into foreground)
+		+ Geysers (shallow water + bursts of hot water to push and damage)
+	Graveyard
+		+ Haunted (heavy mist + ghosts)
+		+ Minefield (heavy mist + only mines)
+		+ Graveyard (heavy mist + only mines + ghosts)
+
+OTHER EVENTS
+	Acid Rain (grab temporary powerups that shield you from the effect of the acid temporarily)
+	Whale (a massive whale swims below, blasting enemies, boosting the boat, and spreading pickups)
+	Parade (hot air balloons and bonus balloon pickups in the air)
+	Ring Race (sail through as many rings as you can, get a bonus at the end depending on performance)
+	
+	
+		

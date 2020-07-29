@@ -1,0 +1,1 @@
+part_emitter_destroy(global.ps_fx_glow,pe_trail);

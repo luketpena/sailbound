@@ -1,0 +1,5 @@
+Your town sits in the center of the world map. Every number of days, the world map resets and the treasure is lost.
+
+Discovering the treasure returns you to town and scrambles the world as well while removing your current upgrades.
+
+Returning to town scrambles the world, but lets you keep your upgrades.

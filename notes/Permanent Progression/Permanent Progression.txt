@@ -1,0 +1,23 @@
+----THE DOCK----
+There is always at least one ship docked.
+
+Ways the ship can chance:
+ - Get shipwrecked -> Becomes the default hull again
+ - Beat the game with a ship -> Becomes that ship
+ - Purchase a hull from the ship yard -> Becomes that ship
+ 
+You can select a hull from any hull that you have purchased or brought back and haven't wrecked.
+
+You can only purchase ships that the shop has blueprints for:
+ - They have a number of default blueprints to start
+ - Discover blueprints while sailing
+ - Automatically unlock the blueprint for any ship you bring back to port
+
+
+----THE TOWN----
+
+Various parts of the town can slowly be expanded over time:
+ - Find new blueprints for the shipyard [affects sailing gameplay]
+ - Expand the aviary with new bird companions [slightly affects all gameplay]
+ - Unlock new outfits to wear at the tailor [affects exploration gameplay]
+ - Research new weaponry to equip [affects exploration gameplay]

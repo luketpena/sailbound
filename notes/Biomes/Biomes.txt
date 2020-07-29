@@ -1,0 +1,24 @@
+	- Ocean
+		+ Sub-biomes: [sunken city] 
+	- Arctic
+	- Volcano / Volcanic
+	- Tropical
+	- Skull Islands
+	- Junkyard Bayou
+			
+
+	- Oil Rigs
+			+ Location: small groups in open waters
+			+ Events: [Oil Spill]
+			+ Monster:
+	- Floating Islands
+			+ Location: single cell surrounded by Tropical biomes
+	- Sunken City
+			+ Location: lines coasts
+	- Ancient Spires
+			+ Location: A rare, 3x3 star location with an island at the center. Near the right. Not always present.
+	- Obsidian Claws
+			+ Location: Sometimes generates over Volcanic cells
+	- Canary Cove
+			+ Location: A single cell biome that rarely spawns near the right along coasts
+

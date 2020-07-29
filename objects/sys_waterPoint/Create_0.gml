@@ -1,0 +1,1 @@
+global.water_y = y; //The default position for the water
