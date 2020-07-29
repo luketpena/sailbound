@@ -22,7 +22,7 @@ water_width = 12; //How far apart each water segment is
 water_num = round(room_width/water_width);
 water_halfNum = round(water_num/2);
 water_stage = 0;
-water_angle = 120; //How far the water tilts inward for perspective
+water_angle = 150; //How far the water tilts inward for perspective
 
 water_alpha_mid = .9; //The alpha at the middle point in the water
 water_alpha_low = .7; //THe alpha at the bottom edge of the water
@@ -48,7 +48,7 @@ wave_wait_min = 3*room_speed;
 
 
 var texture_unit = 1/water_num;
-var half_width = room_width/2;
+
 
 //PILLARS
 var i; for(i=0; i<=water_num; i++) {
@@ -60,7 +60,7 @@ var i; for(i=0; i<=water_num; i++) {
 	water_point_dis[i] = 0;
 	water_point_lDeltas[i] = 0;
 	
-	var perspective_offset = ((water_point_x[i]-half_width)/half_width)*(water_angle/2);	
+	var perspective_offset = get_perspective(water_point_x[i]);
 	
 	water_texture_x[i] = texture_unit*i;
 	water_draw_x_top[i] = water_point_x[i]-perspective_offset;

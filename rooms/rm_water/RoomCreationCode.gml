@@ -1,0 +1,1 @@
+#macro room_hwidth room_width/2

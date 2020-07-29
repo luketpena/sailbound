@@ -16,6 +16,7 @@ if surface_exists(surf_gui) {
 		surface_reset_target();
 		//Drawing the HUD surfacew
 		draw_surface_ext(surf_gui,0,0,1,1,0,c_white,hud_alpha);
+			
 	}
 	
 } else {

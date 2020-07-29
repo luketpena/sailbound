@@ -28,8 +28,6 @@ instance_create_layer(0,0,l_system,sys_water_front);
 instance_create_layer(0,0,l_system,sys_water_back);
 instance_create_layer(0,0,l_system,sys_water_distortion);
 
-instance_create_layer(0,0,l_system,obj_ground);
-
 //----< Final >----\\
 instance_create_layer(0,0,l_system,obj_camera_water);
 instance_create_layer(room_width/2,global.water_y,l_main,obj_boat_front);
