@@ -1,6 +1,6 @@
 draw_set_color(c_gold);
 draw_set_alpha(1);
-draw_circle(target_x,mouse_y,4,false);
+draw_circle(avg_x,y,4,false);
 
 if (active) {
 	shader_set(shd_island);
@@ -9,7 +9,7 @@ if (active) {
 		for (var i=0; i<fish_num; i++) {
 			var fish = fish_list[i];
 			shader_set_uniform_f(u_pwr,fish.shd_power);
-			draw_sprite_ext(sprite_index,0,fish.x,fish.y,1,fish.flip,fish.angle,global.c_front,1);
+			draw_sprite_ext(sprite_index,0,fish.x,fish.y,1,fish.flip,fish.angle,global.c_front,image_alpha);
 		}
 	shader_reset();
 }

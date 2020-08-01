@@ -2,6 +2,7 @@ if (active) {
 
 	target_x += move_speed*face;
 
+	avg_x = 0;
 	for (var i=0; i<fish_num; i++) {
 		var fish = fish_list[i];
 	
@@ -39,11 +40,22 @@ if (active) {
 	
 		fish.x += lengthdir_x(currentSpeed,currentAngle);
 		fish.y += lengthdir_y(currentSpeed,currentAngle);
+		
+		avg_x += fish.x;
 	
 		if (!angleCorrection) fish.angle -= angle_difference(fish.angle, point_direction(fish.x,fish.y,target_x+fish.target_offset_x,target_y+fish.target_offset_y))*currentTurn;
 		if (fish.angle<0) fish.angle += 360;
 		fish.angle = fish.angle mod 360;
 	
 		if (fish.angle>90 && fish.angle<270) fish.flip = -1 else fish.flip = 1;
+	} //END fish_list loop
+	
+	avg_x /= fish_num;
+	if ( (avg_x>exit_x && face=1) || (avg_x<exit_x && face=-1) ) {
+		fade_active = true;	
+	}
+	
+	if (fade_active) {
+		if (image_alpha>0) image_alpha -= .01 else instance_destroy();	
 	}
 }

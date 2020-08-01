@@ -1,5 +1,6 @@
 active = false;
 face = 1;
+fade_active = false;
 
 target_x = x;
 target_y = y;
@@ -11,6 +12,8 @@ turn_min = .01;
 turn_max = .1;
 
 move_speed = .6;
+
+avg_x = 0;
 
 //>> Color Blending
 color = color_to_vec3(global.c_water_depth);
@@ -43,7 +46,13 @@ Fish = function(_x,_y,_fade) constructor {
 
 function init() {
 	active = true;
-	if (x<room_hwidth) face = 1 else face = -1;
+	if (x<room_hwidth) {
+		exit_x = room_width;
+		face = 1 
+	} else {
+		exit_x = 0;
+		face = -1;
+	}
 	for (var i=0; i<fish_num; i++) {
 		var newFish = new Fish(x+random_range(-16,16),y+random_range(-16,16), i/fish_num);
 		fish_list[i] = newFish;
