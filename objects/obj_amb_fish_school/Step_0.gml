@@ -1,6 +1,12 @@
 if (active) {
 
+	//>> Movement
+	
+	
+	move_angle_flux_rot = (move_angle_flux_rot + move_angle_flux_rate) mod 360;
+	
 	target_x += move_speed*face;
+	target_y = ystart+lengthdir_y(move_angle_flux_height,move_angle_flux_rot);
 
 	avg_x = 0;
 	for (var i=0; i<fish_num; i++) {
@@ -51,7 +57,7 @@ if (active) {
 	} //END fish_list loop
 	
 	avg_x /= fish_num;
-	if ( (avg_x>exit_x && face=1) || (avg_x<exit_x && face=-1) ) {
+	if ( (avg_x>room_width && face=1) || (avg_x<0 && face=-1) ) {
 		fade_active = true;	
 	}
 	

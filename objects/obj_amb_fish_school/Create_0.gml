@@ -12,6 +12,9 @@ turn_min = .01;
 turn_max = .1;
 
 move_speed = .6;
+move_angle_flux_rot = random(360);
+move_angle_flux_rate = 1;
+move_angle_flux_height = 16;
 
 avg_x = 0;
 
@@ -47,10 +50,8 @@ Fish = function(_x,_y,_fade) constructor {
 function init() {
 	active = true;
 	if (x<room_hwidth) {
-		exit_x = room_width;
 		face = 1 
 	} else {
-		exit_x = 0;
 		face = -1;
 	}
 	for (var i=0; i<fish_num; i++) {

@@ -1,6 +1,6 @@
 draw_set_color(c_gold);
 draw_set_alpha(1);
-draw_circle(avg_x,y,4,false);
+draw_circle(avg_x,target_y,4,false);
 
 if (active) {
 	shader_set(shd_island);
