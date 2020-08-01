@@ -26,6 +26,7 @@ instance_create_layer(0,0,l_system,sys_water);
 instance_create_layer(0,0,l_system,sys_water_surface);
 instance_create_layer(0,0,l_system,sys_water_front);
 instance_create_layer(0,0,l_system,sys_water_back);
+instance_create_layer(0,0,l_system,sys_water_backdrop);
 instance_create_layer(0,0,l_system,sys_water_distortion);
 
 //----< Final >----\\

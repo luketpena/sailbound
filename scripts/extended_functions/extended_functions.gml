@@ -60,6 +60,13 @@ function draw_tag(tag) {
 	}
 }
 
+function drawBegin_tag(tag) {
+	var collection = tag_get_asset_ids(tag,asset_object);
+	for (var i=0; i<array_length(collection); i++) {
+		with(collection[i]) event_perform(ev_draw_begin,0);
+	}
+}
+
 //Triggers the draw for an object
 function draw_object(object) {
 	with(object) event_perform(ev_draw,0);	

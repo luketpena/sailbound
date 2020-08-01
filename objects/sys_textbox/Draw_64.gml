@@ -1,3 +1,4 @@
+/*
 if surface_exists(surf_textbox) {
 	surface_set_target(surf_textbox);
 	
@@ -62,4 +63,4 @@ if keyboard_check_pressed(vk_space) {
 	if (text_complete) event_user(0) else event_user(1);
 }
 
-
+*/

@@ -22,7 +22,7 @@ water_width = 12; //How far apart each water segment is
 water_num = round(room_width/water_width);
 water_halfNum = round(water_num/2);
 water_stage = 0;
-water_angle = 150; //How far the water tilts inward for perspective
+water_angle = 240; //How far the water tilts inward for perspective
 
 water_alpha_mid = .9; //The alpha at the middle point in the water
 water_alpha_low = .7; //THe alpha at the bottom edge of the water

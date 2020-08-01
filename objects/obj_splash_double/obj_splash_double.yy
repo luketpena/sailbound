@@ -31,6 +31,8 @@
   },
   "resourceVersion": "1.0",
   "name": "obj_splash_double",
-  "tags": [],
+  "tags": [
+    "fx_above",
+  ],
   "resourceType": "GMObject",
 }

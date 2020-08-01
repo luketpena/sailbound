@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"55c51b53-fd51-4798-83da-e0da2493513b","path":"sprites/spr_fx_water_distortion/spr_fx_water_distortion.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"55c51b53-fd51-4798-83da-e0da2493513b","path":"sprites/spr_fx_water_distortion/spr_fx_water_distortion.yy",},"LayerId":{"name":"ddee87e1-436d-4975-b124-d1a415d94a77","path":"sprites/spr_fx_water_distortion/spr_fx_water_distortion.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_fx_water_distortion","path":"sprites/spr_fx_water_distortion/spr_fx_water_distortion.yy",},"resourceVersion":"1.0","name":"55c51b53-fd51-4798-83da-e0da2493513b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"1f989924-1a66-46a2-9cfc-6a2184ea1953","path":"sprites/spr_fx_water_distortion/spr_fx_water_distortion.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"1f989924-1a66-46a2-9cfc-6a2184ea1953","path":"sprites/spr_fx_water_distortion/spr_fx_water_distortion.yy",},"LayerId":{"name":"a5a6e25c-9562-40b5-93ed-ef57b846ee1e","path":"sprites/spr_fx_water_distortion/spr_fx_water_distortion.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_fx_water_distortion","path":"sprites/spr_fx_water_distortion/spr_fx_water_distortion.yy",},"resourceVersion":"1.0","name":"1f989924-1a66-46a2-9cfc-6a2184ea1953","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_fx_water_distortion","path":"sprites/spr_fx_water_distortion/spr_fx_water_distortion.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"edfca4d0-e09b-48c7-a9cb-e3ac8321bc55","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"55c51b53-fd51-4798-83da-e0da2493513b","path":"sprites/spr_fx_water_distortion/spr_fx_water_distortion.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4f8ed6b9-4042-40f6-b4b7-f4bffe2bf60d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1f989924-1a66-46a2-9cfc-6a2184ea1953","path":"sprites/spr_fx_water_distortion/spr_fx_water_distortion.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ddee87e1-436d-4975-b124-d1a415d94a77","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a5a6e25c-9562-40b5-93ed-ef57b846ee1e","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Distortion",
