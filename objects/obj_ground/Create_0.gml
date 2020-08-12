@@ -13,6 +13,10 @@ top_h_upper = top_h*.6; //Center to top
 top_h_lower = top_h-top_h_upper; //Center to bottom
 
 center_y = top_h_upper;
+left = x-hlength;
+right = x+hlength;
+
+ground_sprite = spr_sand;
 
 //>> Texture
 q = 32; //Divisions of the surface
@@ -32,7 +36,7 @@ detail_move = 0; //Moves the detail textures on the surface texture
 //----< Behavior >----\\
 active = false; //Triggered by init
 state = "enter";
-move_speed = 1;
+move_speed = 4;
 distanceToCenter = 0;
 
 //----< Items >----\\
@@ -78,7 +82,7 @@ ItemF = function(_x, _y, _sprite) constructor {
 
 
 //-----< Functions >-----\\
-function init(target_y) {
+function init(target_y,_ground_sprite) {
 	//Fills up all space from target y downward
 	thickness = (room_height-target_y)/2;
 	top = target_y;
@@ -88,10 +92,9 @@ function init(target_y) {
 	fixture_create_box(id,hlength,thickness,0,0,0,0,.2,false,true);
 	//Sets the position based on the goal position
 	phy_position_y = target_y+thickness;
-	//phy_position_x = room_hwidth;
 	distanceToCenter = phy_position_x-room_hwidth;
-	//Activate!
-	active = true;
+	
+	ground_sprite = _ground_sprite;
 	
 	//>> Generate all Items
 	for (var i=0; i<item_num; i++) {
@@ -115,11 +118,39 @@ function init(target_y) {
 		
 		itemF_array[i] = newItemF;
 	}
-
+	
+	active = true;
 }
 
 function findItemX(_x,_depth) {
 	var xx = _x+distanceToCenter;
 	var topX = xx-get_perspective(xx);
 	return lerp(topX,xx,_depth);
+}
+
+function draw_edge(_y,_sprite,_depth, _blend, _index) {
+	if (state!="static") {
+		var edge_x, edge_face;
+		if (state="enter") {
+			edge_x = findItemX(-edge_buffer,_depth);
+			edge_face = 1;
+		} else {
+			edge_x = findItemX(hlength+edge_buffer*1.75,_depth);
+			edge_face = -1;
+		}
+		var img = _index*2;
+		draw_sprite_ext(_sprite,img,edge_x,_y,edge_face,1,0,_blend,1);
+		draw_sprite_ext(_sprite,img+1,edge_x,_y,edge_face,1,0,global.c_water_depth,1);
+	}
+}
+
+function draw_shadow(_x,_y,offset,rad) {
+	var xx = _x-offset;
+	var scale = max( 1-((top-_y)/128) , 0) * (rad/128);
+	draw_sprite_ext(spr_env_water_displace,0,xx,center_y,scale,scale,0,global.c_water_depth,.5);
+}
+
+function leaveStage() {
+	state = "leave";
+	detail_move = 0;	
 }

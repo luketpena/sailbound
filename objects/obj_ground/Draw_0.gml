@@ -1,32 +1,18 @@
 draw_sprite_ext(spr_pixel,0,x-hlength,top,length,thickness*2,0,global.c_water_depth,1);
 
-function draw_edge(_y,_sprite,_depth, _blend) {
-	var edge_x = findItemX(-edge_buffer,_depth);
-	draw_sprite_ext(_sprite,0,edge_x,_y,1,1,0,_blend,1);
-	draw_sprite_ext(_sprite,1,edge_x,_y,1,1,0,global.c_water_depth,1);
-}
-
-function draw_shadow(_x,_y,offset,rad) {
-	var xx = _x-offset;
-	var scale = max( 1-((top-_y)/128) , 0) * (rad/128);
-	draw_sprite_ext(spr_env_water_displace,0,xx,center_y,scale,scale,0,global.c_water_depth,.5);
-}
 
 if (surface_exists(surf_detail) && surface_exists(surf_detail_transfer)) {
 	
-	function drawDebris(sprite, chance) {
-		
+	// Draw debris at random
+	function drawDebris(sprite, chance) {	
 		if (dice(chance)) {
 			var index = irandom(sprite_get_number(sprite)-1);
 			var flip = choose(-1,1);
 			var xx = (length)-sprite_get_width(sprite)/2
 			var yy = random(top_h);
-			
 			draw_sprite_ext(sprite,index,xx-distanceToCenter,yy,flip,1,0,c_white,1);
 		}
 	}
-	
-	if (state="static") detail_move = abs(detail_move-1) else detail_move = 0;
 	
 	surface_set_target(surf_detail_transfer);
 		draw_clear_alpha(c_black,0);
@@ -52,12 +38,10 @@ if (surface_exists(surf_detail) && surface_exists(surf_detail_transfer)) {
 
 if (surface_exists(surf) && active) {
 	
-	var left = phy_position_x-hlength;
-	
 	surface_set_target(surf);
 		
 		draw_clear_alpha(c_white,0);
-		draw_sprite_tiled_ext(spr_sand,0,tex_offset,0,1,1,global.c_front,1);
+		draw_sprite_tiled_ext(ground_sprite,0,tex_offset,0,1,1,global.c_front,1);
 		
 		if (surface_exists(surf_detail)) {
 			draw_surface_ext(surf_detail,0,0,1,1,0,global.c_front,1);	
@@ -69,8 +53,6 @@ if (surface_exists(surf) && active) {
 		
 		
 		if (!global.ko) {
-			var xx = (global.boat_x)-left;
-			//draw_sprite_ext(spr_pixel,0,xx,0,1,top_h,0,c_red,1);
 			draw_shadow(global.boat_x,global.boat_y,left,48);
 		}
 		
@@ -92,8 +74,8 @@ if (surface_exists(surf) && active) {
 	draw_primitive_end();
 	shader_reset();
 	
-	draw_edge(top-16,spr_ground_coral_edge,.8,merge_color(global.c_front,global.c_water_depth,.5));
-	draw_edge(top,spr_ground_coral_edge,1,global.c_front);
+	draw_edge(top-16,spr_ground_coral_edge,.8,merge_color(global.c_front,global.c_water_depth,.5),0);
+	draw_edge(top,spr_ground_coral_edge,1,global.c_front,1);
 	
 	shader_set(shd_maxAlpha);
 	
@@ -110,8 +92,7 @@ if (surface_exists(surf) && active) {
 	draw_primitive_end();
 	shader_reset();
 	
-
-	draw_edge(draw_low,spr_ground_coral_edge,1.5,merge_color(global.c_front,global.c_water_depth,.5));
+	draw_edge(top+16,spr_ground_coral_edge,1.2,merge_color(global.c_front,global.c_water_depth,.25),2);
 	
 	//>> Draw Items
 	shader_set(shd_island);

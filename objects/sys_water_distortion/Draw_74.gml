@@ -7,8 +7,6 @@ if (surface_exists(distort_tex_surface)) {
 			draw_sprite_tiled_ext(spr_fx_water_distortion,0,tex_x,yy,2,2,c_white,.5);
 		gpu_set_blendmode(bm_normal);
 	surface_reset_target();
-	
-	//draw_surface_ext(distort_tex_surface,0,0,1,1,0,c_white,1);
 	distort_tex = surface_get_texture(distort_tex_surface);
 } else {
 	distort_tex_surface = surface_create(global.vw,global.vh);	

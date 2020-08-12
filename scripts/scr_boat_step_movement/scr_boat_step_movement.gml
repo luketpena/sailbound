@@ -69,8 +69,8 @@ function boat_step_movement() {
 				//Jump particle effect
 				var dir = point_direction(x,y,x+phy_speed_x,y-6);
 				
-				part_type_color1(pt_water_jump_main,global.c_water_horizon);
-				part_type_color1(pt_water_jump_point,global.c_water_horizon);
+				part_type_color1(pt_water_jump_main, global.c_water_surface_lt);
+				part_type_color1(pt_water_jump_point,global.c_water_surface_lt);
 				part_type_direction(pt_water_jump_main,dir,dir,0,0);
 				part_type_direction(pt_water_jump_point,dir,dir,0,0);
 				

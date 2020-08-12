@@ -1,1 +1,1 @@
-state = "exit";
+leaveStage();

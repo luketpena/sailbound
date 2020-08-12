@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Textures",
-    "path": "folders/Environment/Ground/Textures.yy",
+    "path": "folders/Environment/Ground/Sprites/Textures.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ground_fade",

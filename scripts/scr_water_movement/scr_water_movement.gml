@@ -14,7 +14,7 @@ function water_step() {
 				water_point_y[i-1] += water_point_lDeltas[i]*water_spread;
 			}
 
-			if (water_point_dis[i]<2 && water_point_vel[i]>0) {	
+			if (water_point_dis[i]<1 && water_point_vel[i]>0) {	
 				//Snap water point position and deactivate when close to the global.water_y
 				water_point_active[i] = false;
 				water_point_vel[i] = 0;		

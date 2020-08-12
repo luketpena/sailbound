@@ -20,8 +20,8 @@ function fadeRange(value, threshold_low, threshold_high, plateau_low, plateau_hi
 
 	var lerpValue;
 	//Fade to point from values below and above the plateau
-	if (value<limit_high && value>plateau_high) then lerpValue = (threshold_high-(value-plateau_high) ) / threshold_high //fading to top
-	if (value>limit_low  && value<plateau_low)  then lerpValue = (value-(plateau_low-threshold_low) ) / threshold_low; //fading to bottom
+	if (value<=limit_high && value>=plateau_high) then lerpValue = (threshold_high-(value-plateau_high) ) / threshold_high; //fading to top
+	if (value>=limit_low  && value<=plateau_low)  then lerpValue = (value-(plateau_low-threshold_low) ) / threshold_low; //fading to bottom
 	
 	return lerp(output_min,output_max,lerpValue);
 }

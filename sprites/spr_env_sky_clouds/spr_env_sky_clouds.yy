@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 18,
-  "bbox_right": 172,
-  "bbox_top": 0,
-  "bbox_bottom": 83,
+  "bbox_left": 39,
+  "bbox_right": 159,
+  "bbox_top": 31,
+  "bbox_bottom": 77,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -27,30 +27,9 @@
     {"compositeImage":{"FrameId":{"name":"2896139e-a4d4-46a6-b39b-5ad76b77a47a","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"2896139e-a4d4-46a6-b39b-5ad76b77a47a","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"LayerId":{"name":"c486b497-2dd2-4943-977a-34b72886d330","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_env_sky_clouds","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","name":"2896139e-a4d4-46a6-b39b-5ad76b77a47a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"72c403ff-6a68-40ec-96b3-cd15a6f3355c","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"72c403ff-6a68-40ec-96b3-cd15a6f3355c","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"LayerId":{"name":"c486b497-2dd2-4943-977a-34b72886d330","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_env_sky_clouds","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","name":"72c403ff-6a68-40ec-96b3-cd15a6f3355c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"fd7c8d89-6f7c-4b47-ab91-896d91df6409","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fd7c8d89-6f7c-4b47-ab91-896d91df6409","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"LayerId":{"name":"c486b497-2dd2-4943-977a-34b72886d330","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_env_sky_clouds","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","name":"fd7c8d89-6f7c-4b47-ab91-896d91df6409","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a947612f-7fca-44ad-9762-6f99df433e6e","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a947612f-7fca-44ad-9762-6f99df433e6e","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"LayerId":{"name":"c486b497-2dd2-4943-977a-34b72886d330","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_env_sky_clouds","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","name":"a947612f-7fca-44ad-9762-6f99df433e6e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8171e834-eba9-49fa-957f-9190f1a82166","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8171e834-eba9-49fa-957f-9190f1a82166","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"LayerId":{"name":"c486b497-2dd2-4943-977a-34b72886d330","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_env_sky_clouds","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","name":"8171e834-eba9-49fa-957f-9190f1a82166","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8b0f489c-e744-4fd9-9d3f-dfe880018b45","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8b0f489c-e744-4fd9-9d3f-dfe880018b45","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"LayerId":{"name":"c486b497-2dd2-4943-977a-34b72886d330","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_env_sky_clouds","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","name":"8b0f489c-e744-4fd9-9d3f-dfe880018b45","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"503cc51e-a75d-4b9a-bb33-835ad7a3a7c2","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"503cc51e-a75d-4b9a-bb33-835ad7a3a7c2","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"LayerId":{"name":"c486b497-2dd2-4943-977a-34b72886d330","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_env_sky_clouds","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","name":"503cc51e-a75d-4b9a-bb33-835ad7a3a7c2","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ce7144af-3cf8-42a5-8440-170322c04f4c","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ce7144af-3cf8-42a5-8440-170322c04f4c","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"LayerId":{"name":"c486b497-2dd2-4943-977a-34b72886d330","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_env_sky_clouds","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","name":"ce7144af-3cf8-42a5-8440-170322c04f4c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"cc2848c5-c989-44a0-9829-8aeb67879d3a","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"cc2848c5-c989-44a0-9829-8aeb67879d3a","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"LayerId":{"name":"c486b497-2dd2-4943-977a-34b72886d330","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_env_sky_clouds","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","name":"cc2848c5-c989-44a0-9829-8aeb67879d3a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"aeb26569-77b4-4a5f-b6ff-79876b42cbf5","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"aeb26569-77b4-4a5f-b6ff-79876b42cbf5","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"LayerId":{"name":"c486b497-2dd2-4943-977a-34b72886d330","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_env_sky_clouds","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","name":"aeb26569-77b4-4a5f-b6ff-79876b42cbf5","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_env_sky_clouds","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},
@@ -60,23 +39,16 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 9.0,
+    "length": 2.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"f53306d3-d31d-4a19-8232-0b76365d2996","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2896139e-a4d4-46a6-b39b-5ad76b77a47a","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"6bd970fe-4712-4411-b139-51b9e345d46f","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"72c403ff-6a68-40ec-96b3-cd15a6f3355c","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"fc81b8ce-06b6-4acd-92fe-d1d15a6cb587","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fd7c8d89-6f7c-4b47-ab91-896d91df6409","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"a002e889-f4a5-404f-97e0-7cb21afdd56e","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a947612f-7fca-44ad-9762-6f99df433e6e","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"ef4750ac-2c12-41ef-8b70-704e9fa84c63","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8171e834-eba9-49fa-957f-9190f1a82166","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"d73dd53a-36c4-431b-ae71-a2f8a30313f2","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8b0f489c-e744-4fd9-9d3f-dfe880018b45","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"98c94928-432b-41b9-920a-b4c26c70dfba","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"503cc51e-a75d-4b9a-bb33-835ad7a3a7c2","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"6a83bd9c-1a84-4e6b-8855-4d3fd2c18457","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ce7144af-3cf8-42a5-8440-170322c04f4c","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"1702a352-a9cb-4eb5-b9e5-67c7b0e81884","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cc2848c5-c989-44a0-9829-8aeb67879d3a","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8201fb66-fde3-4ca6-b18a-fa6ef62281a0","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"aeb26569-77b4-4a5f-b6ff-79876b42cbf5","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,

@@ -76,8 +76,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e4e10f68-0416-4f06-928e-07c6eac6e519","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Ground",
-    "path": "folders/Environment/Ground.yy",
+    "name": "Items",
+    "path": "folders/Environment/Ground/Sprites/Items.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ground_debris_coral_stone_large",

@@ -18,7 +18,7 @@ location_cell_track = 0; //Snaps to match cell, triggering event_user(0)
 map_cell = function() constructor {
 	biome = biomes.tropical;
 	event = -1;
-	palette = scr_palette_ocean;
+	palette = scr_palette_arctic;
 	transition = false; //For transitioning lanes
 	island = -1;
 }

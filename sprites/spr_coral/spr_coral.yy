@@ -88,8 +88,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f7efeb2a-9919-4c08-9596-c0e7e1316ac4","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Ground",
-    "path": "folders/Environment/Ground.yy",
+    "name": "Items",
+    "path": "folders/Environment/Ground/Sprites/Items.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_coral",

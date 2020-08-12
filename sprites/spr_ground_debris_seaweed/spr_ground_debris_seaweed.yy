@@ -76,8 +76,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"65f793fd-aa56-4066-aaed-8214e6b9b444","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Ground",
-    "path": "folders/Environment/Ground.yy",
+    "name": "Items",
+    "path": "folders/Environment/Ground/Sprites/Items.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ground_debris_seaweed",

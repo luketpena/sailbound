@@ -4,8 +4,9 @@ switch(celestial_active) {
 	case false: if (celestial_fade>0) celestial_fade -= .01; break;
 }
 
+
 if (global.clock_time>clock_point_nightfall-5 && global.clock_time<clock_point_morning+5) {
-	stars_alpha = fadeRange(global.clock_time,20,20,clock_point_night,clock_point_sunrise,0,1);
+	stars_alpha = fadeRange(global.clock_time,20,20,clock_point_night,clock_point_sunrise-12,0,1);
 }
 
 

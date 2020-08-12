@@ -1,4 +1,6 @@
 distanceToCenter = phy_position_x-room_hwidth;
+left = phy_position_x-hlength;
+right = phy_position_x+hlength;
 
 function itemStep(array) {
 	for (var i=0; i<array_length(array); i++) {
@@ -23,11 +25,13 @@ if (active) {
 			tex_offset -= move_speed;
 			
 			itemStep(item_array);
-			itemStep(itemF_array);			
+			itemStep(itemF_array);	
+			
+			detail_move = abs(detail_move-1);
 
 			break;
 			
-		case "exit":
+		case "leave":
 			if (phy_position_x+hlength>0) phy_position_x -= move_speed else instance_destroy();
 	}
 }
