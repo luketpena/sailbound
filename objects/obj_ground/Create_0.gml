@@ -18,6 +18,9 @@ right = x+hlength;
 
 ground_sprite = spr_sand;
 
+view_right = global.vr+96;
+view_left = global.vx-96;
+
 //>> Texture
 q = 32; //Divisions of the surface
 unit_w = (length)/q; //How wide each division is
@@ -36,18 +39,18 @@ detail_move = 0; //Moves the detail textures on the surface texture
 //----< Behavior >----\\
 active = false; //Triggered by init
 state = "enter";
-move_speed = 4;
+move_speed = 1;
 distanceToCenter = 0;
 
 //----< Items >----\\
 //>> Item Setup
-item_num = 40;
+item_num = 200;
 item_array = [];
 item_left = -64;
 item_right = room_width+64;
 
 //>> Item Front
-itemF_num = 10;
+itemF_num = 0;
 itemF_array = [];
 
 //>> Item Colors
@@ -69,6 +72,17 @@ Item = function(_x, _y, _depth, _dis, _sprite) constructor {
 	image = irandom(sprite_get_number(_sprite)-1);
 }
 
+function createItem(_depth, _sprite) {
+	var newItem = new Item(
+		random_range(item_left,item_right),
+		top,
+		_depth,
+		top_h_upper,
+		_sprite
+	);
+	return newItem;
+}
+
 
 ItemF = function(_x, _y, _sprite) constructor {
 	x = _x;
@@ -82,7 +96,7 @@ ItemF = function(_x, _y, _sprite) constructor {
 
 
 //-----< Functions >-----\\
-function init(target_y,_ground_sprite) {
+function init(target_y, _ground_sprite, item_types) {
 	//Fills up all space from target y downward
 	thickness = (room_height-target_y)/2;
 	top = target_y;
@@ -93,20 +107,35 @@ function init(target_y,_ground_sprite) {
 	//Sets the position based on the goal position
 	phy_position_y = target_y+thickness;
 	distanceToCenter = phy_position_x-room_hwidth;
-	
 	ground_sprite = _ground_sprite;
+	
+	//--< Items >--\\
+	// Find the full size of the dice for choose the island sprite
+	var diceSize = 0;
+	var type_num = array_length(item_types);
+	for (var i=0; i<type_num; i++) {
+		diceSize += item_types[i].chance;
+	}
 	
 	//>> Generate all Items
 	for (var i=0; i<item_num; i++) {
 		var newDepth = lerp(0,1,i/item_num);
-		var newItem = new Item(
-			random_range(item_left,item_right),
-			top,
-			newDepth,
-			top_h_upper,
-			spr_coral
-		);
-		item_array[i] = newItem;
+		var roll = irandom(diceSize); // Roll the dice...
+		
+		var diceCount = 0; // ...track where on the dice we are looking...
+		for (var j=0; j<type_num; j++) {
+			var type = item_types[j];
+			
+			// ...increment where we look...
+			diceCount += type.chance;
+			/// ...and if we are in range of the current item...
+			if (roll <= diceCount) {
+				// ...generate that item!
+				var newItem = createItem(newDepth, type.sprite);
+				item_array[i] = newItem;
+				break;
+			}
+		}
 	}
 	
 	for (var i=0; i<itemF_num; i++) {
@@ -154,3 +183,4 @@ function leaveStage() {
 	state = "leave";
 	detail_move = 0;	
 }
+

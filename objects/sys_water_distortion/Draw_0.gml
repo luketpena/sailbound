@@ -27,7 +27,7 @@ if (surface_exists(distort_surface) && distort_tex!=noone) {
 	surface_reset_target();
 	
 	shader_set(shd_subtract);
-		draw_surface_ext(distort_surface,0,0,1,1,0,c_white,1);
+		draw_surface_ext(distort_surface,global.vx,global.vy,1,1,0,c_white,1);
 	shader_reset();
 } else {
 	distort_surface = surface_create(global.vw,global.vh);	

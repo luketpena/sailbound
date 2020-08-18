@@ -30,6 +30,8 @@ shader_reset();
 
 with(obj_ground) event_perform(ev_draw,ev_draw_end);
 
+draw_object(sys_water_distortion);
+
 draw_tag("fx_top");
 
 with(sys_glow) event_perform(ev_draw,ev_gui);

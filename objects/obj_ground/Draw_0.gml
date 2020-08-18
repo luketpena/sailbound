@@ -97,11 +97,13 @@ if (surface_exists(surf) && active) {
 	//>> Draw Items
 	shader_set(shd_island);
 	shader_set_uniform_f_array(u_horizon_col,item_color);
-		for (var i=0; i<item_num; i++) {
+		for (var i=0; i<array_length(item_array); i++) {
 			var item = item_array[i];
-			shader_set_uniform_f(u_pwr,item.shd_power);
 			var xx = findItemX(item.x,item.depth);
-			draw_sprite_ext(item.sprite,item.image,xx,item.y,item.flip*item.scale,item.scale,0,global.c_front,1);
+			if (xx > view_left && xx < view_right) {
+				shader_set_uniform_f(u_pwr,item.shd_power);
+				draw_sprite_ext(item.sprite,item.image,xx,item.y,item.flip*item.scale,item.scale,0,global.c_front,1);
+			}
 		}
 	shader_reset();
 } else {
