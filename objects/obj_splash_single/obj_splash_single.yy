@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "ico_effect",
+    "path": "sprites/ico_effect/ico_effect.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

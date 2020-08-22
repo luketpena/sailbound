@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "ico_system",
+    "path": "sprites/ico_system/ico_system.yy",
+  },
   "solid": false,
   "visible": false,
   "spriteMaskId": null,

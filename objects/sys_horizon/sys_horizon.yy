@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "ico_system",
-    "path": "sprites/ico_system/ico_system.yy",
+    "name": "ico_environment",
+    "path": "sprites/ico_environment/ico_environment.yy",
   },
   "solid": false,
   "visible": false,

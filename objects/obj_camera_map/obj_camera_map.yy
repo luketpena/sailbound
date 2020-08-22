@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "ico_camera",
+    "path": "sprites/ico_camera/ico_camera.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

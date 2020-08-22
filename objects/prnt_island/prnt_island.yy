@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "ico_parent",
+    "path": "sprites/ico_parent/ico_parent.yy",
+  },
   "solid": false,
   "visible": false,
   "spriteMaskId": null,

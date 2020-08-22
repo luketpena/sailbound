@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_fx_flare_300",
-    "path": "sprites/spr_fx_flare_300/spr_fx_flare_300.yy",
+    "name": "ico_light",
+    "path": "sprites/ico_light/ico_light.yy",
   },
   "solid": false,
   "visible": true,

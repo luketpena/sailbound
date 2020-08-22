@@ -1,8 +1,14 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "ico_camera",
+    "path": "sprites/ico_camera/ico_camera.yy",
+  },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "ico_camera",
+    "path": "sprites/ico_camera/ico_camera.yy",
+  },
   "persistent": false,
   "parentObjectId": {
     "name": "prnt_camera",

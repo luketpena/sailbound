@@ -1,1 +1,1 @@
-draw_sprite_ext(sprite_index,0,x,y,.1,.1,0,image_blend,.5);
+draw_sprite_ext(spr_fx_flare_300,0,x,y,.1,.1,0,image_blend,.5);

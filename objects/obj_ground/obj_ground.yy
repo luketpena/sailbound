@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "ico_environment",
+    "path": "sprites/ico_environment/ico_environment.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
