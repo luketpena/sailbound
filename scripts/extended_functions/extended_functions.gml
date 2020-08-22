@@ -71,3 +71,7 @@ function drawBegin_tag(tag) {
 function draw_object(object) {
 	with(object) event_perform(ev_draw,0);	
 }
+
+function free_surface(surf) {
+	if surface_exists(surf) surface_free(surf);	
+}

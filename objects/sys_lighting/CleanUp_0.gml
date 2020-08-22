@@ -1,1 +1,1 @@
-if surface_exists(light_surface) then surface_free(light_surface);
+free_surface(light_surface);

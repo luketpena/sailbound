@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Lighting",
-    "path": "folders/Effects/Lighting.yy",
+    "name": "Main",
+    "path": "folders/Effects/Lighting/Main.yy",
   },
   "resourceVersion": "1.0",
   "name": "scr_lighting_shader",

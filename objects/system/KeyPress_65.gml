@@ -15,7 +15,7 @@ var item_types = [
 	}
 ];
 
-spawn_ground(global.water_y+64, spr_sand, item_types);
+//spawn_ground(global.water_y+64, spr_sand, item_types);
 //spawn_amb_fish_school();
 
-//instance_create_layer(mouse_x,mouse_y,"l_main",obj_item_repairBuddy);
+instance_create_layer(mouse_x,mouse_y,"l_main",obj_fx_explosion);

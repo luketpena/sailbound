@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Lighting",
-    "path": "folders/Effects/Lighting.yy",
+    "name": "Main",
+    "path": "folders/Effects/Lighting/Main.yy",
   },
   "resourceVersion": "1.0",
   "name": "prnt_light",

@@ -26,15 +26,18 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_light_default","path":"objects/obj_light_default/obj_light_default.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_light_default","path":"objects/obj_light_default/obj_light_default.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_light_default","path":"objects/obj_light_default/obj_light_default.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Lighting",
-    "path": "folders/Effects/Lighting.yy",
+    "name": "Lights",
+    "path": "folders/Effects/Lighting/Lights.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_light_default",
-  "tags": [],
+  "tags": [
+    "light",
+  ],
   "resourceType": "GMObject",
 }
