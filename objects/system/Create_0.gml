@@ -18,3 +18,6 @@ global.font_normal_small = font_add_sprite_ext(spr_font_normal_small,"ABCDEFGHIJ
 
 instance_create_layer(0,0,"l_system",settings);
 instance_create_layer(0,0,"l_system",sys_testControls);
+
+test_array = [1,2,3,4,5];
+test_value = "unassigned";

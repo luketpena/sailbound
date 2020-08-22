@@ -7,6 +7,13 @@ global.ps_fx_glow = part_system_create_layer(l_main,false);
 global.ps_water_surface = part_system_create();
 global.ps_water_front = part_system_create();
 
+global.ps_list = [
+	global.ps_fx_above,
+	global.ps_fx_glow,
+	global.ps_water_surface,
+	global.ps_water_front,
+];
+
 part_system_automatic_draw(global.ps_water_surface,false);
 part_system_automatic_draw(global.ps_water_front,false);
 part_system_automatic_draw(global.ps_fx_glow,false);
