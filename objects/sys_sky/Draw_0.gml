@@ -14,8 +14,8 @@ if (surface_exists(surf_sky)) {
 		gpu_set_blendmode(bm_normal);
 	surface_reset_target();
 	shader_set(shd_bwToColorGrad);
-		shader_set_uniform_f_array(u_color1,color_to_vec3(global.c_sky_space));
-		shader_set_uniform_f_array(u_color2,color_to_vec3(global.c_sky_horizon));
+		shader_set_uniform_f_array(u_color1,global.c_sky_space_vec3);
+		shader_set_uniform_f_array(u_color2,global.c_sky_horizon_vec3);
 		draw_surface_ext(surf_sky,global.vx,sky_y,1,1,0,c_white,1);
 		
 		

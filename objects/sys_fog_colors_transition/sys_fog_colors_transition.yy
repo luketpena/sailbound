@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Controllers",
-    "path": "folders/Environment/Colors/Controllers.yy",
+    "name": "Transitions",
+    "path": "folders/Environment/Colors/Transitions.yy",
   },
   "resourceVersion": "1.0",
   "name": "sys_fog_colors_transition",

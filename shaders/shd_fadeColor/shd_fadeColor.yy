@@ -5,7 +5,7 @@
     "path": "folders/Effects/Shaders.yy",
   },
   "resourceVersion": "1.0",
-  "name": "shd_island",
+  "name": "shd_fadeColor",
   "tags": [],
   "resourceType": "GMShader",
 }

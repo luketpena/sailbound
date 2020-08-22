@@ -23,16 +23,12 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"sys_colors","path":"objects/sys_colors/sys_colors.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"parent":{"name":"sys_colors","path":"objects/sys_colors/sys_colors.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":49,"eventType":9,"collisionObjectId":null,"parent":{"name":"sys_colors","path":"objects/sys_colors/sys_colors.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":50,"eventType":9,"collisionObjectId":null,"parent":{"name":"sys_colors","path":"objects/sys_colors/sys_colors.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":51,"eventType":9,"collisionObjectId":null,"parent":{"name":"sys_colors","path":"objects/sys_colors/sys_colors.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":52,"eventType":9,"collisionObjectId":null,"parent":{"name":"sys_colors","path":"objects/sys_colors/sys_colors.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Controllers",
-    "path": "folders/Environment/Colors/Controllers.yy",
+    "name": "Colors",
+    "path": "folders/Environment/Colors.yy",
   },
   "resourceVersion": "1.0",
   "name": "sys_colors",

@@ -1,6 +1,5 @@
 //---- Setup ----\\
 clock_set_points();
-alarm[0] = 15; //Setting cloud color
 alarm[1] = 15; //Generating wind
 
 //---- Sun, Moon, and Stars ----\\
@@ -15,8 +14,6 @@ celestial_fade = 1;
 
 surf_sky = -1;
 sky_y = global.horizon_y-global.vh;
-sky_color1 = color_to_vec3(global.c_sky_space);
-sky_color2 = color_to_vec3(c_red);
 
 u_color1 = shader_get_uniform(shd_bwToColorGrad,"color1");
 u_color2 = shader_get_uniform(shd_bwToColorGrad,"color2");

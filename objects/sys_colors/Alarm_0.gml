@@ -12,3 +12,11 @@ global.c_water_surface = scr_system_colors_blend(global.clock_time,c_water_surfa
 global.c_water_depth = scr_system_colors_blend(global.clock_time,c_water_depths[0],c_water_depths[1],c_water_depths[2],c_water_depths[3],c_water_depths[4]);
 
 global.c_front = scr_system_colors_blend(global.clock_time,c_front[0],c_front[1],c_front[2],c_front[3],c_front[4]);
+
+global.c_sky_space_vec3 = color_to_vec3(global.c_sky_space);
+global.c_sky_horizon_vec3 = color_to_vec3(global.c_sky_horizon);
+global.c_sky_clouds_vec3 = color_to_vec3(global.c_sky_clouds);
+global.c_water_horizon_vec3 = color_to_vec3(global.c_water_horizon);
+global.c_water_surface_lt_vec3 = color_to_vec3(global.c_water_surface_lt);
+global.c_water_surface_vec3 = color_to_vec3(global.c_water_surface);
+global.c_water_depth_vec3 = color_to_vec3(global.c_water_depth);

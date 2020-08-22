@@ -95,8 +95,8 @@ if (surface_exists(surf) && active) {
 	draw_edge(top+16,spr_ground_coral_edge,1.2,merge_color(global.c_front,global.c_water_depth,.25),2);
 	
 	//>> Draw Items
-	shader_set(shd_island);
-	shader_set_uniform_f_array(u_horizon_col,item_color);
+	shader_set(shd_fadeColor);
+	shader_set_uniform_f_array(u_horizon_col,global.c_water_depth_vec3);
 		for (var i=0; i<array_length(item_array); i++) {
 			var item = item_array[i];
 			var xx = findItemX(item.x,item.depth);

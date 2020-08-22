@@ -54,10 +54,8 @@ itemF_num = 0;
 itemF_array = [];
 
 //>> Item Colors
-item_color = color_to_vec3(global.c_water_depth);
-alarm[0] = 15;
-u_horizon_col = shader_get_uniform(shd_island,"horizon_col"); //To what color does it fade?
-u_pwr = shader_get_uniform(shd_island,"pwr"); //How far does it fade to that color?
+u_horizon_col = shader_get_uniform(shd_fadeColor,"horizon_col"); //To what color does it fade?
+u_pwr = shader_get_uniform(shd_fadeColor,"pwr"); //How far does it fade to that color?
 
 //>> Item Constructor
 Item = function(_x, _y, _depth, _dis, _sprite) constructor {

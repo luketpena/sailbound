@@ -3,8 +3,8 @@ draw_set_alpha(1);
 draw_circle(avg_x,target_y,4,false);
 
 if (active) {
-	shader_set(shd_island);
-		shader_set_uniform_f_array(u_horizon_col,color);
+	shader_set(shd_fadeColor);
+		shader_set_uniform_f_array(u_horizon_col,global.c_water_depth_vec3);
 	
 		for (var i=0; i<fish_num; i++) {
 			var fish = fish_list[i];
