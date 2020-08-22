@@ -3,7 +3,7 @@ island_wait = [.5*room_speed,3*room_speed];
 alarm[0] = 5;//random_range(island_wait[0],island_wait[1]); //Making an island
 
 //Island Shader
-u_horizon_col = shader_get_uniform(shd_fadeColor,"horizon_col"); //To what color does it fade?
+u_color = shader_get_uniform(shd_fadeColor,"color"); //To what color does it fade?
 u_pwr = shader_get_uniform(shd_fadeColor,"pwr"); //How far does it fade to that color?
 
 //This array tracks the islands and is used to draw them in order

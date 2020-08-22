@@ -17,6 +17,8 @@ left = x-hlength;
 right = x+hlength;
 
 ground_sprite = spr_sand;
+edge_sprite = noone;
+debris_types = []; // A list of structs describing debris
 
 view_right = global.vr+96;
 view_left = global.vx-96;
@@ -50,11 +52,12 @@ item_left = -64;
 item_right = room_width+64;
 
 //>> Item Front
-itemF_num = 0;
+itemF_num = 30;
 itemF_array = [];
+itemF_y = draw_low;
 
 //>> Item Colors
-u_horizon_col = shader_get_uniform(shd_fadeColor,"horizon_col"); //To what color does it fade?
+u_color = shader_get_uniform(shd_fadeColor,"color"); //To what color does it fade?
 u_pwr = shader_get_uniform(shd_fadeColor,"pwr"); //How far does it fade to that color?
 
 //>> Item Constructor
@@ -70,21 +73,8 @@ Item = function(_x, _y, _depth, _dis, _sprite) constructor {
 	image = irandom(sprite_get_number(_sprite)-1);
 }
 
-function createItem(_depth, _sprite) {
-	var newItem = new Item(
-		random_range(item_left,item_right),
-		top,
-		_depth,
-		top_h_upper,
-		_sprite
-	);
-	return newItem;
-}
-
-
-ItemF = function(_x, _y, _sprite) constructor {
+ItemF = function(_x, _sprite) constructor {
 	x = _x;
-	y = _y;
 	flip = choose(-1,1);
 	sprite = _sprite;
 	image = irandom(sprite_get_number(_sprite)-1);
@@ -92,20 +82,23 @@ ItemF = function(_x, _y, _sprite) constructor {
 	rate = random_range(1.5,2);
 }
 
-
 //-----< Functions >-----\\
-function init(target_y, _ground_sprite, item_types) {
-	//Fills up all space from target y downward
+function init(target_y, _ground_sprite, item_types, _debris_types, itemF_types, _edge_sprite) {
+	// Fills up all space from target y downward
 	thickness = (room_height-target_y)/2;
 	top = target_y;
 	draw_top = top-top_h_upper;
 	draw_low = top+top_h_lower;
-	//Generates the physics structure
+	itemF_y = draw_low;
+	// Generates the physics structure
 	fixture_create_box(id,hlength,thickness,0,0,0,0,.2,false,true);
-	//Sets the position based on the goal position
+	// Sets the position based on the goal position
 	phy_position_y = target_y+thickness;
 	distanceToCenter = phy_position_x-room_hwidth;
 	ground_sprite = _ground_sprite;
+	// Set the debris types
+	debris_types = _debris_types;
+	edge_sprite = _edge_sprite;
 	
 	//--< Items >--\\
 	// Find the full size of the dice for choose the island sprite
@@ -136,14 +129,31 @@ function init(target_y, _ground_sprite, item_types) {
 		}
 	}
 	
+	// Find the full size of the dice for choose the island sprite
+	var diceFSize = 0;
+	var typeF_num = array_length(itemF_types);
+	for (var i=0; i<typeF_num; i++) {
+		diceFSize += itemF_types[i].chance;
+	}
+	
 	for (var i=0; i<itemF_num; i++) {
-		var newItemF = new ItemF(
-			random_range(item_left,item_right),
-			draw_low,
-			spr_coral
-		);
 		
-		itemF_array[i] = newItemF;
+		var roll = irandom(diceFSize); // Roll the dice...
+		
+		var diceCount = 0; // ...track where on the dice we are looking...
+		for (var j=0; j<typeF_num; j++) {
+			var type = itemF_types[j];
+			
+			// ...increment where we look...
+			diceCount += type.chance;
+			/// ...and if we are in range of the current item...
+			if (roll <= diceCount) {
+				// ...generate that item!
+				var newItemF = createItemF(type.sprite);
+				itemF_array[i] = newItemF;
+				break;
+			}
+		}
 	}
 	
 	active = true;
@@ -155,8 +165,8 @@ function findItemX(_x,_depth) {
 	return lerp(topX,xx,_depth);
 }
 
-function draw_edge(_y,_sprite,_depth, _blend, _index) {
-	if (state!="static") {
+function draw_edge(_y, _sprite, _depth, _blend, _index) {
+	if (state!="static" && edge_sprite) {
 		var edge_x, edge_face;
 		if (state="enter") {
 			edge_x = findItemX(-edge_buffer,_depth);
@@ -182,3 +192,31 @@ function leaveStage() {
 	detail_move = 0;	
 }
 
+function drawDebris(sprite, chance) {	
+	if (dice(chance)) {
+		var index = irandom(sprite_get_number(sprite)-1);
+		var flip = choose(-1,1);
+		var xx = (length)-sprite_get_width(sprite)/2
+		var yy = random(top_h);
+		draw_sprite_ext(sprite,index,xx-distanceToCenter,yy,flip,1,0,c_white,1);
+	}
+}
+
+function createItem(_depth, _sprite) {
+	var newItem = new Item(
+		random_range(item_left,item_right),
+		top,
+		_depth,
+		top_h_upper,
+		_sprite
+	);
+	return newItem;
+}
+
+function createItemF(_sprite) {
+	var newItemF = new ItemF(
+		random_range(item_left,item_right),
+		_sprite
+	);
+	return newItemF;
+}

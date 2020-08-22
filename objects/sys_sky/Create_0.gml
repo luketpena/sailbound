@@ -1,5 +1,6 @@
 //---- Setup ----\\
 clock_set_points();
+alarm[0] = 1;
 alarm[1] = 15; //Generating wind
 
 //---- Sun, Moon, and Stars ----\\

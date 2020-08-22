@@ -1,41 +1,37 @@
+// Base color
 draw_sprite_ext(spr_pixel,0,x-hlength,top,length,thickness*2,0,global.c_water_depth,1);
 
-
+// Draw ground texture
 if (surface_exists(surf_detail) && surface_exists(surf_detail_transfer)) {
 	
-	// Draw debris at random
-	function drawDebris(sprite, chance) {	
-		if (dice(chance)) {
-			var index = irandom(sprite_get_number(sprite)-1);
-			var flip = choose(-1,1);
-			var xx = (length)-sprite_get_width(sprite)/2
-			var yy = random(top_h);
-			draw_sprite_ext(sprite,index,xx-distanceToCenter,yy,flip,1,0,c_white,1);
-		}
-	}
-	
+	// Save texture to separate surface, offset by movement speed
 	surface_set_target(surf_detail_transfer);
+	
 		draw_clear_alpha(c_black,0);
 		draw_surface_ext(surf_detail,-detail_move,0,1,1,0,c_white,1);
+		
 	surface_reset_target();
 	
+	// Draw the main texture
 	surface_set_target(surf_detail);
+	
 		draw_clear_alpha(c_black,0);
 		draw_surface_ext(surf_detail_transfer,0,0,1,1,0,c_white,1);
 		
-		drawDebris(spr_ground_debris_coral_stone_large,100);
-		drawDebris(spr_ground_debris_seaweed,60);
-		
+		for (var i=0; i<array_length(debris_types); i++) {
+			var debris = debris_types[i];
+			drawDebris( debris.sprite, debris.chance );
+		}
 		
 	surface_reset_target();
-	
-	
 	
 } else {
 	if (!surface_exists(surf_detail)) surf_detail = surface_create(length,top_h);
 	if (!surface_exists(surf_detail_transfer)) surf_detail_transfer = surface_create(length,top_h);
 }
+// END draw ground texture
 
+// Draw ground
 if (surface_exists(surf) && active) {
 	
 	surface_set_target(surf);
@@ -74,8 +70,8 @@ if (surface_exists(surf) && active) {
 	draw_primitive_end();
 	shader_reset();
 	
-	draw_edge(top-16,spr_ground_coral_edge,.8,merge_color(global.c_front,global.c_water_depth,.5),0);
-	draw_edge(top,spr_ground_coral_edge,1,global.c_front,1);
+	draw_edge(top-16,edge_sprite,.8,merge_color(global.c_front,global.c_water_depth,.5),0);
+	draw_edge(top,edge_sprite,1,global.c_front,1);
 	
 	shader_set(shd_maxAlpha);
 	
@@ -92,11 +88,11 @@ if (surface_exists(surf) && active) {
 	draw_primitive_end();
 	shader_reset();
 	
-	draw_edge(top+16,spr_ground_coral_edge,1.2,merge_color(global.c_front,global.c_water_depth,.25),2);
-	
+	draw_edge(top+16, edge_sprite, 1.2, merge_color(global.c_front, global.c_water_depth, .25), 2);
+	 
 	//>> Draw Items
 	shader_set(shd_fadeColor);
-	shader_set_uniform_f_array(u_horizon_col,global.c_water_depth_vec3);
+	shader_set_uniform_f_array(u_color, global.c_water_depth_vec3);
 		for (var i=0; i<array_length(item_array); i++) {
 			var item = item_array[i];
 			var xx = findItemX(item.x,item.depth);
@@ -109,3 +105,4 @@ if (surface_exists(surf) && active) {
 } else {
 	surf = surface_create(length,top_h);
 }
+// END draw ground

@@ -15,7 +15,20 @@ var item_types = [
 	}
 ];
 
-spawn_ground(global.water_y+64, spr_sand, item_types);
+var debris_types = [
+	{
+		sprite: spr_ground_debris_coral_stone_large,
+		chance: 100
+	},
+	{
+		sprite: spr_ground_debris_seaweed,
+		chance: 16
+	}
+];
+
+
+
+spawn_ground(global.water_y+64, spr_sand, item_types, debris_types, item_types, spr_ground_coral_edge);
 //spawn_amb_fish_school();
 
 //instance_create_layer(mouse_x,mouse_y,"l_main",obj_fx_explosion);

@@ -4,7 +4,7 @@
     "path": "sprites/ico_environment/ico_environment.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,

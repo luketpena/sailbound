@@ -18,22 +18,19 @@ function itemStep(array) {
 if (active) {
 	switch(state) {
 		case "enter":
-			if (distanceToCenter>0) phy_position_x -= move_speed else state = "static";
+			if (distanceToCenter>0) phy_position_x -= move_speed else {
+				state = "static";
+				detail_move = move_speed;
+			}
 			break;
 			
 		case "static":
-			tex_offset -= move_speed;
-			
+			tex_offset -= move_speed;			
 			itemStep(item_array);
-			itemStep(itemF_array);	
-			
-			detail_move = abs(detail_move-1);
-
+			itemStep(itemF_array);				
 			break;
 			
 		case "leave":
 			if (phy_position_x+hlength>0) phy_position_x -= move_speed else instance_destroy();
 	}
 }
-
-
