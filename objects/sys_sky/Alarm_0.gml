@@ -1,10 +1,7 @@
-/// @description Cloud Color
+/// @description Wind Create
 
-alarm[0] = 1;
+alarm[0] = irandom_range(1*room_speed, 3*room_speed);
 
-for (var i=0; i<cloud_num; i++) {
-	var cloud = cloud_list[i]
-	var merge_amount = .2+(.8*cloud.cLerp);
-	
-	cloud.color = merge_color(global.c_sky_space, global.c_sky_clouds, merge_amount);	
-}
+var xx = irandom_range(global.vx,global.vr);
+var yy = global.water_y+random_range(-24,-64);
+instance_create_layer(xx, yy, l_main, obj_env_wind);

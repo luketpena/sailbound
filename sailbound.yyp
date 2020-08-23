@@ -163,7 +163,7 @@
     {"id":{"name":"scr_weather_set","path":"scripts/scr_weather_set/scr_weather_set.yy",},"order":2,},
     {"id":{"name":"sys_vibrate","path":"objects/sys_vibrate/sys_vibrate.yy",},"order":9,},
     {"id":{"name":"spr_ground_coral_edge","path":"sprites/spr_ground_coral_edge/spr_ground_coral_edge.yy",},"order":0,},
-    {"id":{"name":"scr_celestial_set_active","path":"scripts/scr_celestial_set_active/scr_celestial_set_active.yy",},"order":1,},
+    {"id":{"name":"scr_sky","path":"scripts/scr_sky/scr_sky.yy",},"order":1,},
     {"id":{"name":"color_to_vec3","path":"scripts/color_to_vec3/color_to_vec3.yy",},"order":1,},
     {"id":{"name":"scr_effects","path":"scripts/scr_effects/scr_effects.yy",},"order":0,},
     {"id":{"name":"scr_pickups","path":"scripts/scr_pickups/scr_pickups.yy",},"order":0,},

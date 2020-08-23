@@ -6,7 +6,7 @@
     "path": "folders/Environment/Background/Sky.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_celestial_set_active",
+  "name": "scr_sky",
   "tags": [],
   "resourceType": "GMScript",
 }

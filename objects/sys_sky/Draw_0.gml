@@ -16,9 +16,7 @@ if (surface_exists(surf_sky)) {
 	shader_set(shd_bwToColorGrad);
 		shader_set_uniform_f_array(u_color1,global.c_sky_space_vec3);
 		shader_set_uniform_f_array(u_color2,global.c_sky_horizon_vec3);
-		draw_surface_ext(surf_sky,global.vx,sky_y,1,1,0,c_white,1);
-		
-		
+		draw_surface_ext(surf_sky,global.vx,sky_y,1,1,0,c_white,1);	
 	shader_reset();
 } else {
 	surf_sky = surface_create(global.vw,global.vh);	
@@ -84,6 +82,6 @@ if (celestial_fade>0) {
 //---- Clouds ----\\
 for (var i=0; i<cloud_num; i++) {
 	var cloud = cloud_list[i];
-	draw_sprite_ext(spr_env_sky_clouds,0,cloud.x,cloud.y,cloud.image_xscale,cloud.image_yscale,0,cloud.color,1);
-	draw_sprite_ext(spr_env_sky_clouds,1,cloud.x,cloud.y,cloud.image_xscale,cloud.image_yscale,0,global.c_sky_horizon,cloud.highlight_alpha);
+	draw_sprite_ext(spr_env_sky_clouds,0,cloud.x,cloud.y,cloud.image_xscale,cloud.image_yscale,0,cloud.color, cloud.alpha);
+	draw_sprite_ext(spr_env_sky_clouds,1,cloud.x,cloud.y,cloud.image_xscale,cloud.image_yscale,0,global.c_sky_horizon, cloud.highlight_alpha*cloud.alpha);
 }

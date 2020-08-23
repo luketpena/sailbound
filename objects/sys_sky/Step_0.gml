@@ -9,11 +9,19 @@ if (global.clock_time>clock_point_nightfall-5 && global.clock_time<clock_point_m
 	stars_alpha = fadeRange(global.clock_time,20,20,clock_point_night,clock_point_sunrise-12,0,1);
 }
 
-
 //---- Clouds ----\\
 var cloud_motion = (.2+.8*global.motion)
 for (var i=0; i<cloud_num; i++) {
 	var cloud = cloud_list[i];
+	
+	cloud.color = merge_color(global.c_sky_space, global.c_sky_clouds, cloud.merge_amount);
+	
+	var fCloud = cloud_list[cloud_fade_list[i]];
+	if (cloud_fade_point <= i) {
+		if (fCloud.alpha > 0) fCloud.alpha -= .01;	
+	} else {
+		if (fCloud.alpha < 1) fCloud.alpha += .01;	
+	}
 	
 	cloud.x -= cloud.speed*cloud_motion;
 	if (cloud.x<cloud_left) {

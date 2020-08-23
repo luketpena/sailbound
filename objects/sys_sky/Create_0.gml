@@ -1,7 +1,6 @@
 //---- Setup ----\\
 clock_set_points();
-alarm[0] = 1;
-alarm[1] = 15; //Generating wind
+alarm[0] = 15; //Generating wind
 
 //---- Sun, Moon, and Stars ----\\
 orb_w = global.hvw-48;
@@ -23,20 +22,16 @@ u_color2 = shader_get_uniform(shd_bwToColorGrad,"color2");
 cloud_num = 60;
 cloud_left = -100;
 cloud_right = room_width+100;
+
+cloud_fade_list = [];
+cloud_fade_point = 60; // How many clouds to show
+
 for (var i=0; i<cloud_num; i++) {
 	var lerp_set = i/cloud_num;
-	cloud_list[i] = {
-		cLerp: lerp_set,
-		x: random_range(cloud_left,cloud_right),
-		y: lerp(global.horizon_y-32,global.horizon_y-128,lerp_set),
-		color: merge_color(global.c_sky_horizon,global.c_sky_clouds,lerp_set),
-		size: lerp(.2,1,lerp_set),
-		speed: lerp(.01,.2,lerp_set),
-		image_index: irandom(sprite_get_number(spr_env_sky_clouds)-1),
-		image_xscale: lerp(.3,1,lerp_set)*choose(-1,1),
-		image_yscale: lerp(.3,1,lerp_set),
-		highlight_alpha: lerp(1,.1,lerp_set)
-	}
+	cloud_list[i] = new Cloud(lerp_set, cloud_left, cloud_right);
+	cloud_fade_list[i] = i;
 }
+cloud_fade_list = array_shuffle(cloud_fade_list);
+
 
 
