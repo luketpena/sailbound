@@ -27,9 +27,9 @@
     {"compositeImage":{"FrameId":{"name":"be81e77d-a34c-45a7-a260-e23b86a19b0e","path":"sprites/spr_boat_sail/spr_boat_sail.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"be81e77d-a34c-45a7-a260-e23b86a19b0e","path":"sprites/spr_boat_sail/spr_boat_sail.yy",},"LayerId":{"name":"1bc22dbd-95d1-454b-9699-230a4f6528b2","path":"sprites/spr_boat_sail/spr_boat_sail.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_boat_sail","path":"sprites/spr_boat_sail/spr_boat_sail.yy",},"resourceVersion":"1.0","name":"be81e77d-a34c-45a7-a260-e23b86a19b0e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"32769446-017d-46ee-920d-e25333a44da1","path":"sprites/spr_boat_sail/spr_boat_sail.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"32769446-017d-46ee-920d-e25333a44da1","path":"sprites/spr_boat_sail/spr_boat_sail.yy",},"LayerId":{"name":"1bc22dbd-95d1-454b-9699-230a4f6528b2","path":"sprites/spr_boat_sail/spr_boat_sail.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_boat_sail","path":"sprites/spr_boat_sail/spr_boat_sail.yy",},"resourceVersion":"1.0","name":"32769446-017d-46ee-920d-e25333a44da1","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"705d5706-07e9-4256-bd42-398127da0145","path":"sprites/spr_boat_sail/spr_boat_sail.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"705d5706-07e9-4256-bd42-398127da0145","path":"sprites/spr_boat_sail/spr_boat_sail.yy",},"LayerId":{"name":"1bc22dbd-95d1-454b-9699-230a4f6528b2","path":"sprites/spr_boat_sail/spr_boat_sail.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_boat_sail","path":"sprites/spr_boat_sail/spr_boat_sail.yy",},"resourceVersion":"1.0","name":"705d5706-07e9-4256-bd42-398127da0145","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_boat_sail","path":"sprites/spr_boat_sail/spr_boat_sail.yy",},
@@ -45,10 +45,10 @@
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"7d1c17b4-de16-414d-b32e-9874f088d1e8","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"be81e77d-a34c-45a7-a260-e23b86a19b0e","path":"sprites/spr_boat_sail/spr_boat_sail.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"67d56f17-34a5-43d2-848e-f18076420ec4","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"32769446-017d-46ee-920d-e25333a44da1","path":"sprites/spr_boat_sail/spr_boat_sail.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0311f9b9-8016-4cea-be01-1aaa9d024482","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"705d5706-07e9-4256-bd42-398127da0145","path":"sprites/spr_boat_sail/spr_boat_sail.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,

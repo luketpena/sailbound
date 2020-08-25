@@ -23,6 +23,28 @@ sail_pos = [
 	x+lengthdir_x(8,hull_angle),
 	y+lengthdir_y(8,hull_angle)
 ];
+/*
+	sail_size_lerp = 0;
+	sail_size_cloth = 1;
+	sail_size_mast = 1;
+	sail_active = true;
+*/
+
+if (sail_active) {
+	if (sail_size_lerp < 1) {
+		sail_size_lerp += .025;
+		sail_size_mast = ease_lerp(EASE.OutElastic, 0, 1, sail_size_lerp);
+		sail_size_cloth = ease_lerp(EASE.OutBack, 0, 1, sail_size_lerp);
+	}
+} else {
+	if (sail_size_lerp > 0) {
+		sail_size_lerp -= .05;
+		sail_size_mast = ease_lerp(EASE.OutBack, 0, 1, sail_size_lerp);
+		sail_size_cloth = 1;
+	}
+}
+
+if keyboard_check_pressed(vk_control) sail_active = !sail_active;
 
 head_pos = [
 	x+lengthdir_x(6*squish,sailor_angle+90),

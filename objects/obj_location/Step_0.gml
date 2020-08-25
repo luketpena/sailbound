@@ -1,14 +1,15 @@
 if (global.motion>0) {
-	x -= mySpeed*global.motion;
+	x += mySpeed*global.motion;
 }
 
 switch(state) {
 	case "enter":
-		//if (x<=room_width/2) {
-		//	state = "stop";
-		//	motion_stop();
-		//	sys_hud.hud_active = false;
-		//}
+		if (x<=room_hwidth*1.05) {
+			state = "stop";
+			motion_stop();
+			sys_hud.hud_active = false;
+			obj_boat_draw.sail_active = false;
+		}
 		break;
 		
 	case "exit":

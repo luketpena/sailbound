@@ -7,7 +7,7 @@ function island_get_sprite(biome) {
 	}
 }
 
-function island_spawn_standard(in_position,biome) {
+function island_spawn_standard(in_position, biome, speed_min, speed_max) {
 	
 	var sprite = island_get_sprite(biome);
 	var sprite_hw = sprite_get_width(sprite)/2;
@@ -18,7 +18,7 @@ function island_spawn_standard(in_position,biome) {
 	with(o) {
 		shader_pwr = lerp(1,.2,in_position);
 		position = in_position;
-		mov_speed = lerp(-.1,-.3,in_position);
+		mov_speed = lerp(speed_min, speed_max, in_position);
 		exit_x = global.vx-sprite_hw;
 		
 		var size = lerp(.25,1,in_position);

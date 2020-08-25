@@ -8,6 +8,8 @@ u_pwr = shader_get_uniform(shd_fadeColor,"pwr"); //How far does it fade to that 
 
 //This array tracks the islands and is used to draw them in order
 island_list = [];
+island_speed_min = -.1;
+island_speed_max = -.3;
 
 #region Island Creation Functions
 function island_list_cleanup() {

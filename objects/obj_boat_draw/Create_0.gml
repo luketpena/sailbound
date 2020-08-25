@@ -3,7 +3,6 @@ back = obj_boat_back;
 
 lighting_flash_init();
 
-
 draw_active = true;
 
 anim_sprite = -1;
@@ -19,10 +18,15 @@ hull_angle = 0;
 sail_angle = hull_angle;
 sailor_angle = (-hull_angle-180)*.5;
 
+//--< Sail >--\\
 sail_pos = [
 	x+lengthdir_x(8,hull_angle+180),
 	y+lengthdir_y(8,hull_angle+180)
 ];
+sail_size_lerp = 0;
+sail_size_cloth = 1;
+sail_size_mast = 1;
+sail_active = true;
 
 head_sprite = spr_peter_head_happy;
 head_frame = 0;
