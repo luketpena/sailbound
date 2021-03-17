@@ -1,0 +1,4 @@
+enum OsType {
+	Desktop,
+	Mobile,
+}

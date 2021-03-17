@@ -8,6 +8,8 @@ os_lock_orientation(true);
 window_set_fullscreen(true);
 show_debug_overlay(false);
 
+osType = noone;
+
 //>> Initialization
 cameraSystem_init();
 
