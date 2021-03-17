@@ -88,8 +88,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ef51e8b6-805d-41d1-b675-711d45b3f37d","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Environment/Water/Effects/Splash/Sprites.yy",
+    "name": "Side",
+    "path": "folders/Environment/Water/Effects/Splash/Sprites/Side.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_fx_water_splash_medium_2",

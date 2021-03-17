@@ -54,10 +54,18 @@ function draw_text_color1_ext(x,y,str,sep,width,color,alpha) {
 
 //Draws all objects with a tag
 function draw_tag(tag) {
-	var collection = tag_get_asset_ids(tag,asset_object);
-	for (var i=0; i<array_length(collection); i++) {
-		with(collection[i]) event_perform(ev_draw,0);
+	var objectList = tag_get_asset_ids(tag, asset_object);
+	
+	if (array_length(objectList)>0) {
+		for (var i=0; i<array_length(objectList); i++) {
+			var instanceNumber = instance_number(objectList[i])
+			for (var j=0; j<instanceNumber; j++) {
+				var o = instance_find(objectList[i], j);
+				with(o) event_perform(ev_draw,0);
+			}		
+		}
 	}
+	
 }
 
 function drawBegin_tag(tag) {
@@ -72,6 +80,12 @@ function draw_object(object) {
 	with(object) event_perform(ev_draw,0);	
 }
 
+// Only trigger if the surface exists
 function free_surface(surf) {
 	if surface_exists(surf) surface_free(surf);	
+}
+
+// Allows you to pick between two values without boilerplate code
+function compare(pickFirst, value1, value2) {
+	if (pickFirst) return value1 else return value2;	
 }

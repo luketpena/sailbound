@@ -9,7 +9,7 @@ var newCell = map_row[location_row][location_cell];
 //Update global biome to match entered cell
 global.biome = newCell.biome;
 //Transition all colors to the new colors
-scr_system_colors_transition(newCell.palette,.01);
+//palette_transition(newCell.palette,.01);
 //Check if there is a transition
 if (newCell.transition || newCell.island) {
 	//motion_stop();

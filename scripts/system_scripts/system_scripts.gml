@@ -16,3 +16,7 @@ function vibrate_set_sustain(strength, duration) {
 function dice(chance) {
 	return (irandom_range(1,max(1,chance)) = 1);
 }
+
+function angleInRange(dir, pointDir, range) {
+	return (abs(angle_difference(dir, pointDir)) <= range);
+}

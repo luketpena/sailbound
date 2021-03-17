@@ -1,17 +1,18 @@
 //>>collisions
-waterpoint_front = water_find_y_precise(x);
-waterpoint_back = water_find_y_precise(obj_boat_back.x);
-waterpoint_center = water_find_y_precise(x_center);
-waterpoint_front_col = waterpoint_front<(y+boat_offset);
+waterY_front = water_find_y_precise(x);
+waterY_back = water_find_y_precise(obj_boat_back.x);
+waterY_center = water_find_y_precise(x_center);
 
 global.boat_x = x_center_draw;
 global.boat_y = y_center_draw;
 
-boat_step_impact_freeze(); //Stopping motion
-boat_step_controls(); //Setting control impulses
+boat_impactFreeze_step(); //Stopping motion
+boat_controls_step(); //Setting control impulses
 boat_step_movement(); //Moving the ship
 boat_step_positions(); //Part and draw positions
 boat_step_angle(); //Setting angle for other usage
+boat_distanceToSurface();
+boat_physics_lock_hold();
 
 boat_step_angleCorrection();
 boat_step_particles();
@@ -20,3 +21,7 @@ boat_step_particles();
 flipped = (x<back.x) //flipped status
 //>>checking if touching the water surface is disabled
 if (touched_disable>0) then touched_disable--;
+
+if (mouse_check_button_pressed(mb_middle)) {
+	boat_bounce();	
+}

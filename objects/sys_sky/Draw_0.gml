@@ -6,11 +6,11 @@ if (surface_exists(surf_sky)) {
 	surface_set_target(surf_sky);
 		draw_clear_alpha(c_black,1);
 		gpu_set_blendmode(bm_add);
-			draw_sprite_ext(spr_env_sky_fade,0,0,global.vh,global.vw,1,0,c_white,.5);
 		
-			var flare_sunset = fadeRange(global.clock_time,20,40,clock_point_sunfall,clock_point_night,0,1);//fadeRange(global.clock_time,pSunset-10,pSunset+10,pSunset-5,pSunset+5,0,1);
-			draw_sprite_ext(spr_fx_flare_300,0,global.vw*.1,global.vh,2,1,0,c_white,flare_sunset);
-			draw_sprite_tiled_ext(spr_fx_water_distortion,0,0,0,1,1,c_white,.1);
+			draw_sprite_ext(spr_env_sky_fade,0,0,global.vh,global.vw,1,0,c_white,.8);
+			var flare_sunset = fadeRange(global.clock_time,20,40,clock_point_sunfall,clock_point_night,0,.5);//fadeRange(global.clock_time,pSunset-10,pSunset+10,pSunset-5,pSunset+5,0,1);
+			draw_sprite_ext(spr_fx_flare_300,0,global.vw*.1,global.vh,2,1,0,c_white,flare_sunset);			
+			
 		gpu_set_blendmode(bm_normal);
 	surface_reset_target();
 	shader_set(shd_bwToColorGrad);
@@ -82,6 +82,6 @@ if (celestial_fade>0) {
 //---- Clouds ----\\
 for (var i=0; i<cloud_num; i++) {
 	var cloud = cloud_list[i];
-	draw_sprite_ext(spr_env_sky_clouds,0,cloud.x,cloud.y,cloud.image_xscale,cloud.image_yscale,0,cloud.color, cloud.alpha);
-	draw_sprite_ext(spr_env_sky_clouds,1,cloud.x,cloud.y,cloud.image_xscale,cloud.image_yscale,0,global.c_sky_horizon, cloud.highlight_alpha*cloud.alpha);
+	draw_sprite_ext(spr_env_sky_clouds,cloud.image,cloud.x,cloud.y,cloud.image_xscale,cloud.image_yscale,0,cloud.color, cloud.alpha);
+	draw_sprite_ext(spr_env_sky_clouds,cloud.image+1,cloud.x,cloud.y,cloud.image_xscale,cloud.image_yscale,0,global.c_sky_horizon, cloud.highlight_alpha*cloud.alpha);
 }

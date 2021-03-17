@@ -11,7 +11,7 @@ if (coin_wait=-1) {
 		coin_active = true;
 		coin_wait = 3*room_speed;
 	}		
-} 
+}
 
 if (coin_alpha>0) {
 	//Incrementing drawn coin ammount to actual coin ammount

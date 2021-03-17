@@ -34,3 +34,28 @@ if (fog_fade>0) {
 	fog_color_array = color_to_vec3(fog_color);
 	fog_position -= fog_speed;
 }
+
+wind_strength = (mouse_x - (global.vx + global.hvw)) / global.hvw;
+
+var droplet_dir = 270 - (45 * wind_strength);
+
+var droplet_list_set = [];
+
+for (var i=0; i<array_length(droplet_list); i++) {
+	var droplet = droplet_list[i];
+	
+	
+	droplet.angle += angle_difference(droplet_dir + droplet.angle_offset, droplet.angle) * droplet.str;
+	
+	droplet.y += lengthdir_y(droplet.speed, droplet.angle);
+	droplet.x += lengthdir_x(droplet.speed, droplet.angle);
+	
+	
+	if (droplet.y < droplet_end) {
+		droplet_list_set[ array_length(droplet_list_set) ] = droplet;
+	} else {
+		delete droplet;	
+	}
+}
+
+droplet_list = droplet_list_set;

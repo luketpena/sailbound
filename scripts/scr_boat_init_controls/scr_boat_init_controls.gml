@@ -1,10 +1,14 @@
-function boat_init_controls() {
+function boat_init_controls(
+	inputType,
+	mobileMovement
+) {
 	/*
 		Defines everything relating to controls on the boat.
 	*/
 
 	control_active = true;
-	control_method = "gamepad";
+	control_inputType = inputType
+	control_mobileMovement = mobileMovement;
 	ctrl_move_active = 0;
 
 	ctrl_move_stop = true; //Prevents x movement when active
@@ -21,13 +25,11 @@ function boat_init_controls() {
 	ctrl_move = 0; //-1=left; 1=right;
 	ctrl_jump_stick_pos = 0;
 	ctrl_jump_pulse = 0;
+	ctrl_jumpDive_inRange = false; // Flag for being ready to jump or dive
+	ctrl_jumpDive_range = 32; // Range of inRange flag
 	ctrl_dive_pulse = 0;
 	ctrl_vertical_pulse_timer = -1;
-	//>> Used by device events
-	flick_thresh = 4;
-	device_x = 0;
-	drag_x = 0; //The x gui position of the mouse click
-	drag_active = false;
 
+	zone_jump = zone_create(global.hvw, 0, global.vw, global.vh);
 
 }

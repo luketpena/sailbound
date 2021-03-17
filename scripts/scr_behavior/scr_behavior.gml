@@ -21,7 +21,7 @@ function behave_init(type,gravity,terminal_fall,terminal_sink,float_active,float
 	behave_buoyancy_limit = buoyancy_limit;
 	
 	touched = false;
-	impact_lock = 0;
+	impactLock = ImpactLock.None;
 
 	waterpoint_y = 0; //The y position of the nearest water vertex
 	waterpoint_distance = 0; //The distance to that point
@@ -88,7 +88,7 @@ function behave_step_bouncer() {
 
 	if (abs(phy_speed_y)<1 && abs(waterpoint_distance)<1) phy_speed_y = 0;
 	
-	if ( (phy_speed_y>0 && impact_lock=-1) || (phy_speed_y<0 && impact_lock=1) ) impact_lock = 0;
+	behavior_impactLock_reset();
 
 	switch(behave_mode) {
 	
@@ -97,7 +97,7 @@ function behave_step_bouncer() {
 				//Trigger impact when close to water
 				behave_mode = "impact";
 				event_user(15); //Splash event
-				if (impact_lock=0) phy_speed_y *= behave_impact_reduction;
+				if (impactLock = ImpactLock.None) phy_speed_y *= behave_impact_reduction;
 				touched = true;
 			} else {
 				//Falling
@@ -119,6 +119,14 @@ function behave_step_bouncer() {
 	}
 
 
+}
+
+function behavior_impactLock_reset() {
+	var resetDown = (phy_speed_y > 0 && impactLock = ImpactLock.Down);
+	var resetUp = (phy_speed_y < 0 && impactLock = ImpactLock.Up);
+	if (resetDown || resetUp) {
+		impactLock = ImpactLock.None;	
+	}
 }
 
 function behave_step_sinker() {

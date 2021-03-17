@@ -4,7 +4,7 @@ lighting_flash_step();
 x = obj_boat_front.x_center_draw;
 y = obj_boat_front.y_center_draw;
 
-if (obj_boat_front.waterpoint_center<obj_boat_front.y_center_draw-16) {
+if (obj_boat_front.waterY_center<obj_boat_front.y_center_draw-16) {
 	head_frame = 3;
 	part_particles_create(global.ps_water_front,head_pos[0],head_pos[1],global.pt_water_bubble,1);
 } else if (obj_boat_front.phy_speed_y<-3) head_frame = 1

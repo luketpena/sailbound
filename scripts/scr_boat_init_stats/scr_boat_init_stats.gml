@@ -1,8 +1,4 @@
 function boat_init_stats() {
-	/*
-		Defines all of the stats used in the physics for the boat.
-	*/
-
 	//>> Physical Stats
 	boat_weight = 80; //gravity strength
 	boat_drag = .95; //rate that boat slows down
@@ -15,8 +11,8 @@ function boat_init_stats() {
 	boat_radius = 4; //decides the "size" of the collision area
 	boat_offset = 10; //offset vertically of the radius
 
-	boat_jump_power = 30; //physics impulse upwards on jump
-	boat_dive_power = 20; //physics impulse downwards on dive
+	boat_jump_power = 40; //physics impulse upwards on jump
+	boat_dive_power = 30; //physics impulse downwards on dive
 
 	boat_jump_limit = 6;
 	boat_dive_limit = 5;
@@ -28,10 +24,6 @@ function boat_init_stats() {
 	total_speed = boat_speed+bonus_speed;
 	total_agility = boat_agility+bonus_agility;
 	//>> Sail Settings
-	sail_index = 0;
-	sail_spr = spr_boat_sail;
 	sail_x = 0;
 	sail_y = 0;
-
-
 }

@@ -4,18 +4,25 @@ if (weather_fade>0) {
 		//>> Drawing weather to the surface
 		surface_set_target(weather_surface);
 			draw_clear_alpha(c_white,0);
-			draw_sprite_tiled_ext(precip_sprite,0,precip_x,precip_y,1,1,global.c_front,.5);
-			draw_surface_ext(sys_water.cutout_bottom_surface,0,global.vy,1,1,0,c_black,1);
+			
+			for (var i=0; i<array_length(droplet_list); i++) {
+				var d = droplet_list[i];
+				draw_sprite_ext(d.sprite, 0, d.x-global.vx, d.y-global.vy, d.scale, 1, d.angle, global.c_front, d.alpha);
+			}
+
+			
+			
+			draw_surface_ext(sys_water.cutout_bottom_surface,-global.vx,0,1,1,0,c_black,1);
 		surface_reset_target();
 		
 		//>> Drawing the surface itself
 		shader_set(shd_subtract);
-			draw_surface_ext(weather_surface,0,0,1,1,0,c_white,weather_fade);
+			draw_surface_ext(weather_surface,global.vx,global.vy,1,1,0,c_white,weather_fade);
 		shader_reset();
 		
 	} else {
 		//>> Creating the surface
-		weather_surface = surface_create(room_width,room_height);
+		weather_surface = surface_create(global.vw, global.vh);
 	}
 }
 

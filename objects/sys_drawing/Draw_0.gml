@@ -1,5 +1,6 @@
 draw_object(sys_sky);
 draw_object(sys_horizon);
+draw_object(obj_storm);
 draw_object(sys_islands);
 draw_object(obj_location); 
 
@@ -16,6 +17,7 @@ lighting_shader_draw();
 	draw_tag("fx_above");
 	
 	draw_tag("item");
+	draw_tag("fx_splash");
 	draw_object(obj_petra);
 		
 	draw_object(obj_chest);
@@ -28,6 +30,7 @@ lighting_shader_draw();
 	
 shader_reset();
 
+draw_tag("fx_over");
 with(obj_ground) event_perform(ev_draw,ev_draw_end);
 
 draw_object(sys_water_distortion);

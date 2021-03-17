@@ -23,6 +23,8 @@ if surface_exists(water_surface) {
 				break;
 		}
 		
+		draw_tag("fx_surface");
+		
 		var float_count = instance_number(obj_floater);
 		for (var i=0; i<float_count; i++) {
 			var o = instance_find(obj_floater,i);

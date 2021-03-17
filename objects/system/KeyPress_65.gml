@@ -31,6 +31,12 @@
 //spawn_ground(global.water_y+64, spr_sand, item_types, debris_types, item_types, spr_ground_coral_edge);
 //spawn_amb_fish_school();
 
-//instance_create_layer(mouse_x,mouse_y,"l_main",obj_fx_explosion);
+//instance_create_layer(mouse_x,mouse_y,"l_main",obj_explosion_puff);
 
-spawn_location(spr_loc_lighthouse, 0);
+if (room_get_name(room) = "rm_water") {
+	room_goto(rm_test)	
+} else {
+	room_goto(rm_water)	
+}
+
+//spawn_location(spr_loc_lighthouse, 0);

@@ -33,5 +33,7 @@ for (var i=0; i<cloud_num; i++) {
 }
 cloud_fade_list = array_shuffle(cloud_fade_list);
 
+u_color1 = shader_get_uniform(shd_bwToColorGrad, "color1");
+u_color2 = shader_get_uniform(shd_bwToColorGrad, "color2");
 
-
+horizonPos = 0;

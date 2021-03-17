@@ -26,6 +26,7 @@ pt_init_water_bubble();
 
 //---- Fire and Explosions ----\\
 pt_init_explosion_burst();
+pt_init_explosion_fragment();
 pt_init_fire_trail();
 pt_make_spark();
 

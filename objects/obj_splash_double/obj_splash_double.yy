@@ -35,7 +35,7 @@
   "resourceVersion": "1.0",
   "name": "obj_splash_double",
   "tags": [
-    "fx_above",
+    "fx_splash",
   ],
   "resourceType": "GMObject",
 }

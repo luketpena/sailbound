@@ -11,11 +11,7 @@ function boat_init_animation() {
 	bob_dis = 1;
 	bob_sin = 0;
 	bob_spd = 4;
-	//>> Impact Freeze
-	impact_freeze = -1; //How long it freezes for
-	impact_freeze_multiplier = 1; //How much it spikes the movement after it unfreezes
-	impact_freeze_speed_front = [0,0]; //Saves the boat front speeds
-	impact_freeze_speed_back = [0,0]; //Saves the boat back speeds
+
 	//>> Center Coordinates
 	x_center = x+lengthdir_x(boat_width/2,boat_angle_reverse);
 	y_center = y+lengthdir_y(boat_width/2,boat_angle_reverse);

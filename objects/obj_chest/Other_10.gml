@@ -3,7 +3,7 @@
 open = true;
 image_speed = 1;
 phy_speed_y = 1;
-impact_lock = 1;
+impactLock = ImpactLock.Up;
 flash = .5;
 
 switch(chest_type) {

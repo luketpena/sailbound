@@ -20,6 +20,4 @@ function boat_step_positions() {
 	center.phy_position_x = x_center_draw+lengthdir_x(6,boat_angle-90);
 	center.phy_position_y = y_center_draw+lengthdir_y(6,boat_angle-90);
 	center.phy_rotation = -boat_angle;
-
-
 }

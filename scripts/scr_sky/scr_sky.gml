@@ -12,6 +12,7 @@ function Cloud(_lerp, _left, _right) constructor {
 	image_xscale = lerp(.3, 1, _lerp)*choose(-1, 1);
 	image_yscale = lerp(.3, 1, _lerp);
 	highlight_alpha = lerp(1, .1, _lerp);
-	merge_amount = .2+(.8*_lerp);
+	merge_amount = ease_lerp(EASE.OutQuad,.25,1,_lerp);
 	alpha = 1;
+	image = irandom(1)*2;
 }

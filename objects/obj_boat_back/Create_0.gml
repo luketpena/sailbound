@@ -21,3 +21,5 @@ submerged = 0;
 pd_boatFront = 0;
 
 waterpillar_nearest = noone;
+
+front = obj_boat_front;

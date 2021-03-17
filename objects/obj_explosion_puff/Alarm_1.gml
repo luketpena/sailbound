@@ -1,0 +1,1 @@
+repeat(irandom_range(3,4)) instance_create_layer(x, y, l_main, obj_explosion_puff_fragment);

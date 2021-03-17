@@ -1,12 +1,13 @@
+global.clock_time = 0; //Rotates around to 360.
+global.clock_fade = 0;
+global.clock_period = "morning";
 
 clock_active = false;
 clock_elapsed = 275;
-global.clock_time = 0; //Rotates around to 360.
 clock_day = 0;
-global.clock_fade = 0;
 
-global.clock_period = "morning";
-clock_speed = .5;
+var dayDurationInMinutes = 10;
+clock_speed = ((360 / 60) / 60) / dayDurationInMinutes;
 
 //Points are used to mark locations where the time of day changes state.
 clock_set_points();

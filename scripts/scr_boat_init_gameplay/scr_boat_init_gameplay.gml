@@ -10,7 +10,6 @@ function boat_init_gameplay() {
 	//inked_fade = 0;
 	//>> Activity States
 	control_active = true; //TOGGLE - Is the player in control of the boat?
-	gravity_active = true; //TOGGLE - Is the boat affected by gravity?
 	//>> Collision with water
 	////>> Invulnerability
 	//invul_alarm = -1;
@@ -32,8 +31,7 @@ function boat_init_gameplay() {
 	impact = false;
 	submerged = false; //below water?
 	floating = false; //is the center of the boat touching the water?
-	physics_active = true;
 	falling = false; //Boat must be airborne && have a positive vspeed
-
+	distanceToSurface = 0; // Pointed from the position of boat
 
 }

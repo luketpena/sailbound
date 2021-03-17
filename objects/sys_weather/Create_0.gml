@@ -36,3 +36,26 @@ u_fog_color = shader_get_uniform(shd_fog,"color");
 
 //---- Dependents ----\\
 instance_create_layer(0,0,l_system,sys_weather_back);
+
+intensity = .01;
+drop_count_max = 8;
+drop_count = drop_count_max;
+droplet_end = global.water_y + 32;
+Droplet = function(_x, _y, _sprite, _speed, _angle) constructor {
+	x = _x;
+	y = _y;
+	sprite = _sprite;
+	angle = _angle;
+	angle_offset = random_range(-4, 4);
+	str = random_range(.01, .1);
+	speed = _speed;
+	alpha = random_range(.3,.8);
+	scale = random_range(.5, 1.5);
+}
+droplet_gravity = 3;
+
+
+
+alarm[0] = 5;
+
+droplet_list = [];

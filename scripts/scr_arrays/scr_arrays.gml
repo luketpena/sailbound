@@ -50,12 +50,6 @@ function array_pop(a) {
 	}
 }
 
-function array_push(a, value) {
-	var new_array = a;
-	new_array[array_length(a)] = value;
-	return new_array;
-}
-
 function array_find(a, value) {
 	for (var i=0; i<array_length(a); i++) {
 		if (a[i] = value) return i;	
@@ -111,6 +105,15 @@ function array_insert(a, value, index) {
 		} else {
 			new_array[i+offset] = a[i];	
 		}
+	}
+	return new_array;
+}
+
+function array_reverse(a) {
+	var new_array = [];
+	var l = array_length(a)-1;
+	for (var i=0; i<=l; i++) {
+		new_array[l-i] = a[i];
 	}
 	return new_array;
 }

@@ -26,6 +26,7 @@
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"sys_weather","path":"objects/sys_weather/sys_weather.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":97,"eventType":9,"collisionObjectId":null,"parent":{"name":"sys_weather","path":"objects/sys_weather/sys_weather.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":98,"eventType":9,"collisionObjectId":null,"parent":{"name":"sys_weather","path":"objects/sys_weather/sys_weather.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"parent":{"name":"sys_weather","path":"objects/sys_weather/sys_weather.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
