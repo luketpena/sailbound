@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Fog",
-    "path": "folders/Environment/Colors/Palettes/Fog.yy",
+    "path": "folders/Environment/Colors/Palettes/Legacy/Fog.yy",
   },
   "resourceVersion": "1.0",
   "name": "scr_fog_palette_storm",

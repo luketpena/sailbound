@@ -38,7 +38,7 @@ function waves_step() {
 			} else {
 				//Moving the wave
 				wave_x[i]+= wave_speed[i];
-				if (!global.stop) part_particles_create_color(global.ps_water_surface,wave_x[i],random(settings.water_depth),pt_water_wave_wake,global.c_water_surface_lt,1);
+				if (!global.stop) part_particles_create_color(global.ps_water_surface,wave_x[i],random(settings.water_depth),pt_water_wave_wake,c_water_highlight,1);
 			}
 		
 		} //END wave active check

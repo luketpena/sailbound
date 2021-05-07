@@ -6,7 +6,7 @@ cameraSystem_update_all();
 instance_create_layer(0,0,"l_system",obj_camera_viewer);
 
 instance_create_layer(0,0,"l_system",sys_clock);
-instance_create_layer(0,0,"l_system",sys_colors);
+instance_create_layer(0,0,"l_system",colors);
 instance_create_layer(0,0,"l_system",sys_lighting);
 instance_create_layer(0,0,"l_system",sys_particles);
 

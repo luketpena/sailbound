@@ -5,7 +5,7 @@
 //>> Setup
 application_surface_enable(true);
 os_lock_orientation(true);
-window_set_fullscreen(true);
+window_set_fullscreen(false);
 show_debug_overlay(false);
 
 osType = noone;
@@ -57,7 +57,7 @@ knapsack = {
 		load: function() {
 			for (var i=0; i<array_length(value); i++) {
 				var data = value[i];
-				var newIsland = island_spawn_ext(data.position, biomes.tropical, sys_islands.island_speed_min, sys_islands.island_speed_max, data.image, data.x, data.y, data.xscale);
+				var newIsland = island_spawn_ext(data.position, Biome.Tropical, sys_islands.island_speed_min, sys_islands.island_speed_max, data.image, data.x, data.y, data.xscale);
 				sys_islands.island_list_insert(newIsland);
 				delete value[i];
 			}

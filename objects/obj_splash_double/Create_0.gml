@@ -1,7 +1,7 @@
 spr_left = noone;
 spr_right = noone;
 
-image_blend = global.c_water_horizon;
+image_blend = c_water_horizon;
 image_speed = 0;
 
 halfWidth = 0;

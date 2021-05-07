@@ -1,2 +1,2 @@
-knapsack.save();
+//knapsack.save();
 clock_stop();

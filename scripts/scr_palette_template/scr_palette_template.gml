@@ -1,4 +1,5 @@
 function scr_palette_template() {
+	
 	/*
 	c_sky_space[0] = $;
 	c_sky_space[1] = $;

@@ -5,7 +5,7 @@ function celestial_set_active(active) {
 function Cloud(_lerp, _left, _right) constructor {
 	x = random_range(_left, _right);
 	y = lerp(global.horizon_y-32, global.horizon_y-128, _lerp);
-	color = merge_color(global.c_sky_horizon, global.c_sky_clouds, _lerp);
+	color = merge_color(c_sky_horizon, c_sky_clouds, _lerp);
 	size = lerp(.2, 1, _lerp);
 	speed = lerp(.01, .2, _lerp);
 	image_index = irandom(sprite_get_number(spr_env_sky_clouds)-1);

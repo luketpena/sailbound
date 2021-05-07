@@ -1,10 +1,10 @@
 ///@description Make island
 
-alarm[0] = random_range(island_wait[0],island_wait[1]);
+islandAlarm_set();
 
-if (island_get_sprite(global.biome)!=-1) {
+if (islandType != null) {
 	//Create island
-	var newIsland = island_spawn(random(1), biomes.tropical, island_speed_min, island_speed_max);
+	var newIsland = island_spawn(random(1), islandType);
 	//Insert island into list
 	island_list_insert(newIsland);
 }

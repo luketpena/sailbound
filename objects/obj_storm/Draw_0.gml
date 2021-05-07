@@ -7,7 +7,7 @@ if surface_exists(surf_cloud) {
 		
 		for (var i=0; i<cloud_num; i++) {
 			var cloud = cloud_list[i];
-			var c = merge_color(global.c_sky_horizon, global.c_sky_space, i/cloud_num);
+			var c = merge_color(c_sky_horizon, c_sky_space, i/cloud_num);
 			draw_sprite_ext(spr_env_storm_clouds_loop, 0, cloud.x, cloud.y-global.vy, cloud.scale, cloud.scale, 0, c, 1);
 			draw_sprite_ext(spr_env_storm_clouds_loop, 0, cloud.x+cloud.length, cloud.y-global.vy, cloud.scale, cloud.scale, 0, c, 1);
 		}
@@ -23,6 +23,6 @@ if surface_exists(surf_cloud) {
 	surf_cloud = surface_create(global.vw, global.vh);	
 }
 
-draw_sprite_ext(spr_env_storm_clouds_back,   0, global.vr-(global.vw*2*storm_progress), global.horizon_y,1,1,0,global.c_sky_horizon,1);
-draw_sprite_ext(spr_env_storm_clouds_mid,    0, global.vr+128-(global.vw*2.5*storm_progress), global.horizon_y,1,1,0,merge_color(global.c_sky_horizon, global.c_sky_clouds, .5),1);
-draw_sprite_ext(spr_env_storm_clouds_front,  0, global.vr+256-(global.vw*3*storm_progress), global.horizon_y,1,1,0,global.c_sky_clouds,1);
+draw_sprite_ext(spr_env_storm_clouds_back,   0, global.vr-(global.vw*2*storm_progress), global.horizon_y,1,1,0,c_sky_horizon,1);
+draw_sprite_ext(spr_env_storm_clouds_mid,    0, global.vr+128-(global.vw*2.5*storm_progress), global.horizon_y,1,1,0,merge_color(c_sky_horizon, c_sky_clouds, .5),1);
+draw_sprite_ext(spr_env_storm_clouds_front,  0, global.vr+256-(global.vw*3*storm_progress), global.horizon_y,1,1,0,c_sky_clouds,1);

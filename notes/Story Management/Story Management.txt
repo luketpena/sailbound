@@ -1,0 +1,24 @@
+Stories are going to end up being incredibly complex actions that manage everything from time of day to
+mob spawns, to environment changes and events. This can also be changed entirely by the game mode being
+set to either Default or Infinite.
+
+A default day has a set track of times, events, and ends within a finite amount of time.
+Infinite mode loops the day cycle and randomly starts events.
+
+Here is a list of everything a story needs to be able to manage:
+	* Time of day (Set / progresses and loops)
+	- Mob variety
+	* Max danger level (Set / constantly increasing)
+	* Events / weather (Set / random)
+	- Ground spawning in and out / changing depth
+	* Bosses triggering (End of level / every few days, increasing in difficulty)
+	* Item availability (Set / decreases in frequency over time)
+	- Background elements
+	- Islands
+	- Environment changes
+	- Color palette
+	- Palette transitions
+	- Obstacles
+	- Music
+	
+* These items behave differently for default /vs/ infinite

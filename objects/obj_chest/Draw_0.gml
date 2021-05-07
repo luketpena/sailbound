@@ -1,5 +1,5 @@
 lighting_flash_draw();
-draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,0,global.c_front,image_alpha);
+draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,0,c_front,image_alpha);
 
 if (burst && glow_alpha>0) {
 	gpu_set_blendmode(bm_add);

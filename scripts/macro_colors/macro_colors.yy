@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Environment/Colors/Scripts.yy",
+    "name": "Macros",
+    "path": "folders/System/Constants/Macros.yy",
   },
   "resourceVersion": "1.0",
   "name": "macro_colors",

@@ -1,1 +1,1 @@
-draw_sprite_ext(sprite_index,0,x,y,1,1,image_angle,global.c_front,1);
+draw_sprite_ext(sprite_index,0,x,y,1,1,image_angle,c_front,1);

@@ -7,7 +7,7 @@ if (weather_fade>0) {
 			
 			for (var i=0; i<array_length(droplet_list); i++) {
 				var d = droplet_list[i];
-				draw_sprite_ext(d.sprite, 0, d.x-global.vx, d.y-global.vy, d.scale, 1, d.angle, global.c_front, d.alpha);
+				draw_sprite_ext(d.sprite, 0, d.x-global.vx, d.y-global.vy, d.scale, 1, d.angle, c_front, d.alpha);
 			}
 
 			

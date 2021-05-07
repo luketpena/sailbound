@@ -20,6 +20,6 @@ for (var i=0; i<cloud_num; i++) {
 }
 
 storm_progress = 0;
-transition = palette_transition(scr_palette_storm, 0);
+transition = null; //palette_transition(scr_palette_storm, 0);
 
 weather_set(Weather.rain);

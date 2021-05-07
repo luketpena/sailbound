@@ -8,7 +8,7 @@ alarm[0] = .15*room_speed;
 vspeed_set = 0;
 hspeed_set = 0;
 anim_length = 0;
-image_blend = global.c_front;
+image_blend = c_front;
 
 move_hspeed = 0;
 move_vspeed = 0;

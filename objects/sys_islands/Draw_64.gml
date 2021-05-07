@@ -1,1 +1,0 @@
-draw_text(32,32,array_length(island_list));

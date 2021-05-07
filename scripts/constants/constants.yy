@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "System Scripts",
-    "path": "folders/System/System Scripts.yy",
+    "name": "Constants",
+    "path": "folders/System/Constants.yy",
   },
   "resourceVersion": "1.0",
   "name": "constants",

@@ -1,25 +1,15 @@
-enum biomes {
-	ocean,
-	volcanic,
-	volcano,
-	arctic,
-	bayou,
-	skull,
-	tropical
-}
-
 function biome_get_palette(biome) {
 	switch(biome) {
-		case biomes.ocean:
-		case biomes.skull:
-		case biomes.tropical:
+		case Biome.Ocean:
+		case Biome.Skull:
+		case Biome.Tropical:
 			return scr_palette_ocean;
-		case biomes.arctic: 
+		case Biome.Arctic: 
 			return scr_palette_arctic;
-		case biomes.bayou: 
+		case Biome.Bayou: 
 			return scr_palette_arctic;
-		case biomes.volcanic:
-		case biomes.volcano:
+		case Biome.Volcanic:
+		case Biome.Volcano:
 			return scr_palette_volcanic;
 	}
 }
@@ -36,7 +26,7 @@ function map_apply_palettes() {
 function map_collect_empty(lane) {
 	var collection = [];
 	for (var i=0; i<map_length; i++) {
-		if (map_row[lane].biome=biomes.ocean) collection[array_length(collection)] = i;
+		if (map_row[lane].biome=Biome.Ocean) collection[array_length(collection)] = i;
 	}
 	return collection;
 }
@@ -83,7 +73,7 @@ function map_gen_skull() {
 		for (var j=0; j<map_length-offset; j++) {
 			chance = lerp(8,1,j/(map_length-offset));
 			if dice(chance) {
-				if (map_row[i][j+offset].biome=biomes.ocean) map_row[i][j+offset].biome=biomes.skull;
+				if (map_row[i][j+offset].biome=Biome.Ocean) map_row[i][j+offset].biome=Biome.Skull;
 			}
 		}
 	}
@@ -95,7 +85,7 @@ function map_gen_tropical() {
 		for (var j=0; j<length; j++) {
 			chance = lerp(1,9,j/length);
 			if dice(chance) {
-				if (map_row[i][j].biome=biomes.ocean) map_row[i][j].biome=biomes.tropical;
+				if (map_row[i][j].biome=Biome.Ocean) map_row[i][j].biome=Biome.Tropical;
 			}
 		}
 	}
@@ -105,19 +95,19 @@ function map_gen_bayou() {
 	for (var i=0; i<2; i++) {
 		for (var j=1; j<map_length-1; j++) {
 			var chance = 0;
-			if (map_row[i][j].biome=biomes.ocean) {
-				if (map_row[i][j-1].biome=biomes.skull) chance += 2;
-				if (map_row[i][j-1].biome=biomes.tropical) chance += 1;
+			if (map_row[i][j].biome=Biome.Ocean) {
+				if (map_row[i][j-1].biome=Biome.Skull) chance += 2;
+				if (map_row[i][j-1].biome=Biome.Tropical) chance += 1;
 				
-				if (map_row[i][j+1].biome=biomes.skull) chance += 2;
-				if (map_row[i][j+1].biome=biomes.tropical) chance += 1;
+				if (map_row[i][j+1].biome=Biome.Skull) chance += 2;
+				if (map_row[i][j+1].biome=Biome.Tropical) chance += 1;
 				
 			}
 			
 			if (chance>0) {
 				chance += floor( (j/map_length)*chapter_number );
 				if dice(lerp(8,1,chance/(4+chapter_number))) {
-					map_row[i][j].biome = biomes.bayou;	
+					map_row[i][j].biome = Biome.Bayou;	
 				}
 			}
 		}

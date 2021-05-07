@@ -1,7 +1,7 @@
 var yy = water_surface_get_y(.5);
 
-draw_sprite_ext(spr_fx_wave, 0, x, yy, -scale*.7, scale*.7, 0, global.c_water_surface_lt, image_alpha * .5);
-draw_sprite_ext(spr_fx_wave, 0, x, yy, scale, scale, 0, global.c_water_surface_lt, image_alpha);
+draw_sprite_ext(spr_fx_wave, 0, x, yy, -scale*.7, scale*.7, 0, c_water_highlight, image_alpha * .5);
+draw_sprite_ext(spr_fx_wave, 0, x, yy, scale, scale, 0, c_water_highlight, image_alpha);
 
 if (burst > 0) {
 	burst--;

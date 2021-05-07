@@ -1,4 +1,4 @@
-draw_sprite_ext(sprite_index,image_index,x,y,1,1,0,global.c_front,1);
+draw_sprite_ext(sprite_index,image_index,x,y,1,1,0,c_front,1);
 
 var cannon_index = 8*((lengthdir_x(1,aim_dir)*.5)+.5);
 

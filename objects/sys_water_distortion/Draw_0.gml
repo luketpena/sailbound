@@ -18,7 +18,7 @@ if (surface_exists(distort_surface) && distort_tex!=noone) {
 
 		shader_set(distort_shader);
 			texture_set_stage(u_distort_tex,distort_tex);
-			shader_set_uniform_f_array(u_blend_color,global.c_water_surface_vec3);
+			shader_set_uniform_f_array(u_blend_color,c_water_surface_vec3);
 			draw_surface_ext(application_surface,0,0,1,1,0,c_white,1);
 		shader_reset();
 

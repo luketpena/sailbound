@@ -5,7 +5,7 @@ switch(global.item_current) {
 		var ox = x+lengthdir_x(12,aim_dir);
 		var oy = item_y+lengthdir_y(12,aim_dir);
 	
-		create_effect(ox,oy,"l_items",spr_fx_cannon_poof,0,1,global.c_front,1,1,1,aim_dir);
+		create_effect(ox,oy,"l_items",spr_fx_cannon_poof,0,1,c_front,1,1,1,aim_dir);
 		light_create(ox,oy,spr_fx_flare_300,0,.5,.5,c_orange,1,-1,.1);
 	
 		var o = instance_create_layer(ox,oy,l_main,obj_item_cannon_cannonball);	

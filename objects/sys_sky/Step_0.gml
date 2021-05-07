@@ -14,7 +14,7 @@ var cloud_motion = (.2+.8*global.motion)
 for (var i=0; i<cloud_num; i++) {
 	var cloud = cloud_list[i];
 	
-	cloud.color = merge_color(global.c_sky_space, global.c_sky_clouds, cloud.merge_amount);
+	cloud.color = merge_color(c_sky_space, c_sky_clouds, cloud.merge_amount);
 	
 	var fCloud = cloud_list[cloud_fade_list[i]];
 	if (cloud_fade_point <= i) {

@@ -1,5 +1,5 @@
 shader_set(shd_fadeColor);
-shader_set_uniform_f_array(u_color,global.c_water_depth_vec3);
+shader_set_uniform_f_array(u_color,c_water_depth_vec3);
 shader_set_uniform_f(u_pwr,1);
 	for (var i=0; i<itemF_num; i++) {	
 		var itemF = itemF_array[i];

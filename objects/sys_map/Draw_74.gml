@@ -1,12 +1,12 @@
 function pick_color(biome) {
 	switch(biome) {
-		case biomes.ocean: return c_blue;	
-		case biomes.volcano: return c_red;	
-		case biomes.volcanic: return c_maroon;
-		case biomes.skull: return c_dkgray;
-		case biomes.tropical: return c_energy;
-		case biomes.arctic: return c_white;
-		case biomes.bayou: return c_dktoxic;
+		case Biome.Ocean: return c_blue;	
+		case Biome.Volcano: return c_red;	
+		case Biome.Volcanic: return c_maroon;
+		case Biome.Skull: return c_dkgray;
+		case Biome.Tropical: return c_energy;
+		case Biome.Arctic: return c_white;
+		case Biome.Bayou: return c_dktoxic;
 	}
 }
 

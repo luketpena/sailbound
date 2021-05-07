@@ -177,14 +177,14 @@ function draw_edge(_y, _sprite, _depth, _blend, _index) {
 		}
 		var img = _index*2;
 		draw_sprite_ext(_sprite,img,edge_x,_y,edge_face,1,0,_blend,1);
-		draw_sprite_ext(_sprite,img+1,edge_x,_y,edge_face,1,0,global.c_water_depth,1);
+		draw_sprite_ext(_sprite,img+1,edge_x,_y,edge_face,1,0,c_water_depth,1);
 	}
 }
 
 function draw_shadow(_x,_y,offset,rad) {
 	var xx = _x-offset;
 	var scale = max( 1-((top-_y)/128) , 0) * (rad/128);
-	draw_sprite_ext(spr_env_water_displace,0,xx,center_y,scale,scale,0,global.c_water_depth,.5);
+	draw_sprite_ext(spr_env_water_displace,0,xx,center_y,scale,scale,0,c_water_depth,.5);
 }
 
 function leaveStage() {
