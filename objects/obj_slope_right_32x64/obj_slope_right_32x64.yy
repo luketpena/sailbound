@@ -1,0 +1,43 @@
+{
+  "spriteId": {
+    "name": "spr_slope_right_32x64",
+    "path": "sprites/spr_slope_right_32x64/spr_slope_right_32x64.yy",
+  },
+  "solid": false,
+  "visible": true,
+  "spriteMaskId": null,
+  "persistent": false,
+  "parentObjectId": {
+    "name": "prnt_block",
+    "path": "objects/prnt_block/prnt_block.yy",
+  },
+  "physicsObject": true,
+  "physicsSensor": false,
+  "physicsShape": 2,
+  "physicsGroup": 0,
+  "physicsDensity": 0.0,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [
+    {"x":0.0,"y":64.0,},
+    {"x":32.0,"y":0.0,},
+    {"x":32.0,"y":64.0,},
+  ],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
+  "properties": [],
+  "overriddenProperties": [],
+  "parent": {
+    "name": "Objects",
+    "path": "folders/Town/Blocks/Left Slopes/Objects.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "obj_slope_right_32x64",
+  "tags": [],
+  "resourceType": "GMObject",
+}

@@ -1,0 +1,16 @@
+image_angle = random(360);
+
+targetAngle = 0;
+moveSpeed = 0;
+maxHeight = image_number - 1;
+
+instance_create_layer(x, y, "l_waterSurface", obj_map_boatTrail);
+
+part = part_type_create();
+part_type_sprite(part, spr_fx_boatWakeParticle, 0, 1, 1);
+part_type_life(part, 10, 20);
+part_type_color1(part, c_white);
+part_type_orientation(part, 0, 360, 0, 0, 0);
+part_type_alpha2(part, 1, 0);
+
+pe = noone;

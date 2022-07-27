@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Palettes",
-    "path": "folders/Environment/Colors/Palettes.yy",
+    "path": "folders/Sailing/Environment/Colors/Palettes.yy",
   },
   "resourceVersion": "1.0",
   "name": "palette_scripts",

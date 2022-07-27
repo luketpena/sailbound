@@ -1,5 +1,4 @@
 //---- Setup ----\\
-clock_set_points();
 alarm[0] = 15; //Generating wind
 
 //---- Sun, Moon, and Stars ----\\
@@ -35,5 +34,3 @@ cloud_fade_list = array_shuffle(cloud_fade_list);
 
 u_color1 = shader_get_uniform(shd_bwToColorGrad, "color1");
 u_color2 = shader_get_uniform(shd_bwToColorGrad, "color2");
-
-horizonPos = 0;

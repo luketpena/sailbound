@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Story",
-    "path": "folders/System/Story.yy",
+    "name": "Fuckit Buckit",
+    "path": "folders/Fuckit Buckit.yy",
   },
   "resourceVersion": "1.0",
   "name": "story_plots",

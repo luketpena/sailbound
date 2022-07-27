@@ -1,0 +1,1 @@
+alphaSet = image_alpha;

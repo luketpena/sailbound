@@ -1,5 +1,5 @@
 //---- Setup ----\\
-var time = global.clock_time;
+var time = clock.time;
 
 //---- Backdrop ----\\
 if (surface_exists(surf_sky)) {
@@ -8,7 +8,7 @@ if (surface_exists(surf_sky)) {
 		gpu_set_blendmode(bm_add);
 		
 			draw_sprite_ext(spr_env_sky_fade, 0, 0, global.vh, global.vw, 1, 0, c_white, .8);
-			var flare_sunset = fadeRange(global.clock_time, 20, 40, clock_point_sunfall, clock_point_night, 0, .5);
+			var flare_sunset = fadeRange(clock.time, 20, 40, clock.point.sunfall, clock.point.night, 0, .5);
 			draw_sprite_ext(spr_fx_flare_300, 0, global.vw*.1, global.vh, 2, 1, 0, c_white, flare_sunset);			
 			
 		gpu_set_blendmode(bm_normal);
@@ -29,23 +29,25 @@ if (celestial_fade>0) {
 	var moon_angle;
 
 	//>> Setting the sun's position
-	
-	if (time>=clock_point_sunrise) {
-		sun_angle = lerp(0, 90, (time-clock_point_sunrise)/(360-clock_point_sunrise));
-	} else if (time<clock_point_nightfall) {
-		sun_angle = lerp(90, 180, time/clock_point_nightfall);
+	var sunriseDistance = (1 - clock.point.sunrise);
+	var totalSunTravelDistance = sunriseDistance + clock.point.nightfall;
+	var sunriseAngle = 180 * (sunriseDistance / totalSunTravelDistance);
+	if (time >= clock.point.sunrise) {
+		sun_angle = lerp(0, sunriseAngle, 1 - ((1 - time) / sunriseDistance));
+	} else if (time<clock.point.nightfall) {
+		sun_angle = lerp(sunriseAngle, 180, time / clock.point.nightfall);
 	} else sun_angle = noone;
 
 	//>> Setting the moon's position
-	var moonPoint = clock_point_morning-13;
-	if (time>=clock_point_night && time<=moonPoint) {
-		moon_angle = lerp(0, 180, (time-clock_point_night)/(moonPoint-clock_point_night));	
+	var moonFadePoint = clock.point.sunrise + .001;
+	if (time >= clock.point.night || time <= moonFadePoint) {
+		moon_angle = lerp(0, 180, (time - clock.point.night) / (moonFadePoint - clock.point.night));	
 	} else moon_angle = noone;
 
 	//>> Drawing the stars
 	if (stars_alpha>0) {
 		gpu_set_blendmode(bm_add);
-			draw_sprite_tiled_ext(spr_env_sky_stars, 0, 0, 0, 1, 1, c_white, celestial_fade*stars_alpha);	
+			draw_sprite_tiled_ext(spr_env_sky_stars, 0, 0, 0, 1, 1, c_white, celestial_fade * stars_alpha);	
 		gpu_set_blendmode(bm_normal);
 	}
 
@@ -64,6 +66,7 @@ if (celestial_fade>0) {
 			orb_y+lengthdir_y(orb_h, moon_angle), 
 			1, 1, 0, c_moon, celestial_fade);
 	}
+	
 }
 
 

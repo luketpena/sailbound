@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Storm",
-    "path": "folders/Events/Storm.yy",
+    "path": "folders/Sailing/Events/Storm.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_storm",

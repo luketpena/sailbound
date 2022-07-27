@@ -1,0 +1,1 @@
+draw_sprite_ext(spr_fx_particle_swirl, image_index, x, y, size * flip, size, image_angle, c_front, 1);

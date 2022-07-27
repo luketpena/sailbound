@@ -1,5 +1,9 @@
 fixture_create_circle(id,8,.5,.1,.1,.1,.2,false,false);
-boat_init_stats();
+boat_init_stats(
+	hullStats_raft(),
+	sailStats_raft(),
+);
+
 boat_init_pieces();
 boat_init_waterpoint();
 boat_init_controls();
@@ -18,3 +22,4 @@ pe_water_line = part_emitter_create(global.ps_fx_above);
 
 global.boat_x = x;
 global.boat_y = y;
+

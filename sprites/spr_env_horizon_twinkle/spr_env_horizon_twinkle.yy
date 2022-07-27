@@ -25,10 +25,10 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"b67ee723-a944-4382-9176-8346a33bd3a7","path":"sprites/spr_env_horizon_twinkle/spr_env_horizon_twinkle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b67ee723-a944-4382-9176-8346a33bd3a7","path":"sprites/spr_env_horizon_twinkle/spr_env_horizon_twinkle.yy",},"LayerId":{"name":"33e8d2cc-b3ac-46b5-aa70-991a0c72f854","path":"sprites/spr_env_horizon_twinkle/spr_env_horizon_twinkle.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"b67ee723-a944-4382-9176-8346a33bd3a7","path":"sprites/spr_env_horizon_twinkle/spr_env_horizon_twinkle.yy",},"LayerId":{"name":"33e8d2cc-b3ac-46b5-aa70-991a0c72f854","path":"sprites/spr_env_horizon_twinkle/spr_env_horizon_twinkle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_env_horizon_twinkle","path":"sprites/spr_env_horizon_twinkle/spr_env_horizon_twinkle.yy",},"resourceVersion":"1.0","name":"b67ee723-a944-4382-9176-8346a33bd3a7","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"db63cffd-c097-4d51-96ba-cc21d31d4999","path":"sprites/spr_env_horizon_twinkle/spr_env_horizon_twinkle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"db63cffd-c097-4d51-96ba-cc21d31d4999","path":"sprites/spr_env_horizon_twinkle/spr_env_horizon_twinkle.yy",},"LayerId":{"name":"33e8d2cc-b3ac-46b5-aa70-991a0c72f854","path":"sprites/spr_env_horizon_twinkle/spr_env_horizon_twinkle.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"db63cffd-c097-4d51-96ba-cc21d31d4999","path":"sprites/spr_env_horizon_twinkle/spr_env_horizon_twinkle.yy",},"LayerId":{"name":"33e8d2cc-b3ac-46b5-aa70-991a0c72f854","path":"sprites/spr_env_horizon_twinkle/spr_env_horizon_twinkle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_env_horizon_twinkle","path":"sprites/spr_env_horizon_twinkle/spr_env_horizon_twinkle.yy",},"resourceVersion":"1.0","name":"db63cffd-c097-4d51-96ba-cc21d31d4999","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -46,7 +46,7 @@
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"665d4fbe-92ee-4092-b449-255d61f1207b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b67ee723-a944-4382-9176-8346a33bd3a7","path":"sprites/spr_env_horizon_twinkle/spr_env_horizon_twinkle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"95677792-1724-4556-9deb-b12fcaaa4224","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"db63cffd-c097-4d51-96ba-cc21d31d4999","path":"sprites/spr_env_horizon_twinkle/spr_env_horizon_twinkle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_env_horizon_twinkle","path":"sprites/spr_env_horizon_twinkle/spr_env_horizon_twinkle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",
@@ -71,9 +71,10 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"33e8d2cc-b3ac-46b5-aa70-991a0c72f854","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Horizon",
-    "path": "folders/Environment/Background/Horizon.yy",
+    "path": "folders/Sailing/Environment/Background/Horizon.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_env_horizon_twinkle",

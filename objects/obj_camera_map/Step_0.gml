@@ -1,14 +1,27 @@
-var mouse_pos = mouse_x-global.vx;
+global.vr = global.vx+global.vw;
+global.vb = global.vy+global.vh;
+global.midx = global.vx+global.vw/2;
+global.midy = global.vy+global.vh/2;
 
-if (mouse_pos<64) {
-	scroll_tilt = -(1-(mouse_pos/64));
-} else if (mouse_pos>global.vw-64) {
-	scroll_tilt = (mouse_pos-(global.vw-64))/64;
-} else {
-	scroll_tilt = 0;
+global.camAngle = camera_get_view_angle(view_camera[0]) + 90;
+
+var axisH = gamepad_axis_value(0, gp_axislh);
+var axisV = gamepad_axis_value(0, gp_axislv);
+var axisRH = gamepad_axis_value(0, gp_axisrh);
+
+global.vx += axisH * 2;
+global.vy += axisV * 2;
+
+if (instance_exists(obj_map_playerIcon)) {
+	camera_set_view_pos(view_camera[0], obj_map_playerIcon.x - global.hvw, obj_map_playerIcon.y - global.hvh);
 }
 
-var scroll_speed_set = scroll_speed*scroll_tilt;
-scroll_speed_current += (scroll_speed_set-scroll_speed_current)*.1;	
+if (axisRH > 0) {
+	if (cameraAngleSpeed < cameraAngleSpeedMax) cameraAngleSpeed += .1 * axisRH;	
+} else if (axisRH < 0) {
+	if (cameraAngleSpeed > -cameraAngleSpeedMax) cameraAngleSpeed += .1 * axisRH;	
+} else {
+	cameraAngleSpeed *= .96;	
+}
 
-camera_set_view_pos(view_camera[0],clamp(global.vx+scroll_speed_current,0,room_width),scroll_y);
+camera_set_view_angle(view_camera[0], camera_get_view_angle(view_camera[0]) + cameraAngleSpeed);	

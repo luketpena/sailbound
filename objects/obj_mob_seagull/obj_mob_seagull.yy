@@ -1,0 +1,52 @@
+{
+  "spriteId": {
+    "name": "spr_mob_seagull_fly",
+    "path": "sprites/spr_mob_seagull_fly/spr_mob_seagull_fly.yy",
+  },
+  "solid": false,
+  "visible": false,
+  "spriteMaskId": {
+    "name": "spr_hitbox_16x16",
+    "path": "sprites/spr_hitbox_16x16/spr_hitbox_16x16.yy",
+  },
+  "persistent": false,
+  "parentObjectId": {
+    "name": "prnt_mob",
+    "path": "objects/prnt_mob/prnt_mob.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": true,
+  "physicsShape": 1,
+  "physicsGroup": 1,
+  "physicsDensity": 0.0,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [
+    {"x":8.0,"y":12.0,},
+    {"x":24.0,"y":12.0,},
+    {"x":24.0,"y":32.0,},
+    {"x":8.0,"y":32.0,},
+  ],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":12,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
+  "properties": [],
+  "overriddenProperties": [],
+  "parent": {
+    "name": "Seagull",
+    "path": "folders/Sailing/Mobs/Seagull.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "obj_mob_seagull",
+  "tags": [
+    "mob",
+  ],
+  "resourceType": "GMObject",
+}

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_amb_fish_2",
-    "path": "sprites/spr_amb_fish_2/spr_amb_fish_2.yy",
+    "name": "spr_amb_blueFish",
+    "path": "sprites/spr_amb_blueFish/spr_amb_blueFish.yy",
   },
   "solid": false,
   "visible": false,
@@ -21,17 +21,17 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_amb_fish_school","path":"objects/obj_amb_fish_school/obj_amb_fish_school.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_amb_fish_school","path":"objects/obj_amb_fish_school/obj_amb_fish_school.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_amb_fish_school","path":"objects/obj_amb_fish_school/obj_amb_fish_school.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":12,"collisionObjectId":null,"parent":{"name":"obj_amb_fish_school","path":"objects/obj_amb_fish_school/obj_amb_fish_school.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":70,"eventType":9,"collisionObjectId":null,"parent":{"name":"obj_amb_fish_school","path":"objects/obj_amb_fish_school/obj_amb_fish_school.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":12,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":70,"eventType":9,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
     "name": "Ambient Fish",
-    "path": "folders/Environment/Ambient Fish.yy",
+    "path": "folders/Sailing/Environment/Ambient Fish.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_amb_fish_school",

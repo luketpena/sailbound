@@ -25,7 +25,7 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"7c688058-2a8d-4491-a973-b61167af6fdd","path":"sprites/spr_env_water_displace/spr_env_water_displace.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7c688058-2a8d-4491-a973-b61167af6fdd","path":"sprites/spr_env_water_displace/spr_env_water_displace.yy",},"LayerId":{"name":"510fbe9c-3ea2-479b-994f-db25189992a1","path":"sprites/spr_env_water_displace/spr_env_water_displace.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"7c688058-2a8d-4491-a973-b61167af6fdd","path":"sprites/spr_env_water_displace/spr_env_water_displace.yy",},"LayerId":{"name":"510fbe9c-3ea2-479b-994f-db25189992a1","path":"sprites/spr_env_water_displace/spr_env_water_displace.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_env_water_displace","path":"sprites/spr_env_water_displace/spr_env_water_displace.yy",},"resourceVersion":"1.0","name":"7c688058-2a8d-4491-a973-b61167af6fdd","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -42,7 +42,7 @@
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"72afd1c3-1933-4a2b-b1d8-274f340b96cf","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7c688058-2a8d-4491-a973-b61167af6fdd","path":"sprites/spr_env_water_displace/spr_env_water_displace.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_env_water_displace","path":"sprites/spr_env_water_displace/spr_env_water_displace.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",
@@ -67,9 +67,10 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"510fbe9c-3ea2-479b-994f-db25189992a1","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Floater",
-    "path": "folders/Environment/Water/Effects/Floater.yy",
+    "path": "folders/Sailing/Environment/Water/Effects/Floater.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_env_water_displace",

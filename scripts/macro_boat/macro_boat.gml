@@ -1,0 +1,1 @@
+#macro boat obj_boat_front

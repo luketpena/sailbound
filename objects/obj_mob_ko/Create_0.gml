@@ -17,5 +17,15 @@ sprite_ko = noone;
 flip = 0;
 
 bounce_lerp = 0;
+poofRadius = 0;
 
 part_particles_create(global.ps_fx_above,x,y,global.pt_burst_ko,8);
+
+function init(_sprite_hit, _sprite_ko, _hspeed, _vspeed, _flip, _poofRadius) {
+	sprite_index = _sprite_hit;
+	flip = _flip;
+	sprite_ko = _sprite_ko;
+	hspeed_set = _hspeed;
+	vspeed_set = _vspeed;
+	poofRadius = _poofRadius
+}

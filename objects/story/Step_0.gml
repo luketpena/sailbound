@@ -1,39 +1,59 @@
 
-
 if (active) {
 	var _currentChapter = getCurrentChapter();
 	
 	if (gameMode = GameMode.Infinite) {
-		progress = (progress + 1) % totalDuration;
+		
 		// Resets the chapter number manually when looped
-		if (progress < chapters[1].startTime && chapterCurrentIndex != 0) {
+		if (progress < config.chapters[1].startTime && chapterCurrentIndex != 0) {
 			chapterCurrentIndex = 0;
-			script_execute(getLastChapter().endMethod, chapterCount-1);
-			script_execute(getFirstChapter().startMethod, 0);
 		}
-	} else {
-		if (progress < totalDuration) progress++
-		else if (!storyEnd) {
-			// All methods for ending the chapter go here
-			storyEnd = true;
-			var _lastChapter = getLastChapter();
-			script_execute(_lastChapter.endMethod, chapterCount-1);
-			show_debug_message("Level completed!");
+	} 
+	// Getting the chapterProgress
+	if (mobActive) {
+		for (var i=0; i<array_length(mobs); i++) {
+			var mob = mobs[i];
+			// Mobs must be ready and there must be room in the danger cap
+			if (mob.cooldown = 0) {
+				if (global.danger < maxDanger - mob.danger) {
+					var roll = dice(mob.chance);
+					if (roll) {
+						mob.spawnScript();
+						global.danger += mob.danger;
+						mob.cooldown = round(random_range(mob.cooldownMin, mob.cooldownMax) * room_speed);
+					}
+				}
+			} else {
+				mob.cooldown--;	
+			}
 		}
 	}
 	
-	// Getting the chapterProgress
-	chapterProgress = (progress - _currentChapter.startTime) / _currentChapter.duration;
-
+	if (chest.active) {
+		if (chest.timer > 0) chest.timer-- else {
+			var diceIndex = diceTiers(chest.diceSides);
+			var chestType = chest.list[diceIndex].type;
+			spawn_chest(chestType);
+			chest.timer = (irandom_range(chest.minTimer, chest.maxTimer) + chest.list[diceIndex].timerOffset) * room_speed;
+		}
+	}
+		
 	if (chapterCurrentIndex < chapterCount-1) {
 		var _nextChapter = getNextChapter();
+		// Trigger when a new chapter starts
 		if (progress >= _nextChapter.startTime) {
-			script_execute(_currentChapter.endMethod, chapterCurrentIndex);
-			script_execute(_nextChapter.startMethod, chapterCurrentIndex+1);
-			
-			sys_islands.updateIslandSettings(_nextChapter);
-
+			story_chapterStart(_currentChapter, _nextChapter);
 			chapterCurrentIndex++;
 		}
 	}
+	
+	if (ring.active) {
+		if (ring.timer > 0) ring.timer-- else {
+			ring.timer = random_range(ring.minTimer, ring.maxTimer) * room_speed;
+			spawn_ringGroup();
+		}
+	}
+	
+	story_increaseProgress();
 }
+

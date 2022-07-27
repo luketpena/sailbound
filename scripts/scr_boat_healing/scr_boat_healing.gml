@@ -11,5 +11,5 @@ function boat_heal(health) {
 			obj_boat_front.y_center_draw+lengthdir_y(dis,rot),
 			global.pt_hearts,1);
 	}
-	scr_health_increment(health)
+	health_increment(health)
 }

@@ -12,7 +12,7 @@ instance_create_layer(0, 0, l_system, sys_textbox);
 instance_create_layer(0, 0, l_system, touch);
 instance_create_layer(0, 0, l_system, controls);
 instance_create_layer(0, 0, l_main, sys_drawing);
-instance_create_layer(0, 0, l_main, story);
+
 
 //----< Environment >----\\
 instance_create_layer(0, 0, l_system, colors);
@@ -20,7 +20,7 @@ instance_create_layer(0, 0, l_system, sys_glow);
 instance_create_layer(0, 0, l_system, sys_horizon);
 instance_create_layer(0, 0, l_system, sys_lighting);
 instance_create_layer(0, 0, l_system, sys_weather);
-instance_create_layer(0, 0, l_system, sys_islands);
+instance_create_layer(0, 0, l_system, islands);
 
 //----< Water >----\\
 instance_create_layer(0, 0, l_system, sys_water);
@@ -34,8 +34,8 @@ instance_create_layer(0, 0, l_system, sys_water_distortion);
 instance_create_layer(0, 0, l_system, obj_camera_water);
 instance_create_layer(room_width/2, global.water_y, l_main, obj_boat_front);
 instance_create_layer(room_width/2, global.water_y, l_main, obj_petra);
-
-clock_start();
+instance_create_layer(0, 0, l_main, story);
+instance_create_layer(0, 0, l_main, obj_pause);
 
 //>> Loading
-knapsack.load();
+//knapsack.load();

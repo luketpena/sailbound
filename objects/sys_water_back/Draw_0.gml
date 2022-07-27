@@ -2,7 +2,7 @@ shader_set(shd_maxAlpha);
 var texture = global.water_texture;
 var water_point_y = sys_water.water_point_y;
 
-if (texture!=noone) {
+if (texture != noone) {
 	//>> Top-left
 	draw_primitive_begin_texture(pr_trianglestrip, texture);
 		for (var i=0; i<=water_halfNum; i++) {	

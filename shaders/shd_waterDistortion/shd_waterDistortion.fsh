@@ -18,5 +18,4 @@ void main() {
 	
 	gl_FragColor = v_vColour * texture2D (gm_BaseTexture, v_vTexcoord + distort);
 	gl_FragColor.rgb = mix(gl_FragColor.rgb, blend_color, .2);
-	//_FragColor.rgb = mix(vec3(distort/max(strength,0.0001),0.0), gl_FragColor.rgb, .9);
 }

@@ -7,7 +7,9 @@ if surface_exists(surf_gui) {
 			draw_clear_alpha(c_white,0);
 			
 			draw_set_color(c_red);
-			draw_text(32, global.hvh, obj_boat_front.ctrl_jumpDive_inRange);
+			if instance_exists(obj_whale) {
+				draw_text(32, global.hvh, obj_whale.y - global.water_y);
+			}
 		
 			
 			var tiltPos = new Posx(global.hvw, global.vh-16);
@@ -31,6 +33,11 @@ if surface_exists(surf_gui) {
 			hud_draw_health(8,8,4);
 			hud_draw_inventory(48,global.vh-64);
 			hud_draw_item(global.vw -96,global.vh-32);
+			hud_draw_rings(16, global.hvh);
+			
+			if (global.combo > 1) {
+				draw_text(16, global.hvh + 32, "COMBO: " + string(global.combo));
+			}
 
 		
 		surface_reset_target();

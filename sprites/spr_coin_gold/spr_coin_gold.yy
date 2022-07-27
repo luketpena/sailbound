@@ -25,37 +25,37 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"828f05cc-cb62-496c-8ea9-e012d79e8190","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"828f05cc-cb62-496c-8ea9-e012d79e8190","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":{"name":"adabeaba-c560-4629-9e29-8e788a0056d5","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"828f05cc-cb62-496c-8ea9-e012d79e8190","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":{"name":"adabeaba-c560-4629-9e29-8e788a0056d5","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_coin_gold","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":"828f05cc-cb62-496c-8ea9-e012d79e8190","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"609b3edb-25ca-4d48-b640-762b574a5e1b","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"609b3edb-25ca-4d48-b640-762b574a5e1b","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":{"name":"adabeaba-c560-4629-9e29-8e788a0056d5","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"609b3edb-25ca-4d48-b640-762b574a5e1b","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":{"name":"adabeaba-c560-4629-9e29-8e788a0056d5","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_coin_gold","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":"609b3edb-25ca-4d48-b640-762b574a5e1b","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"28fd988a-14a2-4972-8aed-afb1641168de","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"28fd988a-14a2-4972-8aed-afb1641168de","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":{"name":"adabeaba-c560-4629-9e29-8e788a0056d5","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"28fd988a-14a2-4972-8aed-afb1641168de","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":{"name":"adabeaba-c560-4629-9e29-8e788a0056d5","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_coin_gold","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":"28fd988a-14a2-4972-8aed-afb1641168de","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"de4d1cd1-4e04-481e-abab-69331cd2a321","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"de4d1cd1-4e04-481e-abab-69331cd2a321","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":{"name":"adabeaba-c560-4629-9e29-8e788a0056d5","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"de4d1cd1-4e04-481e-abab-69331cd2a321","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":{"name":"adabeaba-c560-4629-9e29-8e788a0056d5","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_coin_gold","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":"de4d1cd1-4e04-481e-abab-69331cd2a321","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"7a7d8e68-061e-425a-89e5-50f4944301ec","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7a7d8e68-061e-425a-89e5-50f4944301ec","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":{"name":"adabeaba-c560-4629-9e29-8e788a0056d5","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"7a7d8e68-061e-425a-89e5-50f4944301ec","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":{"name":"adabeaba-c560-4629-9e29-8e788a0056d5","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_coin_gold","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":"7a7d8e68-061e-425a-89e5-50f4944301ec","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"4c9b8f65-5607-49e1-ac83-aba8408edcba","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4c9b8f65-5607-49e1-ac83-aba8408edcba","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":{"name":"adabeaba-c560-4629-9e29-8e788a0056d5","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"4c9b8f65-5607-49e1-ac83-aba8408edcba","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":{"name":"adabeaba-c560-4629-9e29-8e788a0056d5","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_coin_gold","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":"4c9b8f65-5607-49e1-ac83-aba8408edcba","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"a1959515-1090-4f16-850c-93865bd736de","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a1959515-1090-4f16-850c-93865bd736de","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":{"name":"adabeaba-c560-4629-9e29-8e788a0056d5","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"a1959515-1090-4f16-850c-93865bd736de","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":{"name":"adabeaba-c560-4629-9e29-8e788a0056d5","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_coin_gold","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":"a1959515-1090-4f16-850c-93865bd736de","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"a13c7ef1-2d41-4ed0-a4e2-839bb79e1fd4","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a13c7ef1-2d41-4ed0-a4e2-839bb79e1fd4","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":{"name":"adabeaba-c560-4629-9e29-8e788a0056d5","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"a13c7ef1-2d41-4ed0-a4e2-839bb79e1fd4","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":{"name":"adabeaba-c560-4629-9e29-8e788a0056d5","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_coin_gold","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":"a13c7ef1-2d41-4ed0-a4e2-839bb79e1fd4","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"6a1b444f-0a78-48ee-b123-bb288b479fe0","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6a1b444f-0a78-48ee-b123-bb288b479fe0","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":{"name":"adabeaba-c560-4629-9e29-8e788a0056d5","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"6a1b444f-0a78-48ee-b123-bb288b479fe0","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":{"name":"adabeaba-c560-4629-9e29-8e788a0056d5","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_coin_gold","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":"6a1b444f-0a78-48ee-b123-bb288b479fe0","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"2ecf1e22-f052-4398-a498-dcec96abca99","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2ecf1e22-f052-4398-a498-dcec96abca99","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":{"name":"adabeaba-c560-4629-9e29-8e788a0056d5","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"2ecf1e22-f052-4398-a498-dcec96abca99","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":{"name":"adabeaba-c560-4629-9e29-8e788a0056d5","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_coin_gold","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":"2ecf1e22-f052-4398-a498-dcec96abca99","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"06744dc1-06fe-4c12-afb5-d2e1fb51966e","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"06744dc1-06fe-4c12-afb5-d2e1fb51966e","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":{"name":"adabeaba-c560-4629-9e29-8e788a0056d5","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"06744dc1-06fe-4c12-afb5-d2e1fb51966e","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"LayerId":{"name":"adabeaba-c560-4629-9e29-8e788a0056d5","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_coin_gold","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","name":"06744dc1-06fe-4c12-afb5-d2e1fb51966e","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -82,7 +82,7 @@
             {"id":"7339acfd-cfe9-47ae-87c7-0ff40f8dfd0e","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6a1b444f-0a78-48ee-b123-bb288b479fe0","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"bd943e8e-469a-4078-bfa6-c891efaa62e3","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2ecf1e22-f052-4398-a498-dcec96abca99","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"2a25ce39-efb9-460d-973d-b27a6121efa3","Key":10.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"06744dc1-06fe-4c12-afb5-d2e1fb51966e","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -99,7 +99,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_coin_gold","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",
@@ -107,9 +107,10 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"adabeaba-c560-4629-9e29-8e788a0056d5","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Sprites",
-    "path": "folders/Pick-ups/Coins/Sprites.yy",
+    "path": "folders/Sailing/Pick-ups/Coins/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_coin_gold",

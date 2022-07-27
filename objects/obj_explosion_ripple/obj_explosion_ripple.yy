@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Surface",
-    "path": "folders/Environment/Water/Effects/Surface.yy",
+    "path": "folders/Sailing/Environment/Water/Effects/Surface.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_explosion_ripple",

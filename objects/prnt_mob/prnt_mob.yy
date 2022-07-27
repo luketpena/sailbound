@@ -22,7 +22,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Mobs",
-    "path": "folders/Mobs.yy",
+    "path": "folders/Sailing/Mobs.yy",
   },
   "resourceVersion": "1.0",
   "name": "prnt_mob",

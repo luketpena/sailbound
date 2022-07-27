@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Story",
-    "path": "folders/System/Story.yy",
+    "path": "folders/Sailing/Story.yy",
   },
   "resourceVersion": "1.0",
   "name": "story_methods",

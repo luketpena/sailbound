@@ -1,7 +1,5 @@
 ///@description Activate
 
-lighting_flash_step();
-
 active = true;
 move_vspeed = vspeed_set;
 move_hspeed = hspeed_set;

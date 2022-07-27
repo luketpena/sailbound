@@ -5,8 +5,8 @@ switch(celestial_active) {
 }
 
 
-if (global.clock_time>clock_point_nightfall-5 && global.clock_time<clock_point_morning+5) {
-	stars_alpha = fadeRange(global.clock_time,20,20,clock_point_night,clock_point_sunrise-12,0,1);
+if (clock.time>ClockPoint.Nightfall-5 && clock.time<ClockPoint.Morning+5) {
+	stars_alpha = fadeRange(clock.time,20,20,ClockPoint.Night,ClockPoint.Sunrise-12,0,1);
 }
 
 //---- Clouds ----\\

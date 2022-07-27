@@ -25,7 +25,7 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"aca51f88-139f-4137-ae8f-e4058e4fe42a","path":"sprites/spr_env_sky_fade/spr_env_sky_fade.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"aca51f88-139f-4137-ae8f-e4058e4fe42a","path":"sprites/spr_env_sky_fade/spr_env_sky_fade.yy",},"LayerId":{"name":"fa25d84a-9a30-43a1-b8e2-62dbac9834ec","path":"sprites/spr_env_sky_fade/spr_env_sky_fade.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"aca51f88-139f-4137-ae8f-e4058e4fe42a","path":"sprites/spr_env_sky_fade/spr_env_sky_fade.yy",},"LayerId":{"name":"fa25d84a-9a30-43a1-b8e2-62dbac9834ec","path":"sprites/spr_env_sky_fade/spr_env_sky_fade.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_env_sky_fade","path":"sprites/spr_env_sky_fade/spr_env_sky_fade.yy",},"resourceVersion":"1.0","name":"aca51f88-139f-4137-ae8f-e4058e4fe42a","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -42,7 +42,7 @@
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"b50a55a2-eece-4e6c-815d-8ace626cc3bf","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"aca51f88-139f-4137-ae8f-e4058e4fe42a","path":"sprites/spr_env_sky_fade/spr_env_sky_fade.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_env_sky_fade","path":"sprites/spr_env_sky_fade/spr_env_sky_fade.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",
@@ -67,9 +67,10 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"fa25d84a-9a30-43a1-b8e2-62dbac9834ec","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Sprites",
-    "path": "folders/Environment/Background/Sky/Sprites.yy",
+    "path": "folders/Sailing/Environment/Background/Sky/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_env_sky_fade",

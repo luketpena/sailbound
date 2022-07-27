@@ -25,7 +25,7 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"312c3cad-8929-44ea-ab94-687ed59698e7","path":"sprites/spr_item_cannonball/spr_item_cannonball.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"312c3cad-8929-44ea-ab94-687ed59698e7","path":"sprites/spr_item_cannonball/spr_item_cannonball.yy",},"LayerId":{"name":"9f378192-4845-4a3d-a9b4-ce2faa64f8e5","path":"sprites/spr_item_cannonball/spr_item_cannonball.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"312c3cad-8929-44ea-ab94-687ed59698e7","path":"sprites/spr_item_cannonball/spr_item_cannonball.yy",},"LayerId":{"name":"9f378192-4845-4a3d-a9b4-ce2faa64f8e5","path":"sprites/spr_item_cannonball/spr_item_cannonball.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_item_cannonball","path":"sprites/spr_item_cannonball/spr_item_cannonball.yy",},"resourceVersion":"1.0","name":"312c3cad-8929-44ea-ab94-687ed59698e7","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -42,7 +42,7 @@
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"ef7f4576-feb2-40ed-93a9-ac1b722e66d1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"312c3cad-8929-44ea-ab94-687ed59698e7","path":"sprites/spr_item_cannonball/spr_item_cannonball.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_item_cannonball","path":"sprites/spr_item_cannonball/spr_item_cannonball.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",
@@ -67,9 +67,10 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9f378192-4845-4a3d-a9b4-ce2faa64f8e5","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Cannon",
-    "path": "folders/Items/Cannon.yy",
+    "path": "folders/Sailing/Pick-ups/Items/Cannon.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_item_cannonball",

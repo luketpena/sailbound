@@ -1,0 +1,1 @@
+//draw_sprite_ext(sprite_index, 0, x, y, 1, 1, image_angle, bounceReady ? c_red : c_white, 1);

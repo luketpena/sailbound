@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Islands",
-    "path": "folders/Environment/Islands.yy",
+    "path": "folders/Sailing/Environment/Islands.yy",
   },
   "resourceVersion": "1.0",
   "name": "scr_islands",

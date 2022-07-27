@@ -5,9 +5,9 @@ lighting_flash_init();
 
 image_speed = 0;
 
-chest_type = -1; //Holds the enum type for the chest
-open = false; //Triggers animation
-burst = false; //Creates the coins
+type = -1; //Holds the enum type for the chest
+opened = false; //Triggers animation
+bursting = false; //Creates the coins
 exploding = false;
 
 coins = 0; //How many coins will burst out
@@ -27,11 +27,19 @@ burst_anim = 0;
 explode_wait = .075*room_speed
 explode_dir = 0;
 
+function init() {
+	switch(type) {
+		case ChestType.Gold: sprite_index = spr_chest_gold; break;	
+		case ChestType.Silver: sprite_index = spr_chest_silver; break;	
+		case ChestType.Bronze: sprite_index = spr_chest_bronze; break;	
+	}	
+}
+
 function setCoinAmount() {
-	switch(chest_type) {
-		case chests.gold: coins = 20; break;
-		case chests.silver: coins = 10; break;
-		case chests.bronze: coins = 5; break;
+	switch(type) {
+		case ChestType.Gold: coins = 20; break;
+		case ChestType.Silver: coins = 10; break;
+		case ChestType.Bronze: coins = 5; break;
 	}
 }
 
@@ -54,4 +62,37 @@ function explode() {
 	}
 	
 	instance_destroy();
+}
+
+function open() {
+	opened = true;
+	image_speed = 1;
+	phy_speed_y = 1;
+	impactLock = ImpactLock.Up;
+	flash = .5;
+
+	switch(type) {
+		case ChestType.Bronze:
+			glow_width = 9;
+			glow_x = -4;
+			break;
+		case ChestType.Silver:
+			glow_width = 13;
+			glow_x = -6;
+			break;
+		case ChestType.Gold:
+			glow_width = 17;
+			glow_x = -8;
+			break;
+	}	
+}
+
+function burst() {
+	bursting = true;
+	setCoinAmount();
+	behave_float_active = false;
+	flash = 1;
+	phy_speed_x *= .5;
+	part_particles_create(global.ps_fx_above,x,y,global.pt_burst_chest,16);
+	light = light_create(x,y,spr_fx_flare_300,0,1,1,c_gold,1,0,.025);	
 }

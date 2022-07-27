@@ -1,5 +1,4 @@
 water_num = sys_water.water_num;
-water_point_y = sys_water.water_point_y;
 
 water_point_x = [];
 water_draw_x_top = [];

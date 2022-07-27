@@ -1,5 +1,5 @@
 image_speed = 0;
-mySpeed = sys_islands.island_speed_max; //Get the fast speed
+mySpeed = islands.island_speed_max; //Get the fast speed
 
 state = "enter";
 

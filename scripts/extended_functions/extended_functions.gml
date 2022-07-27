@@ -69,7 +69,7 @@ function draw_tag(tag) {
 }
 
 function drawBegin_tag(tag) {
-	var collection = tag_get_asset_ids(tag,asset_object);
+	var collection = tag_get_asset_ids(tag, asset_object);
 	for (var i=0; i<array_length(collection); i++) {
 		with(collection[i]) event_perform(ev_draw_begin,0);
 	}
@@ -77,7 +77,7 @@ function drawBegin_tag(tag) {
 
 //Triggers the draw for an object
 function draw_object(object) {
-	with(object) event_perform(ev_draw,0);	
+	with(object) event_perform(ev_draw, 0);	
 }
 
 // Only trigger if the surface exists
@@ -88,4 +88,26 @@ function free_surface(surf) {
 // Allows you to pick between two values without boilerplate code
 function compare(pickFirst, value1, value2) {
 	if (pickFirst) return value1 else return value2;	
+}
+
+// Gives you the value to iterate between two points over a duration
+function getIncrement(durationInSeconds, targetValue = 1) {
+	return targetValue / (durationInSeconds * room_speed);
+}
+
+// Simplifies the long ass name the original method has.
+function hasProperty(struct, propertyName) {
+	return variable_struct_exists(struct, propertyName);	
+}
+
+function safeDestroy(object = null) {
+	if (object = null) instance_destroy() else {
+		if instance_exists(object) instance_destroy(object);
+	}
+}
+
+// Fully stops all physics motion
+function phy_speed_stop() {
+	phy_speed_x = 0;
+	phy_speed_y = 0;
 }

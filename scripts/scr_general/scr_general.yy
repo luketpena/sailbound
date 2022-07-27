@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Scripts",
-    "path": "folders/Environment/Water/Scripts.yy",
+    "path": "folders/Sailing/Environment/Water/Scripts.yy",
   },
   "resourceVersion": "1.0",
   "name": "scr_general",

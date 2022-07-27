@@ -8,6 +8,18 @@ function boat_set_vspeed(vspeed_front, vspeed_back) {
 		else obj_boat_front.impactLock = ImpactLock.Down;
 }
 
+function boat_accel_vspeed(targetSpeed, accelRate) {
+	var sampleBoatSpeed = obj_boat_front.phy_speed_y;
+	with(obj_boat_front) {
+		if (targetSpeed > phy_speed_y) {
+			phy_speed_y = min(targetSpeed, phy_speed_y + accelRate);
+		} else if (targetSpeed < phy_speed_y) {
+			phy_speed_y = max(targetSpeed, phy_speed_y - accelRate);
+		}
+	}
+	obj_boat_back.phy_speed_y += (obj_boat_front.phy_speed_y - sampleBoatSpeed);
+}
+
 // Sets the hspeed of the boat halves
 function boat_set_hspeed(hspeed_front, hspeed_back) {
 	obj_boat_front.phy_speed_x = hspeed_front;

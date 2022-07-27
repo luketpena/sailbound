@@ -20,7 +20,7 @@ switch(state) {
 			if (global.hp<global.hp_max) {
 				if (healing_count>0) {
 					//Healing up to max
-					scr_health_increment(1);	
+					health_increment(1);	
 					obj_boat_draw.flash = .9;
 				} else {
 					//Final heal

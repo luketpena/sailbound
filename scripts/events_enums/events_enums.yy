@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Events",
-    "path": "folders/Events.yy",
+    "path": "folders/Sailing/Events.yy",
   },
   "resourceVersion": "1.0",
   "name": "events_enums",

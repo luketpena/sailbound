@@ -74,7 +74,6 @@ function behave_step_floater(precise) {
 		case "float":
 			//Snapping y position to water surface
 			phy_position_y += (waterpoint_y-collision_y)*.5;
-			behave_oceanCurrent();
 			break;
 	}
 }
@@ -97,7 +96,9 @@ function behave_step_bouncer() {
 				//Trigger impact when close to water
 				behave_mode = "impact";
 				event_user(15); //Splash event
-				if (impactLock = ImpactLock.None) phy_speed_y *= behave_impact_reduction;
+				if (impactLock = ImpactLock.None) {
+					phy_speed_y *= behave_impact_reduction;
+				}
 				touched = true;
 			} else {
 				//Falling
@@ -132,7 +133,7 @@ function behavior_impactLock_reset() {
 function behave_step_sinker() {
 
 	//Calculating distance to water
-	var collision_y = phy_position_y+behave_radius;
+	var collision_y = phy_position_y + behave_radius;
 	waterpoint_y = water_find_y_basic(x);
 	waterpoint_distance = collision_y-waterpoint_y;
 

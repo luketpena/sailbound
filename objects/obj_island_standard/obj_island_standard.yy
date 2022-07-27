@@ -30,7 +30,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Objects",
-    "path": "folders/Environment/Islands/Objects.yy",
+    "path": "folders/Sailing/Environment/Islands/Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_island_standard",

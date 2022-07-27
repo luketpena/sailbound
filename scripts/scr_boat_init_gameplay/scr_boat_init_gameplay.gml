@@ -33,5 +33,6 @@ function boat_init_gameplay() {
 	floating = false; //is the center of the boat touching the water?
 	falling = false; //Boat must be airborne && have a positive vspeed
 	distanceToSurface = 0; // Pointed from the position of boat
-
+	comboCooldown = 0;
+	comboCooldownTarget = 15;
 }

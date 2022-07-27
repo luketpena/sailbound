@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Sky",
-    "path": "folders/Environment/Background/Sky.yy",
+    "path": "folders/Sailing/Environment/Background/Sky.yy",
   },
   "resourceVersion": "1.0",
   "name": "scr_sky",

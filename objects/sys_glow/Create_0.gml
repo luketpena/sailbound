@@ -1,5 +1,3 @@
-clock_set_points();
-
 shader		= shd_blur_glow;
 u_blur_steps			= shader_get_uniform(shader, "blur_steps");
 u_sigma			= shader_get_uniform(shader, "sigma");

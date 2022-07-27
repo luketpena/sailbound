@@ -10,15 +10,57 @@
 */
 
 // The progress along the story between chapters
-chapters = []; // An array of chapters with their own independent properties
-chapterCount = 0; // How many chapters are there
 progress = 0; // The progress through the total duration of all chapters
 chapterProgress = 0; // The percent progress through the current chapter
 chapterCurrentIndex = 0; // The index of the chapter we are currently within
-totalDuration = 0; // The sum of all chapter durations
 storyEnd = false; // Triggers if loop is false and the story comes to an end
 active = false; // Whether or not the story should progress
+mobs = [];
+mobActive = false;
+maxDanger = 0;
 gameMode = GameMode.Default;
-level = null;
+global.danger = 0;
 
-plot_tropicalParadise(GameMode.Infinite);
+dangerLevel = 0;
+
+ring = {
+	minTimer: 0,
+	maxTimer: 0,
+	timer: 0,
+	active: false,
+}
+
+chest = {
+	active: false,
+	list: [],
+	minTimer: 0,
+	maxTimer: 0,
+	timer: 0,
+	diceSize: 0,
+	diceSides: [],
+	
+}
+/*
+	List format:
+	{
+		type: ChestType,
+		chance: number,
+		timerOffset: number,
+	}
+*/
+
+config = storyConfig_tropical();
+
+// Add start times to the config chapters
+chapterCount = array_length(config.chapters);
+totalDuration = 0;
+for (var i=0; i<chapterCount; i++) {
+	var c = config.chapters[i];
+	c.startTime = totalDuration;
+	totalDuration += c.duration * room_speed;
+}
+
+if (active) {
+	story_init();
+}
+

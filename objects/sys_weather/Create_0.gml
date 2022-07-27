@@ -1,6 +1,3 @@
-//---- Setup ----\\
-clock_set_points();
-
 //---- Targetting ----\\
 target = noone;
 

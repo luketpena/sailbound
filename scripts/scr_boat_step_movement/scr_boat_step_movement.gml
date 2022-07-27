@@ -1,13 +1,18 @@
 ///@description Holds all boat action input
 function boat_step_movement() {
 
-	touched = waterY_front<(y+boat_offset);
-	submerged = (waterY_front<(y+boat_offset-16));
-	floating = waterY_center<(y+boat_offset+4);
-	falling = (!touched && phy_speed_y>.5);
-
+	touched = waterY_front < (y + boat_offset);
+	submerged = (waterY_front < (y + boat_offset - 16));
+	floating = waterY_center < (y + boat_offset + 4);
+	falling = (!touched && phy_speed_y > 1);
+	
 	//>> Vertical Movement
 	if (touched) {
+		if (comboCooldown < comboCooldownTarget) comboCooldown ++ else {
+			if (global.combo > 0) {
+				comboEnd();	
+			}
+		}
 		if (!impact && impactLock = ImpactLock.None) {
 			impact = true;
 			event_user(15); //Splash event
@@ -15,10 +20,9 @@ function boat_step_movement() {
 				phy_speed_y /= boat_stop;
 			}
 		}
-		if (touched) {
-			boat_buoyancy_apply();
-		} 
+		boat_buoyancy_apply();
 	} else {
+		comboCooldown = 0;
 		if (impact && impactLock = ImpactLock.None) {
 			impact = false;
 			if (!ctrl_jump_pulse) {

@@ -5,8 +5,9 @@
 //>> Setup
 application_surface_enable(true);
 os_lock_orientation(true);
-window_set_fullscreen(false);
-show_debug_overlay(false);
+//window_set_fullscreen(true);
+
+debugMode = false;
 
 osType = noone;
 
@@ -16,8 +17,13 @@ cameraSystem_init();
 //>> Fonts
 global.font_numbers_large = font_add_sprite_ext(spr_font_numbers_large,"0123456789",true,2);
 global.font_normal_medium = font_add_sprite_ext(spr_font_normal_medium,"ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,!?:;'$%()-@",true,2);
-global.font_normal_small = font_add_sprite_ext(spr_font_normal_small,"ABCDEFGHIJKLMNÑOPQRSTUVWXYZ0123456789.,!?:;'$%()-@+/abxy$*",true,1);
+global.font_normal_small = font_add_sprite_ext(spr_font_normal_small,  " ABCDEFGHIJKLMNÑOPQRSTUVWXYZ0123456789.,!?:;'$%()-@+/abxy$*",true,1);
 
+vertex_format_begin();
+vertex_format_add_colour();
+vertex_format_add_position();
+vertex_format_add_normal();
+global.format_perspective = vertex_format_end();
 
 //>> Room transition knapsack
 /*
@@ -37,11 +43,11 @@ knapsack = {
 		}
 	},
 	
-	islands: {
+	islandSave: {
 		value: [],
 		save: function() {
-			if (instance_exists(sys_islands)) {
-				var list = sys_islands.island_list;
+			if (instance_exists(islands)) {
+				var list = islands.island_list;
 				for (var i=0; i<array_length(list); i++) {
 					var island = list[i];
 					value[i] = {
@@ -57,15 +63,12 @@ knapsack = {
 		load: function() {
 			for (var i=0; i<array_length(value); i++) {
 				var data = value[i];
-				var newIsland = island_spawn_ext(data.position, Biome.Tropical, sys_islands.island_speed_min, sys_islands.island_speed_max, data.image, data.x, data.y, data.xscale);
-				sys_islands.island_list_insert(newIsland);
+				var newIsland = island_spawn_ext(data.position, Biome.Tropical, islands.island_speed_min, islands.island_speed_max, data.image, data.x, data.y, data.xscale);
+				islands.island_list_insert(newIsland);
 				delete value[i];
 			}
 			value = [];
 		} // END of load function
 	}, // END of islands
 	
-	clock: {
-		
-	}
 }

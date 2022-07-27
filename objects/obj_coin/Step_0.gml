@@ -7,6 +7,13 @@ if (!active) {
 	if (phy_speed_y>=0) active = true;	
 }
 
+if (slideOnGround != 0) {
+	//phy_speed_x = -slideOnGround;
+	if (abs(phy_speed_x - slideOnGround) < .1) phy_speed_x = slideOnGround;
+	if (phy_speed_x < slideOnGround) phy_speed_x *= .95;
+	if (phy_speed_x > slideOnGround) phy_speed_x -= .1;
+}
+
 if (sink_active) {
 	switch(behave_type) {
 		case behave.bouncer:	

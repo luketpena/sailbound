@@ -1,7 +1,7 @@
 {
   "parent": {
     "name": "Items",
-    "path": "folders/Items.yy",
+    "path": "folders/Sailing/Pick-ups/Items.yy",
   },
   "resourceVersion": "1.1",
   "name": "item_note",

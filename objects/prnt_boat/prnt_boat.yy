@@ -21,13 +21,13 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},"parent":{"name":"prnt_boat","path":"objects/prnt_boat/prnt_boat.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_groundBlock","path":"objects/obj_groundBlock/obj_groundBlock.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
     "name": "Objects",
-    "path": "folders/Boat/Objects.yy",
+    "path": "folders/Sailing/Boat/Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "prnt_boat",

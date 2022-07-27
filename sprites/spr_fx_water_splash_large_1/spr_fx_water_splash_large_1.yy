@@ -25,28 +25,28 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"2fe4bacd-a4dd-4603-bcc3-35f456bb608a","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2fe4bacd-a4dd-4603-bcc3-35f456bb608a","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"LayerId":{"name":"5bfe2a49-3f0c-4d3f-ab1b-0f3467075623","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"2fe4bacd-a4dd-4603-bcc3-35f456bb608a","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"LayerId":{"name":"5bfe2a49-3f0c-4d3f-ab1b-0f3467075623","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_fx_water_splash_large_1","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"resourceVersion":"1.0","name":"2fe4bacd-a4dd-4603-bcc3-35f456bb608a","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"a1a168dc-efcd-4573-9270-8ab4d6c74fd2","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a1a168dc-efcd-4573-9270-8ab4d6c74fd2","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"LayerId":{"name":"5bfe2a49-3f0c-4d3f-ab1b-0f3467075623","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"a1a168dc-efcd-4573-9270-8ab4d6c74fd2","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"LayerId":{"name":"5bfe2a49-3f0c-4d3f-ab1b-0f3467075623","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_fx_water_splash_large_1","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"resourceVersion":"1.0","name":"a1a168dc-efcd-4573-9270-8ab4d6c74fd2","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"c22e0530-ec3f-4ad3-a049-bb6dfc2f4a54","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c22e0530-ec3f-4ad3-a049-bb6dfc2f4a54","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"LayerId":{"name":"5bfe2a49-3f0c-4d3f-ab1b-0f3467075623","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"c22e0530-ec3f-4ad3-a049-bb6dfc2f4a54","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"LayerId":{"name":"5bfe2a49-3f0c-4d3f-ab1b-0f3467075623","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_fx_water_splash_large_1","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"resourceVersion":"1.0","name":"c22e0530-ec3f-4ad3-a049-bb6dfc2f4a54","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"1a3ef9be-ea1d-488a-bae8-d118582e75a5","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1a3ef9be-ea1d-488a-bae8-d118582e75a5","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"LayerId":{"name":"5bfe2a49-3f0c-4d3f-ab1b-0f3467075623","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"1a3ef9be-ea1d-488a-bae8-d118582e75a5","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"LayerId":{"name":"5bfe2a49-3f0c-4d3f-ab1b-0f3467075623","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_fx_water_splash_large_1","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"resourceVersion":"1.0","name":"1a3ef9be-ea1d-488a-bae8-d118582e75a5","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"65a99ae9-6da1-4e90-8604-f4d105aa8ff5","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"65a99ae9-6da1-4e90-8604-f4d105aa8ff5","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"LayerId":{"name":"5bfe2a49-3f0c-4d3f-ab1b-0f3467075623","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"65a99ae9-6da1-4e90-8604-f4d105aa8ff5","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"LayerId":{"name":"5bfe2a49-3f0c-4d3f-ab1b-0f3467075623","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_fx_water_splash_large_1","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"resourceVersion":"1.0","name":"65a99ae9-6da1-4e90-8604-f4d105aa8ff5","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"73e664ca-5f74-4787-906a-f7e880f163a8","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"73e664ca-5f74-4787-906a-f7e880f163a8","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"LayerId":{"name":"5bfe2a49-3f0c-4d3f-ab1b-0f3467075623","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"73e664ca-5f74-4787-906a-f7e880f163a8","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"LayerId":{"name":"5bfe2a49-3f0c-4d3f-ab1b-0f3467075623","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_fx_water_splash_large_1","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"resourceVersion":"1.0","name":"73e664ca-5f74-4787-906a-f7e880f163a8","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"6fe90667-b2f4-4ad5-9cde-2343fab834e1","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6fe90667-b2f4-4ad5-9cde-2343fab834e1","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"LayerId":{"name":"5bfe2a49-3f0c-4d3f-ab1b-0f3467075623","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"6fe90667-b2f4-4ad5-9cde-2343fab834e1","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"LayerId":{"name":"5bfe2a49-3f0c-4d3f-ab1b-0f3467075623","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_fx_water_splash_large_1","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"resourceVersion":"1.0","name":"6fe90667-b2f4-4ad5-9cde-2343fab834e1","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"6819a0c7-e7c7-44dc-8fb9-6e42bba7becd","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6819a0c7-e7c7-44dc-8fb9-6e42bba7becd","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"LayerId":{"name":"5bfe2a49-3f0c-4d3f-ab1b-0f3467075623","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"6819a0c7-e7c7-44dc-8fb9-6e42bba7becd","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"LayerId":{"name":"5bfe2a49-3f0c-4d3f-ab1b-0f3467075623","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_fx_water_splash_large_1","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"resourceVersion":"1.0","name":"6819a0c7-e7c7-44dc-8fb9-6e42bba7becd","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -70,7 +70,7 @@
             {"id":"33448161-8bc8-46d9-b22e-d717d3daa8e9","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"73e664ca-5f74-4787-906a-f7e880f163a8","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"78acc342-0cc8-4777-b84d-b3cc114120f8","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6fe90667-b2f4-4ad5-9cde-2343fab834e1","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"d2858652-0507-43b6-8d17-81ede1a8a041","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6819a0c7-e7c7-44dc-8fb9-6e42bba7becd","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_fx_water_splash_large_1","path":"sprites/spr_fx_water_splash_large_1/spr_fx_water_splash_large_1.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",
@@ -95,9 +95,10 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5bfe2a49-3f0c-4d3f-ab1b-0f3467075623","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Side",
-    "path": "folders/Environment/Water/Effects/Splash/Sprites/Side.yy",
+    "path": "folders/Sailing/Environment/Water/Effects/Splash/Sprites/Side.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_fx_water_splash_large_1",

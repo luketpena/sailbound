@@ -20,3 +20,29 @@ function string_fit_width(argument0, argument1) {
 
 	return string_hash_to_newline(text);
 }
+
+
+function string_split(text, delimiter) {
+	var startIndex = 1;
+	var array = [];
+	var length = string_length(text);
+	for (var i=1; i<=length; i++) {
+		var char = string_char_at(text, i);
+		
+		if (char = delimiter) {
+			if (i - startIndex > 0) {
+				var count = i - startIndex;
+				var subString = string_copy(text, startIndex, count);
+				array_push(array, subString);
+			}
+			startIndex = i + 1;
+		}
+		
+		if (i = length) {
+			var count = i - startIndex + 1;
+			var subString = string_copy(text, startIndex, count );
+			array_push(array, subString);
+		}
+	}
+	return array;
+}

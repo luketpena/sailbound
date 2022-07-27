@@ -64,7 +64,7 @@ function array_includes(a, value) {
 	return false;
 }
 
-function array_join(a1, a2) {
+function array_concat(a1, a2) {
 	var new_array = a1;
 	var offset = array_length(a1);
 	for (var i=0; i<array_length(a2); i++) {
@@ -73,12 +73,26 @@ function array_join(a1, a2) {
 	return new_array;
 }
 
+function array_join(a, joinString) {
+	var length = array_length(a);
+	if (length > 1) {
+		var text = a[0];
+		for (var i=1; i<length; i++) {
+			text += joinString + a[i];
+		}
+		return text;
+	} else {
+		return a[0];	
+	}
+}
+
 function array_extract(a, index) {
-	if (index<0 || index>array_length(a)-1) 
+	if (index < 0 || index > array_length(a)-1) {
 		return {
 			array: a,
 			value: noone
 		}
+	}
 	
 	var new_array = [];
 	var offset = 0;
@@ -91,23 +105,14 @@ function array_extract(a, index) {
 	}
 }
 
-function array_insert(a, value, index) {
-	if (index<0) return array_shift(a, value);	
-
-	if (value>array_length(a)-1) return array_push(a, value);
-	
-	var new_array = [];
-	var offset = 0;
-	for (var i=0; i<array_length(a); i++) {
-		if (i=index) {
-			new_array[i] = value;
-			offset = 1;
-		} else {
-			new_array[i+offset] = a[i];	
-		}
-	}
-	return new_array;
+// Just removes the index and returns the array transformed
+function array_pluck(a, index) {
+	var extracted = array_extract(a, index);
+	log("before " + string(array_length(a)));
+	log("after " + string(array_length(extracted.array)));
+	return extracted.array;
 }
+
 
 function array_reverse(a) {
 	var new_array = [];

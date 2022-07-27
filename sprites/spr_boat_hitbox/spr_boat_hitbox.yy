@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 10,
-  "bbox_right": 52,
+  "bbox_left": 6,
+  "bbox_right": 56,
   "bbox_top": 11,
-  "bbox_bottom": 28,
+  "bbox_bottom": 31,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -25,7 +25,7 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"5d2ddef1-cddc-45d7-b373-1498ae69cd80","path":"sprites/spr_boat_hitbox/spr_boat_hitbox.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5d2ddef1-cddc-45d7-b373-1498ae69cd80","path":"sprites/spr_boat_hitbox/spr_boat_hitbox.yy",},"LayerId":{"name":"25ba4fca-7a2e-4f64-9003-bc37c96f9c36","path":"sprites/spr_boat_hitbox/spr_boat_hitbox.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"5d2ddef1-cddc-45d7-b373-1498ae69cd80","path":"sprites/spr_boat_hitbox/spr_boat_hitbox.yy",},"LayerId":{"name":"25ba4fca-7a2e-4f64-9003-bc37c96f9c36","path":"sprites/spr_boat_hitbox/spr_boat_hitbox.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_boat_hitbox","path":"sprites/spr_boat_hitbox/spr_boat_hitbox.yy",},"resourceVersion":"1.0","name":"5d2ddef1-cddc-45d7-b373-1498ae69cd80","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -42,9 +42,9 @@
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"d4f67a7a-a245-4413-9e24-a78e677eb089","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5d2ddef1-cddc-45d7-b373-1498ae69cd80","path":"sprites/spr_boat_hitbox/spr_boat_hitbox.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_boat_hitbox","path":"sprites/spr_boat_hitbox/spr_boat_hitbox.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",
@@ -67,9 +67,10 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"25ba4fca-7a2e-4f64-9003-bc37c96f9c36","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
-    "name": "Hull",
-    "path": "folders/Boat/Sprites/Hull.yy",
+    "name": "Classic",
+    "path": "folders/Sailing/Boat/Hulls/Classic.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_boat_hitbox",

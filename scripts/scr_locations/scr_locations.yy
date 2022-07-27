@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "sailbound",
-    "path": "sailbound.yyp",
+    "name": "Fuckit Buckit",
+    "path": "folders/Fuckit Buckit.yy",
   },
   "resourceVersion": "1.0",
   "name": "scr_locations",

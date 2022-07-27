@@ -25,7 +25,7 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"a6d1dc6f-02c9-4fa1-b5d2-8173e80bb53f","path":"sprites/ico_arrow/ico_arrow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a6d1dc6f-02c9-4fa1-b5d2-8173e80bb53f","path":"sprites/ico_arrow/ico_arrow.yy",},"LayerId":{"name":"97a5d6d4-1fc4-406f-a352-9fd33fc3ecbf","path":"sprites/ico_arrow/ico_arrow.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"a6d1dc6f-02c9-4fa1-b5d2-8173e80bb53f","path":"sprites/ico_arrow/ico_arrow.yy",},"LayerId":{"name":"97a5d6d4-1fc4-406f-a352-9fd33fc3ecbf","path":"sprites/ico_arrow/ico_arrow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"ico_arrow","path":"sprites/ico_arrow/ico_arrow.yy",},"resourceVersion":"1.0","name":"a6d1dc6f-02c9-4fa1-b5d2-8173e80bb53f","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -42,7 +42,7 @@
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"5fc1893b-8952-487e-8728-8bb8f89c517c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a6d1dc6f-02c9-4fa1-b5d2-8173e80bb53f","path":"sprites/ico_arrow/ico_arrow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"ico_arrow","path":"sprites/ico_arrow/ico_arrow.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",
@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"97a5d6d4-1fc4-406f-a352-9fd33fc3ecbf","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Icons",
     "path": "folders/System/Icons.yy",

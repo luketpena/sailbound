@@ -12,17 +12,15 @@ if surface_exists(water_surface) {
 		draw_sprite_tiled_ext(spr_env_water_pattern, 1, -pattern_pos, 0, 1, 1, c_water_highlight, .25);
 		draw_sprite_tiled_ext(spr_env_water_pattern, 0, -pattern_pos*2, 0, 1, 1, c_water_highlight, .5);
 		
-		switch(room_current) {
-			case "rm_water":
-				//Drawing the waves
-				for (var i=0; i<sys_water.wave_num; i++) {
-					if (sys_water.wave_active[i]) {
-						draw_sprite_ext(spr_env_water_wave_front, wave_anim, sys_water.wave_x[i], 0, 1, 1, 0, c_water_highlight, 1*global.motion);	
-					}
-				}
-				break;
-		}
-		
+
+		//Drawing the waves
+		for (var i=0; i<sys_water.waveConfig.count; i++) {
+			var wave = sys_water.waveList[i];
+			if (wave.active) {
+				draw_sprite_ext(spr_env_water_wave_front, wave_anim, wave.x, 0, 1, 1, 0, c_water_highlight, 1 * global.motion);	
+			}
+		}	
+	
 		draw_tag("fx_surface");
 		
 		var float_count = instance_number(obj_floater);

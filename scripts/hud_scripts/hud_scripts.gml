@@ -87,3 +87,8 @@ function hud_draw_item(x,y) {
 		}
 	}
 }
+
+function hud_draw_rings(x, y) {
+	draw_set_font(global.font_normal_small);
+	draw_text(x, y+32, string(global.rings) + " / 10");
+}

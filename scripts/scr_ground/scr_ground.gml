@@ -1,17 +1,19 @@
-/*
-	item_types requires an array of objects:
-	{
-		sprite: [sprite_index],
-		chance: [number]
-	}
-	
-	Sprite determines what will be drawn, chance determines
-	how many sides of the collective die it will claim to
-	spawn itself.
-*/
+function ground_create(target_y, spawnTimeInSeconds, propCollection) {
+	// The separation from room_height prevents phsics shape errors
+	var g = instance_create_layer(0, room_height, "l_main", ground);
+	g.changeHeight(target_y, spawnTimeInSeconds);
+	g.props.list = script_execute(propCollection);
+}
 
-function spawn_ground(target_y, ground_sprite, item_types, debris_types, itemF_types, edge_sprite) {
-	var thickness = (room_height-target_y)/2;
-	var o = instance_create_layer(room_width*2, target_y+thickness, l_main, obj_ground);
-	o.init(target_y, ground_sprite, item_types, debris_types, itemF_types, edge_sprite);
+function ground_createAtStart(targetY, propCollection) {
+	// The separation from room_height prevents phsics shape errors
+	var g = instance_create_layer(0, targetY, "l_main", ground);
+	g.props.list = script_execute(propCollection);
+	g.populateProps();
+}
+
+function ground_finish() {
+	if (instance_exists(ground)) {
+		ground.finish();	
+	}
 }

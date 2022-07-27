@@ -25,7 +25,7 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"2896139e-a4d4-46a6-b39b-5ad76b77a47a","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2896139e-a4d4-46a6-b39b-5ad76b77a47a","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"LayerId":{"name":"c486b497-2dd2-4943-977a-34b72886d330","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"2896139e-a4d4-46a6-b39b-5ad76b77a47a","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"LayerId":{"name":"c486b497-2dd2-4943-977a-34b72886d330","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_env_sky_clouds","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","name":"2896139e-a4d4-46a6-b39b-5ad76b77a47a","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"aeb26569-77b4-4a5f-b6ff-79876b42cbf5","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"aeb26569-77b4-4a5f-b6ff-79876b42cbf5","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"LayerId":{"name":"c486b497-2dd2-4943-977a-34b72886d330","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
@@ -54,7 +54,7 @@
             {"id":"8201fb66-fde3-4ca6-b18a-fa6ef62281a0","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"aeb26569-77b4-4a5f-b6ff-79876b42cbf5","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"a2433e4b-1858-4cd2-a339-e8119920de10","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c6920458-7901-4e3e-879f-bf0e6ac18f9a","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"381eede6-1fd9-4fb3-b845-57740a52e45c","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e2bdb12e-9ed2-485c-9018-106bc508b16f","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_env_sky_clouds","path":"sprites/spr_env_sky_clouds/spr_env_sky_clouds.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",
@@ -79,9 +79,10 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c486b497-2dd2-4943-977a-34b72886d330","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Sprites",
-    "path": "folders/Environment/Background/Sky/Sprites.yy",
+    "path": "folders/Sailing/Environment/Background/Sky/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_env_sky_clouds",

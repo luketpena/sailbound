@@ -25,7 +25,7 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"ade9ba75-e6d3-4d27-b1ef-431340838f30","path":"sprites/spr_env_horizon_fade/spr_env_horizon_fade.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ade9ba75-e6d3-4d27-b1ef-431340838f30","path":"sprites/spr_env_horizon_fade/spr_env_horizon_fade.yy",},"LayerId":{"name":"2ec07547-8df0-4ae6-909d-33bc4a9fb5e6","path":"sprites/spr_env_horizon_fade/spr_env_horizon_fade.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"ade9ba75-e6d3-4d27-b1ef-431340838f30","path":"sprites/spr_env_horizon_fade/spr_env_horizon_fade.yy",},"LayerId":{"name":"2ec07547-8df0-4ae6-909d-33bc4a9fb5e6","path":"sprites/spr_env_horizon_fade/spr_env_horizon_fade.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_env_horizon_fade","path":"sprites/spr_env_horizon_fade/spr_env_horizon_fade.yy",},"resourceVersion":"1.0","name":"ade9ba75-e6d3-4d27-b1ef-431340838f30","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -42,7 +42,7 @@
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"1fbe9752-ee3d-4286-b98f-7981b80753ba","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ade9ba75-e6d3-4d27-b1ef-431340838f30","path":"sprites/spr_env_horizon_fade/spr_env_horizon_fade.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_env_horizon_fade","path":"sprites/spr_env_horizon_fade/spr_env_horizon_fade.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",
@@ -67,9 +67,10 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2ec07547-8df0-4ae6-909d-33bc4a9fb5e6","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Horizon",
-    "path": "folders/Environment/Background/Horizon.yy",
+    "path": "folders/Sailing/Environment/Background/Horizon.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_env_horizon_fade",

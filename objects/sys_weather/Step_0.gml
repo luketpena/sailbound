@@ -30,7 +30,7 @@ if (fog_active) {
 	if (fog_fade>0) fog_fade -= .01;
 }
 if (fog_fade>0) {
-	fog_color = scr_system_colors_blend(global.clock_time,fog_palette[0],fog_palette[1],fog_palette[2],fog_palette[3],fog_palette[4]);
+	fog_color = scr_system_colors_blend(clock.time,fog_palette[0],fog_palette[1],fog_palette[2],fog_palette[3],fog_palette[4]);
 	fog_color_array = color_to_vec3(fog_color);
 	fog_position -= fog_speed;
 }

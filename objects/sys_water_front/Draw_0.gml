@@ -18,7 +18,6 @@ if surface_exists(front_surface) && surface_exists(sys_water.cutout_top_surface)
 
 shader_set(shd_maxAlpha);
 if (global.water_texture!=noone) {
-	
 	//>>BOTTOM-LEFT
 	draw_primitive_begin_texture(pr_trianglestrip, global.water_texture);
 		for (var i=0; i<=water_halfNum; i++) {

@@ -1,14 +1,5 @@
-function island_get_sprite(biome) {
-	switch(biome) {
-		case Biome.Tropical: return spr_islands_tropical;
-		case Biome.Skull: return spr_islands_spiked;
-		case Biome.Arctic: return spr_islands_iceberg;
-		default: return -1;
-	}
-}
-
 function island_list_cleanup() {
-	with(sys_islands) {
+	with(islands) {
 		//Removes islands from the list that don't exist anymore
 		var cleanList = [];
 		var cleanOffset = 0;
@@ -25,7 +16,7 @@ function island_list_cleanup() {
 }
 
 function island_list_insert(island) {
-	with(sys_islands) {
+	with(islands) {
 		var cleanList = island_list_cleanup();
 		//Add new islands to their place in the array
 		var islandNum = array_length(cleanList);
@@ -97,11 +88,38 @@ function island_spawn(verticalPosition, sprite) {
 	with(o) {
 		shader_pwr = lerp(1, .2, verticalPosition);
 		position = verticalPosition;
-		mov_speed = lerp(sys_islands.island_speed[0], sys_islands.island_speed[1], verticalPosition);
+		mov_speed = lerp(islands.island_speed[0], islands.island_speed[1], verticalPosition);
 		exit_x = global.vx-sprite_hw;
 		
 		var size = lerp(.25, 1, verticalPosition);
 		image_xscale = choose(-1, 1);
+		image_yscale = size;
+		depth += (1 - verticalPosition);
+		
+		sprite_index = sprite;
+		image_index = image;
+	}
+
+	return o;
+}
+
+
+function island_spawn_pos(verticalPosition, sprite, horizontalPosition, flip = choose(-1, 1)) {
+	var sprite_hw = sprite_get_width(sprite)/2,
+		xx = lerp(global.vx - sprite_hw, global.vr + sprite_hw, horizontalPosition),
+		yy = floor(global.horizon_y + 16 * verticalPosition),
+		image = irandom(sprite_get_number(sprite)-1);
+	
+	var o = instance_create_layer(xx, yy, l_main, obj_island_standard);
+	
+	with(o) {
+		shader_pwr = lerp(1, .2, verticalPosition);
+		position = verticalPosition;
+		mov_speed = lerp(islands.island_speed[0], islands.island_speed[1], verticalPosition);
+		exit_x = global.vx-sprite_hw;
+		
+		var size = lerp(.25, 1, verticalPosition);
+		image_xscale = flip;
 		image_yscale = size;
 		depth += (1 - verticalPosition);
 		

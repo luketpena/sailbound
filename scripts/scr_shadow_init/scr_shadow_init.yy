@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Shadow",
-    "path": "folders/Environment/Water/Effects/Shadow.yy",
+    "path": "folders/Sailing/Environment/Water/Effects/Shadow.yy",
   },
   "resourceVersion": "1.0",
   "name": "scr_shadow_init",

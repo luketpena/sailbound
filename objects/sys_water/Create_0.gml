@@ -35,16 +35,29 @@ water_fall_dis = 32; //the height divider for the fall rate
 water_fall_rate = .8; //multiplier for fall rate
 
 //-- WAVE VARIABLES --\\
-wave_sys_active = true;
-wave_num = 5; //the number of possible simultaneous waves
-wave_cycle = 0; //which wave number is being activated next
-wave_pwr_min = -2;
-wave_pwr_max = -8;
-wave_speed_min = -2;
-wave_speed_max = -6;
-wave_wait = 0;
-wave_wait_max = 1*room_speed;
-wave_wait_min = 3*room_speed;
+waveConfig = {
+	active: true,
+	count: 5,
+	cycle: 0,
+	minPower: -2,
+	maxPower: -8,
+	minSpeed: -2,
+	maxSpeed: -6,
+	timer: 0,
+	minTimer: 1 * room_speed,
+	maxTimer: 3 * room_speed, 
+}
+
+//wave_sys_active = true;
+//wave_num = 5; //the number of possible simultaneous waves
+//wave_cycle = 0; //which wave number is being activated next
+//wave_pwr_min = -2;
+//wave_pwr_max = -8;
+//wave_speed_min = -2;
+//wave_speed_max = -6;
+//wave_wait = 0;
+//wave_wait_max = 1 * room_speed;
+//wave_wait_min = 3 * room_speed;
 
 
 var texture_unit = 1/water_num;
@@ -67,12 +80,17 @@ var i; for(i=0; i<=water_num; i++) {
 	water_draw_x_low[i] = water_point_x[i]+perspective_offset;
 }
 
-//WAVES
-for (i=0; i<wave_num; i++) {
-	wave_point_choice[i] = 0;
-	wave_power[i] = random_range(wave_pwr_min,wave_pwr_max);
-	wave_x[i] = room_width;
-	wave_draw_x[i] = 0;
-	wave_active[i] = false;
-	wave_speed[i] = 0;
+// Wave settings
+function Wave() constructor {
+	active = false;
+	point = 0;
+	strength = random_range(0, 0);
+	x = room_width;
+	drawX = 0;
+	speed = 0;
+}
+
+waveList = [];
+for (i=0; i<waveConfig.count; i++) {
+	array_push(waveList, new Wave());
 }

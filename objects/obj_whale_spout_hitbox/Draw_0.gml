@@ -1,0 +1,1 @@
+draw_sprite_ext(spr_whale_spout_hitbox, 0, x, y, 1, 1, 0, c_white, .25);

@@ -10,6 +10,19 @@ palette_transition_time = -1; // The countdown timer
 palette_transition_set = 0; // The time that the timer is counting from
 transitioning = false;
 
+// The clock points determine where on the clock it transitions to from color to color
+global.clockPoints = [
+	0, .1, .4, .45, .5, .6, .9, 1
+];
+
+// These color points coincide with what transitions happen for each clockPoint
+global.colorPoints = [
+	0, 1, 1, 2, 3, 4, 4, 0
+];
+
+///@description Transitions to a new palette over time
+///@param palette
+///@param duration
 function transition(
 	_nextPalette,
 	_duration
@@ -23,8 +36,13 @@ function transition(
 	transitioning = true;
 }
 
-clock_set_points();
+///@description Snaps the colors to a given palette
+///@param palette
+function set(_palette) {
+	palette = script_execute(_palette);	
+}
 
+// Current sky colors
 sky = {
 	space: $ffffff,
 	horizon: $fffff,
@@ -37,6 +55,7 @@ sky = {
 	clouds_vec3: $ffffff,
 }
 
+// Current water colors
 water = {
 	horizon: $ffffff,
 	surface: $ffffff,
@@ -52,10 +71,10 @@ water = {
 function setColors(_palette) {
 	return {
 		sky: {
-			space: swatch_blend(global.clock_time, _palette.sky.space.array),
-			horizon: swatch_blend(global.clock_time, _palette.sky.horizon.array),
-			clouds: swatch_blend(global.clock_time, _palette.sky.clouds.array),
-			sun: swatch_blend(global.clock_time, _palette.sky.sun.array),
+			space: swatch_blend(clock.time, _palette.sky.space.array),
+			horizon: swatch_blend(clock.time, _palette.sky.horizon.array),
+			clouds: swatch_blend(clock.time, _palette.sky.clouds.array),
+			sun: swatch_blend(clock.time, _palette.sky.sun.array),
 			moon: _palette.sky.moon,
 		
 			space_vec3: color_to_vec3(sky.space),
@@ -63,17 +82,17 @@ function setColors(_palette) {
 			clouds_vec3: color_to_vec3(sky.clouds),
 		},
 		water: {
-			horizon: swatch_blend(global.clock_time, _palette.water.horizon.array),
-			surface: swatch_blend(global.clock_time, _palette.water.surface.array),
-			depths: swatch_blend(global.clock_time, _palette.water.depths.array),
-			highlight: swatch_blend(global.clock_time, _palette.water.highlight.array),
+			horizon: swatch_blend(clock.time, _palette.water.horizon.array),
+			surface: swatch_blend(clock.time, _palette.water.surface.array),
+			depths: swatch_blend(clock.time, _palette.water.depths.array),
+			highlight: swatch_blend(clock.time, _palette.water.highlight.array),
 		
 			horizon_vec3: color_to_vec3(water.horizon),
 			surface_vec3: color_to_vec3(water.surface),
 			depths_vec3: color_to_vec3(water.depths),
 			highlight_vec3: color_to_vec3(water.highlight),
 		},
-		front: swatch_blend(global.clock_time, _palette.front.array)
+		front: swatch_blend(clock.time, _palette.front.array)
 	}
 }
 

@@ -13,6 +13,6 @@ function Posx(_x, _y) constructor {
 ///@param min
 ///@param max
 function MinMax(_min, _max) constructor {
-	min = _min;
-	max = _max;
+	MIN = _min;
+	MAX = _max;
 }

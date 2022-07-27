@@ -1,0 +1,1 @@
+draw_sprite_ext(spr_block, 0, x, y, image_xscale, image_yscale, 0, phy_active ? c_white : c_red, 1);

@@ -25,19 +25,19 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"fc9cf1ec-b131-477b-b86c-9e24b58197a4","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fc9cf1ec-b131-477b-b86c-9e24b58197a4","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"LayerId":{"name":"0baadcb4-086b-46f3-bc67-24eef03d1936","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"fc9cf1ec-b131-477b-b86c-9e24b58197a4","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"LayerId":{"name":"0baadcb4-086b-46f3-bc67-24eef03d1936","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_peter_head_happy","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"resourceVersion":"1.0","name":"fc9cf1ec-b131-477b-b86c-9e24b58197a4","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"2a68d44f-8031-4435-b81b-31b6d8b19159","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2a68d44f-8031-4435-b81b-31b6d8b19159","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"LayerId":{"name":"0baadcb4-086b-46f3-bc67-24eef03d1936","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"2a68d44f-8031-4435-b81b-31b6d8b19159","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"LayerId":{"name":"0baadcb4-086b-46f3-bc67-24eef03d1936","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_peter_head_happy","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"resourceVersion":"1.0","name":"2a68d44f-8031-4435-b81b-31b6d8b19159","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"32c181d2-3010-404f-bfa0-0f7ed1232471","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"32c181d2-3010-404f-bfa0-0f7ed1232471","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"LayerId":{"name":"0baadcb4-086b-46f3-bc67-24eef03d1936","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"32c181d2-3010-404f-bfa0-0f7ed1232471","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"LayerId":{"name":"0baadcb4-086b-46f3-bc67-24eef03d1936","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_peter_head_happy","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"resourceVersion":"1.0","name":"32c181d2-3010-404f-bfa0-0f7ed1232471","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"4bcd2e38-334b-4103-aa1c-2ce74aefce04","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4bcd2e38-334b-4103-aa1c-2ce74aefce04","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"LayerId":{"name":"0baadcb4-086b-46f3-bc67-24eef03d1936","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"4bcd2e38-334b-4103-aa1c-2ce74aefce04","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"LayerId":{"name":"0baadcb4-086b-46f3-bc67-24eef03d1936","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_peter_head_happy","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"resourceVersion":"1.0","name":"4bcd2e38-334b-4103-aa1c-2ce74aefce04","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"65c90ba6-30a3-4516-b57d-2c2ea235bda9","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"65c90ba6-30a3-4516-b57d-2c2ea235bda9","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"LayerId":{"name":"0baadcb4-086b-46f3-bc67-24eef03d1936","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"65c90ba6-30a3-4516-b57d-2c2ea235bda9","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"LayerId":{"name":"0baadcb4-086b-46f3-bc67-24eef03d1936","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_peter_head_happy","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"resourceVersion":"1.0","name":"65c90ba6-30a3-4516-b57d-2c2ea235bda9","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -58,7 +58,7 @@
             {"id":"70f4e9b2-e7ea-4284-9f57-be78e0558a20","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"32c181d2-3010-404f-bfa0-0f7ed1232471","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"5d6cf8d0-0648-4a83-9c94-a70a127fcb4f","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4bcd2e38-334b-4103-aa1c-2ce74aefce04","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4844092b-0e87-4683-86bb-9c8a550600e6","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"65c90ba6-30a3-4516-b57d-2c2ea235bda9","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_peter_head_happy","path":"sprites/spr_peter_head_happy/spr_peter_head_happy.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",
@@ -83,9 +83,10 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0baadcb4-086b-46f3-bc67-24eef03d1936","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Heads",
-    "path": "folders/Boat/Sprites/Peter/Heads.yy",
+    "path": "folders/Sailing/Boat/Sprites/Peter/Heads.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_peter_head_happy",

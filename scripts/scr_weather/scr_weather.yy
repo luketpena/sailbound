@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Weather",
-    "path": "folders/Environment/Weather.yy",
+    "path": "folders/Sailing/Environment/Weather.yy",
   },
   "resourceVersion": "1.0",
   "name": "scr_weather",

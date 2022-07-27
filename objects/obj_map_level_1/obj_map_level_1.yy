@@ -1,0 +1,46 @@
+{
+  "spriteId": {
+    "name": "spr_map_level_1",
+    "path": "sprites/spr_map_level_1/spr_map_level_1.yy",
+  },
+  "solid": false,
+  "visible": false,
+  "spriteMaskId": null,
+  "persistent": false,
+  "parentObjectId": {
+    "name": "prnt_map_levelSelect",
+    "path": "objects/prnt_map_levelSelect/prnt_map_levelSelect.yy",
+  },
+  "physicsObject": true,
+  "physicsSensor": false,
+  "physicsShape": 0,
+  "physicsGroup": 1,
+  "physicsDensity": 0.0,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [
+    {"x":64.0,"y":66.0,},
+    {"x":16.0,"y":66.0,},
+  ],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_map_playerIcon","path":"objects/obj_map_playerIcon/obj_map_playerIcon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
+  "properties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"range","path":"objects/prnt_map_levelSelect/prnt_map_levelSelect.yy",},"objectId":{"name":"prnt_map_levelSelect","path":"objects/prnt_map_levelSelect/prnt_map_levelSelect.yy",},"value":"48","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
+  "parent": {
+    "name": "Levels",
+    "path": "folders/Map/Levels.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "obj_map_level_1",
+  "tags": [],
+  "resourceType": "GMObject",
+}

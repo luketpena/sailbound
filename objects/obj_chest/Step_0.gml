@@ -1,7 +1,6 @@
 
-
 // Light position
-if (instance_exists(light)) {
+if instance_exists(light) {
 	light.x = x;
 	light.y = y;
 }
@@ -18,19 +17,11 @@ if (exploding) {
 	behave_step_bouncer();
 	floater_step(0);
 	lighting_flash_step();
-	
-	if (!open && obj_boat_front.falling && boat_collide_basic(x,y-6)) {
-		event_user(0); //Triggers the chest to open
-		boat_bounce();
-		image_xscale = 1.1;
-		image_yscale = .9;
-	}
-	
+		
 	//Bursting and coin creation
-	if (!burst) {
+	if (!bursting) {
 		if (image_index>=2) {
-			burst = true;
-			event_user(1);
+			burst();
 		}
 	} else {
 		//Creating coins

@@ -25,7 +25,7 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"74e4ec25-f5f7-4127-b3f2-5d3c76da7f0e","path":"sprites/spr_env_sky_stars/spr_env_sky_stars.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"74e4ec25-f5f7-4127-b3f2-5d3c76da7f0e","path":"sprites/spr_env_sky_stars/spr_env_sky_stars.yy",},"LayerId":{"name":"1f87c46a-894a-45b0-bb04-7c91f798ab0e","path":"sprites/spr_env_sky_stars/spr_env_sky_stars.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"74e4ec25-f5f7-4127-b3f2-5d3c76da7f0e","path":"sprites/spr_env_sky_stars/spr_env_sky_stars.yy",},"LayerId":{"name":"1f87c46a-894a-45b0-bb04-7c91f798ab0e","path":"sprites/spr_env_sky_stars/spr_env_sky_stars.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_env_sky_stars","path":"sprites/spr_env_sky_stars/spr_env_sky_stars.yy",},"resourceVersion":"1.0","name":"74e4ec25-f5f7-4127-b3f2-5d3c76da7f0e","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -42,7 +42,7 @@
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"deba907f-8279-4394-88c6-3cbbb3be78c5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"74e4ec25-f5f7-4127-b3f2-5d3c76da7f0e","path":"sprites/spr_env_sky_stars/spr_env_sky_stars.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_env_sky_stars","path":"sprites/spr_env_sky_stars/spr_env_sky_stars.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",
@@ -67,9 +67,10 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1f87c46a-894a-45b0-bb04-7c91f798ab0e","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Sprites",
-    "path": "folders/Environment/Background/Sky/Sprites.yy",
+    "path": "folders/Sailing/Environment/Background/Sky/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_env_sky_stars",

@@ -24,8 +24,8 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"6e85fd82-1e67-4101-a620-88df59a95848","path":"sprites/spr_hud_dpad/spr_hud_dpad.yy",},"LayerId":null,"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6e85fd82-1e67-4101-a620-88df59a95848","path":"sprites/spr_hud_dpad/spr_hud_dpad.yy",},"LayerId":{"name":"cafe8df4-bbf9-4c81-8797-e09de059a6f1","path":"sprites/spr_hud_dpad/spr_hud_dpad.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+    {"compositeImage":{"FrameId":{"name":"6e85fd82-1e67-4101-a620-88df59a95848","path":"sprites/spr_hud_dpad/spr_hud_dpad.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"6e85fd82-1e67-4101-a620-88df59a95848","path":"sprites/spr_hud_dpad/spr_hud_dpad.yy",},"LayerId":{"name":"cafe8df4-bbf9-4c81-8797-e09de059a6f1","path":"sprites/spr_hud_dpad/spr_hud_dpad.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_hud_dpad","path":"sprites/spr_hud_dpad/spr_hud_dpad.yy",},"resourceVersion":"1.0","name":"6e85fd82-1e67-4101-a620-88df59a95848","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -42,7 +42,7 @@
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"7d29786e-cc18-41ee-b5ea-fb2a903643ad","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6e85fd82-1e67-4101-a620-88df59a95848","path":"sprites/spr_hud_dpad/spr_hud_dpad.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_hud_dpad","path":"sprites/spr_hud_dpad/spr_hud_dpad.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_hud_dpad",
     "tags": [],
     "resourceType": "GMSequence",
@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"cafe8df4-bbf9-4c81-8797-e09de059a6f1","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Sprites",
     "path": "folders/System/HUD/Sprites.yy",

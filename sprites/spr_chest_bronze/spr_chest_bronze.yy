@@ -25,16 +25,16 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"48508735-f3fc-4484-a2f3-5e7189606365","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"48508735-f3fc-4484-a2f3-5e7189606365","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},"LayerId":{"name":"66148746-7dce-46bf-b37a-e9254a0b186d","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"48508735-f3fc-4484-a2f3-5e7189606365","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},"LayerId":{"name":"66148746-7dce-46bf-b37a-e9254a0b186d","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_chest_bronze","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},"resourceVersion":"1.0","name":"48508735-f3fc-4484-a2f3-5e7189606365","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"e451671f-66d6-4c02-9da7-95f2100fd730","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e451671f-66d6-4c02-9da7-95f2100fd730","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},"LayerId":{"name":"66148746-7dce-46bf-b37a-e9254a0b186d","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"e451671f-66d6-4c02-9da7-95f2100fd730","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},"LayerId":{"name":"66148746-7dce-46bf-b37a-e9254a0b186d","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_chest_bronze","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},"resourceVersion":"1.0","name":"e451671f-66d6-4c02-9da7-95f2100fd730","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"8af63053-a562-4ab2-ac8b-1d9b2471ed68","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8af63053-a562-4ab2-ac8b-1d9b2471ed68","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},"LayerId":{"name":"66148746-7dce-46bf-b37a-e9254a0b186d","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"8af63053-a562-4ab2-ac8b-1d9b2471ed68","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},"LayerId":{"name":"66148746-7dce-46bf-b37a-e9254a0b186d","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_chest_bronze","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},"resourceVersion":"1.0","name":"8af63053-a562-4ab2-ac8b-1d9b2471ed68","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"e6de791a-5ba8-4690-b2f9-e30124c127b0","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e6de791a-5ba8-4690-b2f9-e30124c127b0","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},"LayerId":{"name":"66148746-7dce-46bf-b37a-e9254a0b186d","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"e6de791a-5ba8-4690-b2f9-e30124c127b0","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},"LayerId":{"name":"66148746-7dce-46bf-b37a-e9254a0b186d","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_chest_bronze","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},"resourceVersion":"1.0","name":"e6de791a-5ba8-4690-b2f9-e30124c127b0","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -54,7 +54,7 @@
             {"id":"e5b382e4-c6d7-4045-aa63-535f6925f114","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e451671f-66d6-4c02-9da7-95f2100fd730","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"60ea48ee-851f-4730-952d-8324aa723e9e","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8af63053-a562-4ab2-ac8b-1d9b2471ed68","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"36e887dc-5e9d-4691-97d9-510d1859fd52","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e6de791a-5ba8-4690-b2f9-e30124c127b0","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_chest_bronze","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",
@@ -79,9 +79,10 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"66148746-7dce-46bf-b37a-e9254a0b186d","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Sprites",
-    "path": "folders/Pick-ups/Chests/Sprites.yy",
+    "path": "folders/Sailing/Pick-ups/Chests/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_chest_bronze",

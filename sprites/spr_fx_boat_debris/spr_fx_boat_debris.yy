@@ -25,22 +25,22 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"34462402-8c08-47fb-b2f9-3f2928b9e509","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"34462402-8c08-47fb-b2f9-3f2928b9e509","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"LayerId":{"name":"49b0cacf-542f-4ef6-b5c4-cdf75d921605","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"34462402-8c08-47fb-b2f9-3f2928b9e509","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"LayerId":{"name":"49b0cacf-542f-4ef6-b5c4-cdf75d921605","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_fx_boat_debris","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"resourceVersion":"1.0","name":"34462402-8c08-47fb-b2f9-3f2928b9e509","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"936cdf12-0104-4f2a-98bb-11aac93eb44e","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"936cdf12-0104-4f2a-98bb-11aac93eb44e","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"LayerId":{"name":"49b0cacf-542f-4ef6-b5c4-cdf75d921605","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"936cdf12-0104-4f2a-98bb-11aac93eb44e","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"LayerId":{"name":"49b0cacf-542f-4ef6-b5c4-cdf75d921605","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_fx_boat_debris","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"resourceVersion":"1.0","name":"936cdf12-0104-4f2a-98bb-11aac93eb44e","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"0418258c-6349-4222-a60a-a191b3d2a554","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0418258c-6349-4222-a60a-a191b3d2a554","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"LayerId":{"name":"49b0cacf-542f-4ef6-b5c4-cdf75d921605","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"0418258c-6349-4222-a60a-a191b3d2a554","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"LayerId":{"name":"49b0cacf-542f-4ef6-b5c4-cdf75d921605","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_fx_boat_debris","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"resourceVersion":"1.0","name":"0418258c-6349-4222-a60a-a191b3d2a554","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"200ead9e-561d-4b44-8823-0cadefa7db80","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"200ead9e-561d-4b44-8823-0cadefa7db80","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"LayerId":{"name":"49b0cacf-542f-4ef6-b5c4-cdf75d921605","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"200ead9e-561d-4b44-8823-0cadefa7db80","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"LayerId":{"name":"49b0cacf-542f-4ef6-b5c4-cdf75d921605","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_fx_boat_debris","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"resourceVersion":"1.0","name":"200ead9e-561d-4b44-8823-0cadefa7db80","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"e54eb20e-bbd0-4716-92ab-2e4a2bb26942","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e54eb20e-bbd0-4716-92ab-2e4a2bb26942","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"LayerId":{"name":"49b0cacf-542f-4ef6-b5c4-cdf75d921605","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"e54eb20e-bbd0-4716-92ab-2e4a2bb26942","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"LayerId":{"name":"49b0cacf-542f-4ef6-b5c4-cdf75d921605","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_fx_boat_debris","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"resourceVersion":"1.0","name":"e54eb20e-bbd0-4716-92ab-2e4a2bb26942","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"a20295be-3301-4796-833f-1c5898757435","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a20295be-3301-4796-833f-1c5898757435","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"LayerId":{"name":"49b0cacf-542f-4ef6-b5c4-cdf75d921605","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"a20295be-3301-4796-833f-1c5898757435","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"LayerId":{"name":"49b0cacf-542f-4ef6-b5c4-cdf75d921605","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_fx_boat_debris","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"resourceVersion":"1.0","name":"a20295be-3301-4796-833f-1c5898757435","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -62,7 +62,7 @@
             {"id":"c4da47ab-d3da-4297-b921-efdf348fb17f","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"200ead9e-561d-4b44-8823-0cadefa7db80","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"23a48dfe-3c9c-41dc-a04f-0f53fa0741d6","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e54eb20e-bbd0-4716-92ab-2e4a2bb26942","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"557f2394-bdcd-44db-92b5-27107882b3b3","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a20295be-3301-4796-833f-1c5898757435","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_fx_boat_debris","path":"sprites/spr_fx_boat_debris/spr_fx_boat_debris.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",
@@ -87,9 +87,10 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"49b0cacf-542f-4ef6-b5c4-cdf75d921605","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Extras",
-    "path": "folders/Boat/Sprites/Extras.yy",
+    "path": "folders/Sailing/Boat/Sprites/Extras.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_fx_boat_debris",

@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Scripts",
-    "path": "folders/Environment/Colors/Scripts.yy",
+    "path": "folders/Sailing/Environment/Colors/Scripts.yy",
   },
   "resourceVersion": "1.0",
   "name": "scr_system_colors_blend",

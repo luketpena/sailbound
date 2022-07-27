@@ -25,10 +25,10 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"c7b46137-7139-4a17-a6e1-c0a5eaad116b","path":"sprites/spr_env_weather_snow/spr_env_weather_snow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c7b46137-7139-4a17-a6e1-c0a5eaad116b","path":"sprites/spr_env_weather_snow/spr_env_weather_snow.yy",},"LayerId":{"name":"adb43655-3187-4021-9ea5-a8e5cdaae100","path":"sprites/spr_env_weather_snow/spr_env_weather_snow.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"c7b46137-7139-4a17-a6e1-c0a5eaad116b","path":"sprites/spr_env_weather_snow/spr_env_weather_snow.yy",},"LayerId":{"name":"adb43655-3187-4021-9ea5-a8e5cdaae100","path":"sprites/spr_env_weather_snow/spr_env_weather_snow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_env_weather_snow","path":"sprites/spr_env_weather_snow/spr_env_weather_snow.yy",},"resourceVersion":"1.0","name":"c7b46137-7139-4a17-a6e1-c0a5eaad116b","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"4cd2e6b8-3da9-4624-bfb1-026586becefa","path":"sprites/spr_env_weather_snow/spr_env_weather_snow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4cd2e6b8-3da9-4624-bfb1-026586becefa","path":"sprites/spr_env_weather_snow/spr_env_weather_snow.yy",},"LayerId":{"name":"adb43655-3187-4021-9ea5-a8e5cdaae100","path":"sprites/spr_env_weather_snow/spr_env_weather_snow.yy",},"resourceVersion":"1.0","name":null,"tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"4cd2e6b8-3da9-4624-bfb1-026586becefa","path":"sprites/spr_env_weather_snow/spr_env_weather_snow.yy",},"LayerId":{"name":"adb43655-3187-4021-9ea5-a8e5cdaae100","path":"sprites/spr_env_weather_snow/spr_env_weather_snow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_env_weather_snow","path":"sprites/spr_env_weather_snow/spr_env_weather_snow.yy",},"resourceVersion":"1.0","name":"4cd2e6b8-3da9-4624-bfb1-026586becefa","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -46,7 +46,7 @@
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"898bdce8-8398-4615-9b2e-8ccfbea3ea28","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c7b46137-7139-4a17-a6e1-c0a5eaad116b","path":"sprites/spr_env_weather_snow/spr_env_weather_snow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"e6af1fb5-3310-40b5-9db0-6f2d111266b2","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4cd2e6b8-3da9-4624-bfb1-026586becefa","path":"sprites/spr_env_weather_snow/spr_env_weather_snow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_env_weather_snow","path":"sprites/spr_env_weather_snow/spr_env_weather_snow.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",
@@ -71,9 +71,10 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"adb43655-3187-4021-9ea5-a8e5cdaae100","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Precipitation",
-    "path": "folders/Environment/Weather/Precipitation.yy",
+    "path": "folders/Sailing/Environment/Weather/Precipitation.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_env_weather_snow",

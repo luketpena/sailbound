@@ -1,7 +1,7 @@
 if (active && global.boat_canTouch) {
 	if (global.boat_canDamage) {
 		boat_impact(270,4);
-		scr_health_increment(-2);
+		health_increment(-2);
 	}
 	
 	var halves = [-1,-1];
