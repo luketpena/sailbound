@@ -13,6 +13,7 @@
 #macro c_water_highlight colors.water.highlight
 #macro c_water_depth colors.water.depths
 #macro c_front colors.front
+#macro c_front_vec3 colors.front_vec3
 
 #macro c_sky_space_vec3 colors.sky.space_vec3
 #macro c_sky_horizon_vec3 colors.sky.horizon_vec3

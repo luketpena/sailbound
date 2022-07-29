@@ -27,6 +27,13 @@ function player_get_imageSpeed_run() {
 
 function town_player_animate() {
 	switch(state) {
+		case is.Climbing:
+			sprite_index = s_peter_climb;
+			image_speed = 0;
+			image_index = (bottom mod 32) / 4;
+			
+			break;
+		
 		case is.Swimming:
 		case is.Diving:
 			sprite_index = spr_peter_swim;
@@ -61,7 +68,6 @@ function town_player_animate() {
 			break;
 			
 		case is.Jumping:
-			test();
 			sprite_index = spr_peter_jump;
 			break;
 			

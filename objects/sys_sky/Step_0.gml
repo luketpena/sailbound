@@ -10,7 +10,7 @@ if (clock.time>ClockPoint.Nightfall-5 && clock.time<ClockPoint.Morning+5) {
 }
 
 //---- Clouds ----\\
-var cloud_motion = (.2+.8*global.motion)
+var cloud_motion = (.2 + (.8 * global.motion));
 for (var i=0; i<cloud_num; i++) {
 	var cloud = cloud_list[i];
 	
@@ -23,8 +23,8 @@ for (var i=0; i<cloud_num; i++) {
 		if (fCloud.alpha < 1) fCloud.alpha += .01;	
 	}
 	
-	cloud.x -= cloud.speed*cloud_motion;
-	if (cloud.x<cloud_left) {
+	cloud.x -= cloud.speed * cloud_motion;
+	if (cloud.x < cloud_left) {
 		cloud.x = cloud_right;
 		cloud.image_index = irandom(sprite_get_number(spr_env_sky_clouds)-1);
 		cloud.image_xscale = choose(-1,1)*cloud.size;

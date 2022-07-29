@@ -39,6 +39,9 @@ function character_init() {
 	ladder_saved = null;
 	ladder_x = 0;
 	ladder_timeout = 0; // Prevents climbing a ladder immediately after jumping off
+	ladder_timeout_set = .5 * room_speed;
+	ladder_speed = 0;
+	ladder_maxSpeed = 1;
 
 	//---- Ropes ----\\
 	rope_active = false;
@@ -126,7 +129,8 @@ function character_physics_init() {
 	physics_fixture_set_density(fix, 0.2);
 	physics_fixture_set_linear_damping(fix, 0.1);
 	physics_fixture_set_angular_damping(fix, 0.1);
-	physics_fixture_bind_ext(fix, id, -8, -12);
+	
+	physics_fixture_bind_ext(fix, id, -9, -13);
 	
 	physics_fixture_delete(fix);
 	phy_fixed_rotation = true;	

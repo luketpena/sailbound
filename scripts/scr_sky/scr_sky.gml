@@ -3,8 +3,9 @@ function celestial_set_active(active) {
 }
 
 function Cloud(_lerp, _left, _right) constructor {
+	lerpVal = _lerp;
 	x = random_range(_left, _right);
-	y = lerp(global.horizon_y-32, global.horizon_y-128, _lerp);
+	y = lerp(global.horizon_y - 32, global.horizon_y - 128, _lerp);
 	color = merge_color(c_sky_horizon, c_sky_clouds, _lerp);
 	size = lerp(.2, 1, _lerp);
 	speed = lerp(.01, .2, _lerp);
@@ -15,4 +16,12 @@ function Cloud(_lerp, _left, _right) constructor {
 	merge_amount = ease_lerp(EASE.OutQuad,.25,1,_lerp);
 	alpha = 1;
 	image = irandom(1)*2;
+	
+	resetY_sailing = function() {
+		y = lerp(global.horizon_y - 32, global.horizon_y - 128, lerpVal);	
+	}
+	
+	resetY_town = function() {
+		y = lerp(global.horizon_y - 32, global.horizon_y - 192, lerpVal);	
+	}
 }

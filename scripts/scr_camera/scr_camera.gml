@@ -48,9 +48,9 @@ function camera_init(scale = 1) {
 	var windowScale = 1;
 	var surfaceScale = 4;
 
-	camera_set_view_pos(view_camera[0], 64, 384-global.hvh);
-	window_set_size(global.vw * windowScale, global.vh * windowScale);
-	surface_resize(application_surface, global.vw * surfaceScale, global.vh * surfaceScale);
+	camera_set_view_pos(view_camera[0], 64, 384 - global.hvh);
+	//window_set_size(global.vw * windowScale, global.vh * windowScale);
+	//surface_resize(application_surface, global.vw * surfaceScale, global.vh * surfaceScale);
 	display_set_gui_size(global.vw, global.vh);
 
 }

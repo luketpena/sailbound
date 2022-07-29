@@ -4,7 +4,6 @@ switch(state) {
 	case "launch":
 		submerged = phy_position_y + 24 > waterY;
 		if (moveSpeed > -targetMoveSpeed) {
-			test();
 			moveSpeed -= .1;	
 		}
 		if (!submerged) {

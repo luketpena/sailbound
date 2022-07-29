@@ -22,7 +22,7 @@ function town_player_senseFaced() {
 
 ///@description sense if a player is submerged enough to be considered "in the water"
 function town_player_senseWatered() {
-	watered = collision_rectangle(left, y, right, y+4, obj_block_water, false, true);
+	watered = collision_rectangle(left, y, right, y+4, o_block_water, false, true);
 }
 
 function town_player_senseSlipping() {

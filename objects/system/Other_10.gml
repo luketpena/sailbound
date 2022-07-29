@@ -15,7 +15,6 @@ instance_create_layer(0, 0, l_main, sys_drawing);
 
 
 //----< Environment >----\\
-instance_create_layer(0, 0, l_system, colors);
 instance_create_layer(0, 0, l_system, sys_glow);
 instance_create_layer(0, 0, l_system, sys_horizon);
 instance_create_layer(0, 0, l_system, sys_lighting);
@@ -36,6 +35,9 @@ instance_create_layer(room_width/2, global.water_y, l_main, obj_boat_front);
 instance_create_layer(room_width/2, global.water_y, l_main, obj_petra);
 instance_create_layer(0, 0, l_main, story);
 instance_create_layer(0, 0, l_main, obj_pause);
+
+// Settings
+global.motion = 1;
 
 //>> Loading
 //knapsack.load();

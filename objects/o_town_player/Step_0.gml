@@ -12,6 +12,9 @@ waist = y + step_height;
 
 if (latch_timeout > 0) latch_timeout--;
 
+draw_x += (x - draw_x) * .4;
+draw_y += (y - draw_y) * .4;
+
 //---- Running ----\\
 town_player_setControlImpulse();
 
@@ -75,7 +78,9 @@ switch(state) {
 			
 		if (walled) {
 			player_jump_wall(-1);
-			phy_speed_x = 0;
+			if (state = is.SpinFalling) {
+				player_moveSpeed_stop();
+			}
 		}
 		
 		if (state = is.SpinJumping) {

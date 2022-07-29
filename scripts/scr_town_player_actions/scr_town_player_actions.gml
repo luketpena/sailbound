@@ -6,6 +6,14 @@ function player_step_crouch() {
 	}
 }
 
+function player_moveSpeed_set(speed) {
+	move_speed_current = speed;	
+}
+
+function player_moveSpeed_stop() {
+	player_moveSpeed_set(0);	
+}
+
 function player_fallthru_step() {
 	if (fallthru_cooldown > 0) fallthru_cooldown-- else {
 		if (fallthru_active) {
@@ -29,8 +37,9 @@ function player_senseLadder() {
 	if (ladder_timeout > 0) ladder_timeout--;
 	
 	// Collision
-	ladder_touch = collision_rectangle(left, top, right, y - (h_height * .5), obj_ladder, false, true);
-	if (ladder_timeout = 0 && ladder_touch && abs(ctrl_vertical_axis) > .25) {
+	ladder_touch = collision_rectangle(left, top, right, y - (h_height * .5), o_ladder, false, true);
+	
+	if (ladder_timeout = 0 && ladder_touch && abs(ctrl_vertical_axis) > .8) {
 		phy_speed_stop();
 		ladder_x = ladder_touch.x + 16;
 		phy_position_x = ladder_x;
@@ -41,16 +50,18 @@ function player_senseLadder() {
 }
 
 function player_climbLadder() {
+	if (ladder_timeout > 0) ladder_timeout--;
+	
 	if (ctrl_jump_pulse > 0) {
 		player_jump_standard();	
+		ladder_timeout = ladder_timeout_set;
 	} else {
 		// Climbing
 		phy_position_x = ladder_x;
 		phy_speed_y = 0;
-		var move_spd = 1;
-		var movingUp = ctrl_vertical_axis < .25;
-		var movingDown = ctrl_vertical_axis > -.25;
-		ladder_touch = collision_rectangle(left, top, right, y, obj_ladder, false, true);
+		var movingUp = ctrl_vertical_axis < -.25;
+		var movingDown = ctrl_vertical_axis > .25;
+		ladder_touch = collision_rectangle(left, top, right, y, o_ladder, false, true);
 		if (ladder_touch) {
 			ladder_saved = ladder_touch;	
 		} else {
@@ -62,17 +73,21 @@ function player_climbLadder() {
 			}
 		}
 		
-		if (movingUp) {
-			phy_position_y -= move_spd;
-		}
 		
-		if (movingDown) {
-			phy_position_y += move_spd;
-			if (grounded) {
+				
+		if (movingDown || movingUp) {
+			var targetSpeed = movingDown ? ladder_maxSpeed : -ladder_maxSpeed;
+			ladder_speed += (targetSpeed - ladder_speed) * .2;	
+			if (grounded && movingDown) {
 				player_setState(is.Standing);
 				player_impactGround();
+				ladder_timeout = ladder_timeout_set;
 			}
-		}		
+		} else {
+			ladder_speed *= .85;	
+		}
+		
+		phy_position_y += ladder_speed;
 	}
 }
 

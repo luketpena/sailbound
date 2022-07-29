@@ -1,4 +1,4 @@
-camera_init();
+//camera_init();
 window_set_fullscreen(true);
 
 target = o_town_player;
@@ -17,7 +17,6 @@ cam_y = target_y;
 
 camera_set_view_pos(view_camera[0], cam_x, cam_y);
 
-
 function snapToTarget(newTarget = null) {
 	if (newTarget != null) {
 		target = newTarget;	
@@ -27,6 +26,6 @@ function snapToTarget(newTarget = null) {
 	camera_set_view_pos(view_camera[0], cam_x, cam_y);
 }
 
-function snapToPlayer() {
-	snapToTarget(o_town_player);
-}
+//function snapToPlayer() {
+//	snapToTarget(o_town_player);
+//}

@@ -47,7 +47,7 @@ function cameraSystem_init() {
 
 	camera_set_view_pos(view_camera[0], 64, 384-global.hvh);
 	var scale = 2;
-	window_set_size(global.vw*scale, global.vh*scale);
+	window_set_size(global.vw * scale, global.vh * scale);
 	surface_resize(application_surface, global.vw, global.vh);
 	display_set_gui_size(global.vw, global.vh);
 }

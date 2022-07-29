@@ -5,7 +5,7 @@
 //>> Setup
 application_surface_enable(true);
 os_lock_orientation(true);
-//window_set_fullscreen(true);
+window_set_fullscreen(true);
 
 debugMode = false;
 

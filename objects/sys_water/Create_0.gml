@@ -8,7 +8,7 @@ water_surface = noone;
 global.water_texture = noone;
 
 front_surface = noone;
-cutout_top_surface = noone;
+global.cutout_top_surface = noone;
 cutout_bottom_surface = noone;
 
 //-- WATER GLOBALS --\\

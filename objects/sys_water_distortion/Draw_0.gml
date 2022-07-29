@@ -3,8 +3,8 @@ if (surface_exists(distort_tex_surface)) {
 		draw_clear_alpha(c_black, 1);
 		var yy = -global.vy;
 		gpu_set_blendmode(bm_add);
-			draw_sprite_tiled_ext(spr_fx_water_distortion, 0, tex_x*2, yy, 1, 1, c_white, .5);
-			draw_sprite_tiled_ext(spr_fx_water_distortion, 0, tex_x, yy, 2, 2, c_white, .5);
+			draw_sprite_tiled_ext(spr_fx_water_distortion, 0, -global.vx + tex_x * 2, yy, 1, 1, c_white, .5);
+			draw_sprite_tiled_ext(spr_fx_water_distortion, 0, -global.vx + tex_x, yy, 2, 2, c_white, .5);
 		gpu_set_blendmode(bm_normal);
 	surface_reset_target();
 	distort_tex = surface_get_texture(distort_tex_surface);
@@ -23,7 +23,7 @@ if (surface_exists(distort_surface) && distort_tex!=noone) {
 		shader_reset();
 
 		gpu_set_tex_filter(false);
-		draw_surface_ext(sys_water.cutout_top_surface, -global.vx, 0, 1, 1, 0, c_black, 1);
+		draw_surface_ext(global.cutout_top_surface, 0, 0, 1, 1, 0, c_black, 1);
 	surface_reset_target();
 	
 	shader_set(shd_subtract);

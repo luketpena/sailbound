@@ -92,7 +92,7 @@ function setColors(_palette) {
 			depths_vec3: color_to_vec3(water.depths),
 			highlight_vec3: color_to_vec3(water.highlight),
 		},
-		front: swatch_blend(clock.time, _palette.front.array)
+		front: swatch_blend(clock.time, _palette.front.array),
 	}
 }
 
@@ -101,6 +101,7 @@ function setPalette() {
 	sky = currentColors.sky;
 	water = currentColors.water;
 	front = currentColors.front;	
+	front_vec3 = color_to_vec3(front);
 }
 
 function transitionPalette(lerpVal) {

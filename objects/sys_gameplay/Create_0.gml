@@ -24,4 +24,3 @@ global.item_list = item_list();
 
 //>> General
 global.stop = false; // Has the boat stopped moving?
-global.motion = 1; // The motion multiplier
