@@ -1,11 +1,10 @@
 {
-  "type": 1,
-  "parent": {
-    "name": "Room Transition",
-    "path": "folders/System/HUD/Room Transition.yy",
-  },
+  "resourceType": "GMShader",
   "resourceVersion": "1.0",
   "name": "shd_whiteToTransparent",
-  "tags": [],
-  "resourceType": "GMShader",
+  "parent": {
+    "name": "shaders",
+    "path": "folders/effects/shaders.yy",
+  },
+  "type": 1,
 }

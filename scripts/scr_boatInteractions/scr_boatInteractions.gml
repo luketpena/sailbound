@@ -55,14 +55,14 @@ function boat_impact(angle, strength, shove = false) {
 		obj_boat_back.phy_speed_y += move_y;
 	}
 
-	obj_boat_draw.flash = 1;
+	prnt_boat_draw.flash = 1;
 
-	boat_peter_set_animation(spr_peter_hit, .5, true, .5*room_speed, 0);
+	boat_peter_set_animation(spr_peter_hit, .5, true, seconds(.5), 0);
 	
 	global.boat_canDamage = false;
-	with(obj_boat_draw) {
-		dmgFlicker_alarm = 3 * room_speed;
-		dmgFlicker_flip_alarm = .1*room_speed;
+	with(prnt_boat_draw) {
+		dmgFlicker_alarm = seconds(3);
+		dmgFlicker_flip_alarm = seconds(.1);
 		dmgFlicker_flip = true;
 	}
 }
@@ -71,6 +71,29 @@ function boat_damage(damage, angle, strength, vibrate, shove = 0) {
 	health_increment(-damage);
 	boat_impact(angle, strength, shove);
 	vibrate_set_impulse(vibrate);	
+}
+
+function boat_destroy() {
+	global.ko = true;
+	// Destroy lost uncollected hulls
+	var _lostHulls = vault.inventory.getHullsLostByLevelId(global.level_id);
+	for (var i=0; i<array_length(_lostHulls); i++) {
+		var _id = _lostHulls[i];
+		var _hullIsCollected = array_find(sys_gameplay.hullOrbsCollected, _id);
+		// If we don't have the orb collected, mark it as destroyed and recent level positioning
+		if (_hullIsCollected == -1) {
+			vault.inventory.hull[$ _id] = {
+				status: ShipPartStatus.Destroyed,
+				levelId: "",
+				levelPercent: 0
+			}
+		}
+	}
+	
+	// Mark the ship as lost at sea
+	vault.inventory.hullLostAtSea(vault.dock.activeShip);
+	
+	transitionToRoom(r_town);
 }
 
 function motion_stop() {

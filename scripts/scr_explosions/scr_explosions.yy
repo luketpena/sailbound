@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Explosions",
-    "path": "folders/Effects/Explosions.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "scr_explosions",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Explosions",
+    "path": "folders/effects/Explosions.yy",
+  },
 }

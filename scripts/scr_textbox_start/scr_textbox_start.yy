@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Textbox",
-    "path": "folders/System/HUD/Textbox.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "scr_textbox_start",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "textbox",
+    "path": "folders/system/controllers/user-interface/hud/textbox.yy",
+  },
 }

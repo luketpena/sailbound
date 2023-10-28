@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Weather",
-    "path": "folders/Sailing/Environment/Weather.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "scr_weather",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Weather",
+    "path": "folders/sailing/Environment/Weather.yy",
+  },
 }

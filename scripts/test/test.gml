@@ -16,10 +16,20 @@ function testx3(x, y, col, ef) {
 
 function log() {
 	if (argument_count > 1) {
+		var finalString = "";
 		for (var i=0; i<argument_count; i++) {
-			show_debug_message(argument[i]);	
+			finalString += " | " + string(argument[i]);	
 		}
+		show_debug_message(finalString);
 	} else {
 		show_debug_message(argument[0]);
 	}
+}
+
+function sysLog(message) {
+	log("SYS: " + string(message));
+}
+
+function errLog(message) {
+	log("ERR: " + string(message));
 }

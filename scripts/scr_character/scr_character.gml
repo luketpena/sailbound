@@ -2,6 +2,7 @@ function character_init() {
 	character_physics_init();
 	character_defineStates();
 	
+	active = true; // Accepting input
 	grounded = -1; // Is there ground below
 	walled = false; // Is there a wall in front of movement
 	faced = false; // Is there a wall in the direction of movement
@@ -141,6 +142,7 @@ function character_defineStates() {
 		Standing: "standing",
 		Walking: "walking",
 		Running: "running",
+		JumpPrepping: "jumpPrepping",
 		Jumping: "jumping",
 		Falling: "falling",
 		Slipping: "slipping",

@@ -4,3 +4,5 @@ part_emitter_destroy(global.ps_fx_above,pe_water_line);
 
 part_type_destroy(pt_water_jump_main);
 part_type_destroy(pt_water_jump_point);
+
+shadow_cleanup();

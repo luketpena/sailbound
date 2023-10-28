@@ -1,10 +1,9 @@
 {
-  "parent": {
-    "name": "Items",
-    "path": "folders/Sailing/Pick-ups/Items.yy",
-  },
+  "resourceType": "GMNotes",
   "resourceVersion": "1.1",
   "name": "item_note",
-  "tags": [],
-  "resourceType": "GMNotes",
+  "parent": {
+    "name": "Items",
+    "path": "folders/sailing/Pick-ups/Items.yy",
+  },
 }

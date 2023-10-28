@@ -6,7 +6,10 @@ switch(state) {
 	case 1:
 		if (wait > 0) wait -- else {
 			state++;
-			room_goto(roomTarget);
+			room_goto(roomTarget)
+			if (saveOnTransition) {
+				vault.save();
+			}
 		}
 		break;
 	

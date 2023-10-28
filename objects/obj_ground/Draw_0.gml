@@ -1,5 +1,5 @@
 // Base color
-draw_sprite_ext(spr_pixel,0,x-hlength,top,length,thickness*2,0,c_water_depth,1);
+draw_sprite_ext(s_pixel,0,x-hlength,top,length,thickness*2,0,c_water_depth,1);
 
 // Draw ground texture
 if (surface_exists(surf_detail) && surface_exists(surf_detail_transfer)) {

@@ -1,5 +1,5 @@
 //camera_init();
-window_set_fullscreen(true);
+window_set_fullscreen(false);
 
 target = o_town_player;
 

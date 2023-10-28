@@ -49,7 +49,7 @@ if (active) {
 	
 	if (ring.active) {
 		if (ring.timer > 0) ring.timer-- else {
-			ring.timer = random_range(ring.minTimer, ring.maxTimer) * room_speed;
+			ring.timer = seconds(random_range(ring.minTimer, ring.maxTimer));
 			spawn_ringGroup();
 		}
 	}

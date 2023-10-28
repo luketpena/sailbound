@@ -1,0 +1,22 @@
+In the town:
+	- I can speak to an NPC. This opens the store.
+	- In the store, I can see the hulls with their accurate statuses
+	- If a hull is purchasable, I can do so:
+		- This will update the status to "active"
+		- This will remove some ammount of coins from the vault
+	- At the dock:
+		- I can choose to sail with any hull I own
+		- If the hull that is selected is unavailable, it will be cleared upon town start
+		- Any hull that is selected will be shown at the dock floating
+
+On the map:
+	- If a hull is lost on a level, I will see an icon for that orb above the level
+	
+When sailing:
+	- If a hull is lost on the map:
+		- I will "collect" it if I reach that progress point
+		- If I reach the end of the level, the orb will be recovered
+	- If my ship is destroyed:
+		- My current hull will be "lost at sea" at my current progress point
+		- All collected lost hulls: returned to their place in the map
+		- All uncollected lost hulls: destroyed

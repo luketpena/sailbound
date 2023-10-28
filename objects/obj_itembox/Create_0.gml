@@ -6,3 +6,5 @@ item = -1;
 
 tilt = 1;
 tilt_rot = 0;
+
+icon = itemInventory.catalogue.get(item).icon;

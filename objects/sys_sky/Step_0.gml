@@ -5,8 +5,8 @@ switch(celestial_active) {
 }
 
 
-if (clock.time>ClockPoint.Nightfall-5 && clock.time<ClockPoint.Morning+5) {
-	stars_alpha = fadeRange(clock.time,20,20,ClockPoint.Night,ClockPoint.Sunrise-12,0,1);
+if (clock.time > clock.point.nightfall && clock.time < clock.point.dayEnd) {
+	stars_alpha = fadeRange(clock.time, .1, .08, clock.point.night, clock.point.sunrise, 0, 1);
 }
 
 //---- Clouds ----\\
@@ -27,6 +27,6 @@ for (var i=0; i<cloud_num; i++) {
 	if (cloud.x < cloud_left) {
 		cloud.x = cloud_right;
 		cloud.image_index = irandom(sprite_get_number(spr_env_sky_clouds)-1);
-		cloud.image_xscale = choose(-1,1)*cloud.size;
+		cloud.image_xscale = choose(-1, 1)*cloud.size;
 	}
 }

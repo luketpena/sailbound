@@ -3,7 +3,7 @@
 function pt_make_spark(){
 	//spark
 	global.pt_spark = part_type_create();
-	part_type_sprite(global.pt_spark, spr_pixel, 0, 0, 0);
+	part_type_sprite(global.pt_spark, s_pixel, 0, 0, 0);
 	part_type_size(global.pt_spark, 0.50, 1, 0, 0);
 	part_type_scale(global.pt_spark, 3, 1);
 	part_type_orientation(global.pt_spark, 0, 0, 0, 0, 1);

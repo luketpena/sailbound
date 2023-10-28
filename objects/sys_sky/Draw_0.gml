@@ -10,7 +10,7 @@ if (surface_exists(surf_sky)) {
 		gpu_set_blendmode(bm_add);
 		
 			draw_sprite_ext(spr_env_sky_fade, 0, 0, global.vh, global.vw, 1, 0, c_white, .8);
-			var flare_sunset = fadeRange(clock.time, 20, 40, clock.point.sunfall, clock.point.night, 0, .5);
+			var flare_sunset = fadeRange(clock.time, .05, .05, clock.point.sunfall, clock.point.night, 0, .5);
 			draw_sprite_ext(spr_fx_flare_300, 0, global.vw*.1, global.vh, 2, 1, 0, c_white, flare_sunset);			
 			
 		gpu_set_blendmode(bm_normal);
@@ -48,7 +48,7 @@ if (celestial_fade > 0) {
 	//>> Drawing the stars
 	if (stars_alpha > 0) {
 		gpu_set_blendmode(bm_add);
-			draw_sprite_tiled_ext(spr_env_sky_stars, 0, 0, 0, 1, 1, c_white, celestial_fade * stars_alpha);	
+			draw_sprite_tiled_ext(spr_env_sky_stars, 0, global.vx, global.horizon_y, 1, 1, c_white, celestial_fade * stars_alpha);	
 		gpu_set_blendmode(bm_normal);
 	}
 

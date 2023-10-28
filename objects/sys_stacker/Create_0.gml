@@ -1,2 +1,2 @@
 layerCount = 64;
-global.stackDepth = .75;
+global.stackDepth = 1;

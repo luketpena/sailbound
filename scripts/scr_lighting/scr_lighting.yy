@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Main",
-    "path": "folders/Effects/Lighting/Main.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "scr_lighting",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Main",
+    "path": "folders/effects/Lighting/Main.yy",
+  },
 }

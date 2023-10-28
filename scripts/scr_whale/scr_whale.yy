@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Whale",
-    "path": "folders/Sailing/Events/Whale.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "scr_whale",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "whale",
+    "path": "folders/sailing/events/whale.yy",
+  },
 }

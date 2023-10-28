@@ -3,13 +3,13 @@
 */
 
 function item_trigger_cannon() {
-	global.item_current = items.cannon;
+	global.item_current = Items.cannon;
 	global.item_ammo = 12;
 	sys_hud.item_singleUse = false;
 }
 
 function item_trigger_boomerang() {
-	global.item_current = items.boomerang;
+	global.item_current = Items.boomerang;
 	global.item_ammo = 1;
 	sys_hud.item_singleUse = true;
 }

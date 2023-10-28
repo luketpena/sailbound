@@ -1,29 +1,29 @@
 
 //Provides an array containing containing both the x and y lengthdir for a give len and dir
-function lengthdir(length,direction){
+function lengthdir(length, direction){
 	return [
-		lengthdir_x(length,direction),
-		lengthdir_y(length,direction)
+		lengthdir_x(length, direction),
+		lengthdir_y(length, direction)
 	];
 }
 
 //Fades up to a point, plateaus at the point, and translates to a number range in the output
 function fadeRange(value, threshold_low, threshold_high, plateau_low, plateau_high, output_min, output_max) {
 
-	var limit_high = threshold_high+plateau_high;
-	var limit_low = threshold_low-plateau_low;
-
+	var limit_high = plateau_high + threshold_high;
+	var limit_low = plateau_low - threshold_low;
+	
 	//Check for values beyond the fade range
-	if (value>limit_high || value<limit_low ) then return output_min;
+	if (value > limit_high || value < limit_low) then return output_min;
 	//Check for values within the plateau
-	if (value>=plateau_low && value<=plateau_high) then return output_max;
+	if (value >= plateau_low && value <= plateau_high) then return output_max;
 
 	var lerpValue;
 	//Fade to point from values below and above the plateau
-	if (value<=limit_high && value>=plateau_high) then lerpValue = (threshold_high-(value-plateau_high) ) / threshold_high; //fading to top
-	if (value>=limit_low  && value<=plateau_low)  then lerpValue = (value-(plateau_low-threshold_low) ) / threshold_low; //fading to bottom
+	if (value <= limit_high && value >= plateau_high) then lerpValue = (threshold_high - (value - plateau_high) ) / threshold_high; //fading to top
+	if (value >= limit_low  && value <= plateau_low)  then lerpValue = (value - (plateau_low - threshold_low) ) / threshold_low; //fading to bottom
 	
-	return lerp(output_min,output_max,lerpValue);
+	return lerp(output_min, output_max, lerpValue);
 }
 
 //This can be used to grow or return a value in response to some truthy value
@@ -37,11 +37,11 @@ function grow(growTruthVal, targetVal, minVal, maxVal, rateInc, rateDec) {
 
 //Sets all of the value typically needed for drawing text
 function draw_set_style(font,color,halign,valign,alpha) {
-	if (font) draw_set_font(font);
-	if (color) draw_set_color(color);
-	if (halign) draw_set_halign(halign);
-	if (valign) draw_set_valign(valign);
-	if (alpha>0) draw_set_alpha(alpha);
+	draw_set_font(font);
+	draw_set_color(color);
+	draw_set_halign(halign);
+	draw_set_valign(valign);
+	draw_set_alpha(alpha);
 }
 
 function draw_text_color1(x,y,str,color,alpha) {
@@ -110,4 +110,8 @@ function safeDestroy(object = null) {
 function phy_speed_stop() {
 	phy_speed_x = 0;
 	phy_speed_y = 0;
+}
+
+function seconds(value) {
+	return value * game_get_speed(gamespeed_fps);	
 }

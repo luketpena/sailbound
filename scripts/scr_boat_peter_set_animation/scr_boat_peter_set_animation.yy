@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Animation",
-    "path": "folders/Sailing/Boat/Scripts/Animation.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "scr_boat_peter_set_animation",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Draw",
+    "path": "folders/sailing/Boat/Scripts/Draw.yy",
+  },
 }

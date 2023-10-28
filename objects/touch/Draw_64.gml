@@ -1,6 +1,3 @@
-draw_set_alpha(1);
-draw_set_color(c_white);
-draw_text(32, 32, nextFinger);
 if (debug) {
 	for (var i=0; i<=maxFingers; i++) {
 		draw_set_color(debugColor(i));

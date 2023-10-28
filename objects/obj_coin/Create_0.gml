@@ -17,7 +17,7 @@ active = false;
 size = 0;
 
 sink_active = false;
-sink_wait = 3*room_speed;
+sink_wait = 3 * room_speed;
 slideOnGround = 0;
 
 function collect() {

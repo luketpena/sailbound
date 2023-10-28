@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "General",
-    "path": "folders/Sailing/Environment/Colors/Palettes/Legacy/General.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "scr_palette_haunted",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "General",
+    "path": "folders/sailing/Environment/Colors/Palettes/Legacy/General.yy",
+  },
 }

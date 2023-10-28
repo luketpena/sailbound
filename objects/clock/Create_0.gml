@@ -6,7 +6,8 @@ point = {
 	sunfall: .45, // .05
 	nightfall: .5, // .05
 	night: .6, // .1
-	sunrise: .9 // .3
+	sunrise: .9, // .3
+	dayEnd: 1,
 }
 
 time = 0; // Progress 0 to 1 within a day
@@ -24,11 +25,8 @@ var dayDurationInMinutes = 20; // Arbitrary, used to determine how long a day sh
 clock_speed = ((1 / 60) / 60) / dayDurationInMinutes;
 
 // The chapter values let the time of day progress according to chapter progress
-timeStart = null; // Set to whatever time the chapter started at
-timeEnd = null; // Lerps to this value from clockTimeStart
-
-alarm[0] = 1;
-alarm[1] = 1;
+timeStart = 0; // Set to whatever time the chapter started at
+timeEnd = 0; // Lerps to this value from clockTimeStart
 
 //@param newEndTime Number 0 to 1 or null
 function setEndTime(newEndTime) {
@@ -69,25 +67,25 @@ function update(chapter) {
 
 // Sets the groupped period name based on the time
 function updatePeriod() {
-	//>>night to sunrise
-	if (time >= point.sunrise && time <= point.morning) period = TimeOfDay.Madrugada
-	//>>sunrise to day
-	else if (time >= point.morning && time <= point.day) period = TimeOfDay.Morning
-	//>>Day sustained
-	else if (time <= point.sunset || time >= point.day) period = TimeOfDay.Day
-	//>>Day to sunset
-	else if (time >= point.sunset && time <= point.sunfall) period = TimeOfDay.Afternoon
-	//>>sunset to sunfall
-	else if (time >= point.sunfall && time <= point.nightfall) period = TimeOfDay.Evening
-	//>>sunfall to night
-	else if (time >= point.sunfall && time <= point.night) period = TimeOfDay.Sunset
-	//>>night sustained
-	else if (time <= point.sunrise && time >= point.night) period = TimeOfDay.Night;
+	//>> sunrise to day
+	if (time < point.day) period = TimeOfDay.Morning
+	//>> Day sustained
+	else if (time < point.sunset) period = TimeOfDay.Day
+	//>> Day to sunset
+	else if (time < point.sunfall) period = TimeOfDay.Afternoon
+	//>> sunset to sunfall
+	else if (time < point.nightfall) period = TimeOfDay.Evening
+	//>> sunfall to night
+	else if (time < point.night) period = TimeOfDay.Sunset
+	//>> night sustained
+	else if (time < point.sunrise) period = TimeOfDay.Night
+	//>> night to sunrise
+	else period = TimeOfDay.Madrugada;
 }
 
-// Fades valuie up to 1 towards the night and snaps to 0 outside that range
+// Fades value up to 1 towards the night and snaps to 0 outside that range
 function updateNightFade() {
-	if (time > point.night && time < point.sunrise) {
-		nightFade = fadeRange(time, .1, .1, point.night, point.sunrise, 0, 1);
+	if (time > point.nightfall && time < point.dayEnd) {
+		nightFade = fadeRange(time, .1, .08, point.night, point.sunrise, 0, 1);
 	} else nightFade = 0;
 }

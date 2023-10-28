@@ -1,10 +1,9 @@
 {
-  "parent": {
-    "name": "Controllers",
-    "path": "folders/Town/Controllers.yy",
-  },
+  "resourceType": "GMNotes",
   "resourceVersion": "1.1",
   "name": "Note2",
-  "tags": [],
-  "resourceType": "GMNotes",
+  "parent": {
+    "name": "Controllers",
+    "path": "folders/town/Controllers.yy",
+  },
 }

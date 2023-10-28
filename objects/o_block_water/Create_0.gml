@@ -1,6 +1,7 @@
 #region constructors
-	///@param x
-	///@param index
+	///@function Creates a point along the line of vertices at the top of the water
+	///@param {real} _x
+	///@param {real} _index
 	function WaterPoint(
 		_x, _index
 	) constructor {
@@ -9,9 +10,11 @@
 		index = _index;
 	}
 
-	///@param angleOffset
-	///@param rate
-	///@param len
+	///@function One of many overlapping waves that influence the y offset of WaterPoints
+	///@param {real} _angleOffset
+	///@param {real} _rate
+	///@param {real} _len
+	///@param {real} _index
 	function WaterWave(
 		_angleOffset,
 		_rate,
@@ -33,7 +36,11 @@
 		}
 		// Gets you the saved rotation for this current wave at a given looping index
 		getOffset = function(i) {
-			return o_block_water.waveOffset[index][i mod divCount];
+			var result = array_get(
+				array_get(o_block_water.waveOffset, index),
+				i mod divCount
+			);
+			return result;
 		}
 	}
 #endregion
@@ -61,9 +68,12 @@ waveOffset = [];
 for (var i=0; i<waveCount; i++) {
 	var wave = waves[i];
 	waveOffset[i] =	[];
-	for (var j=0; j<wave.divCount; j++) {
-		var offset = wave.setOffset(j);
-		array_push(waveOffset[i], offset);
+	var cc = wave.divCount;
+	 {
+		for (var j=0; j<wave.divCount; j++) {
+			var offset = wave.setOffset(j);
+			array_push(waveOffset[i], offset);
+		}
 	}
 }
 
@@ -94,6 +104,7 @@ function drawSurfaceLine() {
 	for (var i=minMax.iMin; i<minMax.iMax; i++) {
 		var point = points[i];
 		var pointPrev = points[i-1];
+		draw_set_alpha(1);
 		draw_line_color(point.x, point.y - 1, pointPrev.x, pointPrev.y - 1, c_water_highlight, c_water_highlight);
 	}
 }

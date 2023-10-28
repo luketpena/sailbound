@@ -1,21 +1,22 @@
 function town_player_setControlImpulse() {
-	ctrl_move_axis = gamepad_axis_value(0,gp_axislh);
-	ctrl_vertical_axis = gamepad_axis_value(0,gp_axislv);
-
-	if gamepad_button_check_pressed(0,gp_face4) ctrl_jump_pulse = .2*room_speed;
-	if gamepad_button_check(0,gp_face4) ctrl_jump_hold = true else ctrl_jump_hold = false;
-
-
-	if (ctrl_down_pulse = -1) {
-		if (gamepad_axis_value(0,gp_axislv)>.6) {
-			ctrl_down_pulse = 1;
-		}
-	} else {
-		if (gamepad_axis_value(0,gp_axislv)<.2) ctrl_down_pulse = -1;
-	}
+	// Check for gamepad input
+	ctrl_move_axis = input.sail.move_h.value;
+	ctrl_vertical_axis = input.sail.move_v.value;
+	
+	//// If not out of deadzone, snap to 0
+	//if (abs(ctrl_move_axis) < global.deadzone) ctrl_move_axis = 0;
+	//if (abs(ctrl_vertical_axis) < global.deadzone) ctrl_vertical_axis = 0;
+	
+	//// If at zero, allow for checking for keyboard input
+	//if (ctrl_move_axis = 0) {
+	//	ctrl_move_axis = input_check("left") ? -1 : (input_check("right") ? 1 : 0);
+	//}
+	
+	//if (ctrl_vertical_axis = 0) {
+	//	ctrl_vertical_axis = input_check("up") ? -1 : (input_check("down") ? 1 : 0);
+	//}
+	
+	if (input.sail.move_v.clickNegative) ctrl_jump_pulse = seconds(.2);
+	ctrl_jump_hold = input.sail.move_v.value < 0;
 }
 
-function town_player_resetControlImpulse() {
-	ctrl_down_pulse = -1;
-	ctrl_jump_pulse = 0;
-}

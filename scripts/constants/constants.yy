@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Constants",
-    "path": "folders/System/Constants.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "constants",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Constants",
+    "path": "folders/system/Constants.yy",
+  },
 }

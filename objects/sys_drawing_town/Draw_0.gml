@@ -1,5 +1,5 @@
-lighting_shader_draw();
+//lighting_shader_draw();
 
-draw_tag("character");
+//draw_tag("character");
 
-shader_reset();
+//shader_reset();

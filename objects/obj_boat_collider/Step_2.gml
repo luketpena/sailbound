@@ -1,7 +1,7 @@
-if (instance_exists(obj_boat_front) && instance_exists(obj_boat_draw)) {
+if (instance_exists(obj_boat_front) && instance_exists(prnt_boat_draw)) {
 	x = obj_boat_front.x_center_draw;
 	y = obj_boat_front.y_center_draw;
-	image_angle = obj_boat_draw.hull_angle;
+	image_angle = prnt_boat_draw.hull_angle;
 }
 
 

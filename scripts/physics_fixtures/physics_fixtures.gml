@@ -1,6 +1,6 @@
 ///@description Creates and binds a box fixture to an object
 
-function fixture_create_box(target_id, halfWidth, halfHeight, density, restitution, linear_damping, angular_damping, friction, sensor, fixed_rotation, kinematic = false) {
+function fixture_create_box(target_id, halfWidth, halfHeight, density, restitution, linear_damping, angular_damping, friction, sensor, fixed_rotation, kinematic = false, fixedOffset = true) {
 
 	var fix = physics_fixture_create();
 	physics_fixture_set_box_shape(fix, halfWidth, halfHeight);
@@ -16,7 +16,9 @@ function fixture_create_box(target_id, halfWidth, halfHeight, density, restituti
 		physics_fixture_set_kinematic(fix);
 	}
 	
-	physics_fixture_bind_ext(fix, target_id, halfWidth - 1, halfHeight -1);
+	var xo = fixedOffset ? halfWidth - 1 : 0;
+	var yo = fixedOffset ? halfHeight -1 : 0;
+	physics_fixture_bind_ext(fix, target_id, xo, yo);
 	target_id.phy_fixed_rotation = fixed_rotation;
 	
 	physics_fixture_delete(fix);

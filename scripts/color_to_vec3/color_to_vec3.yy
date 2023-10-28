@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Scripts",
-    "path": "folders/Sailing/Environment/Colors/Scripts.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "color_to_vec3",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Scripts",
+    "path": "folders/sailing/Environment/Colors/Scripts.yy",
+  },
 }

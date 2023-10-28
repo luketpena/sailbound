@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Map",
-    "path": "folders/Fuckit Buckit/Map.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "map_scripts",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Map",
+    "path": "folders/depreciated/Fuckit Buckit/Map.yy",
+  },
 }

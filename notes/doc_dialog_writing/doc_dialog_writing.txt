@@ -1,0 +1,38 @@
+--< HOW IT WORKS >--
+To avoid the performance issues of writing individual letters via text (while wanting to retain per-character
+effects), I have mapped the text to a ds map. This is done in scr_alphabet_map.
+
+Because of this, all text written must be written in lowercase. This is what is used to map it, capital
+letters are reserved for some special characters.
+
+--< EFFECTS >--
+Effects are injected into the text before the text you want to be affected.
+
+Example: "if i want this to [color,255,0,0] [quakeLow] shake [quakeOff] then i might do something like this.".
+	- Effects must be surrounded by brackets
+	- There must be spaces between each effect call and line of text
+	- Multiple effects can be called in a row
+	- If an effect has arguments, these are provided via commas after the name of the effect
+	
+Available effects:
+	- [color,r,g,b] Sets the color of dialog to follow via rgb values.
+	- [defaultColor] Returns the text to the default color (as defined earlier in dialog_display)
+	- [quakeLow] Shakes the text a little bit
+	- [quakeHigh] Shakes the text a lot
+	- [quakeOff] Turns off shaking
+	- [waveSet,strength,speed,offset] Starts a wave:
+		- Strength: how high up and down it moves
+		- Speed: how quickly the sine wave occilates
+		- Offset: how much each individual character is offset on the sine value from the previous value
+	- [waveOn] Turns the wave on (using existing values)
+	- [waveOff] Turns the wave off
+	- [scale,size,rate] Sets the start scale and how quickly it should reduce to normal
+	
+Future presets I would like:
+	- [sing] Scales mildly (like 1.2) and waves
+	- [shout] Scales from 2 or larger quickly down to 0
+	- [whisper] Scales up from 0 slowly
+	- [c_white, c_black, etc] Set color by color preset values
+
+Future effects:
+	- [wobble] Characters rotate back and forth on a wave

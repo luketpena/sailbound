@@ -12,7 +12,7 @@ if surface_exists(surf_cloud) {
 			draw_sprite_ext(spr_env_storm_clouds_loop, 0, cloud.x+cloud.length, cloud.y-global.vy, cloud.scale, cloud.scale, 0, c, 1);
 		}
 			
-		draw_sprite_ext(spr_pixel, 0, 0, 0, global.vw*2*(1-storm_progress), global.vh, 0, c_black, 1);
+		draw_sprite_ext(s_pixel, 0, 0, 0, global.vw*2*(1-storm_progress), global.vh, 0, c_black, 1);
 	surface_reset_target();
 	
 	shader_set(shd_subtract);

@@ -1,11 +1,6 @@
-function Pos() constructor {
-	x = 0;
-	y = 0;
-}
-
-///@param x
-///@param y
-function Posx(_x, _y) constructor {
+///@param {Real} x 
+///@param {Real} y
+function Pos(_x = 0, _y = 0) constructor {
 	x = _x;
 	y = _y;
 }

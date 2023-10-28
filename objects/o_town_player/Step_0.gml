@@ -16,8 +16,12 @@ draw_x += (x - draw_x) * .4;
 draw_y += (y - draw_y) * .4;
 
 //---- Running ----\\
-town_player_setControlImpulse();
+active = !global.interfaceOpen;
+if (active) {
+	town_player_setControlImpulse();
+}
 
+// TODO: Make this more universal / live with the interactable
 prnt_interactable.active = false;
 var closestInteractable = instance_nearest(x + (16 * face_draw), y, prnt_interactable);
 if (distance_to_object(closestInteractable) < 16) {
@@ -140,12 +144,10 @@ switch(state) {
 		town_player_senseSlipping();
 		player_senseLadder();
 		
-		if (state = is.Running) {
-			var i = floor(image_index);
-			if ((i = 0 || i = 4) && dust.index != i) {
-				dust.index = i;
-				dust_create_run(draw_x, draw_y + 12, face_draw);
-			}
+		var i = floor(image_index);
+		if ((i = 0 || i = 4) && dust.index != i) {
+			dust.index = i;
+			dust_create_run(draw_x, draw_y + 12, face_draw);
 		}
 		break;
 		
@@ -191,6 +193,3 @@ switch(state) {
 }
 
 town_player_setFacing();
-
-
-town_player_resetControlImpulse();

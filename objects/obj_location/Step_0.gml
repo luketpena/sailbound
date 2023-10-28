@@ -8,7 +8,7 @@ switch(state) {
 			state = "stop";
 			motion_stop();
 			sys_hud.hud_active = false;
-			obj_boat_draw.sail_active = false;
+			prnt_boat_draw.sail_active = false;
 		}
 		break;
 		

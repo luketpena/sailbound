@@ -4,13 +4,10 @@ function boat_controls_step() {
 	boat_controls_jumpPulseManagement();
 	boat_controls_autopilot();
 	
-	if (control_active) {
-		//Each control method sets its own impulses off
-		switch (control_inputType) {
-			//case "touch": boat_controls_touch(); break;
-			case InputType.mobile: boat_controls_mobile(); break;
-			case InputType.gamepad: boat_controls_gamepad(); break;
-		}
+	if (global.input_active) {
+		ctrl_move = 0;
+		// Movement
+		boat_input_move_gamepad();
 	}
 }
 
@@ -39,31 +36,25 @@ function boat_controls_autopilot() {
 }
 
 ///@description Detects inputs from a gamepad and translates them into movement
-function boat_controls_gamepad() {
-
+function boat_input_move_gamepad() {
 	// Movement
-	var _deadzone = .2;
-	var _tilt = gamepad_axis_value(0,gp_axislh);
-	if (abs(_tilt)>_deadzone) {
+	var _tilt = input.sail.move_h.value;
+	if (abs(_tilt) > 0) {
 		autopilot = false;	
 		ctrl_move = clamp(_tilt,-1,1)
 	} else if (!autopilot) ctrl_move = 0;
 	
-	// Stick jump lets the player control vertical movement with the control stick
-	// This resets the position when brought to neutral, enforcing clicking the stick in a direction to jump rather than just holding
-	if (abs(gamepad_axis_value(0,gp_axislv)) < .4) ctrl_jump_stick_pos = 0;
 
-	//>> Jump Press
-	var stickJump = (gamepad_axis_value(0,gp_axislv) < -.5 && ctrl_jump_stick_pos != -1);
-	if (gamepad_button_check_pressed(0,gp_face4) || gamepad_button_check_pressed(0,gp_shoulderl) || stickJump) {
+	// Jump
+	if (input.sail.move_v.clickNegative) {
 		boat_controls_triggerJump();
 	}
 
-	// Dive Release
-	var stickDive = (gamepad_axis_value(0,gp_axislv) > .5 && ctrl_jump_stick_pos != 1);
-	if (gamepad_button_check_pressed(0,gp_face1) || gamepad_button_check_pressed(0,gp_shoulderlb) || stickDive) {
+	// Dive
+	if (input.sail.move_v.clickPositive) {
 		boat_controls_triggerDive();
 	}
+	
 }
 
 function boat_controls_mobile() {

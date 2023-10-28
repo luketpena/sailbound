@@ -1,0 +1,1 @@
+draw_billboard_sprite(sprite_index, 0, x, y, lerp(.5, 1, progress), value, 0, c_front, value);

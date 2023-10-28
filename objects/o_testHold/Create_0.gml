@@ -1,0 +1,1 @@
+confirm = new HoldToInteract(GpFaceButton.A, "ui", "select");

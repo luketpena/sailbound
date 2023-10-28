@@ -13,14 +13,15 @@
 progress = 0; // The progress through the total duration of all chapters
 chapterProgress = 0; // The percent progress through the current chapter
 chapterCurrentIndex = 0; // The index of the chapter we are currently within
+global.level_progress = 0;
+
 storyEnd = false; // Triggers if loop is false and the story comes to an end
-active = false; // Whether or not the story should progress
+active = true; // Whether or not the story should progress
 mobs = [];
 mobActive = false;
 maxDanger = 0;
 gameMode = GameMode.Default;
 global.danger = 0;
-
 dangerLevel = 0;
 
 ring = {
@@ -38,7 +39,6 @@ chest = {
 	timer: 0,
 	diceSize: 0,
 	diceSides: [],
-	
 }
 /*
 	List format:
@@ -49,15 +49,26 @@ chest = {
 	}
 */
 
-config = storyConfig_tropical();
+config = {};
+switch(global.level_id) {
+	case "tropical":
+		config = storyConfig_tropical();
+		break;
+		
+	default:
+		config = storyConfig_tropical(); // Loads something in to prevent crashes
+		sysLog("No config specified for the current global level id.");
+		sysLog(global.level_id);
+		break;
+}
 
 // Add start times to the config chapters
-chapterCount = array_length(config.chapters);
+chapterCount = array_length(config.chapters ?? []) / 4;
 totalDuration = 0;
 for (var i=0; i<chapterCount; i++) {
 	var c = config.chapters[i];
 	c.startTime = totalDuration;
-	totalDuration += c.duration * room_speed;
+	totalDuration += seconds(c.duration);
 }
 
 if (active) {

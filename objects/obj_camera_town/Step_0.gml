@@ -1,7 +1,7 @@
 if (!focus_active) {
 	
 	target_x = target.x - global.hvw;
-	target_y = target.y - global.hvh;
+	target_y = target.y - 48 - global.hvh;
 	
 	for (var i=0; i<focus_num; i++) {
 		var o = instance_find(obj_cam_focus, i);
@@ -31,7 +31,7 @@ if (!focus_active) {
 cam_x += (target_x - cam_x) * .05;
 cam_y += (target_y - cam_y) * .05;
 
-camera_set_view_pos(view_camera[0], cam_x, cam_y);
+camera_set_view_pos(view_camera[0], floor(cam_x), floor(cam_y));
 
 global.vx = camera_get_view_x(view_camera[0]);
 global.vy = camera_get_view_y(view_camera[0]);

@@ -17,6 +17,8 @@ boat_physics_lock_hold();
 boat_step_angleCorrection();
 boat_step_particles();
 
+shadow_step(x_center_draw, y_center_draw);
+
 // Conditions (should NEVER be flipped)
 flipped = (x < back.x) //flipped status
 // Cchecking if touching the water surface is disabled

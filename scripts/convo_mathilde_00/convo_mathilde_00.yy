@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Mathilde",
-    "path": "folders/Town/NPC/Conversations/Mathilde.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "convo_mathilde_00",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Mathilde",
+    "path": "folders/town/npc/Conversations/Mathilde.yy",
+  },
 }

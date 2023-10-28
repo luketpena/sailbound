@@ -98,9 +98,6 @@ function story_init() {
 	var _firstChapter = getFirstChapter();
 	clock.setStartTime(config.startTime);
 	story_chapterStart(null, _firstChapter);
-	//if (story.gameMode = GameMode.Default) {
-	//	clock.active = false;	
-	//}
 	
 	// Execute the initializing script
 	if (variable_struct_exists(config, "startScript")) {
@@ -116,6 +113,10 @@ function story_init() {
 // Triggers the end of a story in default mode
 function story_end() {
 	storyEnd = true;
+	vault.bank.incrementGold(global.coin);
+	vault.inventory.recoverShips(global.level_id);
+
+	transitionToRoom(r_town, true);
 }
 
 function story_stop() {
@@ -137,7 +138,8 @@ function story_increaseProgress() {
 			break;
 	}
 	// Calculating the chapter specific progress from total progress
-	chapterProgress = (progress - _currentChapter.startTime) / (_currentChapter.duration * room_speed);
+	chapterProgress = (progress - _currentChapter.startTime) / (seconds(_currentChapter.duration));
+	global.level_progress = (progress / totalDuration);
 }
 
 // Returns the current chapter

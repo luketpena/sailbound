@@ -1,4 +1,4 @@
-enum items {
+enum Items {
 	cannon,
 	boomerang,
 	potion,

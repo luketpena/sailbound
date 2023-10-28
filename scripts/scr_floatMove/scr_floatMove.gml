@@ -30,6 +30,15 @@ function floatMove_move_point(_x, _y) {
 	floatMove_move_dir(dir);
 }
 
+function floatMove_move_toPoint(_x, _y, _threshold = 16) {
+	if (point_distance(x, y, _x, _y) > _threshold) {
+		floatMove_move_point(_x, _y);
+	} else {
+		floatMove_stop_ext(.8, .8);
+	}
+
+}
+
 function floatMove_move_object(object) {
 	if (instance_exists(object)) {
 		floatMove_move_point(object.x, object.y);	
@@ -61,9 +70,9 @@ function floatMove_speed_set_dir(dir, speed) {
 	);
 }
 
-function floatMove_apply() {
-	x += floatMove.xspeed;
-	y += floatMove.yspeed;
+function floatMove_apply(_rate = 1) {
+	x += floatMove.xspeed * _rate;
+	y += floatMove.yspeed * _rate;
 }
 
 function floatMove_apply_phy() {

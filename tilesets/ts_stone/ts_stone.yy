@@ -1,25 +1,9 @@
 {
-  "spriteId": {
-    "name": "spr_ts_rock",
-    "path": "sprites/spr_ts_rock/spr_ts_rock.yy",
-  },
-  "tileWidth": 16,
-  "tileHeight": 16,
-  "tilexoff": 0,
-  "tileyoff": 0,
-  "tilehsep": 2,
-  "tilevsep": 2,
-  "spriteNoExport": true,
-  "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
-  },
-  "out_tilehborder": 2,
-  "out_tilevborder": 2,
-  "out_columns": 7,
-  "tile_count": 56,
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "ts_stone",
   "autoTileSets": [
-    {"tiles":[
+    {"resourceType":"GMAutoTileSet","resourceVersion":"1.0","name":"autotile_1","closed_edge":false,"tiles":[
         18,
         25,
         24,
@@ -67,10 +51,30 @@
         29,
         16,
         28,
-      ],"closed_edge":false,"resourceVersion":"1.0","name":"autotile_1","tags":[],"resourceType":"GMAutoTileSet",},
+      ],},
   ],
-  "tileAnimationFrames": [],
-  "tileAnimationSpeed": 15.0,
+  "macroPageTiles": {
+    "SerialiseHeight": 0,
+    "SerialiseWidth": 0,
+    "TileSerialiseData": [],
+  },
+  "out_columns": 7,
+  "out_tilehborder": 2,
+  "out_tilevborder": 2,
+  "parent": {
+    "name": "Tile Sets",
+    "path": "folders/town/Environment/Tile Sets.yy",
+  },
+  "spriteId": {
+    "name": "spr_ts_rock",
+    "path": "sprites/spr_ts_rock/spr_ts_rock.yy",
+  },
+  "spriteNoExport": true,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "tile_count": 56,
   "tileAnimation": {
     "FrameData": [
       0,
@@ -132,17 +136,12 @@
     ],
     "SerialiseFrameCount": 1,
   },
-  "macroPageTiles": {
-    "SerialiseWidth": 0,
-    "SerialiseHeight": 0,
-    "TileSerialiseData": [],
-  },
-  "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Town/Environment/Tile Sets.yy",
-  },
-  "resourceVersion": "1.0",
-  "name": "ts_stone",
-  "tags": [],
-  "resourceType": "GMTileSet",
+  "tileAnimationFrames": [],
+  "tileAnimationSpeed": 15.0,
+  "tileHeight": 16,
+  "tilehsep": 2,
+  "tilevsep": 2,
+  "tileWidth": 16,
+  "tilexoff": 0,
+  "tileyoff": 0,
 }

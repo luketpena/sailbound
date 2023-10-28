@@ -19,7 +19,7 @@ function boat_impactFreeze_step() {
 			boat_set_hspeed(impactFreeze_speed_front.x, impactFreeze_speed_back.x);
 			boat_set_vspeed(impactFreeze_speed_back.y, impactFreeze_speed_back.y);
 			//Boosts the boat in the saved direction
-			var _boost = new Posx(phy_speed_x * impactFreeze_boost, phy_speed_y * impactFreeze_boost);
+			var _boost = new Pos(phy_speed_x * impactFreeze_boost, phy_speed_y * impactFreeze_boost);
 			boat_snapPosition_relative(_boost.x, _boost.y);
 		}
 		//Count down until the end

@@ -2,16 +2,15 @@ function boat_init_controls() {
 	var inputType, mobileMovement;
 	switch(system.osType) {
 		case OsType.Desktop:
-			inputType = InputType.gamepad;
+			inputType = InputType.GAMEPAD;
 			mobileMovement = null;
 			break;
 		
 		case OsType.Mobile:
-			inputType = InputType.mobile;
+			inputType = InputType.MOBILE;
 			mobileMovement = MobileMovement.tilt;
 			break;
 	}
-	control_active = true;
 	control_inputType = inputType
 	control_mobileMovement = mobileMovement;
 	ctrl_move = 0; //-1=left; 1=right;

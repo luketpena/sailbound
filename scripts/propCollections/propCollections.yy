@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Props",
-    "path": "folders/Sailing/Environment/Ground/Props.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "propCollections",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Props",
+    "path": "folders/sailing/Environment/Ground/Props.yy",
+  },
 }

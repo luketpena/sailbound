@@ -13,6 +13,19 @@ function vibrate_set_sustain(strength, duration) {
 	}
 }
 
+function disableInput(duration = -1) {
+	global.input_active = false;
+	if (duration > 0) {
+		timeout(duration, function() {
+			global.input_active = true;
+		});
+	}	
+}
+
+function enableInput() {
+	global.input_active = true;	
+}
+
 function dice(chance) {
 	return (irandom_range(1,max(1,chance)) = 1);
 }

@@ -1,15 +1,14 @@
 //----< Alphas >----\\
 hud_alpha = grow(hud_active, hud_alpha, 0, 1, .05, .05);
-item_alpha = grow( (global.item_current=-1), item_alpha, 0, 1, .05, .05);
+item_alpha = grow( (itemInventory.current != null), item_alpha, 0, 1, .05, .05);
 coin_alpha = grow(coin_active, coin_alpha, 0, 1, .1, .05);
 
 //----< Coins >----\\
-
 if (coin_wait=-1) {
 	//Activating the Coin GUI
-	if (coin_count!=global.coin) {
+	if (coin_count != global.coin) {
 		coin_active = true;
-		coin_wait = 3*room_speed;
+		coin_wait = seconds(3);
 	}		
 }
 

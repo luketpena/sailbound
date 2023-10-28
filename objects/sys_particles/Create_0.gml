@@ -18,6 +18,12 @@ part_system_automatic_draw(global.ps_water_surface,false);
 part_system_automatic_draw(global.ps_water_front,false);
 part_system_automatic_draw(global.ps_fx_glow,false);
 
+function setPaused(_active) {
+	for (var i=0; i<array_length(global.ps_list); i++) {
+		part_system_automatic_update(global.ps_list[i], _active);
+	}	
+}
+
 //---- Water Particles ----\\
 pt_init_water_splash();
 pt_init_water_wake_surface();

@@ -1,1 +1,1 @@
-sprite_index = spr_pixel;
+sprite_index = s_pixel;

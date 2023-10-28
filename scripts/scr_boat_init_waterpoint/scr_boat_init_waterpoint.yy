@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Init",
-    "path": "folders/Sailing/Boat/Scripts/Init.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "scr_boat_init_waterpoint",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Init",
+    "path": "folders/sailing/Boat/Scripts/Init.yy",
+  },
 }

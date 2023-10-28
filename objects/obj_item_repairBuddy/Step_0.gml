@@ -21,14 +21,14 @@ switch(state) {
 				if (healing_count>0) {
 					//Healing up to max
 					health_increment(1);	
-					obj_boat_draw.flash = .9;
+					prnt_boat_draw.flash = .9;
 				} else {
 					//Final heal
 					boat_heal(1);
 				}
 			} else {
 				//Flashes only when health is full
-				obj_boat_draw.flash = .9;
+				prnt_boat_draw.flash = .9;
 			}
 			part_particles_create(global.ps_fx_glow,x+8*image_xscale,y,global.pt_spark,8);
 		}

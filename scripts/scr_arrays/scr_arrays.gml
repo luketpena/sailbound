@@ -75,15 +75,14 @@ function array_concat(a1, a2) {
 
 function array_join(a, joinString) {
 	var length = array_length(a);
-	if (length > 1) {
-		var text = a[0];
-		for (var i=1; i<length; i++) {
-			text += joinString + a[i];
-		}
-		return text;
-	} else {
-		return a[0];	
+	if (length = 0) return "";
+	if (length = 1) return a[0];
+	
+	var text = a[0];
+	for (var i=1; i<length; i++) {
+		text += joinString + a[i];
 	}
+	return text;
 }
 
 function array_extract(a, index) {
@@ -108,11 +107,8 @@ function array_extract(a, index) {
 // Just removes the index and returns the array transformed
 function array_pluck(a, index) {
 	var extracted = array_extract(a, index);
-	log("before " + string(array_length(a)));
-	log("after " + string(array_length(extracted.array)));
 	return extracted.array;
 }
-
 
 function array_reverse(a) {
 	var new_array = [];

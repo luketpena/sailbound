@@ -2,6 +2,7 @@ targetDoor = noone;
 mode = "town";
 
 global.cutout_top_surface = noone;
+global.motion = 0;
 
 var partLayer = layer_create(-100, "l_part_above");
 global.ps_fx_above = part_system_create_layer(partLayer, true);
@@ -25,9 +26,6 @@ function updateBlendShader(strength) {
 
 function startTileBlending(layerName, strength) {
 	var layerId = layer_get_id(layerName);
-	setStrength = strength;
-	layer_shader(layerId, shd_blendTileLayers);
-	layer_script_begin(layerId, function() {
-		updateBlendShader(setStrength);	
-	});
+	var o = instance_create_depth(0, 0, 0, o_layerBlender);
+	o.init(layerId, strength);
 }

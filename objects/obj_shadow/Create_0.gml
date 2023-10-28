@@ -14,3 +14,7 @@ size = width/sprite_width; //Scales the size to the sprite size
 //---- Waterpoint ----\\
 waterpoint_y = global.water_y;
 waterpoint_dis = 0;
+
+function init() {
+	size = width/sprite_width;	
+}

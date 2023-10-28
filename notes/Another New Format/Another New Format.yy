@@ -1,10 +1,9 @@
 {
-  "parent": {
-    "name": "Notes",
-    "path": "folders/Notes.yy",
-  },
+  "resourceType": "GMNotes",
   "resourceVersion": "1.1",
   "name": "Another New Format",
-  "tags": [],
-  "resourceType": "GMNotes",
+  "parent": {
+    "name": "Notes",
+    "path": "folders/documentation/Notes.yy",
+  },
 }

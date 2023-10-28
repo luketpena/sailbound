@@ -17,7 +17,7 @@ lighting_shader_draw();
 	
 	draw_tag("solid_below");
 	draw_tag("fx_below");
-	draw_object(obj_boat_draw);
+	draw_object(prnt_boat_draw);
 	draw_tag("fx_above");
 	
 	draw_tag("item");
@@ -35,11 +35,8 @@ lighting_shader_draw();
 shader_reset();
 
 draw_tag("fx_over");
-
 draw_object(ground_front);
-
 draw_object(sys_water_distortion);
-
 draw_tag("fx_top");
 
 with(sys_glow) event_perform(ev_draw, ev_gui);

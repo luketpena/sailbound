@@ -28,7 +28,6 @@ if surface_exists(surf) {
 				text_to_add = "";
 				text_to_write = cleanup(newString);
 			
-				//draw_text(16,height-8,text_to_write);
 			surface_reset_target();	
 		}
 	}

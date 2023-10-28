@@ -1,7 +1,7 @@
 // The listener that actually triggers the jump and dive actions
 function boat_jumpDive_trigger() {
 	// Triggering the jump
-	if (control_active) {
+	if (global.input_active) {
 		// Limits the frequency of jumps
 		if (jump_cool > 0) jump_cool--;
 

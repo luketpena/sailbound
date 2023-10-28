@@ -1,1 +1,1 @@
-story_drawDebug();
+if (system.debugMode) story_drawDebug();

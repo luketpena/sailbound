@@ -1,0 +1,4 @@
+system - master controller, the source of debug, camera sizes, and room generation
+settings - global game controls for me to tweak game configuration
+session - tracks data about the current session
+vault - loads persistent data between sessions

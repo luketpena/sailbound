@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Splash",
-    "path": "folders/Sailing/Environment/Water/Effects/Splash.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "water_splashes",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Splash",
+    "path": "folders/sailing/Environment/Water/Effects/Splash.yy",
+  },
 }

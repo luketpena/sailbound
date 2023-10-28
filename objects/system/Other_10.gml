@@ -11,6 +11,7 @@ instance_create_layer(0, 0, l_system, sys_progress);
 instance_create_layer(0, 0, l_system, sys_textbox);
 instance_create_layer(0, 0, l_system, touch);
 instance_create_layer(0, 0, l_system, controls);
+instance_create_layer(0, 0, l_system, itemInventory);
 instance_create_layer(0, 0, l_main, sys_drawing);
 
 
@@ -34,7 +35,6 @@ instance_create_layer(0, 0, l_system, obj_camera_water);
 instance_create_layer(room_width/2, global.water_y, l_main, obj_boat_front);
 instance_create_layer(room_width/2, global.water_y, l_main, obj_petra);
 instance_create_layer(0, 0, l_main, story);
-instance_create_layer(0, 0, l_main, obj_pause);
 
 // Settings
 global.motion = 1;

@@ -42,7 +42,7 @@ function pt_init_water_wake_splash() {
 
 function pt_init_water_front_current() {
 	pt_water_front_current = part_type_create();
-	part_type_sprite(pt_water_front_current, spr_pixel, 0, 0, 0);
+	part_type_sprite(pt_water_front_current, s_pixel, 0, 0, 0);
 	part_type_size(pt_water_front_current, 1, 1, 0, 0);
 	part_type_scale(pt_water_front_current, 1, 1);
 	part_type_alpha3(pt_water_front_current, 0, 1, 0);
@@ -53,7 +53,7 @@ function pt_init_water_front_current() {
 
 function pt_init_water_bubble() {
 	global.pt_water_bubble = part_type_create();
-	part_type_sprite(global.pt_water_bubble, spr_pixel, 0, 0, 1);
+	part_type_sprite(global.pt_water_bubble, s_pixel, 0, 0, 1);
 	part_type_color1(global.pt_water_bubble, c_white);
 	part_type_alpha3(global.pt_water_bubble, 0,.5,0);
 	part_type_life(global.pt_water_bubble, 20, 80);

@@ -7,7 +7,7 @@ if surface_exists(water_surface) {
 		//Draw the surface color
 		draw_clear_alpha(c_water_surface, 1);
 		//Drawing the dividing line
-		draw_sprite_ext(spr_pixel, 0, 0, settings.water_depth-1, room_width, 1, 0, c_water_highlight, 1);
+		draw_sprite_ext(s_pixel, 0, 0, settings.water_depth-1, room_width, 1, 0, c_water_highlight, 1);
 		//Draw the floating pattern
 		draw_sprite_tiled_ext(spr_env_water_pattern, 1, -pattern_pos, 0, 1, 1, c_water_highlight, .25);
 		draw_sprite_tiled_ext(spr_env_water_pattern, 0, -pattern_pos*2, 0, 1, 1, c_water_highlight, .5);

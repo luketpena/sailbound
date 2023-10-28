@@ -1,0 +1,2 @@
+endFunction();
+instance_destroy();

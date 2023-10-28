@@ -15,9 +15,6 @@ sky_y = global.horizon_y - global.vh;
 sunAngle = 0;
 moonAngle = 0;
 
-u_color1 = shader_get_uniform(shd_bwToColorGrad,"color1");
-u_color2 = shader_get_uniform(shd_bwToColorGrad,"color2");
-
 //---- Clouds ----\\
 cloud_num = (room_width / 640) * 60;
 cloud_left = -100;

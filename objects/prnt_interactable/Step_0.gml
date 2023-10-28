@@ -1,3 +1,7 @@
-if (active && gamepad_button_check_pressed(0, gp_face3)) {
-	interact();
+triggered = false;
+if (!disabled && active && o_town_player.active && input.town.interact.pressed) {
+	if (!is_undefined(interact)) {
+		interact();	
+	}
+	triggered = true;
 }

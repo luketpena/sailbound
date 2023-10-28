@@ -1,0 +1,32 @@
+---< New Ship Data Pipeline >---
+1. Import sprites (hull, sail, ship orb, other)
+2. If the hull needs a custom draw object, make a draw object child of o_boatDraw_default
+3. Define hull stats in scr_hull_stats
+4. Define boat catalogue data in the shipDataCatalogue
+	- Name
+	- Description
+	- Ship orb sprite
+	- Boat draw object (default if needed)
+	- hullStats script
+
+
+Note: the catalogue keys act as the source of truth for these values. They are
+currently referenced in:
+	- vault.inventory (for defining inventory status in save files)
+	- vault.dock (for verifying a hull exists in the catalogue before setting it as active)
+	
+	
+---< Draw Objects >---
+Most ships that only have a hull back + front and a sail just need the default draw object.
+
+If a ship needs animated parts outside of those three parts, it create a new child of the
+default draw object that has custom that inherits the create and step events of the default
+drawer, but can otherwise do whatever needs to be done in draw.
+
+Example: steamboat needs a spinning steam wheel, but can use the default draw methods.
+
+
+---< Single vs Two-piece Sail >---
+If a sail and mast must be a fixed piece together, the sail sprite will be one image together
+in the sprite. If there are two frames in a sail sprite, the drawSail method will assume they
+need to animated separately. (With wobble.)

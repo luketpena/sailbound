@@ -1,6 +1,5 @@
 var stackers = ds_list_create();
-
-collision_circle_list(obj_map_playerIcon.x, obj_map_playerIcon.y, global.hvw, prnt_map_stackedObject, false, true, stackers, false);
+collision_circle_list(o_map_player.x, o_map_player.y, global.hvw, prnt_map_stacked_object, false, true, stackers, false);
 
 for (var i=0; i<layerCount; i++) {
 	var offset = global.stackDepth * i;
@@ -12,10 +11,10 @@ for (var i=0; i<layerCount; i++) {
 		var object = stackers[| j];
 		
 		if (i >= object.minHeight && i <= object.maxHeight) {
-			object.index = i;
+			object.layerIndex = i;
 			object.offsetX = offsetX;
 			object.offsetY = offsetY;
-			with(object) event_perform(ev_draw, 0);
+			with(object) drawLayer();
 		}
 	}
 }

@@ -23,5 +23,3 @@ for (var i=minMax.iMin; i<minMax.iMax; i++) {
 	}
 	point.y = y + pointOffset;
 }
-
-log(minMax);

@@ -1,0 +1,21 @@
+-- < PROPERTIES >--
+Basics
+	- text [ the text written below as dialog, can be a single string or an array of strings ]
+	- next [ the id of the node that follows ]
+Responses
+	- responses [ an array of ids as answers to a question ]
+	- response_text [ the text displayed in response array ]
+Active Status
+	- activate_node [ the id of some other node to activate after entry ]
+	- deactivate_node [ the id of some other node to deactivate after entry ]
+	- deactivate_self [ self will be deactivated after entry ]
+Actions
+	- action_enter [ function to call when entering the node ]
+	- action_exit [ function to call when leaving the node ]
+Misc
+	- speaker [ some way of identifying who the speaker is, completely up to the coder ]
+	
+--< WHEN WILL THE SYSTEM DEACTIVATE >--
+	- If we select "next" on a node with no "next" value
+	- If we reach a node with no text
+	- If we reach a question with no active responses

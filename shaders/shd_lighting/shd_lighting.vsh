@@ -22,8 +22,8 @@ void main()
     vec4 object_space_pos = vec4( in_Position.x, in_Position.y, in_Position.z, 1.0);
     gl_Position	= gm_Matrices[MATRIX_WORLD_VIEW_PROJECTION] * object_space_pos;
     
-    v_vColour		= in_Colour;
-    v_vTexcoord		= in_TextureCoord;
+    v_vColour = in_Colour;
+    v_vTexcoord	= in_TextureCoord;
 	
 	lum_coord.x =  gl_Position.x * 0.5 + 0.5 + surface_offset.x;
 	lum_coord.y = -gl_Position.y * 0.5 + 0.5 + surface_offset.y; // -gl_Position because the y-axis of gl_Position is flipped
@@ -51,7 +51,7 @@ void main()
 	the offset.
 	
 	Since lum_coord is depending on gl_Position, gl_Position was caalculated from in_Position
-	and in_Position is a vertey attribute lum_coord will get interpolated like any other varying
+	and in_Position is a vertex attribute, lum_coord will get interpolated like any other varying
 	derived from a vertex attribute. And so we can use the interpolated value in the fragment shader.
 	
 	And since gl_Position ignores the rotation of the base tesxture we can completely ignore

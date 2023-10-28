@@ -25,6 +25,6 @@ hp_wait = -1;
 //>> Items
 item_alpha = 0;
 item_hud_icons = [];
-item_hud_icons[items.cannon] = spr_hud_item_cannon;
+item_hud_icons[Items.cannon] = spr_hud_item_cannon;
 item_singleUse = false;
 inventory_alpha = 0;

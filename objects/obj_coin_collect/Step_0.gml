@@ -5,7 +5,7 @@ target_y = global.vb-16;
 var dir = point_direction(x,y,target_x,target_y);
 var dis = point_distance(x,y,target_x,target_y);
 
-if (dis<16) {
+if (dis < 16) {
 	global.coin += 1;
 	instance_destroy();
 }

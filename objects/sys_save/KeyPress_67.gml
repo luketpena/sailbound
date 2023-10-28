@@ -1,0 +1,1 @@
+savegame_clear();

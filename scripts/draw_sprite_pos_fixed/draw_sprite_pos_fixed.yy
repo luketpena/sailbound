@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Draw Pos Fixed",
-    "path": "folders/System/Draw Pos Fixed.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "draw_sprite_pos_fixed",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Draw Pos Fixed",
+    "path": "folders/effects/Draw Pos Fixed.yy",
+  },
 }

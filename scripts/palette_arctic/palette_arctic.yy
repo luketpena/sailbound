@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Sets",
-    "path": "folders/Sailing/Environment/Colors/Palettes/Sets.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "palette_arctic",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Sets",
+    "path": "folders/sailing/Environment/Colors/Palettes/Sets.yy",
+  },
 }

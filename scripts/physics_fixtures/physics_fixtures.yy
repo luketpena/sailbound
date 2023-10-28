@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "General",
-    "path": "folders/System/System Scripts/General.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "physics_fixtures",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "general",
+    "path": "folders/system/system scripts/general.yy",
+  },
 }

@@ -1,0 +1,4 @@
+---< USAGE >---
+
+BASIC TEXT
+For basic text display, call dialog.open with an array of config structs.

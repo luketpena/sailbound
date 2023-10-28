@@ -1,6 +1,6 @@
 phy_position_x = obj_boat_front.x_center_draw;
 phy_position_y = obj_boat_front.y_center_draw;
-phy_rotation = -obj_boat_draw.hull_angle;
+phy_rotation = -prnt_boat_draw.hull_angle;
 
 if (obj_boat_front.falling) {
 	if (bounceReady = false) {

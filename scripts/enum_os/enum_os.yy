@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Enums",
-    "path": "folders/System/Constants/Enums.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "enum_os",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Enums",
+    "path": "folders/system/Constants/Enums.yy",
+  },
 }

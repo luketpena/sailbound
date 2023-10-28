@@ -1,10 +1,9 @@
 {
-  "parent": {
-    "name": "Events",
-    "path": "folders/Sailing/Events.yy",
-  },
+  "resourceType": "GMNotes",
   "resourceVersion": "1.1",
   "name": "events_note",
-  "tags": [],
-  "resourceType": "GMNotes",
+  "parent": {
+    "name": "events",
+    "path": "folders/sailing/events.yy",
+  },
 }

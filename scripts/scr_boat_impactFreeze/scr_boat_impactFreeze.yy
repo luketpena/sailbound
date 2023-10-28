@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Movement",
-    "path": "folders/Sailing/Boat/Scripts/Movement.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "scr_boat_impactFreeze",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Movement",
+    "path": "folders/sailing/Boat/Scripts/Movement.yy",
+  },
 }

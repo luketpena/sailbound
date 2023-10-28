@@ -5,7 +5,7 @@ if surface_exists(surf) {
 		draw_clear_alpha($fa7d02, 1);
 		draw_sprite_tiled_ext(spr_town_env_water_pattern, 0, waterPos, 0, 1, 1, c_white, .5);
 		draw_sprite_tiled_ext(spr_town_env_water_pattern, 1, waterPos + lengthdir_x(16, waterRot), 0, 1, 1, c_white, .25);
-		draw_sprite_ext(spr_pixel, 0, 0, 23, width, 1, 0, c_white, 1);
+		draw_sprite_ext(s_pixel, 0, 0, 23, width, 1, 0, c_white, 1);
 	surface_reset_target();
 	
 	var tex = surface_get_texture(surf);
@@ -18,7 +18,7 @@ if surface_exists(surf) {
 	draw_primitive_end();
 	shader_reset();
 	
-	draw_sprite_ext(spr_pixel, 0, x, y + 12, width, height, 0, $fa7d02, .5);
+	draw_sprite_ext(s_pixel, 0, x, y + 12, width, height, 0, $fa7d02, .5);
 } else {
 	surf = surface_create(width, 24);
 }

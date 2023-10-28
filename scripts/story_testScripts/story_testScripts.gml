@@ -1,11 +1,8 @@
 function story_drawDebug() {
 	draw_set_color(c_red);
 	draw_set_alpha(1);
-	
-	
 
 	draw_line_width(-1, 4, global.vw, 4, 2);
-
 	draw_set_color(c_orange);
 
 	for (var i=0; i<chapterCount; i++) {
@@ -17,7 +14,4 @@ function story_drawDebug() {
 
 	draw_set_color(c_yellow);
 	draw_circle(global.vw * (progress / totalDuration), 4, 3, false);
-	
-	draw_set_color(c_purple);
-	draw_text(48, global.vh-48, "DANGER LEVEL: " + string(global.danger));
 }

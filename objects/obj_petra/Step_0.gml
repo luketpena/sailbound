@@ -25,7 +25,7 @@ x += (target_pos[0]-x)*.1;
 y += (target_pos[1]-y)*.1;
 item_y = y+12;
 
-if (global.item_current=-1) {
+if (itemInventory = null) {
 	aim_active = false;
 	point_dir = 0;
 	

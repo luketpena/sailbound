@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Config Files",
-    "path": "folders/Sailing/Story/Config Files.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "storyConfig_storm",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Config Files",
+    "path": "folders/sailing/Story/Config Files.yy",
+  },
 }

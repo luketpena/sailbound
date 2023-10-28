@@ -5,25 +5,28 @@
 //>> Setup
 application_surface_enable(true);
 os_lock_orientation(true);
-window_set_fullscreen(true);
+window_set_fullscreen(false);
 
 debugMode = false;
-
 osType = noone;
 
 //>> Initialization
 cameraSystem_init();
 
 //>> Fonts
-global.font_numbers_large = font_add_sprite_ext(spr_font_numbers_large,"0123456789",true,2);
-global.font_normal_medium = font_add_sprite_ext(spr_font_normal_medium,"ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,!?:;'$%()-@",true,2);
-global.font_normal_small = font_add_sprite_ext(spr_font_normal_small,  " ABCDEFGHIJKLMNÑOPQRSTUVWXYZ0123456789.,!?:;'$%()-@+/abxy$*",true,1);
+global.font_numbers_large = font_add_sprite_ext(s_font_numbers_large,"0123456789",true,2);
+global.font_normal_medium = font_add_sprite_ext(s_font_normal_medium,"abcdefghijklmnopqrstuvwxyz0123456789.,!?:;'$%()-@",true,2);
+global.font_normal_small = font_add_sprite_ext(s_font_normal_small,  " abcdefghijklmnñopqrstuvwxyz0123456789.,!?:;'$%()-@+/abxy$*",true,1);
+global.font_textbox = font_add_sprite_ext(s_font_textbox,  " abcdefghijklmnñopqrstuvwxyz0123456789.,!?:;'$%()-@+/ABXY$*",true,1);
 
 vertex_format_begin();
 vertex_format_add_colour();
 vertex_format_add_position();
 vertex_format_add_normal();
 global.format_perspective = vertex_format_end();
+
+// Whether the player should respond to input or not
+global.input_active = true;
 
 //>> Room transition knapsack
 /*
@@ -39,7 +42,7 @@ knapsack = {
 	load: function() {
 		var name = room_get_name(room);
 		if (name = "rm_water") {
-			islands.load();		
+			//islands.load();		
 		}
 	},
 	

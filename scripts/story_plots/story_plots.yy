@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Fuckit Buckit",
-    "path": "folders/Fuckit Buckit.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "story_plots",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Fuckit Buckit",
+    "path": "folders/depreciated/Fuckit Buckit.yy",
+  },
 }

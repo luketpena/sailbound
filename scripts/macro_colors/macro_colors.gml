@@ -53,5 +53,6 @@
 
 #macro c_plack make_color_rgb(50,27,37)
 
+#macro c_fire #ff7e00
 
 

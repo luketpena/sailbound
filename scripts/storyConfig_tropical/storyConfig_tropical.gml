@@ -6,14 +6,14 @@ function storyConfig_tropical(){
 		startPalette: palette_tropical,
 		startScript: function() {
 			ground_createAtStart(global.water_y + 64, propCollection_tropical);
-			var startingIsland = island_spawn_pos(1, spr_landmark_startingIsland, .5, 1);
-			island_list_insert(startingIsland);
+			//var startingIsland = island_spawn_pos(1, spr_landmark_startingIsland, .5, 1);
+			//island_list_insert(startingIsland);
 			waves_set_behavior_preset(WaveTypes.Calm);
 		},
 		chapters: [
 		{ // Chapter 1
 			islandActive: true,
-			islandType: IslandType.Tropical,
+			//islandType: IslandType.Tropical,
 			islandWaitMin: .2,
 			islandWaitMax: 3,
 			duration: totalDuration * .1,
@@ -206,6 +206,6 @@ function storyConfig_tropical(){
 
 function startMethod_tropical() {
 	ground_createAtStart(global.water_y + 64, propCollection_tropical);
-	var startingIsland = island_spawn_pos(1, spr_landmark_startingIsland, .5, 1);
-	island_list_insert(startingIsland);
+	//var startingIsland = island_spawn_pos(1, spr_landmark_startingIsland, .5, 1);
+	//island_list_insert(startingIsland);
 }

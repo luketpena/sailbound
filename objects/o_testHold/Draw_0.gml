@@ -1,0 +1,1 @@
+confirm.draw(mouse_x, mouse_y - 32);

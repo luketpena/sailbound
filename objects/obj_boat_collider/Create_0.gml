@@ -5,7 +5,7 @@ bounceDelay = 0;
 bounceDelaySet = 15;
 
 function init(width, height) {
-	fixture_create_box(id, width, height, .1, 0, 0, 0, 0, true, false, false);	
+	fixture_create_box(id, width, height, .1, 0, 0, 0, 0, true, false, false, false);	
 }
 
 collideQueue = [];

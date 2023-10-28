@@ -9,7 +9,6 @@ function boat_init_gameplay() {
 	//inked_wait = -1;
 	//inked_fade = 0;
 	//>> Activity States
-	control_active = true; //TOGGLE - Is the player in control of the boat?
 	//>> Collision with water
 	////>> Invulnerability
 	//invul_alarm = -1;

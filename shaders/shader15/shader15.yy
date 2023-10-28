@@ -1,11 +1,10 @@
 {
-  "type": 1,
-  "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
-  },
+  "resourceType": "GMShader",
   "resourceVersion": "1.0",
   "name": "Shader15",
-  "tags": [],
-  "resourceType": "GMShader",
+  "parent": {
+    "name": "rooms",
+    "path": "folders/rooms.yy",
+  },
+  "type": 1,
 }

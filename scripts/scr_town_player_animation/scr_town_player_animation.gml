@@ -67,14 +67,15 @@ function town_player_animate() {
 			sprite_index = spr_peter_latch;
 			break;
 			
+	
 		case is.Jumping:
-			sprite_index = spr_peter_jump;
-			break;
-			
 		case is.Falling:
-			if (slip_active) 
-				then sprite_index = spr_peter_slipping;
-				else sprite_index = spr_peter_fall;
+			if (slip_active) {
+				sprite_index = spr_peter_slipping;
+			} else {
+				sprite_index = spr_peter_jump;
+				image_index = clamp(phy_speed_y * 2, 0, 3);
+			}
 			break;
 			
 		case is.SpinJumping:

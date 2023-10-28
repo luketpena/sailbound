@@ -1,11 +1,10 @@
 {
-  "type": 1,
+  "resourceType": "GMShader",
+  "resourceVersion": "1.0",
+  "name": "shd_blendTileLayers",
   "parent": {
     "name": "sailbound",
     "path": "sailbound.yyp",
   },
-  "resourceVersion": "1.0",
-  "name": "shd_blendTileLayers",
-  "tags": [],
-  "resourceType": "GMShader",
+  "type": 1,
 }

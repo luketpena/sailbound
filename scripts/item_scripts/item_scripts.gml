@@ -1,59 +1,46 @@
-function item_slot() constructor {
+function ItemSlot() constructor {
 	active = false;
-	name = "";
-	sprite_index = -1;
-	trigger_function = -1;
+	name = null;
+	icon = null;
+	triggerFunction = null
 	
 	//Resets the slot to the default, empty values
-	reset = function() {
+	function reset() {
 		active = false;
-		name = "";
-		sprite_index = -1;
-		trigger_function = -1;
+		name = null;
+		icon = null;
+		triggerFunction = null;
 	}
 	
 	//Picking up a new item into the slot
-	pickup = function( _name, _sprite_index, _trigger_function ) {
+	function pickup(_itemCatalogueData) {
 		active = true;
-		name = _name;
-		sprite_index = _sprite_index;
-		trigger_function = _trigger_function;
+		name = _itemCatalogueData.name;
+		icon = _itemCatalogueData.icon;
+		triggerFunction = _itemCatalogueData.triggerFunction;
     }
 	
 	//Trigger the use of an item and then call a reset
-	use = function() {
-		if (script_exists(trigger_function)) {
-			script_execute(trigger_function);	
+	function activate() {
+		if (script_exists(triggerFunction)) {
+			script_execute(triggerFunction);	
 		}
 		reset();
 	}
 }
 
 // Creates an itembox with an item assigned to it
-function item_spawn_box(x,y,item) {
-	var o = instance_create_layer(x,y,"l_items",obj_itembox);
+function item_spawn_box(x, y, item) {
+	var o = instance_create_layer(x, y, "l_items", obj_itembox);
 	o.item = item;
 	o.item_icon = item_get_icon(item);
 }
 
 // Assigns an item to a slot, but only if a slot is free
 function item_pickup(item) {
-	for (var i=0; i<4; i++) {
-		if (!global.inventory[i].active) {
-			global.inventory[i].pickup(item, item_get_icon(item), item_get_trigger(item));
-			return true;
-			break;
-		}
+	if (itemInventory.hasFreeSlot) {
+		itemInventory.pickup(item);
+		return true;
 	}
 	return false;
-}
-
-//Returns the sprite for a given item enum
-function item_get_icon(item) {
-	return global.item_list.get_item(item).icon;
-}
-
-//Returns the trigger script for a given item enum
-function item_get_trigger(item) {
-	return global.item_list.get_item(item).trigger_function;
 }

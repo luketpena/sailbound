@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Scripts",
-    "path": "folders/Sailing/Pick-ups/Items/Scripts.yy",
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "item_enums",
-  "tags": [],
-  "resourceType": "GMScript",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Scripts",
+    "path": "folders/sailing/Pick-ups/Items/Scripts.yy",
+  },
 }
