@@ -21,19 +21,22 @@ if (active) {
 	town_player_setControlImpulse();
 }
 
-// TODO: Make this more universal / live with the interactable
+// -- INTERACTABLES --
 prnt_interactable.active = false;
-var closestInteractable = instance_nearest(x + (16 * face_draw), y, prnt_interactable);
-if (distance_to_object(closestInteractable) < 16) {
-	closestInteractable.active = true;	
+var _intList = ds_list_create();
+collision_rectangle_list(left, top, right, bottom, prnt_interactable, false, true, _intList, true);
+if (ds_list_size(_intList) > 0) {
+	var _closestInteractable = _intList[| 0];
+	_closestInteractable.active = true;	
 }
+ds_list_destroy(_intList);
+
 
 town_player_senseGrounded();
 town_player_senseWalled();
 town_player_senseFaced();
 town_player_senseWatered();
 town_player_animate();
-
 
 if (grounded) {
 	coyote_time = coyote_set;

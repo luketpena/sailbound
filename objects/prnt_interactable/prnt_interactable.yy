@@ -29,11 +29,16 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"interactMessage","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"\"test\"","varType":2,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"active","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":3,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"offset_y","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"-32","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"text","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":2,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"width","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"32","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"height","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"32","varType":0,},
   ],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "s_interactable_collider",
+    "path": "sprites/s_interactable_collider/s_interactable_collider.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

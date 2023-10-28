@@ -1,7 +1,13 @@
-triggered = false;
-if (!disabled && active && o_town_player.active && input.town.interact.pressed) {
-	if (!is_undefined(interact)) {
-		interact();	
+if (active && !disabled && !global.interfaceOpen) {
+	if (openLerp < 1) openLerp += .05;
+	interactInput.step();
+	if (interactInput.triggered) {
+		if (!is_undefined(interact)) {
+			interact();	
+		}
 	}
-	triggered = true;
+} else {
+	if (openLerp > 0) openLerp -= .1;	
 }
+
+posValue = ease_lerp(EASE.OutCubic, 0, 1, openLerp);

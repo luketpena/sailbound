@@ -8,7 +8,7 @@
   ],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"prnt_interactable","path":"objects/prnt_interactable/prnt_interactable.yy",},"propertyId":{"name":"interactMessage","path":"objects/prnt_interactable/prnt_interactable.yy",},"value":"\"set sail\"",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"prnt_interactable","path":"objects/prnt_interactable/prnt_interactable.yy",},"propertyId":{"name":"text","path":"objects/prnt_interactable/prnt_interactable.yy",},"value":"Set Sail!",},
   ],
   "parent": {
     "name": "Doors",
@@ -34,8 +34,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "ico_town",
-    "path": "sprites/ico_town/ico_town.yy",
+    "name": "s_interactable_collider",
+    "path": "sprites/s_interactable_collider/s_interactable_collider.yy",
   },
   "spriteMaskId": null,
   "visible": true,
