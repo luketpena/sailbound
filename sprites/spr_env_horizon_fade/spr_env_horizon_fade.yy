@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Horizon",
-    "path": "folders/sailing/Environment/Background/Horizon.yy",
+    "name": "horizon",
+    "path": "folders/sailing/environment/background/horizon.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

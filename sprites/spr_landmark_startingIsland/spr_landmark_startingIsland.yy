@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "Landmarks",
-    "path": "folders/sailing/Environment/Islands/Landmarks.yy",
+    "name": "landmarks",
+    "path": "folders/sailing/environment/background/islands/landmarks.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Ground",
-    "path": "folders/sailing/Environment/Ground.yy",
+    "name": "ground",
+    "path": "folders/sailing/environment/ground.yy",
   },
 }

@@ -13,7 +13,7 @@
   ],
   "function": 1,
   "parent": {
-    "name": "Ambient Fish",
-    "path": "folders/sailing/Environment/Ambient Fish.yy",
+    "name": "ambient-fish",
+    "path": "folders/sailing/environment/ambient-fish.yy",
   },
 }

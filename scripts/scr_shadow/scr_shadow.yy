@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Shadow",
-    "path": "folders/sailing/Environment/Water/Effects/Shadow.yy",
+    "path": "folders/sailing/environment/water/Effects/Shadow.yy",
   },
 }

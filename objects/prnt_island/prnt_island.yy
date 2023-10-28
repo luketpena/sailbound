@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/sailing/Environment/Islands/Objects.yy",
+    "name": "objects",
+    "path": "folders/sailing/environment/background/islands/objects.yy",
   },
   "parentObjectId": null,
   "persistent": false,

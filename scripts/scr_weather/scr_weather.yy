@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Weather",
-    "path": "folders/sailing/Environment/Weather.yy",
+    "name": "weather",
+    "path": "folders/sailing/environment/weather.yy",
   },
 }

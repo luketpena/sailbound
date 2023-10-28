@@ -8,7 +8,6 @@ maxHeight = image_number - 1;
 moveRate = .93;
 moveSpeedMax = 1.5;
 rotateRate = .15;
-activeLevel = noone;
 
 instance_create_layer(x, y, "l_water_surface", o_map_boatTrail);
 
@@ -21,6 +20,9 @@ part_type_alpha2(part, 1, 0);
 
 pe = part_emitter_create(sys_map_particles.sys);
 pe_size = 6;
+
+axisH = 0;
+axisV = 0;
 
 function drawLayer() {
 	if (layerIndex < image_number) {

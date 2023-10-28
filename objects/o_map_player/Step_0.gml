@@ -1,16 +1,16 @@
 var lv = input.map.sail_v.value;
 var lh = input.map.sail_h.value;
+if (lv != 0 || lh != 0) {
+	axisH = lh;
+	axisV = lv;
+}
 
-var gPdir = point_direction(0, 0, lh, lv);
-var gPdis = point_distance(0, 0, lh, lv);
-
+var gPdir = point_direction(0, 0, axisH, axisV);
+var gPdis = min(point_distance(0, 0, lh, lv), 1);
 var targetSpeed = 0;
-var targetDir = gPdir;
-var targetDis = gPdis;
 
-
-targetAngle = targetDir - camera_get_view_angle(view_camera[0]);
-targetSpeed = moveSpeedMax * targetDis;
+targetAngle = gPdir - camera_get_view_angle(view_camera[0]);
+targetSpeed = moveSpeedMax * gPdis;
 
 
 // Altering rate of speed
@@ -48,7 +48,7 @@ if (moveSpeed > 1) {
 var _nearestLevel = instance_nearest(x, y, prnt_map_level);
 if (instance_exists(_nearestLevel) &&
 	point_distance(x, y, _nearestLevel.x, _nearestLevel.y) < _nearestLevel.range) {
-	activeLevel = _nearestLevel;	
+	global.targetLevel = _nearestLevel;	
 } else {
-	activeLevel = noone;	
+	global.targetLevel = noone;	
 }

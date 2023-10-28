@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "General",
-    "path": "folders/sailing/Environment/Colors/Palettes/Legacy/General.yy",
+    "path": "folders/sailing/environment/colors/Palettes/Legacy/General.yy",
   },
 }

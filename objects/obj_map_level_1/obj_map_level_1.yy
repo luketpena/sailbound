@@ -6,7 +6,7 @@
   "managed": true,
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"prnt_map_level","path":"objects/prnt_map_level/prnt_map_level.yy",},"propertyId":{"name":"range","path":"objects/prnt_map_level/prnt_map_level.yy",},"value":"48",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"prnt_map_level","path":"objects/prnt_map_level/prnt_map_level.yy",},"propertyId":{"name":"name","path":"objects/prnt_map_level/prnt_map_level.yy",},"value":"level 1",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"prnt_map_level","path":"objects/prnt_map_level/prnt_map_level.yy",},"propertyId":{"name":"name","path":"objects/prnt_map_level/prnt_map_level.yy",},"value":"Coral Capers",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"prnt_map_level","path":"objects/prnt_map_level/prnt_map_level.yy",},"propertyId":{"name":"level_id","path":"objects/prnt_map_level/prnt_map_level.yy",},"value":"tropical",},
   ],
   "parent": {

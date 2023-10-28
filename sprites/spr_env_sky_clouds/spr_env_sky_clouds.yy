@@ -29,7 +29,7 @@
   "origin": 9,
   "parent": {
     "name": "Sprites",
-    "path": "folders/sailing/Environment/Background/Sky/Sprites.yy",
+    "path": "folders/sailing/environment/background/sky/Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

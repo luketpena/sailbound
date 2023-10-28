@@ -4,7 +4,7 @@
   "name": "shd_waterDistortion",
   "parent": {
     "name": "Distortion",
-    "path": "folders/sailing/Environment/Water/Effects/Distortion.yy",
+    "path": "folders/sailing/environment/water/Effects/Distortion.yy",
   },
   "type": 1,
 }

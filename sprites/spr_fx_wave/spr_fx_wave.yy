@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Surface",
-    "path": "folders/sailing/Environment/Water/Effects/Surface.yy",
+    "path": "folders/sailing/environment/water/Effects/Surface.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

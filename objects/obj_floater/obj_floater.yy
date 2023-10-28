@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Floater",
-    "path": "folders/sailing/Environment/Water/Effects/Floater.yy",
+    "path": "folders/sailing/environment/water/Effects/Floater.yy",
   },
   "parentObjectId": null,
   "persistent": false,

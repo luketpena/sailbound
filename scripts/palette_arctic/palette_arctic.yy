@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Sets",
-    "path": "folders/sailing/Environment/Colors/Palettes/Sets.yy",
+    "path": "folders/sailing/environment/colors/Palettes/Sets.yy",
   },
 }

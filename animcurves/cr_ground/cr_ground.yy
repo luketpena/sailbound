@@ -27,7 +27,7 @@
   ],
   "function": 2,
   "parent": {
-    "name": "Ground",
-    "path": "folders/sailing/Environment/Ground.yy",
+    "name": "ground",
+    "path": "folders/sailing/environment/ground.yy",
   },
 }

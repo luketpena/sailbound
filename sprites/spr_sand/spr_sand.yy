@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Textures",
-    "path": "folders/sailing/Environment/Ground/Sprites/Textures.yy",
+    "path": "folders/sailing/environment/ground/Sprites/Textures.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

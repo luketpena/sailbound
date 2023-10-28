@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Sprites",
-    "path": "folders/sailing/Environment/Ambient Fish/Sprites.yy",
+    "path": "folders/sailing/environment/ambient-fish/Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

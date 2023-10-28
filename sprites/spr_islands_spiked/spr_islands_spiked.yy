@@ -30,8 +30,8 @@
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/sailing/Environment/Islands/Sprites.yy",
+    "name": "sprites",
+    "path": "folders/sailing/environment/background/islands/sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

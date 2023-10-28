@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Floater",
-    "path": "folders/sailing/Environment/Water/Effects/Floater.yy",
+    "path": "folders/sailing/environment/water/Effects/Floater.yy",
   },
 }

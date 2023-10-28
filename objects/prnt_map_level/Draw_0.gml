@@ -1,5 +1,4 @@
 draw_stacked_sprite(sprite_index, x, y, z, c_front, scale);
-if (active) draw_billboard_text(x, y, name, -32);
 
 for (var i=0; i<array_length(hullLost); i++) {
 	var _id = hullLost[i];

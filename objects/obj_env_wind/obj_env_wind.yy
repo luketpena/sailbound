@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Misc",
-    "path": "folders/sailing/Environment/Misc.yy",
+    "name": "misc",
+    "path": "folders/sailing/environment/misc.yy",
   },
   "parentObjectId": null,
   "persistent": false,

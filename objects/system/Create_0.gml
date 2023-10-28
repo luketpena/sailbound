@@ -27,6 +27,7 @@ global.format_perspective = vertex_format_end();
 
 // Whether the player should respond to input or not
 global.input_active = true;
+global.transitioning = false; // Whether we are transitioning to a new room
 
 //>> Room transition knapsack
 /*

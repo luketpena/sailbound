@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Islands",
-    "path": "folders/sailing/Environment/Islands.yy",
+    "name": "islands",
+    "path": "folders/sailing/environment/background/islands.yy",
   },
 }

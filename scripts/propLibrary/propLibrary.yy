@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Props",
-    "path": "folders/sailing/Environment/Ground/Props.yy",
+    "path": "folders/sailing/environment/ground/Props.yy",
   },
 }

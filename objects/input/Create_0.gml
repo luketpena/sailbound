@@ -1,6 +1,7 @@
 map = input_group_create([
 	new InputAxis("sail_v", ord("W"), ord("S"), gp_axislv),
 	new InputAxis("sail_h", ord("A"), ord("D"), gp_axislh),
+	new InputButton("interact", ord("E"), gp_face3),
 ]);
 
 sail = input_group_create([

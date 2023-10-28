@@ -24,8 +24,8 @@
     "Keyframes": [],
   },
   "parent": {
-    "name": "Colors",
-    "path": "folders/sailing/Environment/Colors.yy",
+    "name": "colors",
+    "path": "folders/sailing/environment/colors.yy",
   },
   "playback": 0,
   "playbackSpeed": 60.0,

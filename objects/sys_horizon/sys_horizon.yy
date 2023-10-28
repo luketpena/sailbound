@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Horizon",
-    "path": "folders/sailing/Environment/Background/Horizon.yy",
+    "name": "horizon",
+    "path": "folders/sailing/environment/background/horizon.yy",
   },
   "parentObjectId": null,
   "persistent": false,

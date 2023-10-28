@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Weather",
-    "path": "folders/sailing/Environment/Weather.yy",
+    "name": "weather",
+    "path": "folders/sailing/environment/weather.yy",
   },
   "parentObjectId": null,
   "persistent": false,

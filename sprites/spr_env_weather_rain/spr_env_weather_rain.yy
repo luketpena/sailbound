@@ -29,7 +29,7 @@
   "origin": 0,
   "parent": {
     "name": "Precipitation",
-    "path": "folders/sailing/Environment/Weather/Precipitation.yy",
+    "path": "folders/sailing/environment/weather/Precipitation.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

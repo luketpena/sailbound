@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Transitions",
-    "path": "folders/sailing/Environment/Colors/Transitions.yy",
+    "path": "folders/sailing/environment/colors/Transitions.yy",
   },
   "parentObjectId": null,
   "persistent": false,

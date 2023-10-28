@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Sky",
-    "path": "folders/sailing/Environment/Background/Sky.yy",
+    "name": "sky",
+    "path": "folders/sailing/environment/background/sky.yy",
   },
   "parentObjectId": null,
   "persistent": false,

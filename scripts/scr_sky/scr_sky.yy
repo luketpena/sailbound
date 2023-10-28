@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Sky",
-    "path": "folders/sailing/Environment/Background/Sky.yy",
+    "name": "sky",
+    "path": "folders/sailing/environment/background/sky.yy",
   },
 }

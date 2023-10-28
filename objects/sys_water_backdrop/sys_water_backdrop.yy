@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Controllers",
-    "path": "folders/sailing/Environment/Water/Controllers.yy",
+    "path": "folders/sailing/environment/water/Controllers.yy",
   },
   "parentObjectId": null,
   "persistent": false,

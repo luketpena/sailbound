@@ -4,3 +4,5 @@ global.vr = global.vx+global.vw;
 global.vb = global.vy+global.vh;
 global.midx = global.vx+global.hvw;
 global.midy = global.vy+global.hvh;
+
+global.transitioning = instance_exists(obj_roomTransition);

@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Distortion",
-    "path": "folders/sailing/Environment/Water/Effects/Distortion.yy",
+    "path": "folders/sailing/environment/water/Effects/Distortion.yy",
   },
   "parentObjectId": null,
   "persistent": false,

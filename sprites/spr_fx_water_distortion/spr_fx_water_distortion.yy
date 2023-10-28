@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Distortion",
-    "path": "folders/sailing/Environment/Water/Effects/Distortion.yy",
+    "path": "folders/sailing/environment/water/Effects/Distortion.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

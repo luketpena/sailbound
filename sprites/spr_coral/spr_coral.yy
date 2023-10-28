@@ -31,7 +31,7 @@
   "origin": 7,
   "parent": {
     "name": "Sprites",
-    "path": "folders/sailing/Environment/Ground/Props/Sprites.yy",
+    "path": "folders/sailing/environment/ground/Props/Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

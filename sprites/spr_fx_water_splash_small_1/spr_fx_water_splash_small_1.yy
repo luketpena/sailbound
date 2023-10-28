@@ -31,7 +31,7 @@
   "origin": 9,
   "parent": {
     "name": "Side",
-    "path": "folders/sailing/Environment/Water/Effects/Splash/Sprites/Side.yy",
+    "path": "folders/sailing/environment/water/Effects/Splash/Sprites/Side.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

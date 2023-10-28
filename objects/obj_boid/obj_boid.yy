@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Ambient Fish",
-    "path": "folders/sailing/Environment/Ambient Fish.yy",
+    "name": "ambient-fish",
+    "path": "folders/sailing/environment/ambient-fish.yy",
   },
   "parentObjectId": null,
   "persistent": false,

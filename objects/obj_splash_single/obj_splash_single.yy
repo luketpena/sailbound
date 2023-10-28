@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Splash",
-    "path": "folders/sailing/Environment/Water/Effects/Splash.yy",
+    "path": "folders/sailing/environment/water/Effects/Splash.yy",
   },
   "parentObjectId": null,
   "persistent": false,
