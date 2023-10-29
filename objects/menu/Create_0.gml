@@ -13,6 +13,8 @@ menuOptions = [];
 menuOptionCount = array_length(menuOptions);
 menuOptionHeight = sprite_get_height(s_font_normal_medium) + 8;
 menuPosY = global.hvh - ((menuOptionHeight * menuOptionCount) / 2);
+menuMargin = 32;
+menuOptionSlideDistance = 32;
 
 // These will be reactivated upon pause
 pauseExceptions = [
@@ -23,6 +25,13 @@ pauseExceptions = [
 
 // These are for displaying inputs at the bottom of the screen
 inputRow = [];
+
+function selectOption() {
+	if (menuPosition != -1) {
+		disableInput(seconds(.5));
+		menuOptions[menuPosition].select();	
+	}	
+}
 
 function clearInputRow() {
 	inputRow = [];

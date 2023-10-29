@@ -9,9 +9,9 @@ if (global.paused) {
 	draw_set_halign(fa_left);
 	
 	for (var i=0; i<menuOptionCount; i++) {
-		var _menuOption = menuOptions[i];
-		draw_set_alpha(.5 + .5 * (_menuOption.slideLerp * 2));
-		draw_text(32 + 32 * _menuOption.slidePos, menuPosY + menuOptionHeight * i, _menuOption.text);
+		var _option = menuOptions[i];
+		draw_set_alpha(.5 + .5 * (_option.slideLerp * 2));
+		draw_text(menuMargin + menuOptionSlideDistance * _option.slidePos, _option.y, _option.text);
 	}	
 }
 
@@ -24,6 +24,7 @@ if (array_length(inputRow) > 0) {
 	
 	var _xPos = 16;
 	var _gap = 16;
+	
 	for (var i=0; i<array_length(inputRow); i++) {
 		var _text = inputRow[i].getText();
 		draw_text(_xPos, global.vh - 8, _text);

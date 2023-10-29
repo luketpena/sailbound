@@ -10,19 +10,35 @@ if (!global.interfaceOpen) {
 }
 
 if (global.paused) {
-	if (input.ui.navY.clickPositive) {
-		menuPosition = (menuPosition + 1) mod menuOptionCount;
-	}
+	if (input.type == InputType.GAMEPAD) {
+		// -- Navigating Options --
+		if (input.ui.navY.clickPositive) {
+			menuPosition = (menuPosition + 1) mod menuOptionCount;
+		}
 
-	if (input.ui.navY.clickNegative) {
-		menuPosition = (menuPosition = 0) ? menuOptionCount - 1	: menuPosition - 1;
+		if (input.ui.navY.clickNegative) {
+			menuPosition = (menuPosition = 0) ? menuOptionCount - 1	: menuPosition - 1;
+		}
+	
+		// -- Selecting option --
+		if (input.ui.select.pressed) selectOption();
 	}
 	
-	if (input.ui.select.pressed) {
-		disableInput(seconds(.5));
-		menuOptions[menuPosition].select();	
+	// -- Mouse hover --
+	if (input.type == InputType.KEYBOARD) {
+		menuPosition = -1;
+		array_foreach(menuOptions, function(_option, _index) {
+			draw_set_font(global.font_normal_medium);
+			var _width = string_width(_option.text);
+			_option.hover = get_mouse_hovering(0, _option.y - 4, _width + menuMargin + menuOptionSlideDistance, menuOptionHeight);
+			if (_option.hover) {
+				menuPosition = _index;
+			}
+		});
+		if (mouse_check_button_pressed(mb_left)) selectOption();
 	}
 
+	// -- Animating option movement --
 	for (var i=0; i<menuOptionCount; i++) {
 		var _menuOption = menuOptions[i];
 	

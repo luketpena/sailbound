@@ -1061,8 +1061,8 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"r_init","path":"rooms/r_init/r_init.yy",},},
-    {"roomId":{"name":"r_water","path":"rooms/r_water/r_water.yy",},},
     {"roomId":{"name":"r_map","path":"rooms/r_map/r_map.yy",},},
+    {"roomId":{"name":"r_water","path":"rooms/r_water/r_water.yy",},},
     {"roomId":{"name":"r_town","path":"rooms/r_town/r_town.yy",},},
     {"roomId":{"name":"r_test","path":"rooms/r_test/r_test.yy",},},
     {"roomId":{"name":"r_town_shipyard","path":"rooms/r_town_shipyard/r_town_shipyard.yy",},},

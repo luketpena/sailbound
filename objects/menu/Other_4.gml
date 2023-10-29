@@ -19,3 +19,8 @@ switch(room) {
 }
 
 menuOptionCount = array_length(menuOptions);
+
+// Set y positions
+array_foreach(menuOptions, function(_option, _index) {
+	_option.y = menuPosY + menuOptionHeight * _index;
+});

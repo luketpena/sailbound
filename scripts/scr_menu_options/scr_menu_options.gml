@@ -1,16 +1,19 @@
 ///@param text
 ///@param select
+///@param y
 function MenuOption(_text, _select) constructor {
 	slidePos = 0;
 	slideLerp = 0;
 	text = _text;
 	select = _select;
+	hover = false;
+	y = 0;
 }
 
 function menu_options_water() {
 	return  [
 		new MenuOption(
-			"return",
+			"back to sailing",
 			function() {
 				menu.unpause();
 			}),
@@ -35,7 +38,7 @@ function menu_options_water() {
 function menu_options_map() {
 	return  [
 		new MenuOption(
-			"RETURN",
+			"back to map",
 			function() {
 				menu.unpause();
 			}),
@@ -55,7 +58,7 @@ function menu_options_map() {
 function menu_options_town() {
 	return  [
 		new MenuOption(
-			"return",
+			"back to town",
 			function() {
 				menu.unpause();
 			}),
