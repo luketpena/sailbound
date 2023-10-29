@@ -1,5 +1,6 @@
 image_speed = 0;
-mySpeed = islands.island_speed_max; //Get the fast speed
+// TODO: redo locations
+mySpeed = 0//islands_old.island_speed_max; //Get the fast speed
 
 state = "enter";
 

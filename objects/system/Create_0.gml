@@ -37,7 +37,7 @@ knapsack = {
 	save: function() {
 		var name = room_get_name(room);
 		if (name = "rm_water") {
-			islands.save();	
+			islands_old.save();	
 		}
 	},
 	load: function() {
@@ -50,27 +50,27 @@ knapsack = {
 	islandSave: {
 		value: [],
 		save: function() {
-			if (instance_exists(islands)) {
-				var list = islands.island_list;
-				for (var i=0; i<array_length(list); i++) {
-					var island = list[i];
-					value[i] = {
-						image: island.image_index,
-						position: island.position,
-						x: island.x,
-						y: island.y,
-						xscale: island.image_xscale
-					}
-				}
-			}
+			//if (instance_exists(islands_old)) {
+			//	var list = islands_old.island_list;
+			//	for (var i=0; i<array_length(list); i++) {
+			//		var island = list[i];
+			//		value[i] = {
+			//			image: island.image_index,
+			//			position: island.position,
+			//			x: island.x,
+			//			y: island.y,
+			//			xscale: island.image_xscale
+			//		}
+			//	}
+			//}
 		}, // END of save function
 		load: function() {
-			for (var i=0; i<array_length(value); i++) {
-				var data = value[i];
-				var newIsland = island_spawn_ext(data.position, Biome.Tropical, islands.island_speed_min, islands.island_speed_max, data.image, data.x, data.y, data.xscale);
-				islands.island_list_insert(newIsland);
-				delete value[i];
-			}
+			//for (var i=0; i<array_length(value); i++) {
+			//	var data = value[i];
+			//	var newIsland = island_spawn_ext(data.position, Biome.Tropical, islands_old.island_speed_min, islands_old.island_speed_max, data.image, data.x, data.y, data.xscale);
+			//	islands_old.island_list_insert(newIsland);
+			//	delete value[i];
+			//}
 			value = [];
 		} // END of load function
 	}, // END of islands

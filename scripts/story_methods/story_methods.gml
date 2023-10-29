@@ -77,7 +77,7 @@ function story_chapterStart(currentChapter, nextChapter) {
 		getChestDiceSize();
 	}
 	
-	islands.update(nextChapter);
+	//islands_old.update(nextChapter);
 	//clock.update(nextChapter);
 }
 

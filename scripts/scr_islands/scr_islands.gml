@@ -1,4 +1,4 @@
-//-function island_list_cleanup() {
+//function island_list_cleanup() {
 //	with(islands) {
 //		//Removes islands from the list that don't exist anymore
 //		var cleanList = [];
@@ -10,7 +10,7 @@
 //				cleanOffset++;	
 //			}
 //		}
-//		//array_copy(island_list,0,cleanList,0,array_length(cleanList));
+//		array_copy(island_list, 0, cleanList, 0, array_length(cleanList));
 //		return cleanList;
 //	}
 //}
@@ -55,15 +55,15 @@
 //	var sprite_hw = sprite_get_width(_sprite)/2;
 //	var xx = _x;
 //	var yy = _y;
-//	var o = instance_create_layer(xx,yy,l_main,obj_island_standard);
+//	var o = instance_create_layer(xx, yy, l_main, obj_island_standard);
 	
 //	with(o) {
-//		shader_pwr = lerp(1,.2,in_position);
+//		shader_pwr = lerp(1, .2, in_position);
 //		position = in_position;
 //		mov_speed = lerp(speed_min, speed_max, in_position);
 //		exit_x = global.vx-sprite_hw;
 		
-//		var size = lerp(.25,1,in_position);
+//		var size = lerp(.25, 1, in_position);
 //		image_xscale = xscale;
 //		image_yscale = size;
 //		depth += (1-in_position);
@@ -77,37 +77,37 @@
 
 /////@param verticalPosition
 /////@param sprite
-////function island_spawn(verticalPosition, sprite) {
-////	var sprite_hw = sprite_get_width(sprite)/2,
-////		xx = global.vr + sprite_hw,
-////		yy = floor(global.horizon_y + 16*verticalPosition),
-////		image = irandom(sprite_get_number(sprite)-1);
+//function island_spawn(verticalPosition, sprite) {
+//	var sprite_hw = sprite_get_width(sprite)/2, 
+//		xx = global.vr + sprite_hw, 
+//		yy = floor(global.horizon_y + 16*verticalPosition), 
+//		image = irandom(sprite_get_number(sprite)-1);
 	
-////	var o = instance_create_layer(xx, yy, l_main, obj_island_standard);
+//	var o = instance_create_layer(xx, yy, l_main, obj_island_standard);
 	
-////	with(o) {
-////		shader_pwr = lerp(1, .2, verticalPosition);
-////		position = verticalPosition;
-////		mov_speed = lerp(islands.island_speed[0], islands.island_speed[1], verticalPosition);
-////		exit_x = global.vx-sprite_hw;
+//	with(o) {
+//		shader_pwr = lerp(1, .2, verticalPosition);
+//		position = verticalPosition;
+//		mov_speed = lerp(islands.island_speed[0], islands.island_speed[1], verticalPosition);
+//		exit_x = global.vx-sprite_hw;
 		
-////		var size = lerp(.25, 1, verticalPosition);
-////		image_xscale = choose(-1, 1);
-////		image_yscale = size;
-////		depth += (1 - verticalPosition);
+//		var size = lerp(.25, 1, verticalPosition);
+//		image_xscale = choose(-1, 1);
+//		image_yscale = size;
+//		depth += (1 - verticalPosition);
 		
-////		sprite_index = sprite;
-////		image_index = image;
-////	}
+//		sprite_index = sprite;
+//		image_index = image;
+//	}
 
-////	return o;
-////}
+//	return o;
+//}
 
 
 //function island_spawn_pos(verticalPosition, sprite, horizontalPosition, flip = choose(-1, 1)) {
-//	var sprite_hw = sprite_get_width(sprite)/2,
-//		xx = lerp(global.vx - sprite_hw, global.vr + sprite_hw, horizontalPosition),
-//		yy = floor(global.horizon_y + 16 * verticalPosition),
+//	var sprite_hw = sprite_get_width(sprite)/2, 
+//		xx = lerp(global.vx - sprite_hw, global.vr + sprite_hw, horizontalPosition), 
+//		yy = floor(global.horizon_y + 16 * verticalPosition), 
 //		image = irandom(sprite_get_number(sprite)-1);
 	
 //	var o = instance_create_layer(xx, yy, l_main, obj_island_standard);
