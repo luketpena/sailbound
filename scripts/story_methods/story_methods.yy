@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Story",
-    "path": "folders/sailing/Story.yy",
+    "name": "story",
+    "path": "folders/sailing/story.yy",
   },
 }

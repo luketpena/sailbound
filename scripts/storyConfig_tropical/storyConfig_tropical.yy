@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Config Files",
-    "path": "folders/sailing/Story/Config Files.yy",
+    "path": "folders/sailing/story/Config Files.yy",
   },
 }

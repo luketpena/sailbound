@@ -112,6 +112,10 @@ function phy_speed_stop() {
 	phy_speed_y = 0;
 }
 
-function seconds(value) {
-	return value * game_get_speed(gamespeed_fps);	
+function seconds(_value) {
+	return _value * game_get_speed(gamespeed_fps);	
+}
+
+function minutes(_value) {
+	return seconds(_value * 60);
 }

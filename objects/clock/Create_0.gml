@@ -43,7 +43,7 @@ function setEndTime(newEndTime) {
 	}
 }
 
-// Snaps the time to the starTime provided
+// Snaps the time to the startTime provided
 function setStartTime(startTime) {
 	elapsed = startTime;
 	calculateTimeAndDay();

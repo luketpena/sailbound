@@ -23,10 +23,10 @@
 
 /////@description A mob that is entered into a Chapter mob list
 /////@param danger The number of danger points the mob will cost
-/////@param spawnScript The script that brings the mob into the scene
+/////@param spawnFunction The script that brings the mob into the scene
 //function MobDefinition(
 //	_danger,
-//	_spawnScript
+//	_spawnFunction
 //) constructor {
 		
 //}

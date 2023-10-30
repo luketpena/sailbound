@@ -96,7 +96,6 @@ function getChestDiceSize() {
 
 function story_init() {
 	var _firstChapter = getFirstChapter();
-	clock.setStartTime(config.startTime);
 	story_chapterStart(null, _firstChapter);
 	
 	// Execute the initializing script

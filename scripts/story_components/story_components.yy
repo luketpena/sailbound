@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "story_testScripts",
+  "name": "story_components",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

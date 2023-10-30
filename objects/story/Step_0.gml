@@ -2,31 +2,19 @@
 if (active) {
 	var _currentChapter = getCurrentChapter();
 	
-	if (gameMode = GameMode.Infinite) {
-		
-		// Resets the chapter number manually when looped
-		if (progress < config.chapters[1].startTime && chapterCurrentIndex != 0) {
-			chapterCurrentIndex = 0;
-		}
-	} 
-	// Getting the chapterProgress
+	// -- Spawning Mobs 00
 	if (mobActive) {
-		for (var i=0; i<array_length(mobs); i++) {
-			var mob = mobs[i];
+		array_foreach(mobs, function(_mob) {
 			// Mobs must be ready and there must be room in the danger cap
-			if (mob.cooldown = 0) {
-				if (global.danger < maxDanger - mob.danger) {
-					var roll = dice(mob.chance);
-					if (roll) {
-						mob.spawnScript();
-						global.danger += mob.danger;
-						mob.cooldown = round(random_range(mob.cooldownMin, mob.cooldownMax) * room_speed);
-					}
+			if (_mob.cooldown > 0) _mob.cooldown--
+			else if (global.danger < maxDanger - _mob.danger) {
+				if (dice(_mob.chance)) {
+					_mob.spawnFunction();
+					global.danger += _mob.danger;
+					_mob.cooldown = seconds(random_range(_mob.cooldownMin, _mob.cooldownMax));
 				}
-			} else {
-				mob.cooldown--;	
 			}
-		}
+		});
 	}
 	
 	if (chest.active) {
@@ -38,7 +26,8 @@ if (active) {
 		}
 	}
 		
-	if (chapterCurrentIndex < chapterCount-1) {
+	// Looking to trigger the next chapter
+	if (chapterCurrentIndex < chapterCount - 1) {
 		var _nextChapter = getNextChapter();
 		// Trigger when a new chapter starts
 		if (progress >= _nextChapter.startTime) {
