@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Sprites",
-    "path": "folders/town/Environment/Tile Sets/Sprites.yy",
+    "path": "folders/town/environment/tile-sets/Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

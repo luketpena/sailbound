@@ -30,8 +30,8 @@
   "nineSlice": null,
   "origin": 6,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/town/Environment/Flora/Sprites.yy",
+    "name": "grass",
+    "path": "folders/town/environment/props/flora/grass.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

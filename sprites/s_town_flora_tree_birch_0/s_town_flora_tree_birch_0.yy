@@ -26,7 +26,7 @@
   "origin": 7,
   "parent": {
     "name": "Sprites",
-    "path": "folders/town/Environment/Trees/Birch/Sprites.yy",
+    "path": "folders/town/environment/props/flora/trees/Birch/Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

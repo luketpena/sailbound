@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Street Lamp",
-    "path": "folders/town/Buildings/General/Street Lamp.yy",
+    "name": "street-lamp",
+    "path": "folders/town/environment/props/structures/street-lamp.yy",
   },
   "parentObjectId": null,
   "persistent": false,

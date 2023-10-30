@@ -26,7 +26,7 @@
   "origin": 7,
   "parent": {
     "name": "Deep",
-    "path": "folders/town/Environment/Trees/Birch/Background/Deep.yy",
+    "path": "folders/town/environment/props/flora/trees/Birch/Background/Deep.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

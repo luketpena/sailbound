@@ -62,8 +62,8 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/town/Environment/Tile Sets.yy",
+    "name": "tile-sets",
+    "path": "folders/town/environment/tile-sets.yy",
   },
   "spriteId": {
     "name": "spr_ts_rock",

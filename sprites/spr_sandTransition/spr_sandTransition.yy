@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Props",
-    "path": "folders/town/Environment/Props.yy",
+    "name": "props",
+    "path": "folders/town/environment/props.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

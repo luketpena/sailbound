@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/town/Environment/Tile Sets.yy",
+    "name": "tile-sets",
+    "path": "folders/town/environment/tile-sets.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

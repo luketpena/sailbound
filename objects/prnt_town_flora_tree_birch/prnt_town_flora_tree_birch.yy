@@ -7,7 +7,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Objects",
-    "path": "folders/town/Environment/Trees/Birch/Objects.yy",
+    "path": "folders/town/environment/props/flora/trees/Birch/Objects.yy",
   },
   "parentObjectId": {
     "name": "prnt_town_tree",

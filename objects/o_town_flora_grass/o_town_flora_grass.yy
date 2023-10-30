@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Flora",
-    "path": "folders/town/Environment/Flora.yy",
+    "name": "grass",
+    "path": "folders/town/environment/props/flora/grass.yy",
   },
   "parentObjectId": null,
   "persistent": false,

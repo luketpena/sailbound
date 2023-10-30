@@ -1,10 +1,9 @@
-light = light_create(x, y-64, spr_fx_flare_300, 0, .5, .5, c_fire, .8);
+light = light_create(x, y-64, spr_fx_flare_300, 0, .8, .8, c_fire, 1);
 light.off(-1);
 active = false;
 fireAnim = irandom(5);
 inRange = 0;
 range = 300 + global.hvw;
-
 
 aura = {
 	rot: random(360),
@@ -25,7 +24,7 @@ aura = {
 }
 
 function lightDelay_set() {
-	lightDelay = irandom(1 * room_speed);
+	lightDelay = irandom(seconds(1));
 };
 lightDelay = 0;
 lightDelay_set();

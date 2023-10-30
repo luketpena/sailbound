@@ -26,7 +26,7 @@
   "origin": 7,
   "parent": {
     "name": "Mid",
-    "path": "folders/town/Environment/Trees/Birch/Background/Mid.yy",
+    "path": "folders/town/environment/props/flora/trees/Birch/Background/Mid.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
