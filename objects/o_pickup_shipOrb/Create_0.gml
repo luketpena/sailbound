@@ -1,5 +1,6 @@
 active = false;
 floatMove_init(3, .15);
+floatMove_speed_set_dir(random(360), 2);
 
 x = room_width + 128;
 y = global.water_y - 128;
