@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Fall-thru",
-    "path": "folders/town/Blocks/Special Blocks/Fall-thru.yy",
+    "path": "folders/town/blocks/Special Blocks/Fall-thru.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

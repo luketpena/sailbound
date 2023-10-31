@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "environment",
-    "path": "folders/town/environment.yy",
+    "name": "background",
+    "path": "folders/town/environment/background.yy",
   },
   "parentObjectId": null,
   "persistent": false,

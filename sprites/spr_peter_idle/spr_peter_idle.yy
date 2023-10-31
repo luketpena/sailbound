@@ -35,7 +35,7 @@
   "origin": 9,
   "parent": {
     "name": "Sprites",
-    "path": "folders/town/Peter/Sprites.yy",
+    "path": "folders/town/player/Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

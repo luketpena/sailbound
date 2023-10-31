@@ -109,6 +109,13 @@ function drawSurfaceLine() {
 	}
 }
 
+function getPositionY(_x) {
+	// How far along the length of me is the x position, clamped at the start and end
+	var _posXPercent = clamp((_x - x) / sprite_width, 0, 1);
+	var _index = floor(_posXPercent * pointCount);
+	return points[_index].y;
+}
+
 
 //-- Setup
 

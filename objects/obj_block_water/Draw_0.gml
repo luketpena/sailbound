@@ -1,4 +1,3 @@
-
 draw_set_alpha(1);
 if surface_exists(surf) {
 	surface_set_target(surf);

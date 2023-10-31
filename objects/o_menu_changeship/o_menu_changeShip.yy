@@ -13,7 +13,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Slideshow",
-    "path": "folders/town/Stores/Slideshow.yy",
+    "path": "folders/town/stores/Slideshow.yy",
   },
   "parentObjectId": null,
   "persistent": false,

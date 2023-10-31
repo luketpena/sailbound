@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Tilesets",
-    "path": "folders/town/Buildings/General/Tilesets.yy",
+    "path": "folders/town/buildings/General/Tilesets.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

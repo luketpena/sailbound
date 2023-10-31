@@ -26,7 +26,7 @@
   "origin": 3,
   "parent": {
     "name": "Gear",
-    "path": "folders/town/Buildings/General/Gear.yy",
+    "path": "folders/town/buildings/General/Gear.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

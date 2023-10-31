@@ -13,7 +13,7 @@
   "out_tilevborder": 2,
   "parent": {
     "name": "Tilesets",
-    "path": "folders/town/Buildings/General/Tilesets.yy",
+    "path": "folders/town/buildings/General/Tilesets.yy",
   },
   "spriteId": {
     "name": "spr_tileset_indoor_dark",

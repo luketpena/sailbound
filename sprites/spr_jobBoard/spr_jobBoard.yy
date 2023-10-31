@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Job Board",
-    "path": "folders/town/Districts/Dock/Job Board.yy",
+    "name": "job-board",
+    "path": "folders/town/environment/props/structures/job-board.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Interactive",
-    "path": "folders/town/Interactive.yy",
+    "name": "interactive",
+    "path": "folders/town/interactive.yy",
   },
 }

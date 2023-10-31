@@ -40,8 +40,6 @@
     {"name":"inst_17BB9E41","path":"rooms/r_town/r_town.yy",},
     {"name":"inst_7B62C28","path":"rooms/r_town/r_town.yy",},
     {"name":"inst_6F522474","path":"rooms/r_town/r_town.yy",},
-    {"name":"inst_3A8B4C09","path":"rooms/r_town/r_town.yy",},
-    {"name":"inst_678BA3C7","path":"rooms/r_town/r_town.yy",},
     {"name":"inst_2688C807","path":"rooms/r_town/r_town.yy",},
     {"name":"inst_4737015C","path":"rooms/r_town/r_town.yy",},
     {"name":"inst_7F1DC942","path":"rooms/r_town/r_town.yy",},
@@ -174,19 +172,13 @@
     {"name":"inst_34F242D2","path":"rooms/r_town/r_town.yy",},
     {"name":"inst_4D309A5E","path":"rooms/r_town/r_town.yy",},
     {"name":"inst_367D4F48","path":"rooms/r_town/r_town.yy",},
-    {"name":"inst_DA9349B","path":"rooms/r_town/r_town.yy",},
-    {"name":"inst_5C511DCB","path":"rooms/r_town/r_town.yy",},
     {"name":"inst_B73F2C9","path":"rooms/r_town/r_town.yy",},
   ],
   "isDnd": false,
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"l_water","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3A8B4C09","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_testTownObject","path":"objects/obj_testTownObject/obj_testTownObject.yy",},"properties":[],"rotation":0.0,"scaleX":3.0,"scaleY":1.5,"x":1184.0,"y":480.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_678BA3C7","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_testTownObject","path":"objects/obj_testTownObject/obj_testTownObject.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1408.0,"y":576.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2C659D7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_block_water_manager","path":"objects/o_block_water_manager/o_block_water_manager.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":32.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_33DFED10","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"sys_water_distortion","path":"objects/sys_water_distortion/sys_water_distortion.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":64.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_DA9349B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_test_townsfolk2","path":"objects/obj_test_townsfolk2/obj_test_townsfolk2.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1696.0,"y":352.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5C511DCB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_test_townsfolk3","path":"objects/obj_test_townsfolk3/obj_test_townsfolk3.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2176.0,"y":416.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"l_props_top","depth":100,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4D309A5E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_townBoat","path":"objects/o_townBoat/o_townBoat.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":72.0,"y":680.0,},

@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Sprites",
-    "path": "folders/town/Blocks/Left Slopes/Sprites.yy",
+    "path": "folders/town/blocks/Left Slopes/Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

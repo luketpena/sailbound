@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Ladder",
-    "path": "folders/town/Interactive/Ladder.yy",
+    "name": "ladder",
+    "path": "folders/town/interactive/ladder.yy",
   },
   "parentObjectId": null,
   "persistent": false,

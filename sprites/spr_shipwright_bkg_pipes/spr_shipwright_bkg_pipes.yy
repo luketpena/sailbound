@@ -26,7 +26,7 @@
   "origin": 8,
   "parent": {
     "name": "Background",
-    "path": "folders/town/Buildings/Shipwright/Background.yy",
+    "path": "folders/town/buildings/Shipwright/Background.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

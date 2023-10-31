@@ -6,8 +6,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Latch",
-    "path": "folders/town/Interactive/Latch.yy",
+    "name": "latch",
+    "path": "folders/town/interactive/latch.yy",
   },
   "parentObjectId": null,
   "persistent": false,

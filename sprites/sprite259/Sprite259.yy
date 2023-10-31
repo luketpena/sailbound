@@ -27,7 +27,7 @@
   "origin": 6,
   "parent": {
     "name": "Outside",
-    "path": "folders/town/Buildings/Shipwright/Outside.yy",
+    "path": "folders/town/buildings/Shipwright/Outside.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

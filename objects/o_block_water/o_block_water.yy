@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "sailbound",
-    "path": "sailbound.yyp",
+    "name": "water",
+    "path": "folders/town/environment/water.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Interactive",
-    "path": "folders/town/Interactive.yy",
+    "name": "interactive",
+    "path": "folders/town/interactive.yy",
   },
   "parentObjectId": null,
   "persistent": false,

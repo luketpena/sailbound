@@ -30,7 +30,7 @@
   "origin": 9,
   "parent": {
     "name": "Mathilde",
-    "path": "folders/town/Townsfolk/Mathilde.yy",
+    "path": "folders/town/townsfolk/Mathilde.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

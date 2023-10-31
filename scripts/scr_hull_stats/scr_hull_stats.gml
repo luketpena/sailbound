@@ -6,7 +6,7 @@ function hullStats_classic() {
 		new HullSizeStats(48, 10, 4, 4),
 		new HullDrawStats(spr_hull_classic, spr_sail_classic, 180, 8),
 		new ColliderStats(28, 12),
-		new HullWakeStats(-10, 4),
+		new HullWakeStats(-10, 4)
 	);
 }
 
@@ -18,7 +18,7 @@ function hullStats_banana() {
 		new HullSizeStats(48, 7, 2, 2),
 		new HullDrawStats(s_hull_banana, s_sail_banana, 180, 8),
 		new ColliderStats(28, 12),
-		new HullWakeStats(-10, 4),
+		new HullWakeStats(-10, 4)
 	);
 }
 
@@ -30,7 +30,7 @@ function hullStats_raft() {
 		new HullSizeStats(32, 10, 4, 4),
 		new HullDrawStats(spr_hull_raft, spr_sail_raft, 180, 8),
 		new ColliderStats(30, 8),
-		new HullWakeStats(-10, 4),
+		new HullWakeStats(-10, 4)
 	);
 }
 
@@ -42,6 +42,6 @@ function hullStats_steamboat() {
 		new HullSizeStats(48, 10, 6, 6),
 		new HullDrawStats(s_hull_steamboat, null, 180, 8),
 		new ColliderStats(30, 16),
-		new HullWakeStats(10, 24),
+		new HullWakeStats(10, 24)
 	);
 }

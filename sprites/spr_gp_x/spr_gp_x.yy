@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 5,
   "parent": {
-    "name": "Controllers",
-    "path": "folders/town/Controllers.yy",
+    "name": "controllers",
+    "path": "folders/town/controllers.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

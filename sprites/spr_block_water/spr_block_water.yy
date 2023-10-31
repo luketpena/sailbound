@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Water",
-    "path": "folders/town/Interactive/Water.yy",
+    "name": "depreciated",
+    "path": "folders/depreciated.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Doors",
-    "path": "folders/town/Interactive/Doors.yy",
+    "name": "doors",
+    "path": "folders/town/interactive/doors.yy",
   },
   "parentObjectId": {
     "name": "prnt_interactable",

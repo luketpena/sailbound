@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Bellows",
-    "path": "folders/town/Buildings/Shipwright/Bellows.yy",
+    "path": "folders/town/buildings/Shipwright/Bellows.yy",
   },
   "parentObjectId": null,
   "persistent": false,

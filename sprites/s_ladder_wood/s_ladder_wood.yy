@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Ladder",
-    "path": "folders/town/Interactive/Ladder.yy",
+    "name": "ladder",
+    "path": "folders/town/interactive/ladder.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

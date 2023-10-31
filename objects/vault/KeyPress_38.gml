@@ -1,1 +1,0 @@
-bank.incrementGold(5);

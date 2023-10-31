@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/town/Districts/Dock/Sprites.yy",
+    "name": "dock",
+    "path": "folders/town/environment/props/structures/dock.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

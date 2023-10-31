@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Rope",
-    "path": "folders/town/Interactive/Rope.yy",
+    "name": "rope",
+    "path": "folders/town/interactive/rope.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

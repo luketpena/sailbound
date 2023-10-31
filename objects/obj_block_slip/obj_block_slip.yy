@@ -7,7 +7,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Slip",
-    "path": "folders/town/Blocks/Special Blocks/Slip.yy",
+    "path": "folders/town/blocks/Special Blocks/Slip.yy",
   },
   "parentObjectId": null,
   "persistent": false,

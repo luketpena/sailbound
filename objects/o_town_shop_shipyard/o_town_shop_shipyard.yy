@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "shops",
-    "path": "folders/town/shops.yy",
+    "path": "folders/town/interactive/shops.yy",
   },
   "parentObjectId": null,
   "persistent": false,

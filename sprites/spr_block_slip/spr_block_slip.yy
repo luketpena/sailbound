@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Slip",
-    "path": "folders/town/Blocks/Special Blocks/Slip.yy",
+    "path": "folders/town/blocks/Special Blocks/Slip.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

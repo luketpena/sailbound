@@ -6,8 +6,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Job Board",
-    "path": "folders/town/Districts/Dock/Job Board.yy",
+    "name": "job-board",
+    "path": "folders/town/environment/props/structures/job-board.yy",
   },
   "parentObjectId": null,
   "persistent": false,

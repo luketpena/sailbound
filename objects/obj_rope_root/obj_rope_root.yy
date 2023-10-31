@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Rope",
-    "path": "folders/town/Interactive/Rope.yy",
+    "name": "rope",
+    "path": "folders/town/interactive/rope.yy",
   },
   "parentObjectId": null,
   "persistent": false,

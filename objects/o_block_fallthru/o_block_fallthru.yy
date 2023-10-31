@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Fall-thru",
-    "path": "folders/town/Blocks/Special Blocks/Fall-thru.yy",
+    "path": "folders/town/blocks/Special Blocks/Fall-thru.yy",
   },
   "parentObjectId": {
     "name": "prnt_block",

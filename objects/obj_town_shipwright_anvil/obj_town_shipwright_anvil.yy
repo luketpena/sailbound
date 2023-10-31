@@ -7,7 +7,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Anvil",
-    "path": "folders/town/Buildings/Shipwright/Anvil.yy",
+    "path": "folders/town/buildings/Shipwright/Anvil.yy",
   },
   "parentObjectId": null,
   "persistent": false,

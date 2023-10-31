@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Stop",
-    "path": "folders/town/Blocks/Special Blocks/Stop.yy",
+    "path": "folders/town/blocks/Special Blocks/Stop.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

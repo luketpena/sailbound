@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Slideshow",
-    "path": "folders/town/Stores/Slideshow.yy",
+    "path": "folders/town/stores/Slideshow.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

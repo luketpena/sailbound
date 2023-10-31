@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Sprites",
-    "path": "folders/town/Buildings/Shipwright/Bellows/Sprites.yy",
+    "path": "folders/town/buildings/Shipwright/Bellows/Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

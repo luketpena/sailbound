@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "sailbound",
-    "path": "sailbound.yyp",
+    "name": "water",
+    "path": "folders/town/environment/water.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

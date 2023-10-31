@@ -1,26 +1,35 @@
-target = null;
+target = noone;
 
 bobRot = 0;
 posY = y;
 activeShip = undefined;
+stats = undefined;
+left = new Pos();
+right = new Pos();
 
 function setBoat() {
 	if (!is_string(vault.dock.activeShip)) exit;
-	log("SETTING BOAT FOR TOWN", vault.dock.activeShip);
 	
-	var stats = getActiveShipStats();
+	stats = getActiveShipStats();
 	var	hullSprite = stats.hullSprite;
 	var	sailSprite = stats.sailSprite;
 	var drawObject = getActiveShipDrawObject();
+	
+	var _hw = stats.width / 2;
+	left.x = x - _hw;
+	right.x = x + _hw;
 
 	target = instance_create_depth(x, y, depth, drawObject);
 	target.init(hullSprite, sailSprite, false, -1);	
 	target.hull_angle = 180;
 	target.sailSnapToHullAngle();
+	
+	log("STATS", stats);
 }
 
+
 function targetExists() {
-	return target != null && instance_exists(target)	;
+	return target != noone && instance_exists(target);
 }
 
 function resetBoat() {
@@ -30,5 +39,4 @@ function resetBoat() {
 	}
 	setBoat();
 }
-
 setBoat();

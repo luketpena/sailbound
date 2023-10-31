@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Objects",
-    "path": "folders/town/Blocks/Right Slopes/Objects.yy",
+    "path": "folders/town/blocks/Right Slopes/Objects.yy",
   },
   "parentObjectId": {
     "name": "prnt_block",

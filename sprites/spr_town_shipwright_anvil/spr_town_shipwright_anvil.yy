@@ -26,7 +26,7 @@
   "origin": 1,
   "parent": {
     "name": "Anvil",
-    "path": "folders/town/Buildings/Shipwright/Anvil.yy",
+    "path": "folders/town/buildings/Shipwright/Anvil.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

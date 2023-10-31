@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Water",
-    "path": "folders/town/Interactive/Water.yy",
+    "name": "depreciated",
+    "path": "folders/depreciated.yy",
   },
   "parentObjectId": null,
   "persistent": false,

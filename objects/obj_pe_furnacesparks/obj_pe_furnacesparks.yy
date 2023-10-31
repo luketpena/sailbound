@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Furnace",
-    "path": "folders/town/Buildings/Shipwright/Furnace.yy",
+    "path": "folders/town/buildings/Shipwright/Furnace.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -11,8 +11,8 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"prnt_interactable","path":"objects/prnt_interactable/prnt_interactable.yy",},"propertyId":{"name":"text","path":"objects/prnt_interactable/prnt_interactable.yy",},"value":"Change Ship",},
   ],
   "parent": {
-    "name": "Doors",
-    "path": "folders/town/Interactive/Doors.yy",
+    "name": "doors",
+    "path": "folders/town/interactive/doors.yy",
   },
   "parentObjectId": {
     "name": "prnt_interactable",

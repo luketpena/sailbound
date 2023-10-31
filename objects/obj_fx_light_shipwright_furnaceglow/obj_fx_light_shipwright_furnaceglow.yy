@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "FX",
-    "path": "folders/town/Buildings/Shipwright/FX.yy",
+    "path": "folders/town/buildings/Shipwright/FX.yy",
   },
   "parentObjectId": null,
   "persistent": false,

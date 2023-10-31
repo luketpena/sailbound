@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Gear",
-    "path": "folders/town/Buildings/General/Gear.yy",
+    "path": "folders/town/buildings/General/Gear.yy",
   },
   "parentObjectId": null,
   "persistent": false,

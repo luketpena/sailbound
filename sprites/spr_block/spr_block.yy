@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Blocks",
-    "path": "folders/town/Blocks.yy",
+    "name": "blocks",
+    "path": "folders/town/blocks.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
