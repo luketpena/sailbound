@@ -1,6 +1,6 @@
 function player_swimming() {	
 	// Buoyancy
-	var buoyancy_point = collision_point(x,y,o_block_water,false,true);
+	var buoyancy_point = collision_point(x,y,o_town_water,false,true);
 	if (buoyancy_point) {
 		physics_apply_force(x, y, 0, -20);
 	} else {
@@ -17,7 +17,7 @@ function player_swimming() {
 ///@description Handles state when diving
 function player_diving() {
 	// Find the surface of the water
-	swim_top = collision_release(90, 96, -1, x, bottom, o_block_water, false);
+	swim_top = collision_release(90, 96, -1, x, bottom, o_town_water, false);
 	var top_dis = y - swim_top[1];	
 	
 	/// Transition to swimming if surfaced

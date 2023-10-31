@@ -16,7 +16,11 @@ function town_player_setControlImpulse() {
 	//	ctrl_vertical_axis = input_check("up") ? -1 : (input_check("down") ? 1 : 0);
 	//}
 	
-	if (input.sail.move_v.clickNegative) ctrl_jump_pulse = seconds(.2);
-	ctrl_jump_hold = input.sail.move_v.value < 0;
+	if (!input.town.crouch.held) {
+		fallthru_charge = 0;	
+	}
+	
+	if (input.town.jump.pressed) ctrl_jump_pulse = seconds(.2);
+	ctrl_jump_hold = input.town.jump.held;
 }
 

@@ -25,11 +25,11 @@ function player_fallthru_step() {
 }
 
 function player_fallthru_trigger() {
-	if (ctrl_jump_pulse) {
+	if (ctrl_jump_pulse || fallthru_charge = fallthru_charge_target) {
 		fallthru_active = true;
 		fallthru_cooldown = 10;
 		groundSnapCooldown = 5;
-	}
+	} else if (fallthru_charge < fallthru_charge_target && input.town.crouch.held) fallthru_charge++;
 }
 
 function player_senseLadder() {

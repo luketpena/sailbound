@@ -11,6 +11,8 @@ sail = input_group_create([
 
 town = input_group_create([
 	new InputButton("interact", ord("E"), gp_face3),
+	new InputButton("jump", ord("W"), gp_face4),
+	new InputButton("crouch", ord("S"), gp_face1),
 ]);
 
 ui = input_group_create([

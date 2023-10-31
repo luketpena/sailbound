@@ -52,7 +52,7 @@ function character_init() {
 	wallslide_active = false;
 	wallslide_triggerSpeed = .5;
 	wallslide_hold = 0; //Coyote time for walljumping after release from wall
-	wallslide_hold_set = .2 * room_speed;
+	wallslide_hold_set = seconds(.2);
 	wallslide_dir = 0;
 
 	//---- Wall Jump ----\\
@@ -70,6 +70,8 @@ function character_init() {
 	//---- Fall-Through ----\\
 	fallthru_active = false;
 	fallthru_cooldown = 0;
+	fallthru_charge = 0;
+	fallthru_charge_target = seconds(.25);
 
 	//---- Controls ----\\
 	ctrl_move_axis = 0;
@@ -77,7 +79,7 @@ function character_init() {
 	ctrl_jump_hold = false;
 	ctrl_down_pulse = -1;
 	ctrl_vertical_axis = 0;
-	coyote_set = .1*room_speed;
+	coyote_set = seconds(.1);
 	coyote_time = coyote_set;
 
 	//---- Movement ----\\

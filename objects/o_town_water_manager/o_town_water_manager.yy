@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_block_water_front",
+  "name": "o_town_water_manager",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "s_block_water",
-    "path": "sprites/s_block_water/s_block_water.yy",
+    "name": "ico_system",
+    "path": "sprites/ico_system/ico_system.yy",
   },
   "spriteMaskId": null,
   "visible": true,

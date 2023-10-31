@@ -37,7 +37,7 @@
 		// Gets you the saved rotation for this current wave at a given looping index
 		getOffset = function(i) {
 			var result = array_get(
-				array_get(o_block_water.waveOffset, index),
+				array_get(o_town_water.waveOffset, index),
 				i mod divCount
 			);
 			return result;
@@ -51,7 +51,7 @@ unitWidth = 6;
 //-- Variables
 global.water_y = y;
 active = false;
-front = instance_create_layer(x, y, "l_water", o_block_water_front);
+front = instance_create_layer(x, y, "l_water", o_town_water_front);
 front.init(id);
 pointCount = (sprite_width / unitWidth) + 1;
 points = array_create(pointCount);
