@@ -1,9 +1,3 @@
-enum ChestType {
-	Gold,
-	Silver,
-	Bronze
-}
-
 function create_coin(x, y, spd_min, spd_max, dir_min, dir_max) {
 	var o = instance_create_layer(x,y,"l_items",obj_coin);
 	
@@ -16,16 +10,16 @@ function create_coin(x, y, spd_min, spd_max, dir_min, dir_max) {
 	return o;
 }
 
-
-function create_chest(x, y, chestType) {
-	var chest = instance_create_layer(x, y, "l_main", obj_chest);
-	chest.type = chestType
-	chest.init();
-	return chest;
+// Creates a chest somewhere specific
+function create_chest(x, y, _chestConfig) {
+	var _chest = instance_create_layer(x, y, "l_main", o_chest);
+	_chest.init(_chestConfig);
+	return _chest;
 }
 
-function spawn_chest(chestType) {
-	return create_chest(room_width, global.water_y, chestType);
+// Creates a chest to float in from the right
+function spawn_chest(_chestConfig) {
+	return create_chest(room_width, global.water_y, _chestConfig);
 }
 
 ///@description Creates a single ring

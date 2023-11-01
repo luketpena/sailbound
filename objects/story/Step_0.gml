@@ -17,12 +17,15 @@ if (active) {
 		});
 	}
 	
-	if (chest.active) {
+	if (chest.active && array_length(chest.list) > 0) {
 		if (chest.timer > 0) chest.timer-- else {
-			var diceIndex = diceTiers(chest.diceSides);
-			var chestType = chest.list[diceIndex].type;
-			spawn_chest(chestType);
-			chest.timer = (irandom_range(chest.minTimer, chest.maxTimer) + chest.list[diceIndex].timerOffset) * room_speed;
+			var _diceIndex = diceTiers(chest.diceSides);
+			var _chest = chest.list[_diceIndex];
+			var _time = irandom_range(chest.minTimer, chest.maxTimer) + _chest.timerOffset;
+			var _config = _chest.config;
+
+			spawn_chest(_config);
+			chest.timer = seconds(_time);
 		}
 	}
 		

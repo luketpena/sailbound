@@ -2,6 +2,8 @@ map = input_group_create([
 	new InputAxis("sail_v", ord("W"), ord("S"), gp_axislv),
 	new InputAxis("sail_h", ord("A"), ord("D"), gp_axislh),
 	new InputButton("interact", ord("E"), gp_face3),
+	new InputAxis("cam_rotate", vk_left, vk_right, gp_axisrh),
+	new InputAxis("cam_tilt", vk_up, vk_down, gp_axisrv)
 ]);
 
 sail = input_group_create([

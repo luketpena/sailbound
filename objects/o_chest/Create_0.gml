@@ -15,7 +15,7 @@ coin_wait = 0; //Delay between coin creation
 
 //For fading out after bursting open
 fade_active = false;
-fade_wait = 2*room_speed;
+fade_wait = seconds(2);
 
 glow_width = 0;
 glow_x = 0;
@@ -24,29 +24,20 @@ glow_alpha = 2;
 light = noone;
 burst_anim = 0;
 
-explode_wait = .075*room_speed
+explode_wait = seconds(.075);
 explode_dir = 0;
 
-function init() {
-	switch(type) {
-		case ChestType.Gold: sprite_index = spr_chest_gold; break;	
-		case ChestType.Silver: sprite_index = spr_chest_silver; break;	
-		case ChestType.Bronze: sprite_index = spr_chest_bronze; break;	
-	}	
-}
-
-function setCoinAmount() {
-	switch(type) {
-		case ChestType.Gold: coins = 20; break;
-		case ChestType.Silver: coins = 10; break;
-		case ChestType.Bronze: coins = 5; break;
-	}
+function init(_chestConfig) {
+	var _config = new _chestConfig();
+	sprite_index = _config.sprite;
+	coins = _config.coins;
+	glow_width = _config.glowWidth;
+	glow_x = _config.glowX;
 }
 
 function explode() {
 	
 	if (!burst) {
-		setCoinAmount();
 		part_particles_create(global.ps_fx_above,x,y,global.pt_explosion_burst,32);
 		create_effect(x+phy_speed_x,y,l_main,spr_fx_burst_star,0,1,c_white,1.5,1,1,random(360));
 	
@@ -58,7 +49,7 @@ function explode() {
 	
 	for (var i=0; i<8; i++) {
 		var debrisDir = explode_dir-(angle_difference(explode_dir,90)*.5)
-		create_debris(x,y,spr_fx_chest_debris,i,1,2,debrisDir-25,debrisDir+25,200,300,1);
+		create_debris(x,y,s_fx_chest_debris,i,1,2,debrisDir-25,debrisDir+25,200,300,1);
 	}
 	
 	instance_destroy();
@@ -70,26 +61,10 @@ function open() {
 	phy_speed_y = 1;
 	impactLock = ImpactLock.Up;
 	flash = .5;
-
-	switch(type) {
-		case ChestType.Bronze:
-			glow_width = 9;
-			glow_x = -4;
-			break;
-		case ChestType.Silver:
-			glow_width = 13;
-			glow_x = -6;
-			break;
-		case ChestType.Gold:
-			glow_width = 17;
-			glow_x = -8;
-			break;
-	}	
 }
 
 function burst() {
 	bursting = true;
-	setCoinAmount();
 	behave_float_active = false;
 	flash = 1;
 	phy_speed_x *= .5;

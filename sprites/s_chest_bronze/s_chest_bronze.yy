@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_chest_bronze",
+  "name": "s_chest_bronze",
   "bbox_bottom": 23,
   "bbox_left": 2,
   "bbox_right": 14,
@@ -28,14 +28,14 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/sailing/Pick-ups/Chests/Sprites.yy",
+    "name": "sprites",
+    "path": "folders/sailing/Pick-ups/chests/sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "s_chest_bronze",
     "autoRecord": true,
     "backdropHeight": 1080,
     "backdropImageOpacity": 0.5,
@@ -57,10 +57,10 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"48508735-f3fc-4484-a2f3-5e7189606365","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},},},"Disabled":false,"id":"472eff33-14d5-4982-a6af-807e1cbb1d72","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e451671f-66d6-4c02-9da7-95f2100fd730","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},},},"Disabled":false,"id":"e5b382e4-c6d7-4045-aa63-535f6925f114","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8af63053-a562-4ab2-ac8b-1d9b2471ed68","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},},},"Disabled":false,"id":"60ea48ee-851f-4730-952d-8324aa723e9e","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e6de791a-5ba8-4690-b2f9-e30124c127b0","path":"sprites/spr_chest_bronze/spr_chest_bronze.yy",},},},"Disabled":false,"id":"36e887dc-5e9d-4691-97d9-510d1859fd52","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"48508735-f3fc-4484-a2f3-5e7189606365","path":"sprites/s_chest_bronze/s_chest_bronze.yy",},},},"Disabled":false,"id":"472eff33-14d5-4982-a6af-807e1cbb1d72","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e451671f-66d6-4c02-9da7-95f2100fd730","path":"sprites/s_chest_bronze/s_chest_bronze.yy",},},},"Disabled":false,"id":"e5b382e4-c6d7-4045-aa63-535f6925f114","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8af63053-a562-4ab2-ac8b-1d9b2471ed68","path":"sprites/s_chest_bronze/s_chest_bronze.yy",},},},"Disabled":false,"id":"60ea48ee-851f-4730-952d-8324aa723e9e","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e6de791a-5ba8-4690-b2f9-e30124c127b0","path":"sprites/s_chest_bronze/s_chest_bronze.yy",},},},"Disabled":false,"id":"36e887dc-5e9d-4691-97d9-510d1859fd52","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

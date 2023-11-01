@@ -5,16 +5,11 @@ function storyConfig_tropical(){
 		startPalette: palette_tropical,
 		startScript: function() {
 			ground_createAtStart(global.water_y + 64, propCollection_tropical);
-			//var startingIsland = island_spawn_pos(1, spr_landmark_startingIsland, .5, 1);
-			//island_list_insert(startingIsland);
 			waves_set_behavior_preset(WaveTypes.Calm);
+			islands.activate([TropicalIsland], seconds(2), seconds(5));
 		},
 		chapters: [
 		{ // Chapter 1
-			islandActive: true,
-			//islandType: IslandType.Tropical,
-			islandWaitMin: .2,
-			islandWaitMax: 3,
 			duration: totalDuration * .1,
 			maxDanger: 10,
 			ringActive: true,
@@ -27,13 +22,7 @@ function storyConfig_tropical(){
 				minTimer: 8,
 				maxTimer: 30,
 			},
-			chestList: [
-				{
-					type: ChestType.Bronze,
-					chance: 1,
-					timerOffset: 0,
-				},
-			],
+			chestList: [new StoryBronzeChest()],
 			mobs: [
 				new StoryMobUrchin(),
 				new StoryMobSeagull()
@@ -43,7 +32,8 @@ function storyConfig_tropical(){
 			duration: totalDuration * .1,
 			mobsToAdd: [
 				new StoryMobChomper(),	
-			]
+			],
+			chestList: []
 		},
 		{ // Chapter 3
 			duration: 1,
@@ -56,27 +46,28 @@ function storyConfig_tropical(){
 		},
 		
 		{ // Chapter 4
-			islandWaitMin: 3,
-			islandWaitMax: 8,
 			duration: totalDuration * .05,
 			startScript: function() {
 				ground_finish();
+				islands.setIslandWaitTimes(seconds(3), seconds(8));
 			},
 			mobsToRemove: ["urchin"],
+			
 		},
 		{ // Chapter 5
-			islandWaitMin: 6,
-			islandWaitMax: 16,
 			duration: totalDuration * .10,
 			mobsToAdd: [
 				new StoryMobPuffer()
-			]
+			],
+			startScript: function() {
+				islands.setIslandWaitTimes(seconds(6), seconds(16));	
+			}
 		},
 		{ // Chapter 6
-			islandActive: false,
 			duration: totalDuration * .15,
 			startScript: function() {
 				event_whale_start();	
+				islands.active = false;
 			},
 		},
 		{ // Chapter 7
@@ -117,8 +108,6 @@ function storyConfig_tropical(){
 			],
 			mobsToRemove: ["puffer"]
 		}
-
-	
 	]}
 }
 

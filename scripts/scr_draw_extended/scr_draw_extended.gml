@@ -14,3 +14,14 @@ function draw_asset_layer_sprites(_layer_name, _x_offset = 0, _y_offset = 0) {
 		}
 	}	
 }
+
+// Returns the scale a sprite must be drawn at in order to fit a certain width and height
+function sprite_get_scale(_sprite, _width, _height) {
+	var _w = sprite_get_width(_sprite);
+	var _h = sprite_get_height(_sprite);
+	
+	return {
+		xscale: _width / _w,
+		yscale: _height / _h
+	}
+}

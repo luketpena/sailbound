@@ -1,7 +1,7 @@
 state = 0;
 size = 1;
 roomTarget = noone;
-wait = .1 * room_speed;
+wait = seconds(.1);
 surf = noone;
 active = false;
 saveOnTransition = false;

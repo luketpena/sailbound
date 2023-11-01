@@ -40,16 +40,9 @@ chest = {
 	diceSize: 0,
 	diceSides: [],
 }
-/*
-	List format:
-	{
-		type: ChestType,
-		chance: number,
-		timerOffset: number,
-	}
-*/
 
-config = {};
+config = storyConfig_tropical();
+
 switch(global.level_id) {
 	case "tropical":
 		config = storyConfig_tropical();
@@ -57,6 +50,7 @@ switch(global.level_id) {
 		
 	default:
 		config = storyConfig_tropical(); // Loads something in to prevent crashes
+		log("CONFIG SET:", config);
 		sysLog("No config specified for the current global level id.");
 		sysLog(global.level_id);
 		break;

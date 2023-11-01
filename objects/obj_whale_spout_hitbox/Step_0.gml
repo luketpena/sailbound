@@ -26,7 +26,7 @@ ds_list_destroy(physicsBobberList);
 
 var chestList = ds_list_create();
 
-var numberOfChestsCollided = collision_rectangle_list(left, top, right, y, obj_chest, false, true, chestList, false);
+var numberOfChestsCollided = collision_rectangle_list(left, top, right, y, o_chest, false, true, chestList, false);
 if (numberOfChestsCollided > 0) {
 	for (var i=0; i<numberOfChestsCollided; i++) {
 		var chest = chestList[| i];

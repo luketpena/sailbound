@@ -24,8 +24,7 @@ function story_chapterStart(currentChapter, nextChapter) {
 		for (var i=0; i<array_length(nextChapter.mobsToRemove); i++) {
 			var targetMobName = nextChapter.mobsToRemove[i];
 			// Iterate over mobs, find named mob, and remove it
-			for (var j=0; j<array_length(mobs); j++) {
-				
+			for (var j=0; j<array_length(mobs); j++) {	
 				var mob = mobs[j];
 				if (mob.name = targetMobName) {
 					mobs = array_pluck(mobs, j);	
@@ -51,34 +50,19 @@ function story_chapterStart(currentChapter, nextChapter) {
 	}
 	
 	// Checking for updates to chest settings
-	if hasProperty(nextChapter, "chestActive") chest.active = nextChapter.chestActive;
+	if hasProperty(nextChapter, "chestActive") {
+		chest.active = nextChapter.chestActive;	
+	}
+
 	if hasProperty(nextChapter, "chestTimer") {
 		chest.minTimer = nextChapter.chestTimer.minTimer;
 		chest.maxTimer = nextChapter.chestTimer.maxTimer;
 	}
+	
 	if hasProperty(nextChapter, "chestList") {
 		chest.list = nextChapter.chestList;
 		getChestDiceSize();
 	}
-	if hasProperty(nextChapter, "chestListToAdd") {
-		chest.list = array_concat(chest.list, nextChapter.chestListToAdd);
-		getChestDiceSize();
-	}
-	if hasProperty(nextChapter, "chestListToRemove") {
-		for (var i=0; i<array_length(nextChapter.chestListToRemove); i++) {
-			var targetChestType = nextChapter.chestListToRemove[i];
-			for (var j=0; j<array_length(chest.list); j++) {
-				var targetChest = chest.list[j];
-				if (targetChest.type = targetChestType) {
-					array_pluck(chest.list, j);	
-				}
-			}
-		}
-		getChestDiceSize();
-	}
-	
-	//islands_old.update(nextChapter);
-	//clock.update(nextChapter);
 }
 
 function getChestDiceSize() {
@@ -86,8 +70,9 @@ function getChestDiceSize() {
 		var newDiceSize = 0;
 		var newDiceSides = [];
 		for (var i=0; i<array_length(chest.list); i++) {
-			newDiceSize += chest.list[i].chance;
-			array_push(newDiceSides, chest.list[i].chance);
+			var _chest = chest.list[i];
+			newDiceSize += _chest.chance;
+			array_push(newDiceSides, _chest.chance);
 		}
 		chest.diceSides = newDiceSides;
 		chest.diceSize = newDiceSize;
@@ -149,10 +134,10 @@ function getCurrentChapter() {
 // Returns the next chapter (does not move to next chapter)
 function getNextChapter() {
 	with(story) {
-		if (chapterCurrentIndex < chapterCount-1) {
-			return config.chapters[chapterCurrentIndex+1];
+		if (chapterCurrentIndex < chapterCount - 1) {
+			return config.chapters[chapterCurrentIndex + 1];
 		} else {
-			return null;
+			return undefined;
 		}
 	}
 }

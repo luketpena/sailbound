@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_fx_chest_glow",
+  "name": "s_fx_chest_glow",
   "bbox_bottom": 38,
   "bbox_left": 0,
   "bbox_right": 0,
@@ -25,14 +25,14 @@
   "nineSlice": null,
   "origin": 6,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/sailing/Pick-ups/Chests/Sprites.yy",
+    "name": "sprites",
+    "path": "folders/sailing/Pick-ups/chests/sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_fx_chest_glow",
+    "name": "s_fx_chest_glow",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c8808e9f-f664-405b-bebe-3ac92493e055","path":"sprites/spr_fx_chest_glow/spr_fx_chest_glow.yy",},},},"Disabled":false,"id":"c3058523-9817-4750-b90c-adc027510967","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c8808e9f-f664-405b-bebe-3ac92493e055","path":"sprites/s_fx_chest_glow/s_fx_chest_glow.yy",},},},"Disabled":false,"id":"c3058523-9817-4750-b90c-adc027510967","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

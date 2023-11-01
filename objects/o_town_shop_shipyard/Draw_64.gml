@@ -1,4 +1,5 @@
 if (image_alpha > 0) {
+	draw_set_color(c_white);
 	// Drawing the background
 	draw_sprite_ext(s_pixel, 0, 0, 0, global.hvw, global.vh, 0, c_black, .65 * image_alpha);
 	draw_sprite_ext(s_pixel, 0, global.hvw, 0, global.vw, global.vh, 0, c_black, .5 * image_alpha);

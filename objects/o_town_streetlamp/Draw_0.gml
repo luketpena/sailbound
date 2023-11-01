@@ -9,7 +9,9 @@ if (inRange) {
 			draw_sprite_ext(spr_fx_flare_300, 0, x, y-65, .1, .1, 0, c_fire, light.image_alpha);
 			
 			draw_set_alpha(.05 * light.image_alpha);
-			draw_circle_color(x-1, y-65, aura.getRad(), c_fire, c_fire, false);
+			var _rad = aura.getRad();
+			var _scale = sprite_get_scale(s_circle_512x512, _rad, _rad);
+			draw_sprite_ext(s_circle_512x512, 0, x, y-65, _scale.xscale, _scale.yscale, 0, c_fire, .1 * light.image_alpha);
 		gpu_set_blendmode(bm_normal);	
 	}
 }

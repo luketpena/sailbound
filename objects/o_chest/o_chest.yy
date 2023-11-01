@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_chest",
+  "name": "o_chest",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,},
@@ -13,8 +13,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Chests",
-    "path": "folders/sailing/Pick-ups/Chests.yy",
+    "name": "chests",
+    "path": "folders/sailing/Pick-ups/chests.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -38,8 +38,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_chest_gold",
-    "path": "sprites/spr_chest_gold/spr_chest_gold.yy",
+    "name": "s_chest_gold",
+    "path": "sprites/s_chest_gold/s_chest_gold.yy",
   },
   "spriteMaskId": {
     "name": "spr_hitbox_24x24",

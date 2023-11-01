@@ -7,7 +7,7 @@ range = 300 + global.hvw;
 
 aura = {
 	rot: random(360),
-	rad: 18,
+	rad: 32,
 	rate: {
 		rMin: 2,
 		rMax: 5,

@@ -14,7 +14,6 @@ draw_object(sys_water_back);
 draw_tag("fx_bottom");
 
 lighting_shader_draw();
-	
 	draw_tag("solid_below");
 	draw_tag("fx_below");
 	draw_object(prnt_boat_draw);
@@ -24,7 +23,7 @@ lighting_shader_draw();
 	draw_tag("fx_splash");
 	draw_object(obj_petra);
 		
-	draw_object(obj_chest);
+	draw_object(o_chest);
 	draw_tag("pickup");
 	
 	draw_tag("mob");

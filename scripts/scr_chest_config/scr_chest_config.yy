@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "story_components",
+  "name": "scr_chest_config",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "story",
-    "path": "folders/sailing/story.yy",
+    "name": "chests",
+    "path": "folders/sailing/Pick-ups/chests.yy",
   },
 }
