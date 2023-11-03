@@ -1,3 +1,8 @@
+if (ceilingMode) {
+	draw_sprite_ext(s_ceilingTransition_test, 0, transitionX, global.water_y, 1, 1, 0, c_white, 1);
+	exit;
+}
+
 draw_set_color(c_white);
 draw_set_alpha(1);
 

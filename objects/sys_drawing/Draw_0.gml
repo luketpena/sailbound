@@ -36,6 +36,7 @@ shader_reset();
 draw_tag("fx_over");
 draw_object(ground_front);
 draw_object(sys_water_distortion);
+draw_object(ground_ceiling);
 draw_tag("fx_top");
 
 with(sys_glow) event_perform(ev_draw, ev_gui);

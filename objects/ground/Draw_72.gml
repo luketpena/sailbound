@@ -1,19 +1,16 @@
+if (ceilingMode) exit;
+
 // Generate the surfaces
 if !surface_exists(surf_detail) surf_detail = surface_create(surfaceWidth, 64);
 if !surface_exists(surf_transfer) surf_transfer = surface_create(surfaceWidth, 64);
 
 if (surface_exists(surf_detail) && surface_exists(surf_transfer)) {
-	// This weirdness is what allows sub-pixel movement in the ground animation
-	texture.position -= move.speed;
-	var moveOffset = 0;
-	if (texture.position >= 1) {
-		moveOffset = texture.position div 1;
-		texture.position -= moveOffset;
-	}
+
+	var _moveOffset = getTextureOffset();
 	// We draw the detail surfaces offset by a value...
 	surface_set_target(surf_transfer);
 		draw_clear_alpha(c_white, 0);
-		draw_surface_ext(surf_detail, -moveOffset, 0, 1, 1, 0, c_white, 1);
+		draw_surface_ext(surf_detail, -_moveOffset, 0, 1, 1, 0, c_white, 1);
 	surface_reset_target();
 	
 	// ...then transfer it to the main detail layer at position 0, simulating motion

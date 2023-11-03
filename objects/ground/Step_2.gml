@@ -1,4 +1,5 @@
 offset += move.speed;
+texture.position -= move.speed;
 
 // Prop movement
 for (var i=0; i<props.row.count; i++) {

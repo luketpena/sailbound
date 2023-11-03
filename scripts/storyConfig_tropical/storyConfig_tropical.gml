@@ -4,7 +4,7 @@ function storyConfig_tropical(){
 	return {
 		startPalette: palette_tropical,
 		startScript: function() {
-			ground_createAtStart(global.water_y + 64, propCollection_tropical);
+			ceiling_create(global.water_y -128, 5, propCollection_tropical);
 			waves_set_behavior_preset(WaveTypes.Calm);
 			islands.activate([TropicalIsland], seconds(2), seconds(5));
 		},

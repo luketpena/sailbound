@@ -8,6 +8,11 @@ surf_transfer = null;
 surfaceWidth = room_width + (margin * 2);
 groundSprite = spr_sand;
 
+fullGroundIn = false;
+fullGroundOut = false;
+exiting = false;
+transitionX = 0; // The point at which the ground has finished transitioning in
+
 // Divisions of the surface
 unit = {
 	width: 32,
@@ -36,7 +41,7 @@ currentDepth = 0;
 stoneConfig = {
 	sprite: spr_ground_debris_coral_stone_large,
 	chance: 35, // How many sides to the dice	
-	curve: animcurve_get_channel(cr_ground, "stone"),
+	curve: animcurve_get_channel(cr_ground, "stone"), // Decides the spread of stone from center to edge
 }
 
 // Movement
@@ -45,7 +50,7 @@ move = {
 	speed: -1,
 }
 offset = unit.width;
-minY = global.water_y + 32;
+yLimit = ceilingMode ? global.water_y : global.water_y + 32;
 
 
 // The rotations that wiggle the ground's vertical position
@@ -94,6 +99,23 @@ for (var i = 0; i < props.row.count; i++) {
 
 
 #region Functions
+
+function calculateTransitionX(_transitionSeconds) {
+	var _offset = abs(move.speed * seconds(_transitionSeconds));
+	transitionX = room_width + margin;
+	if (!exiting) {
+		transitionX += _offset;	
+	}
+}
+
+function getTextureOffset() {
+	var _moveOffset = 0;
+	if (texture.position >= 1) {
+		_moveOffset = texture.position div 1;
+		texture.position -= _moveOffset;
+	}
+	return _moveOffset;
+}
 
 function updatePropChance(name, chance) {
 	for (var i=0; i<array_length(props.list); i++) {
@@ -166,7 +188,12 @@ function createProp(steepnessLimit, chance, sprite, propX) {
 
 function finish() {
 	destroyAtEdge = true;
-	changeHeight(room_height + 8, 20);
+	exiting = true;
+	calculateTransitionX(5);
+	changeHeight(
+		ceilingMode ? 0 : room_height + 8,
+		ceilingMode ? 5 : 20
+	);
 }
 
 function Prop(_sprite, _y, _depth, _x) constructor {
@@ -229,20 +256,20 @@ function heightChangeStart() {
 
 function changeHeight(targetHeight, durationInSeconds) {
 	heightChangeStart();
-	elevation.change.target = max(targetHeight, minY);
+	elevation.change.target = ceilingMode ? min(targetHeight, yLimit) : max(targetHeight, yLimit);
 	elevation.change.rate = getIncrement(durationInSeconds);
 	
 }
 
 function changeHeightRelative(change, durationInSeconds) {
 	heightChangeStart();
-	elevation.change.target = max(elevation.change.target + change, minY);
+	elevation.change.target = ceilingMode ? min(elevation.change.target + change, yLimit) : max(elevation.change.target + change, yLimit);
 	elevation.change.rate = getIncrement(durationInSeconds);
 }
 
 function changeHeightRandom(durationInSeconds) {
 	heightChangeStart();
-	elevation.change.target = irandom_range(minY, minY + 100);
+	elevation.change.target = irandom_range(yLimit, yLimit + 100);
 	elevation.change.rate = getIncrement(durationInSeconds);
 }
 
@@ -258,16 +285,20 @@ function generateNextPoint() {
 		}
 		elevation.rot[i] = (elevation.rot[i] +elevation. rotRate[i] * nudge) mod 360;
 	}
-	return max(yy, minY);	
+	return ceilingMode ? min(yy, yLimit) : max(yy, yLimit);	
 }
 
 
 function createBlock(i) {
 	var xPos = xMid[i];
 	var yPos = points[i];
-	var o = instance_create_layer(xPos, yPos, layer, obj_groundBlock);
-	o.x = xPos;
-	o.init(points[i+1], unit.width, move.speed);
+	var o = instance_create_layer(xPos, yPos, layer, o_groundBlock, {
+		x: xPos,
+		width: unit.width,
+		moveSpeed: move.speed,
+		ceilingMode: ceilingMode
+	});
+	o.init(points[i+1]);
 }
 
 function setMidXPosition(index) {
@@ -323,4 +354,4 @@ for (var i=0; i<unit.count-2; i++) {
 
 
 // Create front ground layer
-front = instance_create_layer(0, 0, layer, ground_front);
+front = instance_create_layer(0, 0, layer, ceilingMode? ground_ceiling : ground_front);

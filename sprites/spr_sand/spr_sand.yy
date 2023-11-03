@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Textures",
-    "path": "folders/sailing/environment/ground/Sprites/Textures.yy",
+    "name": "textures",
+    "path": "folders/sailing/environment/ground/sprites/textures.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

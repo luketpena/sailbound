@@ -1,3 +1,4 @@
+// Drawing props
 shader_set(shd_fadeColor);
 shader_set_uniform_f_array(u_color, c_water_depth_vec3);
 var startPos = (ground.props.row.count / 2) + 1
@@ -9,3 +10,12 @@ var startPos = (ground.props.row.count / 2) + 1
 		}
 	}
 shader_reset();
+
+// Drawing ground
+draw_primitive_begin(pr_trianglestrip)
+for (var i=0; i<ground.unit.count-1; i++) {
+	var _point = ground.points[i];
+	draw_vertex_color(ground.xLow[i], _point + 32, c_water_depth, 1);
+	draw_vertex_color(ground.xLow[i], room_height, c_water_depth, 1);	
+}
+draw_primitive_end();
