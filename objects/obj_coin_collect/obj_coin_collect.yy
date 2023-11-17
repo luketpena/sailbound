@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Coins",
-    "path": "folders/sailing/Pick-ups/Coins.yy",
+    "path": "folders/sailing/pickups/Coins.yy",
   },
   "parentObjectId": null,
   "persistent": false,

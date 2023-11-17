@@ -26,7 +26,7 @@
   "origin": 9,
   "parent": {
     "name": "Bodies",
-    "path": "folders/sailing/Boat/Sprites/Peter/Bodies.yy",
+    "path": "folders/sailing/boat/Sprites/Peter/Bodies.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

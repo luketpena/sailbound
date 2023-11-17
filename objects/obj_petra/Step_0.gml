@@ -8,13 +8,13 @@ switch(mode) {
 	case "idle":
 		if (aim_active) {
 			target_pos = [
-				obj_boat_front.x_center_draw+(32*aim_h),
-				min(obj_boat_front.y_center_draw-24+(32*aim_v),y_limit)
+				o_boat_main.x_center_draw+(32*aim_h),
+				min(o_boat_main.y_center_draw-24+(32*aim_v),y_limit)
 			]
 		} else {
 			target_pos = [
-				obj_boat_front.x_center_draw-32,
-				min(obj_boat_front.y_center_draw-32,y_limit)
+				o_boat_main.x_center_draw-32,
+				min(o_boat_main.y_center_draw-32,y_limit)
 				];
 		}
 		break;

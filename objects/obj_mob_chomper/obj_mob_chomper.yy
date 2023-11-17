@@ -13,7 +13,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Chomper",
-    "path": "folders/sailing/Mobs/Chomper.yy",
+    "path": "folders/sailing/mobs/Chomper.yy",
   },
   "parentObjectId": {
     "name": "prnt_mob",

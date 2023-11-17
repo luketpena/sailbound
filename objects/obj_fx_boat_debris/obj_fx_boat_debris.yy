@@ -13,7 +13,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Extras",
-    "path": "folders/sailing/Boat/Sprites/Extras.yy",
+    "path": "folders/sailing/boat/Sprites/Extras.yy",
   },
   "parentObjectId": null,
   "persistent": false,

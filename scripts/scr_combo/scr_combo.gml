@@ -3,8 +3,8 @@ function comboIncrement(value = 1) {
 	var dir = random(360)
 	if (global.combo > 1) {
 		createComboCounter(
-			obj_boat_front.x_center_draw + lengthdir_x(64, dir),
-			obj_boat_front.y_center_draw + lengthdir_y(64, dir),
+			o_boat_main.x_center_draw + lengthdir_x(64, dir),
+			o_boat_main.y_center_draw + lengthdir_y(64, dir),
 		);
 	}
 }

@@ -59,7 +59,7 @@ switch(state) {
 
 
 if (instance_exists(ground)) {
-	var groundTarget = ground.findY_public(x, .5);
+	var groundTarget = ground.findY(x, .5);
 
 	if (groundTarget - y < 8) {
 		y--;

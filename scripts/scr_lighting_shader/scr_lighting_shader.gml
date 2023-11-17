@@ -8,8 +8,8 @@ function lighting_shader_init() {
 
 function lighting_shader_draw() {
 	shader_set(shader);
-	texture_set_stage(u_lighting_surface, global.light_texture);
-	shader_set_uniform_f(u_lighting_ambience, clock.nightFade);
+	texture_set_stage(u_lighting_surface, lighting.texture);
+	shader_set_uniform_f(u_lighting_ambience, max(clock.nightFade, lighting.value));
 	shader_set_uniform_f(u_lighting_surface_offset, 0, 0);
 }
 

@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Seagull",
-    "path": "folders/sailing/Mobs/Seagull.yy",
+    "path": "folders/sailing/mobs/Seagull.yy",
   },
   "parentObjectId": {
     "name": "prnt_mob",

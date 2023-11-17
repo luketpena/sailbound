@@ -27,6 +27,21 @@ function boat_jumpDive_trigger() {
 			}
 		}
 	}	
+	
+	// TODO: Make this into a property of a hull
+	var _shortHopRate = .9;
+	
+	// Short-hop
+	if (!touched && distanceToSurface > 16 && input.sail.move_v.value >= 0 && phy_speed_y < 0) {
+		phy_speed_y *= _shortHopRate;
+		obj_boat_back.phy_speed_y *= _shortHopRate;
+	}
+	
+	// Short-dive
+	if (submerged && distanceToSurface > 16 && input.sail.move_v.value <= 0 && phy_speed_y > 0) {
+		phy_speed_y *= _shortHopRate;
+		obj_boat_back.phy_speed_y *= _shortHopRate;
+	}
 }
 
 ///@description Triggers the motion of a jump

@@ -81,7 +81,11 @@ function getChestDiceSize() {
 
 function story_init() {
 	var _firstChapter = getFirstChapter();
-	story_chapterStart(null, _firstChapter);
+	story_chapterStart(-1, _firstChapter);
+	
+	if (variable_struct_exists(config, "music")) {
+		//audio_play_sound(config.music, 0, true);	
+	}
 	
 	// Execute the initializing script
 	if (variable_struct_exists(config, "startScript")) {
@@ -90,7 +94,7 @@ function story_init() {
 	
 	// Set initial palette
 	if (variable_struct_exists(config, "startPalette")) {
-		colors.set(config.startPalette);
+		colors.setPalette(config.startPalette);
 	}
 }
 

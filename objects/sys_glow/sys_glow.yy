@@ -12,8 +12,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Glow",
-    "path": "folders/effects/Glow.yy",
+    "name": "glow",
+    "path": "folders/effects/glow.yy",
   },
   "parentObjectId": null,
   "persistent": false,

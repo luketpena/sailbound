@@ -31,7 +31,7 @@
   "origin": 4,
   "parent": {
     "name": "Extras",
-    "path": "folders/sailing/Boat/Sprites/Extras.yy",
+    "path": "folders/sailing/boat/Sprites/Extras.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

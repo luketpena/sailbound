@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Scripts",
-    "path": "folders/sailing/Pick-ups/Items/Scripts.yy",
+    "path": "folders/sailing/pickups/Items/Scripts.yy",
   },
 }

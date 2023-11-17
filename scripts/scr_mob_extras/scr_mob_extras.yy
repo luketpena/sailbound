@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Mobs",
-    "path": "folders/sailing/Mobs.yy",
+    "name": "mobs",
+    "path": "folders/sailing/mobs.yy",
   },
 }

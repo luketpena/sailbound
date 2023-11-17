@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Types",
-    "path": "folders/effects/Particles/Types.yy",
+    "path": "folders/effects/particles/Types.yy",
   },
 }

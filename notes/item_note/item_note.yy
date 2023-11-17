@@ -4,6 +4,6 @@
   "name": "item_note",
   "parent": {
     "name": "Items",
-    "path": "folders/sailing/Pick-ups/Items.yy",
+    "path": "folders/sailing/pickups/Items.yy",
   },
 }

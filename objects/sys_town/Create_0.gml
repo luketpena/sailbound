@@ -17,7 +17,7 @@ u_lighting_surface_offset = shader_get_uniform(shader, "surface_offset");
 u_blendColor = shader_get_uniform(shader, "blendColor");
 
 function updateBlendShader(strength) {
-	texture_set_stage(u_lighting_surface, global.light_texture);
+	texture_set_stage(u_lighting_surface, lighting.texture);
 	shader_set_uniform_f(u_lighting_ambience, clock.nightFade);
 	shader_set_uniform_f(u_lighting_strength, strength);
 	shader_set_uniform_f(u_lighting_surface_offset, 0, 0);

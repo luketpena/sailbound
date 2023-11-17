@@ -1,16 +1,13 @@
-function light_create(x, y, sprite, index, xscale, yscale, blend, alpha, fadeDelay = -1, fadeRate = 0) {
-
-	var o = instance_create_layer(x, y, "l_main", o_light_default);
-
-	o.sprite_index = sprite;
-	o.image_index = index;
-	o.image_xscale = xscale;
-	o.image_yscale = yscale;
-	o.image_alpha = alpha;
-	o.targetAlpha = alpha;
-	o.image_blend = blend;
-	o.fadeDelay = fadeDelay;
-	o.fadeDelay = fadeDelay;
-
-	return o;
+function light_create(_x, _y, _sprite, _index, _xscale, _yscale, _blend, _alpha, _fadeDelay = -1, _fadeRate = 0) {
+	return instance_create_layer(_x, _y, l_main, o_light_default, {
+		sprite_index: _sprite,
+		image_index: _index,
+		image_xscale: _xscale,
+		image_yscale: _yscale,
+		image_alpha: _alpha,
+		image_blend: _blend,
+		targetAlpha: _alpha,
+		fadeDelay: _fadeDelay,
+		fadeRate: _fadeRate
+	});
 }

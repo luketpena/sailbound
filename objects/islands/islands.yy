@@ -34,5 +34,5 @@
     "path": "sprites/ico_environment/ico_environment.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

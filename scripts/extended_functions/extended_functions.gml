@@ -100,7 +100,7 @@ function hasProperty(struct, propertyName) {
 	return variable_struct_exists(struct, propertyName);	
 }
 
-function safeDestroy(object = null) {
+function instance_destroy_safe(object = null) {
 	if (object = null) instance_destroy() else {
 		if instance_exists(object) instance_destroy(object);
 	}

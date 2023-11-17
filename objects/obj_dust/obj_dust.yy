@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Dust",
-    "path": "folders/effects/Dust.yy",
+    "name": "dust",
+    "path": "folders/effects/dust.yy",
   },
   "parentObjectId": null,
   "persistent": false,

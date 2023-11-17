@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Draw Pos Fixed",
-    "path": "folders/effects/Draw Pos Fixed.yy",
+    "name": "draw-pos-fixed",
+    "path": "folders/effects/draw-pos-fixed.yy",
   },
 }

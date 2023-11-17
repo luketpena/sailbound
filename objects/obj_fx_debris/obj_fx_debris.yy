@@ -12,8 +12,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Basic",
-    "path": "folders/effects/Basic.yy",
+    "name": "basic",
+    "path": "folders/effects/basic.yy",
   },
   "parentObjectId": {
     "name": "prnt_physicsBobber",

@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Distortion",
-    "path": "folders/sailing/environment/water/Effects/Distortion.yy",
+    "name": "distortion",
+    "path": "folders/sailing/environment/water/controllers/distortion.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

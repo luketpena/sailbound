@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Objects",
-    "path": "folders/sailing/Boat/Objects.yy",
+    "path": "folders/sailing/boat/Objects.yy",
   },
   "parentObjectId": null,
   "persistent": false,

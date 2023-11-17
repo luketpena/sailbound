@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Enums",
-    "path": "folders/system/Constants/Enums.yy",
+    "name": "enums",
+    "path": "folders/system/constants/enums.yy",
   },
 }

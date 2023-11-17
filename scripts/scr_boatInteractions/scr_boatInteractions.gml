@@ -1,13 +1,13 @@
 function distanceFromBoat(x, y) {
-	return point_distance(x, y, obj_boat_front.x_center_draw, obj_boat_front.y_center_draw);	
+	return point_distance(x, y, o_boat_main.x_center_draw, o_boat_main.y_center_draw);	
 }
 
 function directionToBoat(x, y) {
-	return point_direction(x, y, obj_boat_front.x_center_draw, obj_boat_front.y_center_draw);	
+	return point_direction(x, y, o_boat_main.x_center_draw, o_boat_main.y_center_draw);	
 }
 
 function directionFromBoat(x, y) {
-	return point_direction(obj_boat_front.x_center_draw, obj_boat_front.y_center_draw, x, y);	
+	return point_direction(o_boat_main.x_center_draw, o_boat_main.y_center_draw, x, y);	
 }
 
 function boat_bounce(bounceSpeed = -4) {
@@ -18,8 +18,8 @@ function boat_bounce(bounceSpeed = -4) {
 
 
 function boat_collide_basic(x, y){
-	var collide_h = (x > obj_boat_back.x && x < obj_boat_front.x);
-	var collide_dis = (point_distance(x, y, global.boat_x, global.boat_y) < obj_boat_front.boat_hwidth);
+	var collide_h = (x > obj_boat_back.x && x < o_boat_main.x);
+	var collide_dis = (point_distance(x, y, global.boat_x, global.boat_y) < o_boat_main.boat_hwidth);
 	
 	return (collide_h && collide_dis);
 }
@@ -42,14 +42,14 @@ function boat_impact(angle, strength, shove = false) {
 	var move_y = lengthdir_y(strength*.5, angle);
 
 	if (shove) {
-		obj_boat_front.phy_speed_x = move_x;
-		obj_boat_front.phy_speed_y = move_y;
+		o_boat_main.phy_speed_x = move_x;
+		o_boat_main.phy_speed_y = move_y;
 
 		obj_boat_back.phy_speed_x = move_x;
 		obj_boat_back.phy_speed_y = move_y;
 	} else {
-		obj_boat_front.phy_speed_x += move_x;
-		obj_boat_front.phy_speed_y += move_y;
+		o_boat_main.phy_speed_x += move_x;
+		o_boat_main.phy_speed_y += move_y;
 
 		obj_boat_back.phy_speed_x += move_x;
 		obj_boat_back.phy_speed_y += move_y;

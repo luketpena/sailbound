@@ -33,5 +33,5 @@
     "path": "sprites/ico_system/ico_system.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

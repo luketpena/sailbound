@@ -31,7 +31,7 @@
   "origin": 9,
   "parent": {
     "name": "Shrimp",
-    "path": "folders/sailing/Mobs/Shrimp.yy",
+    "path": "folders/sailing/mobs/Shrimp.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

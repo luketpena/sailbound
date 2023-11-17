@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Mob Poof",
-    "path": "folders/effects/Explosions/Mob Poof.yy",
+    "path": "folders/effects/explosions/Mob Poof.yy",
   },
   "parentObjectId": null,
   "persistent": false,

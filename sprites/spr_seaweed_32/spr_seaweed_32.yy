@@ -29,7 +29,7 @@
   "origin": 7,
   "parent": {
     "name": "Seaweed",
-    "path": "folders/sailing/environment/ground/props/Sprites/Seaweed.yy",
+    "path": "folders/sailing/environment/ground/props/sprites/Seaweed.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

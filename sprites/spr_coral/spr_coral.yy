@@ -30,8 +30,8 @@
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/sailing/environment/ground/props/Sprites.yy",
+    "name": "sprites",
+    "path": "folders/sailing/environment/ground/props/sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

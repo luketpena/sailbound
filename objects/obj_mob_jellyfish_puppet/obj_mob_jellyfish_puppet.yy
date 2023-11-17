@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Jellyfish",
-    "path": "folders/sailing/Mobs/Jellyfish.yy",
+    "path": "folders/sailing/mobs/Jellyfish.yy",
   },
   "parentObjectId": null,
   "persistent": false,

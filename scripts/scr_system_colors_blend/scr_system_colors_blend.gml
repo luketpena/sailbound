@@ -1,76 +1,72 @@
 ///@description Blends through multiple colors depending on position in loop
-
-
 ///@param position
-///@param colorSwatchArray
-function swatch_blend(_position,  _colorSwatchArray) {
-	var finalColor = c_white,
-		clockPointCount = array_length(global.clockPoints);
-
-	for (var i = 0; i < clockPointCount-1; i++) {
-		// All other points point to themselves and the previous value
-		var points = [
-			global.clockPoints[i],
-			global.clockPoints[i+1]
-		];
-		if (clock.time < points[1]) {
-			var colorPoints = [
-				global.colorPoints[i],
-				global.colorPoints[i+1]
-			];
-			
-			var blend = (clock.time-points[0]) / (points[1]-points[0])
-			finalColor = merge_colour(_colorSwatchArray[colorPoints[0]], _colorSwatchArray[colorPoints[1]], blend);
-			break;
-		}
-	
-	}
-	
-	
-
-	////>>Night to sunrise
-	//if (_position >= ClockPoint.Sunrise && _position < ClockPoint.Morning) {
-	//	blend = (_position-ClockPoint.Sunrise) / (ClockPoint.Morning-ClockPoint.Sunrise)
-	//	finalColor = merge_colour(_colorSwatchArray[4], _colorSwatchArray[0], blend);
-	//}
-
-	////>>Sunrise to day
-	//if (_position >= ClockPoint.Morning && _position < ClockPoint.Day) {
-	//	blend = (_position-ClockPoint.Morning) / (ClockPoint.Day-ClockPoint.Morning)
-	//	finalColor = merge_colour(_colorSwatchArray[0], _colorSwatchArray[1], blend);		
-	//}
-
-	////>>Day sustained
-	//if (_position < ClockPoint.Sunset || _position >= ClockPoint.Day) {
-	//	finalColor = _colorSwatchArray[1];
-	//}
-
-	////>>Day to sunset
-	//if (_position >= ClockPoint.Sunset && _position < ClockPoint.Sunfall) {
-	//	blend = (_position-ClockPoint.Sunset) / (ClockPoint.Sunfall-ClockPoint.Sunset)
-	//	finalColor = merge_colour(_colorSwatchArray[1], _colorSwatchArray[2], blend);
-	//}
-
-	////>>Sunset to sunfall
-	//if (_position >= ClockPoint.Sunfall && _position < ClockPoint.Nightfall) {
-	//	blend = (clock.time-ClockPoint.Sunfall) / (ClockPoint.Nightfall-ClockPoint.Sunfall)
-	//	finalColor = merge_colour(_colorSwatchArray[2], _colorSwatchArray[3], blend);
-	//}
-
-	////>>Sunfall to night
-	//if (_position >= ClockPoint.Nightfall && _position < ClockPoint.Night) {
-	//	blend = (_position-ClockPoint.Nightfall) / (ClockPoint.Night-ClockPoint.Nightfall)
-	//	finalColor = merge_colour(_colorSwatchArray[3], _colorSwatchArray[4], blend);
-	//}
-
-	////>>Night sustained
-	//if (_position < ClockPoint.Sunrise && _position >= ClockPoint.Night) {
-	//	finalColor = _colorSwatchArray[4];
-	//}
-
+///@param colorArray
+function blendSwatch(_colorArray) {
+	var _finalColor = getColorArrayBlend(_colorArray);
+		
 	return make_color_hsv(
-		color_get_hue(finalColor),
-		color_get_saturation(finalColor)*c_saturation,
-		color_get_value(finalColor)*c_value);
+		color_get_hue(_finalColor),
+		color_get_saturation(_finalColor) * colors.saturation,
+		color_get_value(_finalColor) * colors.value
+	);
 }
 
+// Blends colors in the palette across the day
+function getColorArrayBlend(_colorArray) {
+	// Handling single-color palettes
+	if (array_length(_colorArray) == 1) {
+		return _colorArray[0];	
+	}
+	return merge_color(
+		_colorArray[currentColorPoint],
+		_colorArray[nextColorPoint],
+		colorBlendAmmount
+	);	
+}
+
+function mergeColorArrays(_array1, _array2, _ammount) {
+	// Handle colors that palette 2 ignores
+	if (array_length(_array2) == 0) {
+		var _color = getColorArrayBlend(_array1);
+		return make_color_hsv(
+			color_get_hue(_color),
+			color_get_saturation(_color) * colors.saturation,
+			color_get_value(_color) * colors.value
+		);	
+	}
+	
+	// If both have some colors to blend, then blend them
+	var _color1 = getColorArrayBlend(_array1);
+	var _color2 = getColorArrayBlend(_array2);
+	
+	var _merged = merge_color(_color1, _color2, _ammount);
+	
+	return make_color_hsv(
+		color_get_hue(_merged),
+		color_get_saturation(_merged) * colors.saturation,
+		color_get_value(_merged) * colors.value
+	);
+}
+
+function snapToPalette(_prev, _next) {
+	return {
+		sky: {
+			space: snapToSwatch(_prev.sky.space, _next.sky.space),
+			horizon: snapToSwatch(_prev.sky.horizon, _next.sky.horizon),
+			clouds: snapToSwatch(_prev.sky.clouds, _next.sky.clouds),
+			sun: snapToSwatch(_prev.sky.sun, _next.sky.sun),
+			moon: (_next.sky.moon == undefined) ? _prev.sky.moon : _next.sky.moon
+		},
+		water: {
+			horizon: snapToSwatch(_prev.water.horizon, _next.water.horizon),
+			surface: snapToSwatch(_prev.water.surface, _next.water.surface),
+			depths: snapToSwatch(_prev.water.depths, _next.water.depths),
+			highlight: snapToSwatch(_prev.water.highlight, _next.water.highlight),
+		},
+		front: snapToSwatch(_prev.front, _next.front),
+	}
+}
+
+function snapToSwatch(_prev, _next) {
+	return (array_length(_next) == 0) ? _prev : _next;
+}

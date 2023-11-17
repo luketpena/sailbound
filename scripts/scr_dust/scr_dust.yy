@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Dust",
-    "path": "folders/effects/Dust.yy",
+    "name": "dust",
+    "path": "folders/effects/dust.yy",
   },
 }

@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Transitions",
-    "path": "folders/sailing/environment/colors/Transitions.yy",
+    "name": "transitioning",
+    "path": "folders/sailing/environment/colors/transitioning.yy",
   },
   "parentObjectId": null,
   "persistent": false,

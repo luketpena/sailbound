@@ -1,8 +1,4 @@
-fadeRate = 0;
-fadeDelay = -1;
-targetAlpha = 0;
 active = true;
-
 activeRate = 0;
 
 function off(_activeRate = .1) {

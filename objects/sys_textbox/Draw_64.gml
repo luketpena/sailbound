@@ -24,7 +24,7 @@ if surface_exists(surf_textbox) {
 		
 		//Draw the genie tail
 		if (genie_lerp>0) {
-			var point_x = obj_boat_front.x_center_draw-global.vx;
+			var point_x = o_boat_main.x_center_draw-global.vx;
 			draw_primitive_begin(pr_trianglelist)
 				var genie_y, point_y;
 				var genie_w = 12;

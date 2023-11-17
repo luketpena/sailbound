@@ -6,8 +6,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Mobs",
-    "path": "folders/sailing/Mobs.yy",
+    "name": "mobs",
+    "path": "folders/sailing/mobs.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -29,3 +29,23 @@ function prop_coralReef() {
 		steepnessLimit: 5,
 	}
 }
+
+function prop_magmaPits() {
+	return {
+		name: "Magma Pits",
+		sprite: s_prop_magmaPits,
+		depthLimit: 32,
+		chance: 15,
+		steepnessLimit: 5,
+	}
+}
+
+function prop_magmaStalagtite() {
+	return {
+		name: "Magma Stalagtite",
+		sprite: s_prop_magmaStalagtite,
+		depthLimit: 32,
+		chance: 15,
+		steepnessLimit: 5,
+	}
+}

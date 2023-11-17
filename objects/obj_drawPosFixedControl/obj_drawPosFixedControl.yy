@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Draw Pos Fixed",
-    "path": "folders/effects/Draw Pos Fixed.yy",
+    "name": "draw-pos-fixed",
+    "path": "folders/effects/draw-pos-fixed.yy",
   },
   "parentObjectId": null,
   "persistent": false,

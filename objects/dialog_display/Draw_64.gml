@@ -20,7 +20,6 @@ if (active) {
 			layout.width + (layout.margin * 2),
 			layout.height + (layout.margin * 2)
 		);
-		log(layout.height);
 	}
 
 

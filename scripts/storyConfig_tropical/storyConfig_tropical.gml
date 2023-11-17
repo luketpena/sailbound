@@ -2,9 +2,11 @@ function storyConfig_tropical(){
 	var totalDuration = minutes(1);
 	
 	return {
-		startPalette: palette_tropical,
+		music: mx_test_magma,
+		startPalette: palette_tropical3,
 		startScript: function() {
-			ceiling_create(global.water_y -128, 5, propCollection_tropical);
+			ceiling_create(global.water_y - 128, 5, propCollection_tropical);
+			ground_createAtStart(global.water_y + 128, propCollection_tropical);
 			waves_set_behavior_preset(WaveTypes.Calm);
 			islands.activate([TropicalIsland], seconds(2), seconds(5));
 		},

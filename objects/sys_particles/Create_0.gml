@@ -2,8 +2,8 @@
 alarm[0] = 15;
 
 //---- Systems ----\\
-global.ps_fx_above = part_system_create_layer(l_main,false);
-global.ps_fx_glow = part_system_create_layer(l_main,false);
+global.ps_fx_above = part_system_create_layer(l_main, false);
+global.ps_fx_glow = part_system_create_layer(l_main, false);
 global.ps_water_surface = part_system_create();
 global.ps_water_front = part_system_create();
 
@@ -14,9 +14,10 @@ global.ps_list = [
 	global.ps_water_front,
 ];
 
-part_system_automatic_draw(global.ps_water_surface,false);
-part_system_automatic_draw(global.ps_water_front,false);
-part_system_automatic_draw(global.ps_fx_glow,false);
+part_system_automatic_draw(global.ps_fx_above, false);
+part_system_automatic_draw(global.ps_water_surface, false);
+part_system_automatic_draw(global.ps_water_front, false);
+part_system_automatic_draw(global.ps_fx_glow, false);
 
 function setPaused(_active) {
 	for (var i=0; i<array_length(global.ps_list); i++) {

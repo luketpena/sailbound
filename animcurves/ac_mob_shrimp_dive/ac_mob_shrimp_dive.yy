@@ -12,6 +12,6 @@
   "function": 0,
   "parent": {
     "name": "Shrimp",
-    "path": "folders/sailing/Mobs/Shrimp.yy",
+    "path": "folders/sailing/mobs/Shrimp.yy",
   },
 }

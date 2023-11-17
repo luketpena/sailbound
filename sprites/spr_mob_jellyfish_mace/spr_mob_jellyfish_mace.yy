@@ -26,7 +26,7 @@
   "origin": 1,
   "parent": {
     "name": "Sprites",
-    "path": "folders/sailing/Mobs/Jellyfish/Sprites.yy",
+    "path": "folders/sailing/mobs/Jellyfish/Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

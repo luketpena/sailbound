@@ -4,7 +4,7 @@ tilt_rot = (tilt_rot+4) mod 360;
 floater_step(0);
 behave_step_bouncer();
 
-var distance_to_boat = point_distance(x, y, obj_boat_front.x_center_draw, obj_boat_front.y_center_draw);
+var distance_to_boat = point_distance(x, y, o_boat_main.x_center_draw, o_boat_main.y_center_draw);
 if (distance_to_boat < 32) {
 	if (itemInventory.hasFreeSlot) {
 		item_pickup(item);

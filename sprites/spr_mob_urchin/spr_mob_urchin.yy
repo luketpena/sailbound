@@ -26,7 +26,7 @@
   "origin": 7,
   "parent": {
     "name": "Urchin",
-    "path": "folders/sailing/Mobs/Urchin.yy",
+    "path": "folders/sailing/mobs/Urchin.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

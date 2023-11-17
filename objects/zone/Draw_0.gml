@@ -1,3 +1,4 @@
+image_blend = c_fuchsia;
 draw_set_color(image_blend);
 
 draw_set_alpha(1);

@@ -5,7 +5,7 @@ if instance_exists(light) {
 	light.y = y;
 }
 
-//Collide and open
+// Collide and open
 if (exploding) {
 	if (explode_wait>0) explode_wait-- else explode();
 	

@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Shadow",
-    "path": "folders/sailing/environment/water/Effects/Shadow.yy",
+    "path": "folders/sailing/environment/water/effects/Shadow.yy",
   },
   "parentObjectId": null,
   "persistent": false,

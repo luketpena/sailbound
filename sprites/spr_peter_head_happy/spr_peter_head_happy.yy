@@ -30,7 +30,7 @@
   "origin": 9,
   "parent": {
     "name": "Heads",
-    "path": "folders/sailing/Boat/Sprites/Peter/Heads.yy",
+    "path": "folders/sailing/boat/Sprites/Peter/Heads.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

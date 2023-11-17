@@ -6,8 +6,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Main",
-    "path": "folders/effects/Lighting/Main.yy",
+    "name": "main",
+    "path": "folders/effects/lighting/main.yy",
   },
   "parentObjectId": null,
   "persistent": false,

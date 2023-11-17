@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Macros",
-    "path": "folders/system/Constants/Macros.yy",
+    "name": "macros",
+    "path": "folders/system/constants/macros.yy",
   },
 }

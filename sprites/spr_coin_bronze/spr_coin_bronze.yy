@@ -36,7 +36,7 @@
   "origin": 4,
   "parent": {
     "name": "Sprites",
-    "path": "folders/sailing/Pick-ups/Coins/Sprites.yy",
+    "path": "folders/sailing/pickups/Coins/Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

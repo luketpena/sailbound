@@ -14,7 +14,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Item Box",
-    "path": "folders/sailing/Pick-ups/Item Box.yy",
+    "path": "folders/sailing/pickups/Item Box.yy",
   },
   "parentObjectId": null,
   "persistent": false,

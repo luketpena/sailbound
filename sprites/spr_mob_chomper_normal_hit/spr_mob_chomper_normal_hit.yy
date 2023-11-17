@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Sprites",
-    "path": "folders/sailing/Mobs/Chomper/Sprites.yy",
+    "path": "folders/sailing/mobs/Chomper/Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

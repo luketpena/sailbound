@@ -1,7 +1,7 @@
 if asset_has_tags(room, "town", asset_room) {
 	instance_create_layer(0, 0, l_system, sys_falthruManager);
 
-	instance_create_layer(0, 0, l_system, sys_lighting);
+	instance_create_layer(0, 0, l_system, lighting);
 	instance_create_layer(0, 0, l_system, colors);
 	
 	layer_create(layer_get_depth(l_main) - 10, "l_dust");

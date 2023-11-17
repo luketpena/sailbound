@@ -3,8 +3,8 @@
 ///@param y center y position
 function boat_snapPosition(x, y) {
 	var originalPosition = {
-		x: obj_boat_front.x_center_draw,
-		y: obj_boat_front.y_center_draw,
+		x: o_boat_main.x_center_draw,
+		y: o_boat_main.y_center_draw,
 	}
 	
 	var diff = {
@@ -12,7 +12,7 @@ function boat_snapPosition(x, y) {
 		y: y-originalPosition.y,
 	}
 	
-	boat_setPosition_front(obj_boat_front.x + diff.x, obj_boat_front.y + diff.y);
+	boat_setPosition_front(o_boat_main.x + diff.x, o_boat_main.y + diff.y);
 	boat_setPosition_back(obj_boat_back.x + diff.x, obj_boat_back.y + diff.y);
 }
 
@@ -20,14 +20,14 @@ function boat_snapPosition(x, y) {
 ///@param xdis x distance to move boat
 ///@param ydis y distance to move boat
 function boat_snapPosition_relative(xdis, ydis) {
-	boat_setPosition_front(obj_boat_front.x + xdis, obj_boat_front.y + ydis);
+	boat_setPosition_front(o_boat_main.x + xdis, o_boat_main.y + ydis);
 	boat_setPosition_back(obj_boat_back.x + xdis, obj_boat_back.y + ydis);
 }
 
 function boat_snapPosition_toWater() {
 	boat_snapPosition(
-		obj_boat_front.x_center,
-		obj_boat_front.waterY_center,
+		o_boat_main.x_center,
+		o_boat_main.waterY_center,
 	);	
 }
 
@@ -35,8 +35,8 @@ function boat_snapPosition_toWater() {
 ///@param x x position
 ///@param y y position
 function boat_setPosition_front(x, y) {
-	obj_boat_front.phy_position_x = x;
-	obj_boat_front.phy_position_y = y;
+	o_boat_main.phy_position_x = x;
+	o_boat_main.phy_position_y = y;
 }
 
 ///@description Sets the phy position for the back of the boat

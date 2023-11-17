@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Repair Buddy",
-    "path": "folders/sailing/Pick-ups/Items/Repair Buddy.yy",
+    "path": "folders/sailing/pickups/Items/Repair Buddy.yy",
   },
   "parentObjectId": null,
   "persistent": false,

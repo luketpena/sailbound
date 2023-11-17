@@ -31,7 +31,7 @@
   "origin": 9,
   "parent": {
     "name": "Combat",
-    "path": "folders/effects/Sprites/Combat.yy",
+    "path": "folders/effects/sprites/Combat.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

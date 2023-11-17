@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "orb",
-    "path": "folders/sailing/Pick-ups/orb.yy",
+    "path": "folders/sailing/pickups/orb.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -36,5 +36,5 @@
   "tags": [
     "pickup",
   ],
-  "visible": true,
+  "visible": false,
 }

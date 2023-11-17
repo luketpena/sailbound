@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Controllers",
-    "path": "folders/sailing/environment/water/Controllers.yy",
+    "name": "controllers",
+    "path": "folders/sailing/environment/water/controllers.yy",
   },
   "parentObjectId": null,
   "persistent": false,

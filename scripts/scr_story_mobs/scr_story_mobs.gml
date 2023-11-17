@@ -50,6 +50,15 @@ function StoryMobPuffer() : StoryMob(
 	seconds(.5)
 ) constructor {}
 
+function StoryMobLavaWall() : StoryMob(
+	"lavaWall",
+	function() { spawn_lavaFall(); },
+	MobDanger.LavaWall,
+	2, 8,
+	seconds(.5),
+	seconds(8)
+) constructor {}
+
 function StoryMob(
 	_name,
 	_spawnFunction,

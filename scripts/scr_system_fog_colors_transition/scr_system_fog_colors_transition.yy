@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/sailing/environment/colors/Scripts.yy",
+    "name": "scripts",
+    "path": "folders/sailing/environment/colors/scripts.yy",
   },
 }

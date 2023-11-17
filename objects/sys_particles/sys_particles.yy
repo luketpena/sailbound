@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Particles",
-    "path": "folders/effects/Particles.yy",
+    "name": "particles",
+    "path": "folders/effects/particles.yy",
   },
   "parentObjectId": null,
   "persistent": false,

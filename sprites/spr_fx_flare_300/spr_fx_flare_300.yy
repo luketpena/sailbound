@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Flares",
-    "path": "folders/effects/Sprites/Flares.yy",
+    "path": "folders/effects/sprites/Flares.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -34,7 +34,7 @@
   "origin": 9,
   "parent": {
     "name": "Cannon",
-    "path": "folders/sailing/Pick-ups/Items/Cannon.yy",
+    "path": "folders/sailing/pickups/Items/Cannon.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

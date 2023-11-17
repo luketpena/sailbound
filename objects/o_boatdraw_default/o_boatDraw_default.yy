@@ -7,7 +7,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Draw Objects",
-    "path": "folders/sailing/Boat/Draw Objects.yy",
+    "path": "folders/sailing/boat/Draw Objects.yy",
   },
   "parentObjectId": {
     "name": "prnt_boat_draw",
@@ -33,5 +33,5 @@
     "path": "sprites/ico_boat/ico_boat.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

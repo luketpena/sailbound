@@ -10,7 +10,7 @@ if surface_exists(water_surface) {
 		draw_sprite_ext(s_pixel, 0, 0, settings.water_depth-1, room_width, 1, 0, c_water_highlight, 1);
 		//Draw the floating pattern
 		draw_sprite_tiled_ext(spr_env_water_pattern, 1, -pattern_pos, 0, 1, 1, c_water_highlight, .25);
-		draw_sprite_tiled_ext(spr_env_water_pattern, 0, -pattern_pos*2, 0, 1, 1, c_water_highlight, .5);
+		draw_sprite_tiled_ext(spr_env_water_pattern, 0, -pattern_pos*1.5, 0, 1, 1, c_water_highlight, .5);
 		
 
 		//Drawing the waves

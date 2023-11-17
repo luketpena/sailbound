@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Surface",
-    "path": "folders/sailing/environment/water/Effects/Surface.yy",
+    "path": "folders/sailing/environment/water/effects/Surface.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "General",
-    "path": "folders/sailing/environment/colors/Palettes/Legacy/General.yy",
+    "name": "general",
+    "path": "folders/sailing/environment/colors/palettes/legacy/general.yy",
   },
 }

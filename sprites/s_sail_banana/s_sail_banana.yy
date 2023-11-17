@@ -26,7 +26,7 @@
   "origin": 9,
   "parent": {
     "name": "Banana",
-    "path": "folders/sailing/Boat/Hulls/Banana.yy",
+    "path": "folders/sailing/boat/Hulls/Banana.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -59,7 +59,7 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 7,
+    "xorigin": 6,
     "yorigin": 55,
   },
   "swatchColours": null,

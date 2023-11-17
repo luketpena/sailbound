@@ -5,19 +5,19 @@ if surface_exists(surf_gui) {
 		surface_set_target(surf_gui);
 	
 			draw_clear_alpha(c_white, 0);
-			draw_set_color(c_red);
+			//draw_set_color(c_red);
 		
 			
-			var tiltPos = new Pos(global.hvw, global.vh-16);
-			var tiltWidth = global.hvw*.7;
-			draw_set_color(c_white);
-			draw_rectangle(tiltPos.x-tiltWidth, tiltPos.y-2, tiltPos.x+tiltWidth, tiltPos.y+2, false);
-			draw_set_color(c_gold);
-			draw_circle(tiltPos.x + tiltWidth * controls.tilt_slide, tiltPos.y, 16, false);
+			//var tiltPos = new Pos(global.hvw, global.vh-16);
+			//var tiltWidth = global.hvw*.7;
+			//draw_set_color(c_white);
+			//draw_rectangle(tiltPos.x-tiltWidth, tiltPos.y-2, tiltPos.x+tiltWidth, tiltPos.y+2, false);
+			//draw_set_color(c_gold);
+			//draw_circle(tiltPos.x + tiltWidth * controls.tilt_slide, tiltPos.y, 16, false);
 			
-			draw_set_color(c_white);
-			draw_set_font(global.font_normal_medium);
-			draw_text(tiltPos.x, tiltPos.y, controls.tilt_slide);
+			//draw_set_color(c_white);
+			//draw_set_font(global.font_normal_medium);
+			//draw_text(tiltPos.x, tiltPos.y, controls.tilt_slide);
 			
 			//>> Drawing Functions	
 			hud_draw_coins(16,global.vh-16);

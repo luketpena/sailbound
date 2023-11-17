@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Cannon",
-    "path": "folders/sailing/Pick-ups/Items/Cannon.yy",
+    "path": "folders/sailing/pickups/Items/Cannon.yy",
   },
   "parentObjectId": null,
   "persistent": false,

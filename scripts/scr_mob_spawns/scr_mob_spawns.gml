@@ -19,7 +19,7 @@ function spawn_chomper(side = 0) {
 function spawn_urchin() {
 	if (instance_exists(ground)) {
 		var spawnX = room_width;
-		var spawnY = ground.findY_public(spawnX, .5);
+		var spawnY = ground.findY(spawnX, .5);
 		return instance_create_layer(spawnX, spawnY, l_main, obj_mob_urchin);
 	}
 }

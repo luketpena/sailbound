@@ -33,8 +33,8 @@ switch(state) {
 			part_particles_create(global.ps_fx_glow,x+8*image_xscale,y,global.pt_spark,8);
 		}
 		
-		x += (obj_boat_front.x_center_draw+move_offset_x-x)*.1;		
-		y += (obj_boat_front.y_center_draw+move_offset_y-y)*.1;		
+		x += (o_boat_main.x_center_draw+move_offset_x-x)*.1;		
+		y += (o_boat_main.y_center_draw+move_offset_y-y)*.1;		
 		
 		facing_direction();
 		

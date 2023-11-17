@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Draw Objects",
-    "path": "folders/sailing/Boat/Draw Objects.yy",
+    "path": "folders/sailing/boat/Draw Objects.yy",
   },
   "parentObjectId": {
     "name": "prnt_boat_draw",

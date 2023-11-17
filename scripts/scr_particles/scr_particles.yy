@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Particles",
-    "path": "folders/effects/Particles.yy",
+    "name": "particles",
+    "path": "folders/effects/particles.yy",
   },
 }

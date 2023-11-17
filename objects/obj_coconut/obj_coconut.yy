@@ -15,7 +15,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Coconut",
-    "path": "folders/sailing/Mobs/Seagull/Coconut.yy",
+    "path": "folders/sailing/mobs/Seagull/Coconut.yy",
   },
   "parentObjectId": {
     "name": "prnt_physicsBobber",

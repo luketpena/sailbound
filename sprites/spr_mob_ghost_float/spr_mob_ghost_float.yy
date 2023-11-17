@@ -33,7 +33,7 @@
   "origin": 4,
   "parent": {
     "name": "Sprites",
-    "path": "folders/sailing/Mobs/Ghost/Sprites.yy",
+    "path": "folders/sailing/mobs/Ghost/Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -34,7 +34,7 @@
   "origin": 9,
   "parent": {
     "name": "Sprites",
-    "path": "folders/effects/Particles/Sprites.yy",
+    "path": "folders/effects/particles/Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -109,12 +109,3 @@ function array_pluck(a, index) {
 	var extracted = array_extract(a, index);
 	return extracted.array;
 }
-
-function array_reverse(a) {
-	var new_array = [];
-	var l = array_length(a)-1;
-	for (var i=0; i<=l; i++) {
-		new_array[l-i] = a[i];
-	}
-	return new_array;
-}

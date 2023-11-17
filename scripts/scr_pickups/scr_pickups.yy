@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Pick-ups",
-    "path": "folders/sailing/Pick-ups.yy",
+    "name": "pickups",
+    "path": "folders/sailing/pickups.yy",
   },
 }

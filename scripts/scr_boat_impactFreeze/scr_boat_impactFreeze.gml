@@ -31,7 +31,7 @@ function boat_impactFreeze_step() {
 ///@param duration How long in seconds it freezes
 ///@param boost how much the speed is multiplied when the freeze is over
 function boat_impactFreeze_trigger(duration, boost) {
-	with(obj_boat_front) {
+	with(o_boat_main) {
 		//Save the current speed
 		impactFreeze_speed_front = {
 			x: phy_speed_x,

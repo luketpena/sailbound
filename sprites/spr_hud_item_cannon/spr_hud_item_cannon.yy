@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "HUD",
-    "path": "folders/sailing/Pick-ups/Items/Icons/HUD.yy",
+    "path": "folders/sailing/pickups/Items/Icons/HUD.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -13,7 +13,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Ring",
-    "path": "folders/sailing/Pick-ups/Ring.yy",
+    "path": "folders/sailing/pickups/Ring.yy",
   },
   "parentObjectId": null,
   "persistent": false,

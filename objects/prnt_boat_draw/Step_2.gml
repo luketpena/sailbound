@@ -7,11 +7,11 @@ sailStep();
 if (updateBlending) image_blend = c_front;
 
 if (hasBoatTarget) {
-	x = obj_boat_front.x_center_draw;
-	y = obj_boat_front.y_center_draw;
+	x = o_boat_main.x_center_draw;
+	y = o_boat_main.y_center_draw;
 
-	squish += (1+(obj_boat_front.phy_speed_y/20)-squish)*.2;
-	hull_angle = obj_boat_front.boat_angle_reverse-180;
+	squish += (1+(o_boat_main.phy_speed_y/20)-squish)*.2;
+	hull_angle = o_boat_main.boat_angle_reverse-180;
 
 	if (dmgFlicker_alarm>-1) {
 		if (dmgFlicker_alarm>0) {

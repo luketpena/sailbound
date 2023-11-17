@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Sprites",
-    "path": "folders/sailing/Pick-ups/Item Box/Sprites.yy",
+    "path": "folders/sailing/pickups/Item Box/Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

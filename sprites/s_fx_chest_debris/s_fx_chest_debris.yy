@@ -33,7 +33,7 @@
   "origin": 4,
   "parent": {
     "name": "sprites",
-    "path": "folders/sailing/Pick-ups/chests/sprites.yy",
+    "path": "folders/sailing/pickups/chests/sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

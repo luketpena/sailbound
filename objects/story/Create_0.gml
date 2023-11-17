@@ -41,7 +41,7 @@ chest = {
 	diceSides: [],
 }
 
-config = storyConfig_tropical();
+config = storyConfig_magma();
 
 switch(global.level_id) {
 	case "tropical":
@@ -49,8 +49,7 @@ switch(global.level_id) {
 		break;
 		
 	default:
-		config = storyConfig_tropical(); // Loads something in to prevent crashes
-		log("CONFIG SET:", config);
+		config = storyConfig_magma(); // Loads something in to prevent crashes
 		sysLog("No config specified for the current global level id.");
 		sysLog(global.level_id);
 		break;

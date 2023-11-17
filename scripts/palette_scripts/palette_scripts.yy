@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Palettes",
-    "path": "folders/sailing/environment/colors/Palettes.yy",
+    "name": "palettes",
+    "path": "folders/sailing/environment/colors/palettes.yy",
   },
 }

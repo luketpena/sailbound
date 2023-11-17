@@ -1,4 +1,4 @@
-var boat_adjust = (obj_boat_front.y_center_draw-global.water_y)/camera_sensor_distance;
+var boat_adjust = (o_boat_main.y_center_draw-global.water_y)/camera_sensor_distance;
 var camera_adjust_x = camera_set_x;
 var camera_adjust_y = camera_set_y+boat_adjust*camera_displace_distance;
 

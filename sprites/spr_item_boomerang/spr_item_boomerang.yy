@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Boomerang",
-    "path": "folders/sailing/Pick-ups/Items/Boomerang.yy",
+    "path": "folders/sailing/pickups/Items/Boomerang.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

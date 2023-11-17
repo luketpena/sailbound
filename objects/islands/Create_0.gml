@@ -1,5 +1,8 @@
 active = false;
+blockedByCave = false;
 islandTypes = [];
+islandChanceThresholds = [];
+chanceSum = 0;
 
 islandList = [];
 islandSpeed = new MinMax(-.1, -.5);
@@ -12,13 +15,19 @@ islandWaitMin = 0;
 islandWaitMax = 0;
 
 function activate(
-	_islandTypes,
+	_islandsWithChance,
 	_minTime,
 	_maxTime
 ) {
 	active = true;
 	setIslandWaitTimes(_minTime, _maxTime);
-	islandTypes = _islandTypes;
+	// Getting the dice chance
+	for (var i=0; i<array_length(_islandsWithChance); i++) {
+		var _config = _islandsWithChance[i];
+		array_push(islandTypes, _config.island);
+		chanceSum += _config.chance;
+		array_push(islandChanceThresholds, chanceSum);
+	}
 }
 
 function setIslandWaitTimes(_min, _max) {
@@ -29,7 +38,21 @@ function setIslandWaitTimes(_min, _max) {
 function generateIsland() {
 	if (array_length(islandTypes) == 0) exit;
 	
-	var _islandType = islandTypes[irandom(array_length(islandTypes) - 1)];
+	
+	var _roll = irandom(chanceSum);
+	var _index = -1;
+	
+	for (var i=0; i<array_length(islandChanceThresholds); i++) {
+		var _chance = islandChanceThresholds[i];
+		if (_roll < _chance) {
+			_index = i;
+			break;
+		}
+	}
+	
+	if (_index == -1) exit;
+	
+	var _islandType = islandTypes[_index];
 	var _depth = random(1);
 	var _newIsland = new _islandType(_depth);
 	addIsland(_newIsland);	

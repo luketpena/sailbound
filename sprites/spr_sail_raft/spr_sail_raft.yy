@@ -26,7 +26,7 @@
   "origin": 9,
   "parent": {
     "name": "Raft",
-    "path": "folders/sailing/Boat/Hulls/Raft.yy",
+    "path": "folders/sailing/boat/Hulls/Raft.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -1,5 +1,5 @@
 //setup
-pd_boatFront = point_direction(x,y,obj_boat_front.x,obj_boat_front.y);
+pd_boatFront = point_direction(x,y,o_boat_main.x,o_boat_main.y);
 water_y = water_find_y_precise(x);
 touched = water_y<(y+boat_offset);
 

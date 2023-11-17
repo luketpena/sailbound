@@ -6,6 +6,20 @@ function SpikedIsland(_depth) : Island(_depth) constructor {
 	setSprite(spr_islands_spiked);
 }
 
+function VolcanoIsland(_depth) : Island(_depth) constructor {
+	setSprite(spr_islands_volcano);
+	timerRange = new MinMax(seconds(5), seconds(10));
+	timer = timerRange.MAX;
+	
+	function step() {
+		move();
+		if (timer > 0) timer-- else {
+			timer = irandom_range(timerRange.MIN, timerRange.MAX);
+			instance_create_layer(x, y - 30 * yscale, l_main, o_magmaBomb_background);
+		}
+	}
+}
+
 function Island(
 	_depth,
 ) constructor {

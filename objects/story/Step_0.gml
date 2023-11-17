@@ -2,7 +2,7 @@
 if (active) {
 	var _currentChapter = getCurrentChapter();
 	
-	// -- Spawning Mobs 00
+	// -- Spawning Mobs --
 	if (mobActive) {
 		array_foreach(mobs, function(_mob) {
 			// Mobs must be ready and there must be room in the danger cap

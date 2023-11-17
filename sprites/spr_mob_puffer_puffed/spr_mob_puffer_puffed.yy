@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Puffer",
-    "path": "folders/sailing/Mobs/Puffer.yy",
+    "path": "folders/sailing/mobs/Puffer.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

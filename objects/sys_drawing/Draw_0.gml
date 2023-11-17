@@ -1,13 +1,17 @@
-draw_object(sys_sky);
-draw_object(sys_horizon);
-draw_object(obj_storm);
-draw_object(islands);
-draw_object(obj_location); 
+if (drawBackdropSky) {
+	draw_object(sys_sky);
+}
+if (drawBackdropWater) {
+	draw_object(sys_horizon);
+	draw_object(obj_storm);
+	draw_object(islands);
+	draw_object(obj_location);
+}
 
-
+draw_object(o_cave_backdrop);
 draw_object(sys_water_backdrop);
-with(ground) event_perform(ev_draw, ev_draw_begin);
-draw_object(ground);
+with(prnt_ground) event_perform(ev_draw, ev_draw_begin);
+draw_object(prnt_ground);
 
 draw_object(sys_water_back);
 
@@ -21,6 +25,7 @@ lighting_shader_draw();
 	
 	draw_tag("item");
 	draw_tag("fx_splash");
+	part_system_drawit(global.ps_fx_above);
 	draw_object(obj_petra);
 		
 	draw_object(o_chest);
@@ -36,7 +41,6 @@ shader_reset();
 draw_tag("fx_over");
 draw_object(ground_front);
 draw_object(sys_water_distortion);
-draw_object(ground_ceiling);
 draw_tag("fx_top");
 
 with(sys_glow) event_perform(ev_draw, ev_gui);
@@ -44,4 +48,5 @@ draw_object(sys_glow);
 
 draw_object(sys_water_front);
 draw_object(sys_weather);
+draw_object(o_ceiling_draw);
 draw_tag("gui");

@@ -22,7 +22,7 @@ sinkAccel = 0;
 floatMove_init(2.5, .2);
 
 function facePlayer() {
-	image_xscale = obj_boat_front.x > x ? 1 : -1;	
+	image_xscale = o_boat_main.x > x ? 1 : -1;	
 }
 
 function stayAtSurface() {

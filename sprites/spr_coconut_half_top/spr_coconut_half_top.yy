@@ -35,7 +35,7 @@
   "origin": 4,
   "parent": {
     "name": "Sprites",
-    "path": "folders/sailing/Mobs/Seagull/Coconut/Sprites.yy",
+    "path": "folders/sailing/mobs/Seagull/Coconut/Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -27,7 +27,7 @@
   "origin": 9,
   "parent": {
     "name": "Steamboat",
-    "path": "folders/sailing/Boat/Hulls/Steamboat.yy",
+    "path": "folders/sailing/boat/Hulls/Steamboat.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

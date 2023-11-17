@@ -1,6 +1,6 @@
 offset = 0;
 boundFix = noone;
-margin = ground.margin;
+margin = surfaceInstance.margin;
 
 function init(targetY) {
 	assignFixture(targetY);

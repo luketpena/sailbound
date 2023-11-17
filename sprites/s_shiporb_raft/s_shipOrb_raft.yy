@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Ship Orbs",
-    "path": "folders/sailing/Boat/Ship Orbs.yy",
+    "path": "folders/sailing/boat/Ship Orbs.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -18,7 +18,7 @@ instance_create_layer(0, 0, l_main, sys_drawing);
 //----< Environment >----\\
 instance_create_layer(0, 0, l_system, sys_glow);
 instance_create_layer(0, 0, l_system, sys_horizon);
-instance_create_layer(0, 0, l_system, sys_lighting);
+instance_create_layer(0, 0, l_system, lighting);
 instance_create_layer(0, 0, l_system, sys_weather);
 instance_create_layer(0, 0, l_system, islands);
 
@@ -32,7 +32,7 @@ instance_create_layer(0, 0, l_system, sys_water_distortion);
 
 //----< Final >----\\
 instance_create_layer(0, 0, l_system, obj_camera_water);
-instance_create_layer(room_width/2, global.water_y, l_main, obj_boat_front);
+instance_create_layer(room_width/2, global.water_y, l_main, o_boat_main);
 instance_create_layer(room_width/2, global.water_y, l_main, obj_petra);
 instance_create_layer(0, 0, l_main, story);
 

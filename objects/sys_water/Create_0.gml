@@ -12,7 +12,7 @@ global.cutout_top_surface = noone;
 cutout_bottom_surface = noone;
 
 //-- WATER GLOBALS --\\
-global.water_speed = .5; //the speed at which floating objects move
+global.water_speed = 1; //the speed at which floating objects move
 
 //-- Particles --\\
 pt_init_water_wave_wake();

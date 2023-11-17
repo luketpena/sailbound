@@ -4,3 +4,15 @@ function propCollection_tropical() {
 		prop_coralReef()
 	];
 }
+
+function propCollection_magma() {
+	return [
+		prop_magmaPits()
+	]
+}
+
+function propCollection_magmaCeiling() {
+	return [
+		prop_magmaStalagtite()
+	]
+}

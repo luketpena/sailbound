@@ -2,10 +2,10 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "s_hull_banana",
-  "bbox_bottom": 14,
-  "bbox_left": 0,
-  "bbox_right": 55,
-  "bbox_top": 0,
+  "bbox_bottom": 15,
+  "bbox_left": 1,
+  "bbox_right": 56,
+  "bbox_top": 1,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -18,7 +18,7 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 15,
+  "height": 17,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4b78eddc-1a35-4fac-be63-027c78aa5d15","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -27,7 +27,7 @@
   "origin": 9,
   "parent": {
     "name": "Banana",
-    "path": "folders/sailing/Boat/Hulls/Banana.yy",
+    "path": "folders/sailing/boat/Hulls/Banana.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -61,7 +61,7 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 28,
+    "xorigin": 29,
     "yorigin": 4,
   },
   "swatchColours": null,
@@ -72,5 +72,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 56,
+  "width": 58,
 }

@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Fog",
-    "path": "folders/sailing/environment/colors/Palettes/Legacy/Fog.yy",
+    "name": "fog",
+    "path": "folders/sailing/environment/colors/palettes/legacy/fog.yy",
   },
 }

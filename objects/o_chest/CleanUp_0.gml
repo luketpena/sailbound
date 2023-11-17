@@ -1,2 +1,2 @@
 floater_cleanup();
-safeDestroy(light)
+instance_destroy_safe(light)

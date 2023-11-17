@@ -30,8 +30,8 @@
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "Dust",
-    "path": "folders/effects/Dust.yy",
+    "name": "dust",
+    "path": "folders/effects/dust.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

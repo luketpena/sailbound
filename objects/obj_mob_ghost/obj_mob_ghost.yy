@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Ghost",
-    "path": "folders/sailing/Mobs/Ghost.yy",
+    "path": "folders/sailing/mobs/Ghost.yy",
   },
   "parentObjectId": null,
   "persistent": false,

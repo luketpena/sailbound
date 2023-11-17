@@ -1,8 +1,8 @@
 lighting_flash_init();
 
-front = obj_boat_front;
+front = o_boat_main;
 back = obj_boat_back;
-hasBoatTarget = instance_exists(obj_boat_front);
+hasBoatTarget = instance_exists(o_boat_main);
 
 
 draw_active = false;
@@ -99,13 +99,13 @@ head = {
 		
 		// Animation
 		if (bd.hasBoatTarget) {
-			if (obj_boat_front.waterY_center < obj_boat_front.y_center_draw-16) {
+			if (o_boat_main.waterY_center < o_boat_main.y_center_draw-16) {
 				// Submerged
 				frame = 3;
 				// These are bubbles coming out of the mouth
 				part_particles_create(global.ps_water_front, bd.x, bd.y, global.pt_water_bubble, 1);
-			}   else if (obj_boat_front.phy_speed_y < -3) frame = 1
-				else if (obj_boat_front.phy_speed_y > 3) frame = 2
+			}   else if (o_boat_main.phy_speed_y < -3) frame = 1
+				else if (o_boat_main.phy_speed_y > 3) frame = 2
 				else frame = 0;
 		}
 	},

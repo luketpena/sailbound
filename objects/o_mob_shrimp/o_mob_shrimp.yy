@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Shrimp",
-    "path": "folders/sailing/Mobs/Shrimp.yy",
+    "path": "folders/sailing/mobs/Shrimp.yy",
   },
   "parentObjectId": {
     "name": "prnt_mob",

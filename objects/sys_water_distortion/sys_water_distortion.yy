@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Distortion",
-    "path": "folders/sailing/environment/water/Effects/Distortion.yy",
+    "name": "distortion",
+    "path": "folders/sailing/environment/water/controllers/distortion.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -34,5 +34,5 @@
     "path": "sprites/ico_system/ico_system.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

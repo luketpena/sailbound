@@ -34,7 +34,7 @@
   "origin": 4,
   "parent": {
     "name": "Bursts",
-    "path": "folders/effects/Sprites/Bursts.yy",
+    "path": "folders/effects/sprites/Bursts.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

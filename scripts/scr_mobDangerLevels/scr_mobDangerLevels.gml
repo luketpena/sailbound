@@ -3,4 +3,5 @@ enum MobDanger {
 	Urchin = 1,
 	Chomper = 1,
 	Puffer = 2,
+	LavaWall = 2,
 }

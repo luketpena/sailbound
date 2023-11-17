@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Classic",
-    "path": "folders/sailing/Boat/Hulls/Classic.yy",
+    "path": "folders/sailing/boat/Hulls/Classic.yy",
   },
   "parentObjectId": null,
   "persistent": false,

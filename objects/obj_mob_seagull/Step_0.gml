@@ -1,9 +1,9 @@
 switch(state) {
 	case "flyToPlayer":
 		moveToPlayer();
-		var inRangeH = abs(obj_boat_front.x_center_draw - x) < attackRange;
-		var inRangeV = obj_boat_front.y_center_draw > y + 4;
-		if (inRangeH && inRangeV && !obj_boat_front.submerged) {
+		var inRangeH = abs(o_boat_main.x_center_draw - x) < attackRange;
+		var inRangeV = o_boat_main.y_center_draw > y + 4;
+		if (inRangeH && inRangeV && !o_boat_main.submerged) {
 			state = "prepareAttack";
 			stateTimer = .2 * room_speed;
 		}

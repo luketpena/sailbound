@@ -16,14 +16,14 @@ sprite_index = spr_mob_seagull_carry;
 function moveToPlayer() {
 	var waterY = water_find_y_basic(phy_position_x);
 	var targetY = min(
-		(obj_boat_front.y_center_draw - heightOffsetFromBoat), 
+		(o_boat_main.y_center_draw - heightOffsetFromBoat), 
 		waterY - 48
 	);
 
 	phy_position_y += (targetY - phy_position_y) / 130;
 	
 	// The seagull should slowdown slightly as it gets in range of the boat
-	var dis = abs(x - obj_boat_front.x_center_draw);
+	var dis = abs(x - o_boat_main.x_center_draw);
 	var disToSlowAt = 64;
 	var disToLerp = min(dis / disToSlowAt, 1);
 	var speedMultiplier = lerp(.5, 1, disToLerp);

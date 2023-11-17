@@ -36,7 +36,7 @@
   "origin": 4,
   "parent": {
     "name": "Sprites",
-    "path": "folders/sailing/Pick-ups/Coins/Sprites.yy",
+    "path": "folders/sailing/pickups/Coins/Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -77,7 +77,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"06744dc1-06fe-4c12-afb5-d2e1fb51966e","path":"sprites/spr_coin_gold/spr_coin_gold.yy",},},},"Disabled":false,"id":"2a25ce39-efb9-460d-973d-b27a6121efa3","IsCreationKey":false,"Key":10.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 5,
     "yorigin": 5,

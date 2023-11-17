@@ -26,7 +26,7 @@
   "origin": 9,
   "parent": {
     "name": "Classic",
-    "path": "folders/sailing/Boat/Hulls/Classic.yy",
+    "path": "folders/sailing/boat/Hulls/Classic.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

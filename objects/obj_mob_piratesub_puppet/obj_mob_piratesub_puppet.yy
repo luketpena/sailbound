@@ -17,7 +17,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Submarine",
-    "path": "folders/sailing/Mobs/Pirates/Submarine.yy",
+    "path": "folders/sailing/mobs/Pirates/Submarine.yy",
   },
   "parentObjectId": null,
   "persistent": false,

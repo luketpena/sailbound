@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Explosions",
-    "path": "folders/effects/Explosions.yy",
+    "name": "explosions",
+    "path": "folders/effects/explosions.yy",
   },
 }

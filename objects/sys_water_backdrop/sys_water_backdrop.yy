@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Controllers",
-    "path": "folders/sailing/environment/water/Controllers.yy",
+    "name": "controllers",
+    "path": "folders/sailing/environment/water/controllers.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -33,5 +33,5 @@
     "path": "sprites/ico_environment/ico_environment.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

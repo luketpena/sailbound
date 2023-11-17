@@ -1,8 +1,8 @@
-phy_position_x = obj_boat_front.x_center_draw;
-phy_position_y = obj_boat_front.y_center_draw;
+phy_position_x = o_boat_main.x_center_draw;
+phy_position_y = o_boat_main.y_center_draw;
 phy_rotation = -prnt_boat_draw.hull_angle;
 
-if (obj_boat_front.falling) {
+if (o_boat_main.falling) {
 	if (bounceReady = false) {
 		bounceReady = true;	
 		bounceReadyTimer = bounceReadyTimerSet;

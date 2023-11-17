@@ -27,7 +27,7 @@
   "origin": 4,
   "parent": {
     "name": "Small",
-    "path": "folders/sailing/Pick-ups/Items/Icons/Small.yy",
+    "path": "folders/sailing/pickups/Items/Icons/Small.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

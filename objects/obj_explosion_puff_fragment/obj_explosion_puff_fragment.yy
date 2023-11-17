@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Objects",
-    "path": "folders/effects/Explosions/Objects.yy",
+    "path": "folders/effects/explosions/Objects.yy",
   },
   "parentObjectId": null,
   "persistent": false,
